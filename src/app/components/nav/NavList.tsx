@@ -17,11 +17,6 @@ export default function NavList() {
           t("about.items.item5"),
         ]}
       />
-      <NavItem title={t("innovations")} path="#" />
-      <NavItem title={t("products")} path="#" />
-      <NavItem title={t("professionals")} path="#" />
-      <NavItem title={t("contact")} path="#" />
-      <NavItem title={t("carreers")} path="#" />
     </ul>
   );
 }
