@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { useTranslations } from "next-intl";
-import React from "react";
 
 export const metadata: Metadata = {
-  title: "test title",
-  description: "test description",
+  title: "Vivacy.com",
+  description: "Description",
 };
 
 export default function Home() {

@@ -12,6 +12,7 @@ const config: Config = {
       white: "#FFFFFF",
       background: "#FAFAFA",
       black: "#000000",
+      transparent: "rgba(0,0,0,0)",
     },
     extend: {
       fontFamily: {
