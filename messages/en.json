@@ -1,5 +1,16 @@
 {
-  "Index": {
+  "Navigation": {
+    "about": "About us",
+    "innovations": "Innovations",
+    "products": "Products",
+    "professionals": "Healthcare professionals",
+    "contact": "Contact",
+    "carreers": "Carrières"
+  },
+  "IndexPage": {
     "title": "Hello world!"
+  },
+  "NotFoundPage": {
+    "title": "Page not found"
   }
 }

@@ -1,10 +1,11 @@
 "use-client";
+import React from "react";
 
 export default function NotFound() {
   return (
     <html>
-      <body>
-        <h1>Something went wrong...</h1>
+      <body className=" text-center">
+        <h1 className="mt-10">Something went wrong..</h1>
       </body>
     </html>
   );
