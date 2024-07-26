@@ -1,6 +1,10 @@
+import type { Metadata } from "next";
 import { getMessages } from "next-intl/server";
 import localFont from "next/font/local";
 
+export const metadata: Metadata = {
+  robots: "noindex",
+};
 // Font files can be colocated inside of `app`
 const mona = localFont({
   src: "./MonaSansVF-Regular.ttf",
