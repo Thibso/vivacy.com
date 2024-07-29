@@ -4,20 +4,150 @@
       "title": "About us",
       "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
       "items": {
-        "item1": "About us",
-        "item2": "Our brands",
-        "item3": "Our corporate commitments",
-        "item4": "Research & development (R&D)",
-        "item5": "Our news"
+        "item1": {
+          "id": "1",
+          "title": "About us",
+          "path": "#"
+        },
+        "item2": {
+          "id": "2",
+          "title": "Our brands",
+          "path": "#"
+        },
+        "item3": {
+          "id": "3",
+          "title": "Our corporate commitments",
+          "path": "#"
+        },
+        "item4": {
+          "id": "4",
+          "title": "Research & development (R&D)",
+          "path": "#"
+        },
+        "item5": {
+          "id": "5",
+          "title": "Our news",
+          "path": "#"
+        }
+      },
+      "images": {
+        "1": "/images/nav/image-1.jpg",
+        "2": "/images/nav/image-2.jpg",
+        "3": "/images/nav/image-1.jpg",
+        "4": "/images/nav/image-1.jpg",
+        "5": "/images/nav/image-1.jpg"
       }
     },
-    "innovations": "Innovations",
-    "products": "Products",
-    "professionals": "Healthcare professionals",
-    "contact": "Contact",
-    "carreers": "Carreers"
+    "innovations": {
+      "title": "Innovations",
+      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
+      "items": {
+        "item1": {
+          "id": "1",
+          "title": "IPN-LIKE®",
+          "path": "#"
+        },
+        "item2": {
+          "id": "2",
+          "title": "BI-SOFT®",
+          "path": "#"
+        },
+        "item3": {
+          "id": "3",
+          "title": "Vivasôme",
+          "path": "#"
+        },
+        "item4": {
+          "id": "4",
+          "title": "Vivacy Security",
+          "path": "#"
+        }
+      },
+      "images": {
+        "1": "/images/nav/image-1.jpg",
+        "2": "/images/nav/image-2.jpg",
+        "3": "/images/nav/image-1.jpg",
+        "4": "/images/nav/image-1.jpg"
+      }
+    },
+    "products": {
+      "title": "Products",
+      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
+      "items": {
+        "item1": {
+          "id": "1",
+          "title": "Aesthetic medicine: Stylage®",
+          "path": "#"
+        },
+        "item2": {
+          "id": "2",
+          "title": "Intimate medicine: Desirial® & Desirial Plus®",
+          "path": "#"
+        },
+        "item3": {
+          "id": "3",
+          "title": "Dermo-cosmetics: Vivacy Beauty",
+          "path": "#"
+        },
+        "item4": {
+          "id": "4",
+          "title": "Mobile application: MyVivacy",
+          "path": "#"
+        }
+      },
+      "images": {
+        "1": "/images/nav/image-1.jpg",
+        "2": "/images/nav/image-2.jpg",
+        "3": "/images/nav/image-1.jpg",
+        "4": "/images/nav/image-1.jpg"
+      }
+    },
+    "professionals": {
+      "title": "Healthcare professionals",
+      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
+      "items": {
+        "item1": {
+          "id": "1",
+          "title": "Training platform: Vivacy Academy",
+          "path": "#"
+        },
+        "item2": {
+          "id": "2",
+          "title": "Inscription",
+          "path": "#"
+        }
+      },
+      "images": {
+        "1": "/images/nav/image-1.jpg",
+        "2": "/images/nav/image-2.jpg"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
+      "items": {
+        "item1": {
+          "id": "1",
+          "title": "World map",
+          "path": "#"
+        },
+        "item2": {
+          "id": "2",
+          "title": "Contact form",
+          "path": "#"
+        }
+      },
+      "images": {
+        "1": "/images/nav/image-1.jpg",
+        "2": "/images/nav/image-2.jpg"
+      }
+    },
+    "carreers": {
+      "title": "Carreers",
+      "path": "#"
+    }
   },
-  "IndexPage": {
+  "HomePage": {
     "title": "Hello world!"
   },
   "NotFoundPage": {

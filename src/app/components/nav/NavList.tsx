@@ -4,19 +4,158 @@ import NavItem from "./NavItem";
 export default function NavList() {
   const t = useTranslations("Navigation");
   return (
-    <ul className="text-white flex gap-8 justify-around w-full max-w-[80%] ">
+    <ul className="text-white flex gap-8 justify-around w-full max-w-[1200px] ">
       <NavItem
         title={t("about.title")}
         path="#"
         content={t("about.content")}
         items={[
-          t("about.items.item1"),
-          t("about.items.item2"),
-          t("about.items.item3"),
-          t("about.items.item4"),
-          t("about.items.item5"),
+          [
+            t("about.items.item1.id"),
+            t("about.items.item1.title"),
+            t("about.items.item1.path"),
+          ],
+          [
+            t("about.items.item2.id"),
+            t("about.items.item2.title"),
+            t("about.items.item2.path"),
+          ],
+          [
+            t("about.items.item3.id"),
+            t("about.items.item3.title"),
+            t("about.items.item3.path"),
+          ],
+          [
+            t("about.items.item4.id"),
+            t("about.items.item4.title"),
+            t("about.items.item4.path"),
+          ],
+          [
+            t("about.items.item5.id"),
+            t("about.items.item5.title"),
+            t("about.items.item5.path"),
+          ],
+        ]}
+        images={[
+          t("about.images.1"),
+          t("about.images.2"),
+          t("about.images.3"),
+          t("about.images.4"),
+          t("about.images.5"),
         ]}
       />
+
+      <NavItem
+        title={t("innovations.title")}
+        path="#"
+        content={t("innovations.content")}
+        items={[
+          [
+            t("innovations.items.item1.id"),
+            t("innovations.items.item1.title"),
+            t("innovations.items.item1.path"),
+          ],
+          [
+            t("innovations.items.item2.id"),
+            t("innovations.items.item2.title"),
+            t("innovations.items.item2.path"),
+          ],
+          [
+            t("innovations.items.item3.id"),
+            t("innovations.items.item3.title"),
+            t("innovations.items.item3.path"),
+          ],
+          [
+            t("innovations.items.item4.id"),
+            t("innovations.items.item4.title"),
+            t("innovations.items.item4.path"),
+          ],
+        ]}
+        images={[
+          t("innovations.images.1"),
+          t("innovations.images.2"),
+          t("innovations.images.3"),
+          t("innovations.images.4"),
+        ]}
+      />
+
+      <NavItem
+        title={t("products.title")}
+        path="#"
+        content={t("products.content")}
+        items={[
+          [
+            t("products.items.item1.id"),
+            t("products.items.item1.title"),
+            t("products.items.item1.path"),
+          ],
+          [
+            t("products.items.item2.id"),
+            t("products.items.item2.title"),
+            t("products.items.item2.path"),
+          ],
+          [
+            t("products.items.item3.id"),
+            t("products.items.item3.title"),
+            t("products.items.item3.path"),
+          ],
+          [
+            t("products.items.item4.id"),
+            t("products.items.item4.title"),
+            t("products.items.item4.path"),
+          ],
+        ]}
+        images={[
+          t("products.images.1"),
+          t("products.images.2"),
+          t("products.images.3"),
+          t("products.images.4"),
+        ]}
+      />
+
+      <NavItem
+        title={t("professionals.title")}
+        path="#"
+        content={t("professionals.content")}
+        items={[
+          [
+            t("professionals.items.item1.id"),
+            t("professionals.items.item1.title"),
+            t("professionals.items.item1.path"),
+          ],
+          [
+            t("professionals.items.item2.id"),
+            t("professionals.items.item2.title"),
+            t("professionals.items.item2.path"),
+          ],
+        ]}
+        images={[t("professionals.images.1"), t("professionals.images.2")]}
+      />
+
+      <NavItem
+        title={t("contact.title")}
+        path="#"
+        content={t("contact.content")}
+        items={[
+          [
+            t("contact.items.item1.id"),
+            t("contact.items.item1.title"),
+            t("contact.items.item1.path"),
+          ],
+          [
+            t("contact.items.item2.id"),
+            t("contact.items.item2.title"),
+            t("contact.items.item2.path"),
+          ],
+        ]}
+        images={[t("professionals.images.1"), t("professionals.images.2")]}
+      />
+
+      <li>
+        <a className="uppercase font-light text-base" href="" target="_blank">
+          {t("carreers.title")}
+        </a>
+      </li>
     </ul>
   );
 }

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const t = useTranslations("IndexPage");
+  const t = useTranslations("HomePage");
   return (
     <div>
       <h1 className="text-blue text-3xl">{t("title")}</h1>
