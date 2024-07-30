@@ -7,7 +7,7 @@ import kartilage from "../../img/logos/kartilge-by-vivacy.png";
 import stylage from "../../img/logos/stylage-by-vivacy.png";
 import vivacy from "../../img/logos/vivacy-beauty.png";
 
-const images = [desirial, stylage, ispace, desirialPlus, vivacy, kartilage];
+const images = [stylage, desirial, desirialPlus, vivacy, ispace, kartilage];
 
 export default function LogoSlider() {
   return (

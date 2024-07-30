@@ -4,6 +4,7 @@ import BlueButton from "../components/buttons/BlueButton";
 import WhiteButton from "../components/buttons/WhiteButton";
 import SyringeRotate from "../components/scrollEffects/SyringeRotate";
 import LogoSlider from "../components/sliders/LogoSlider";
+import FromTopTitles from "../components/titles/FromTopTitles";
 import productsBg from "../img/experts-acide-hyaluronique-laboratoires-vivacy.jpg";
 import syringe from "../img/stylage-specialiste-acide-hyaluronique-premium.png";
 import premisesArchamps from "../img/vivacy-archamps-locaux.jpg";
@@ -38,10 +39,11 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-2 gap-36 justify-between">
             <div className="py-16 space-y-28 my-auto">
-              <div className="titles-container">
-                <h2 className="h2-perso">{t("section1.h2")}</h2>
-                <h3 className="h3-perso text-black">{t("section1.h3")}</h3>
-              </div>
+              <FromTopTitles
+                titleH2={t("section1.h2")}
+                titleH3={t("section1.h3")}
+                h3Classes="text-black"
+              />
 
               <div className="space-y-4">
                 {t.rich("section1.text", {

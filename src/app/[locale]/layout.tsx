@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { useLocale } from "next-intl";
 import localFont from "next/font/local";
 import React from "react";
 import NavBar from "../components/globals/NavBar";
@@ -20,10 +21,12 @@ export default function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  const localeActive = useLocale();
+
   return (
     <html lang={locale} className={mona.className}>
       <body className="relative">
-        <NavBar />
+        <NavBar localeActive={localeActive} />
 
         <div>{children}</div>
 
