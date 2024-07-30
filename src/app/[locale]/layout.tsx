@@ -22,10 +22,8 @@ export default function LocaleLayout({
 }) {
   return (
     <html lang={locale} className={mona.className}>
-      <body>
-        <header>
-          <NavBar />
-        </header>
+      <body className="relative">
+        <NavBar />
 
         <div>{children}</div>
 

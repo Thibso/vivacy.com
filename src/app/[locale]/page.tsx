@@ -88,8 +88,8 @@ export default function Home() {
         />
         <div className="container h-[auto] flex flex-col justify-around">
           <div className="titles-container text-center">
-            <h2 className="h2-perso">{t("section1.h2")}</h2>
-            <h3 className="h3-perso text-white">{t("section1.h3")}</h3>
+            <h2 className="h2-perso">{t("section2.h2")}</h2>
+            <h3 className="h3-perso text-white">{t("section2.h3")}</h3>
           </div>
           <div className="grid grid-cols-2 gap-36">
             <div className="col-start-2 space-y-28">

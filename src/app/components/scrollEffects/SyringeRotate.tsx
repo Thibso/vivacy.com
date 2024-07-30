@@ -25,7 +25,7 @@ export default function SyringeRotate() {
   const scaleProgress = useTransform(scaleY, [0.65, 0.85], [1, 1.5]);
 
   return (
-    <section className="min-h-[150vh] relative z-10">
+    <section className="min-h-[150vh] relative z-[51]">
       <motion.section
         ref={ref}
         className=" min-h-[250vh] absolute top-0 left-0 w-full"
