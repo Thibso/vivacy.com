@@ -6,26 +6,11 @@ import { useRef } from "react";
 import front from "../../img/syringe-effect/expert-acide-hyaluronique.png";
 import bg from "../../img/syringe-effect/vivacy-seringue-speciale.png";
 
-const rotateVariants = {
-  visible: { rotate: 0 },
-  hidden: { rotate: 180 },
-};
-
-const wrapperVariants = {
-  visible: { opacity: 1 },
-  hidden: { opacity: 0, transition: { when: "afterChildren" } },
-};
-
-const sectionVariants = {
-  visible: { display: "block" },
-  hidden: { display: "block", transition: { when: "afterChildren" } },
-};
-
 export default function SyringeRotate() {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0.5 1", "1 1"],
+    offset: ["0.41 1", "1 1"],
   });
 
   const scaleY = useSpring(scrollYProgress, {
@@ -34,9 +19,10 @@ export default function SyringeRotate() {
     restDelta: 0.001,
   });
 
-  const rotateProgresse = useTransform(scaleY, [0, 0.45], [0, -180]);
+  const rotateProgresse = useTransform(scaleY, [0, 0.4], [0, -180]);
   const opacityProgress = useTransform(scaleY, [0.7, 0.85], [1, 0]);
-  const translateXProgress = useTransform(scaleY, [0.55, 0.75], ["0", "100%"]);
+  const translateXProgress = useTransform(scaleY, [0.5, 0.7], ["0", "60%"]);
+  const scaleProgress = useTransform(scaleY, [0.65, 0.85], [1, 1.5]);
 
   return (
     <section className="min-h-[150vh] relative z-10">
@@ -46,7 +32,10 @@ export default function SyringeRotate() {
         style={{ opacity: opacityProgress }}
       >
         <div className="sticky top-0 min-h-screen overflow-hidden">
-          <motion.div className="absolute w-full h-full -z-[2]">
+          <motion.div
+            className="absolute w-full h-full -z-[2]"
+            style={{ scale: scaleProgress }}
+          >
             <Image
               src={bg}
               alt=""

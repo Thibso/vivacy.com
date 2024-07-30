@@ -9,7 +9,7 @@ export default function NavBar() {
   const localActive = useLocale();
 
   return (
-    <nav className=" bg-blue py-3 px-8 rounded-[44px] max-w-[1920px] sticky top-8 mt-8 mx-8 h-16 flex">
+    <nav className=" bg-blue py-3 px-8 rounded-[44px] max-w-[1920px] sticky top-8 mt-8 mx-8 h-16 flex z-50">
       <div className="relative flex justify-between items-center w-full">
         <Link href={"/" + localActive}>
           <Image
