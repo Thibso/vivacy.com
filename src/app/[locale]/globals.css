@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .container {
+    @apply max-w-screen-2xl mx-auto p-16;
+  }
+
+  .titles-container {
+    @apply flex flex-col-reverse gap-5;
+  }
+
+  .h2-perso {
+    @apply text-blue uppercase font-semibold text-xl leading-none;
+  }
+
+  .h3-perso {
+    @apply font-light text-5xl uppercase leading-none;
+  }
+}

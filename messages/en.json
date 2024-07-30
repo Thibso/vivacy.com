@@ -148,7 +148,51 @@
     }
   },
   "HomePage": {
-    "title": "Hello world!"
+    "section1": {
+      "h2": "Unlock the full power of ha",
+      "h3": "Innovative injectable solutions",
+      "text": "<p>Thanks to our comprehensive offer from beauty to medical usages (aesthetic medicine, gynecology, rheumatology, ophthalmology, anti-ageing skincare), we create life-changing solutions.</p><p>We believe hyaluronic acid (HA) is an exceptional ingredient that has just started proving its powers. Our goal? Explore further and take it to the next level.</p><p>Mobilising our state-of-the art R&D capabilities, we constantly disrupt markets with advanced bio-compatible technologies and new reversible usages, setting the highest quality standards.</p><p>As impact-driven entrepreneurs, we aim to build on HA to positively impact people’s everyday life.</p>",
+      "button": "Discover our history",
+      "buttonPath": "/#",
+      "imgText": "Archamps, Haute-Savoie"
+    },
+    "section2": {
+      "h2": "Premium quality injectable products",
+      "h3": "Our expertise",
+      "text": "<p>VIVACY stands as a key player in the medical aesthetics market. Founded in 2007, this French company specializes in manufacturing dermal filler products based on hyaluronic acid, tailored specifically for aesthetic and anti-aging treatments. Laboratoires VIVACY distributes its products not only in France but also in over 75 other countries. Aesthetic doctors, surgeons, and dermatologists worldwide rely on VIVACY’s renowned STYLAGE® range. What sets it apart is its patented hyaluronic acid stabilization technology, ensuring long-lasting results. With 15 years of medical expertise, the STYLAGE® range holds a CE mark.</p> <p>Available as transparent, absorbable gel formulations, these products cater precisely to patients’ diverse aesthetic requirements, including wrinkle filling, skin hydration, and loss of facial volume, among others. Your practitioner will devise a personalized treatment plan based on your specific needs, selecting the appropriate products to ensure optimal results.</p>",
+      "button": "Discover our expertise",
+      "buttonPath": "/#"
+    },
+    "section3": {
+      "h2": "Vivacy outstanding performance",
+      "h3": "Key figures",
+      "keyNumbers": {
+        "1": "In 10 years, the production capacity has increased by a factor of 5 (3 million syringes per year)",
+        "2": "Sales growth of over 20% per year for 15 years",
+        "3": "More than 80 countries 80% of sales generated outside France",
+        "4": "Top 5 hyaluronic acid manufacturers worldwide"
+      },
+      "button": "See more",
+      "buttonPath": "/#"
+    },
+    "section4": {
+      "h2": "Creating breakthrough customer experience",
+      "h3": "Our innovations",
+      "textTop": "<p>- IPN-LIKE TECHNOLOGY</p><p>TECHNOLOGY ON THE MOVE: HYALURONIC ACID, A “MOLECULE TO MOISTURIZE”</p>",
+      "textCore": "<p>All VIVACY’s products are hyaluronic acid-based. Hyaluronic acid (HA) is a naturally occurring molecule in the human body, particularly in the skin and mucous membranes. It can retain up to 1,000 times its weight in water2, consequently contributing to the hydration and toning of the concerned tissues3.</p><p>HA has a short life span and is soluble in water, meaning it needs to be stabilised before injection into skin tissues. To do so, a special technical process called “cross-linking” is used to bind HA molecules together to obtain a cohesive HA gel for a skin smoothing, lifting and/or volumising effect that will last for several months. The duration of the treatment depends on many factors, such as the patient’s skin type and structure, age, lifestyle, the area treated and the injection technique used by the practitioner.</p>",
+      "button": "Learn more",
+      "buttonPath": "/#"
+    },
+    "section5": {
+      "h2": "Vivacy products made in France",
+      "h3": "Our products"
+    },
+    "section6": {
+      "h2": "Science-based aesthetic solutions",
+      "h3": "Our brands",
+      "button": "Learn more",
+      "buttonPath": "/#"
+    }
   },
   "NotFoundPage": {
     "title": "Page not found"

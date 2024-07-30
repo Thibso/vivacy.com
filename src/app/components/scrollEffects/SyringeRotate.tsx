@@ -1,0 +1,86 @@
+"use client";
+
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import Image from "next/image";
+import { useRef } from "react";
+import front from "../../img/syringe-effect/expert-acide-hyaluronique.png";
+import bg from "../../img/syringe-effect/vivacy-seringue-speciale.png";
+
+const rotateVariants = {
+  visible: { rotate: 0 },
+  hidden: { rotate: 180 },
+};
+
+const wrapperVariants = {
+  visible: { opacity: 1 },
+  hidden: { opacity: 0, transition: { when: "afterChildren" } },
+};
+
+const sectionVariants = {
+  visible: { display: "block" },
+  hidden: { display: "block", transition: { when: "afterChildren" } },
+};
+
+export default function SyringeRotate() {
+  const ref = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0.5 1", "1 1"],
+  });
+
+  const scaleY = useSpring(scrollYProgress, {
+    stiffness: 150,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
+  const rotateProgresse = useTransform(scaleY, [0, 0.45], [0, -180]);
+  const opacityProgress = useTransform(scaleY, [0.7, 0.85], [1, 0]);
+  const translateXProgress = useTransform(scaleY, [0.55, 0.75], ["0", "100%"]);
+
+  return (
+    <section className="min-h-[150vh] relative z-10">
+      <motion.section
+        ref={ref}
+        className=" min-h-[250vh] absolute top-0 left-0 w-full"
+        style={{ opacity: opacityProgress }}
+      >
+        <div className="sticky top-0 min-h-screen overflow-hidden">
+          <motion.div className="absolute w-full h-full -z-[2]">
+            <Image
+              src={bg}
+              alt=""
+              quality={100}
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: "cover",
+              }}
+            />
+          </motion.div>
+
+          <motion.div className="absolute top-0 left-0 size-full -z-[3]">
+            <motion.div
+              className="relative h-full"
+              style={{
+                rotate: rotateProgresse,
+                translateX: translateXProgress,
+              }}
+            >
+              <Image
+                src={front}
+                alt=""
+                quality={100}
+                fill
+                sizes="100vw"
+                style={{
+                  objectFit: "cover",
+                }}
+              />
+            </motion.div>
+          </motion.div>
+        </div>
+      </motion.section>
+    </section>
+  );
+}

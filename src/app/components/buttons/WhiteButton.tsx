@@ -13,7 +13,7 @@ export default function BlueButton(props: Props) {
       <a
         href={props.path}
         target="_blank"
-        className=" inline-block bg-blue py-3 px-10 rounded-3xl text-white uppercase font-normal text-sm sm:text-base hover:bg-blue transition-all"
+        className=" inline-block bg-white/90 py-3 px-10 rounded-3xl text-blue uppercase font-normal text-sm sm:text-base hover:bg-white transition-all"
       >
         {props.content}
       </a>
@@ -24,7 +24,7 @@ export default function BlueButton(props: Props) {
   return (
     <Link
       href={props.path}
-      className=" inline-block bg-blue/90 py-3 px-10 rounded-3xl text-white uppercase font-normal text-sm lg:text-base hover:bg-blue transition-all"
+      className=" inline-block bg-white/90 py-3 px-10 rounded-3xl text-blue uppercase font-normal text-sm lg:text-base hover:bg-white transition-all"
     >
       {props.content}
     </Link>
