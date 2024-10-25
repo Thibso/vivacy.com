@@ -7,22 +7,22 @@
         "item1": {
           "id": "1",
           "title": "About us",
-          "path": "#"
+          "path": "/en/vivacy"
         },
         "item2": {
           "id": "2",
           "title": "Our brands",
-          "path": "#"
+          "path": "/en/brands"
         },
         "item3": {
           "id": "3",
           "title": "Our corporate commitments",
-          "path": "#"
+          "path": "/en/commitments"
         },
         "item4": {
           "id": "4",
           "title": "Research & development (R&D)",
-          "path": "#"
+          "path": "/en/r&d"
         },
         "item5": {
           "id": "5",
@@ -284,6 +284,55 @@
       "cta": {
         "title": "See more",
         "path": ""
+      },
+      "references": {
+        "rifd": "Radio Frequency Identification"
+      }
+    },
+    "section2": {
+      "h2": "Promoting well-being of people and the planet",
+      "h3": "Social & environmental responsibilities",
+      "first": {
+        "content": "<p>During the Odyssea event, 171 members of our VIVACY teams and associated distributors worldwide walked and ran to support this vital cause. For us, maintaining our commitment to this cause is crucial, as we shine a spotlight on women’s health and provide medical professionals with the knowledge and tools to shape a better future. </p><p>Together, we stand united in the fight against breast cancer.At VIVACY, we firmly believe in the importance of raising awareness about this disease and providing tangible support to initiatives working towards its eradication. Participating in events like Odyssea is a concrete way for us to demonstrate our solidarity and commitment to this crucial cause.</p>"
+      },
+      "second": {
+        "h2": "Ethics at the heart of our actions",
+        "h3": "Gender equality",
+        "content": "<p>At Laboratoires VIVACY, we take pride in our commitment to gender equality. The law for the Freedom to Choose One’s Professional Future of September 5, 2018, imposes on companies an obligation to achieve results regarding gender equality.</p> <p>At VIVACY, gender parity is not just about legal compliance; it is a fundamental value that we nurture every day. We firmly believe that gender diversity is a strength that fuels our innovation and growth. Our commitment to gender parity is reflected in our outstanding rating of 99/100 on the Gender Equality Index for the year 2023.</p>"
+      },
+      "third": {
+        "h2": "Our sustainable development approach",
+        "h3": "Environmental challenge",
+        "content": "<p>The Laboratoires VIVACY, aware of the current environmental challenges, have equipped their new industrial site with innovative ecological solutions. Featuring vegetated parking lots and a large-scale photovoltaic installation, this site stands out as one of the pioneers in sustainability in the Auvergne Rhône-Alpes region.</p><p>In partnership with local companies such as Syan’EnR, VOLTEC Solar, and EPC Solaire, VIVACY has installed no less than 830 solar panels on the site’s roof. This collaboration demonstrates VIVACY’s commitment to the development of renewable energies and the local economy.</p>"
+      },
+      "fourth": {
+        "content": "The Auvergne-Rhône-Alpes region supports part of Laboratoires VIVACY’s investments, which demonstrates their strong local presence. This financial support underscores the regional authorities’ confidence in the quality and innovation of Laboratoires VIVACY. Consequently, Laboratoires VIVACY continues to contribute to the economic dynamism of the region.  This partnership shows the importance of the biomedical industry in the Auvergne-Rhône-Alpes economic fabric."
+      }
+    }
+  },
+  "R&D": {
+    "title": "Research & development",
+    "span": "Expert in hyaluronic acid",
+    "section1": {
+      "h2": "Transforming ideas into reality",
+      "h3": "Innovation at heart",
+      "content": "Our Research & Development laboratory, based in Archamps, is a site entirely dedicated to innovation in the fields of Anti-Aging and Aesthetics. It is here that our injectable products are born, designed and developed by a team of passionate experts."
+    },
+    "section2": {
+      "h2": "Continuous commitment to innovation ",
+      "h3": "Investment in innovation",
+      "content": "We invest 10% of our annual revenue in R&D, thus demonstrating our ongoing commitment to innovation. With 16 years of experience, we have developed a strong expertise in our field. Over the past 8 years, our production capacity has increased by 11-fold, reflecting our commitment to meeting the growing demand for our products."
+    },
+    "section3": {
+      "first": {
+        "h2": "Innovation at the heart of vivacy",
+        "h3": "Patented technologies",
+        "content": "We are proud of our 2 patented technologies: IPN-Like and Bi-SOFT®, which exemplify our dedication to innovation and our pursuit of advanced solutions in the field of aesthetic injections. The IPN-Like technology enhances the durability and performance of our dermal fillers, while the Bi-SOFT® injection system provides practitioners with a more precise and comfortable injection experience. "
+      },
+      "second": {
+        "h2": "Building strong relations with physicians and patients ",
+        "h3": "Trust and reliability",
+        "content": "<p>Trust and reliability are the cornerstones of our relationship with healthcare professionals and patients. With over 7 million syringes sold worldwide between 2008 and 2018, we have established ourselves as a trusted partner in the field of aesthetic medicine. Our products are renowned for their safety and effectiveness, and they are used by practitioners around the globe. </p> <p>This trust is built on a foundation of rigorous testing,  quality control, and unwavering commitment to upholding the highest standards across all aspects of our operations.</p>"
       }
     }
   },

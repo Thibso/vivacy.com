@@ -1,4 +1,6 @@
 import WhiteButton from "@/app/components/buttons/WhiteButton";
+import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
+import HeaderSpan from "@/app/components/globals/headerSpan";
 import HistorySteps from "@/app/components/ourHistory/historySteps";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
@@ -51,15 +53,9 @@ export default function OurBrands() {
           }}
         />
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
-        <div className="m-auto px-5 lg:px-28 lg:py-32">
-          <h1 className=" text-[10vw] font-mona uppercase font-bold text-whiteGrey text-center leading-none">
-            {t("title")}
-          </h1>
-        </div>
+        <HeaderBigTitle title={t("title")} />
 
-        <span className="max-lg:text-center max-lg:w-[60%] absolute bottom-8 lg:bottom-16 left-1/2 -translate-x-1/2 bg-whiteGrey/50 py-3 px-8 rounded-full uppercase text-sm text-blue backdrop-blur-sm">
-          {t("span")}
-        </span>
+        <HeaderSpan content={t("span")} />
       </section>
 
       <section>

@@ -4,7 +4,8 @@
 
 @layer base {
   .myContainer {
-    @apply max-w-screen-2xl mx-auto px-5 py-16 lg:px-28 lg:py-32;
+    max-width: 1920px;
+    @apply mx-auto px-5 py-16 lg:px-20 lg:py-24 xl:px-28 xl:py-32;
   }
 
   .titles-container {

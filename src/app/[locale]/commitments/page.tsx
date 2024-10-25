@@ -1,10 +1,18 @@
 import BlueButton from "@/app/components/buttons/BlueButton";
+import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
+import HeaderSpan from "@/app/components/globals/headerSpan";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
+import FromTopTitles from "@/app/components/titles/FromTopTitles";
+import fourth from "@/app/img/auvergne-rhone-alpes-vivacy.jpg";
+import bg from "@/app/img/background-grained.jpg";
 import authenticity from "@/app/img/badge-check.png";
 import efficiency from "@/app/img/crosshair.png";
+import rhoneAlpes from "@/app/img/Groupe 66.png";
 import security from "@/app/img/lock-keyhole.png";
 import bgHeader from "@/app/img/our-brands-hyaluronic-acid.jpg";
 import quality from "@/app/img/shield-check.png";
+import first from "@/app/img/vivacy-laboratories-commitments.jpg";
+import second from "@/app/img/vivacy-photo-from-top.jpg";
 
 import { useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
@@ -63,15 +71,9 @@ export default function OurCommitments() {
           }}
         />
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
-        <div className="m-auto px-5 lg:px-28 lg:py-32">
-          <h1 className=" text-[10vw] font-mona uppercase font-bold text-whiteGrey text-center leading-none">
-            {t("title")}
-          </h1>
-        </div>
+        <HeaderBigTitle title={t("title")} />
 
-        <span className="max-lg:text-center max-lg:w-[60%] absolute bottom-8 lg:bottom-16 left-1/2 -translate-x-1/2 bg-whiteGrey/50 py-3 px-8 rounded-full uppercase text-sm text-blue backdrop-blur-sm">
-          {t("span")}
-        </span>
+        <HeaderSpan content={t("span")} />
       </section>
 
       <section>
@@ -82,7 +84,7 @@ export default function OurCommitments() {
             h3Classes="text-black"
           />
 
-          <div className="grid grid-cols-2 gap-x-20 gap-y-14 relative">
+          <div className="max-lg:space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-20 lg:gap-y-14 relative lg:w-[80%] lg:mx-auto">
             {corporateValues.map((value, index) => {
               return (
                 <div key={index} className="space-y-4">
@@ -100,10 +102,129 @@ export default function OurCommitments() {
               );
             })}
 
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2">
+            <div className="max-lg:flex max-lg:justify-center lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2">
               <BlueButton
                 content={t("section1.cta.title")}
                 path={t("section1.cta.path")}
+              />
+            </div>
+          </div>
+
+          <div>
+            <p>* {t("section1.references.rifd")}</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative">
+        <Image
+          src={bg}
+          alt=""
+          quality={100}
+          className="absolute object-contain w-full -z-[1]"
+        />
+
+        <div className="myContainer">
+          <FromTopTitles
+            titleH2={t("section2.h2")}
+            titleH3={t("section2.h3")}
+            h3Classes="text-black"
+          />
+        </div>
+
+        <div className="max-lg:space-y-28">
+          {/* first */}
+          <div className="max-lg:flex max-lg:flex-col-reverse max-lg:px-5 max-lg:gap-8 lg:grid lg:grid-cols-2">
+            <div className="relative max-lg:h-[350px]">
+              <Image
+                src={first}
+                alt=""
+                quality={75}
+                fill
+                className="object-cover object-center"
+              />
+            </div>
+            <div className="lg:myContainer space-y-4">
+              {t.rich("section2.first.content", {
+                p: (chunks) => <p className="text-lg">{chunks}</p>,
+              })}
+            </div>
+          </div>
+
+          {/* second */}
+          <div className="max-lg:px-5 space-y-8 lg:grid lg:grid-cols-2 lg:mt-72">
+            <div className="lg:px-28 lg:py-6 space-y-8 lg:space-y-20">
+              <FromTopTitles
+                titleH2={t("section2.second.h2")}
+                titleH3={t("section2.second.h3")}
+                h3Classes="text-black"
+              />
+
+              <div className="space-y-4">
+                {t.rich("section2.second.content", {
+                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                })}
+              </div>
+            </div>
+
+            <div className="relative max-lg:h-[350px] lg:mr-14">
+              <Image
+                src={second}
+                alt=""
+                quality={100}
+                fill
+                className="object-cover object-left"
+              />
+            </div>
+          </div>
+
+          {/* third */}
+          <div className="max-lg:px-5 max-lg:flex max-lg:flex-col-reverse max-lg:gap-8 lg:grid lg:grid-cols-2 lg:mt-40">
+            <div className="relative max-lg:h-[350px]">
+              <Image
+                src={first}
+                alt=""
+                quality={75}
+                fill
+                className="object-cover object-center"
+              />
+            </div>
+            <div className="lg:px-28 lg:pb-16 space-y-8 lg:space-y-20">
+              <FromTopTitles
+                titleH2={t("section2.third.h2")}
+                titleH3={t("section2.third.h3")}
+                h3Classes="text-black"
+              />
+              <div className="space-y-4">
+                {t.rich("section2.third.content", {
+                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                })}
+              </div>
+            </div>
+          </div>
+
+          {/* fourth */}
+          <div className="max-lg:px-5 lg:grid lg:grid-cols-2 lg:mt-10 space-y-8">
+            <div className="lg:myContainer space-y-8 lg:space-y-20">
+              <Image
+                src={rhoneAlpes}
+                alt=""
+                quality={75}
+                className="max-lg:w-[60%] max-lg:mx-auto"
+              />
+              <div className="space-y-4">
+                {t.rich("section2.third.content", {
+                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                })}
+              </div>
+            </div>
+            <div className="relative max-lg:h-[350px]">
+              <Image
+                src={fourth}
+                alt=""
+                quality={75}
+                fill
+                className="object-cover object-center"
               />
             </div>
           </div>
