@@ -151,7 +151,7 @@
     "section1": {
       "h2": "Innovative injectable solutions",
       "h3": "Unlock the full power of ha",
-      "text": "<p>Thanks to our comprehensive offer from beauty to medical usages (aesthetic medicine, gynecology, rheumatology, ophthalmology, anti-ageing skincare), we create life-changing solutions.</p><p>We believe hyaluronic acid (HA) is an exceptional ingredient that has just started proving its powers. Our goal? Explore further and take it to the next level.</p><p>Mobilising our state-of-the art R&D capabilities, we constantly disrupt markets with advanced bio-compatible technologies and new reversible usages, setting the highest quality standards.</p><p>As impact-driven entrepreneurs, we aim to build on HA to positively impact people’s everyday life.</p>",
+      "text": "<p>Thanks to our comprehensive offer from beauty to medical usages (aesthetic medicine, gynecology, rheumatology, ophthalmology, anti-ageing skincare), we create life-changing solutions. We believe hyaluronic acid (HA) is an exceptional ingredient that has just started proving its powers. Our goal? Explore further and take it to the next level.</p> <p>Mobilising our state-of-the art R&D capabilities, we constantly disrupt markets with advanced bio-compatible technologies and new reversible usages, setting the highest quality standards. As impact-driven entrepreneurs, we aim to build on HA to positively impact people’s everyday life.</p>",
       "button": "Discover our history",
       "buttonPath": "/#",
       "imgText": "Archamps, Haute-Savoie"
@@ -192,6 +192,99 @@
       "h3": "Our brands",
       "button": "Learn more",
       "buttonPath": "/#"
+    }
+  },
+  "Global": {
+    "vivacySecurity": {
+      "h2": "Vivacy is with you every day",
+      "h3": "Our mobile application",
+      "content": "Scan a product to verify its authenticity using RFID technology and access our digitized instructions. Explore our pre and post-injection advice for a serene treatment experience."
+    }
+  },
+  "Brands": {
+    "title": "Our brands",
+    "span": "Expert in hyaluronic acid",
+    "section1": {
+      "h2": "Designed & manufactured in france",
+      "h3": "premium aesthetic solutions",
+      "content": "<p>Laboratoires VIVACY stands out in aesthetic and anti-aging treatments with hyaluronic acid-based fillers, particularly the STYLAGE® range, renowned for its patented technology and long-lasting results. In 2011, VIVACY innovated in functional and aesthetic gynecology with the first injectable gel for vulvo-vaginal restoration.</p><p>Pursuing excellence, VIVACY offers premium skincare lines for women and men, developed with dermatologists and skin biology experts. These products use the VIVASÔME complex, which encapsulates active ingredients for optimal absorption by the skin.</p><p>Collaborating with over 250,000 doctors worldwide, VIVACY designs and tests its products in close cooperation with healthcare professionals. The company also supports dermatological research, scientific training, and social initiatives, reflecting a deep commitment to the medical community and patient well-being.</p>"
+    },
+    "brandsDescriptions": {
+      "stylage": {
+        "title": "The Stylage®",
+        "content": {
+          "c1": "The STYLAGE® range by Laboratoires VIVACY stands out with innovative solutions for diverse aesthetic needs. STYLAGE® S, M, and L are specifically formulated to fill wrinkles, while STYLAGE® Special Lips Lidocaine and STYLAGE® Lips Plus focus on hydrating and volumizing lips.",
+          "c2": "To restore or enhance facial volumes, STYLAGE® offers XL, XL LIDOCAINE, and XXL versions. Lastly, STYLAGE® HYDRO and HYDROMAX are designed to improve skin hydration and elasticity. With these versatile products, STYLAGE® meets a wide range of needs for both patients and healthcare professionals."
+        },
+        "cta": {
+          "content": "Discover Stylage",
+          "path": ""
+        }
+      },
+      "desirial": {
+        "title": "Desirial®",
+        "content": {
+          "c1": "DESIRIAL® is specifically designed to restore hydration and firmness in the vulvo-vaginal area for women experiencing vaginal dryness. With innovative formulations incorporating hyaluronic acid and antioxidants, DESIRIAL® provides effective solutions to enhance comfort and improve quality of life for affected women."
+        },
+        "cta": {
+          "content": "Discover Desirial",
+          "path": ""
+        }
+      }
+    }
+  },
+  "History": {
+    "title": "Our history",
+    "span": "Expert in hyaluronic acid",
+    "section1": {
+      "h2": "A leading aesthetic industry player",
+      "h3": "Vivacy",
+      "content": "<p>Laboratoires VIVACY is a prominent player in the field of medical aesthetics and anti-aging. Established in 2007, this esteemed French company has rapidly specialized in creating, producing, and distributing cutting-edge medical devices based on hyaluronic acid. Operating primarily in France, Vivacy has expanded its reach across more than 75 countries globally, craving out a significant niche in the competitive landscape of medical aesthetic.</p> <p>For over 16 years, Laboratoires VIVACY has demonstrated unwavering dedication to the development of injectable medical devices specifically tailored for healthcare professionals. The aim of the company is enhance the natural beauty of individuals, achieving remarkable results without drastic alterations. This core philosophy is deeply embedded in the brand’s identity and has been primordial in earning the trust of medical practitioners and patients.</p>"
+    },
+    "section2": {
+      "h2": "Innovating beyond boundaries",
+      "h3": "About us",
+      "content": "<p>Consequently, VIVACY is committed to providing practitioners worldwide with the finest medical innovations in terms of quality, effectiveness, and safety. Its product range encompasses three main categories:</p>   <ul><li>STYLAGE® series focusing on facial aesthetics</li><li>DESIRIAL® line addressing gynecological applications </li><li>VIVACY BEAUTY range of dermo-cosmetic productsAdditionally</li></ul><p>Laboratoires Vivacy manufactures hyaluronic acid gels for ophthalmic surgery like I-SPACE®, along with viscosupplementation products such as KARTILAGE® for treating knee osteoarthritis pain.</p><p>With its unparalleled expertise, VIVACY has cultivated an extensive portfolio of premium products featuring innovative medical properties. These injectable formulations are meticulously designed by expert teams and serve as the basis for numerous clinical studies.</p>"
+    },
+    "section3": {
+      "h2": "Prioritising safety in manufacturing",
+      "content": "<p>Laboratoires VIVACY’s advanced production facility in Archamps, France, highlights the company’s dedication to excellence. Complying with strict EU medical device regulations, this facility ensures all products are safe and effective. These products are then distributed globally to meet the growing demand from aesthetic doctors and healthcare professionals.</p><p>Healthcare professionals around the world trust VIVACY’s hyaluronic acid products for their ability to enhance natural beauty subtly and effectively. This trust is based on the consistent quality and innovation of VIVACY’s offerings, making the company a leading partner in medical aesthetics and anti-ageing solutions.</p>"
+    },
+    "section4": {
+      "h2": "Discovering the heart of laboratoires vivacy",
+      "h3": "Our corporate vision"
+    },
+    "section5": {
+      "h2": "Retracing our historic steps",
+      "h3": "Key milestones"
+    }
+  },
+  "Commitments": {
+    "title": "Our commitments",
+    "span": "Expert in hyaluronic acid",
+    "section1": {
+      "h2": "Building trust by being authentic",
+      "h3": "Corporate values",
+      "quality": {
+        "title": "Quality",
+        "content": "For 16 years, Laboratoires VIVACY’s objective has always been to offer practitioners and patients the best products in terms of quality, performance and security. All products are meticulously manufactured in France at the advanced facility in Archamps Technopole, a hub of French research and innovation. Laboratoires VIVACY maintain complete control over every stage of production without compromise."
+      },
+      "security": {
+        "title": "Security",
+        "content": "Laboratoires VIVACY uses pharmaceutical-grade raw materials and operates in highly secure white rooms to ensure the purity and safety of the gel manufacturing process. Each syringe undergoes manual inspection by trained operators before market release."
+      },
+      "authenticity": {
+        "title": "Authenticity",
+        "content": "In its commitment to guaranteeing safe, quality products for practitioners and patients worldwide, Laboratoires VIVACY launched an innovative authentication system for the injectable products in 2017. Each box is equipped with a uniquely numbered RFID* chip to verify the origin of STYLAGE® or DESIRIAL® injectables and combat counterfeiting. Practitioners can verify product’s authenticity using the « MY VIVACY » mobile app."
+      },
+      "efficiency": {
+        "title": "Efficiency",
+        "content": "Laboratoires VIVACY have developed clinical studies for the injectable products to prove the good tolerance and efficiency when it comes to the desired results. All studies are conducted with expert oversight and patient panels managed by certified centers. The STYLAGE® range holds CE marking in Europe and certifications in several countries, supported by over 16 years of clinical experience."
+      },
+      "cta": {
+        "title": "See more",
+        "path": ""
+      }
     }
   },
   "NotFoundPage": {

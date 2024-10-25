@@ -12,6 +12,8 @@ const config: Config = {
       white: "#FFFFFF",
       background: "#FAFAFA",
       black: "#000000",
+      whiteGrey: "#FDFEFF",
+      grey: "#F8F8F8",
       transparent: "rgba(0,0,0,0)",
     },
     extend: {
