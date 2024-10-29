@@ -115,8 +115,8 @@ export default function BrandsDescriptions(props: Props) {
               transition={{ duration: 0.4 }}
               className="space-y-4"
             >
-              {props.texts[brand].content.map((p) => {
-                return <p>{p}</p>;
+              {props.texts[brand].content.map((p, index) => {
+                return <p key={"p" + index}>{p}</p>;
               })}
             </motion.div>
 
