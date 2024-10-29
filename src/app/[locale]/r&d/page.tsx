@@ -4,6 +4,7 @@ import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
 import bgHeader from "@/app/img/our-brands-hyaluronic-acid.jpg";
+import section3Second from "@/app/img/vivacy-expert-laboratory-acid-hyaluronic.jpg";
 import research1 from "@/app/img/vivacy-research-1.jpg";
 import research2 from "@/app/img/vivacy-research-2.jpg";
 import research3 from "@/app/img/vivacy-research-3.jpg";
@@ -66,8 +67,8 @@ export default function OurCommitments() {
             h3Classes="text-black"
           />
 
-          <div className="grid grid-cols-12 gap-x-28">
-            <div className="col-span-7 grid grid-cols-10 gap-x-10">
+          <div className="lg:grid lg:grid-cols-12 lg:gap-x-28">
+            <div className="lg:col-span-7 max-lg:h-[250px] grid grid-cols-10 gap-x-2 lg:gap-x-10">
               <div className="col-span-4 relative">
                 <Image
                   src={research1}
@@ -117,7 +118,7 @@ export default function OurCommitments() {
                 />
               </div>
             </div>
-            <div className="col-span-5 py-32">
+            <div className="col-span-5 max-lg:mt-8 lg:py-32">
               <p>{t("section1.content")}</p>
             </div>
           </div>
@@ -136,8 +137,8 @@ export default function OurCommitments() {
             zIndex: "-1",
           }}
         />
-        <div className="myContainer grid grid-cols-10 ">
-          <div className="p-10 col-span-6 backdrop-blur rounded-xl bg-white/15 space-y-8 lg:space-y-28">
+        <div className="myContainer lg:grid lg:grid-cols-10 ">
+          <div className="p-4 lg:p-10 lg:col-span-6 backdrop-blur rounded-xl bg-white/15 space-y-8 lg:space-y-28">
             <FromTopTitles
               titleH2={t("section2.h2")}
               titleH3={t("section2.h3")}
@@ -152,7 +153,7 @@ export default function OurCommitments() {
         <Image
           src={bg}
           alt=""
-          quality={100}
+          quality={75}
           fill
           style={{
             objectFit: "cover",
@@ -160,46 +161,76 @@ export default function OurCommitments() {
             zIndex: "-1",
           }}
         />
-        <div className="myContainer grid grid-cols-12 gap-x-24">
-          <div className="col-span-7 py-6 space-y-28">
-            <div className="space-y-20">
-              <FromTopTitles
-                titleH2={t("section3.first.h2")}
-                titleH3={t("section3.first.h3")}
-                h3Classes="text-black"
-              />
-              <div className="space-y-4 w-[80%]">
-                {t.rich("section3.first.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
-                })}
+        <div className="myContainer space-y-16 lg:space-y-28">
+          <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-16 lg:grid lg:grid-cols-12 lg:gap-x-16 xl:gap-x-24">
+            <div className="lg:col-span-6 lg:py-6 space-y-16 lg:space-y-28">
+              <div className="space-y-8 lg:space-y-20">
+                <FromTopTitles
+                  titleH2={t("section3.first.h2")}
+                  titleH3={t("section3.first.h3")}
+                  h3Classes="text-black"
+                />
+                <div className="space-y-4 lg:w-[80%]">
+                  {t.rich("section3.first.content", {
+                    p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  })}
+                </div>
+              </div>
+
+              <div className="space-y-8 lg:space-y-20">
+                <FromTopTitles
+                  titleH2={t("section3.second.h2")}
+                  titleH3={t("section3.second.h3")}
+                  h3Classes="text-black"
+                />
+                <div className="space-y-4 lg:w-[80%]">
+                  {t.rich("section3.second.content", {
+                    p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  })}
+                </div>
               </div>
             </div>
-
-            <div className="space-y-20">
-              <FromTopTitles
-                titleH2={t("section3.first.h2")}
-                titleH3={t("section3.first.h3")}
-                h3Classes="text-black"
+            <div className="max-lg:h-[350px] lg:col-span-6 relative">
+              <Image
+                src={section3First}
+                alt=""
+                quality={100}
+                fill
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "50% 50%",
+                  zIndex: "-1",
+                }}
               />
-              <div className="space-y-4 w-[80%]">
-                {t.rich("section3.first.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
-                })}
-              </div>
             </div>
           </div>
-          <div className="col-span-5 relative">
-            <Image
-              src={section3First}
-              alt=""
-              quality={100}
-              fill
-              style={{
-                objectFit: "cover",
-                objectPosition: "50% 50%",
-                zIndex: "-1",
-              }}
-            />
+
+          <div className="max-lg:space-y-16 lg:grid lg:grid-cols-12 lg:gap-x-24">
+            <div className="lg:col-span-5 relative h-[350px] lg:h-[600px]">
+              <Image
+                src={section3Second}
+                alt=""
+                quality={100}
+                fill
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "50% 50%",
+                  zIndex: "-1",
+                }}
+              />
+            </div>
+            <div className="max-lg:space-y-8 lg:col-span-7 lg:gap-y-20 lg:flex lg:flex-col lg:justify-end">
+              <FromTopTitles
+                titleH2={t("section4.h2")}
+                titleH3={t("section4.h3")}
+                h3Classes="text-black"
+              />
+              <div className="space-y-4 lg:w-[70%]">
+                {t.rich("section4.content", {
+                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </section>
