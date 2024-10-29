@@ -427,6 +427,68 @@
       "h2": "An innovative solution for product authenticity"
     }
   },
+  "Beauty": {
+    "title": "Vivacy Beauty",
+    "span": "Expert in hyaluronic acid",
+    "cta": {
+      "title": "Visit website",
+      "path": ""
+    },
+    "section1": {
+      "h2": "Vivacy beauty: explore our universe dedicated to dermo-cosmetics on our e-commerce site vivacy beauty ",
+      "h3": "Vivacy Beauty",
+      "content": "<p>Laboratoires VIVACY offers a range of professional quality dermo cosmetic products based on expert and innovative formulas to complement aesthetic interventions and help men and women alike preserve their natural beauty beyond the doctor’s office. </p> <p>Laboratoires VIVACY is committed to producing high-quality dermal treatments in the form of its premium range of cosmetic products called VIVACY BEAUTY. We strive to make professional skincare accessible by making our expertise in aesthetic medicine available to all through a comprehensive e-commerce website.</p>"
+    },
+    "section2": {
+      "h2": "Professional quality dermo-cosmetic products",
+      "h3": "Elevating skincare",
+      "content": "<p>With over 16 years of experience, the brand decided to create professional quality dermo-cosmetic products to soothe the skin after an aesthetic medicine intervention, but also to preserve its youthful appearance in day-to-day life for people who are merely seeking to take care of their skin through an effective routine. </p> <p>Offering a facecare routine to our clients was primordial for us to prolong the results of our treatments. More generally, having a good skincare is the first step to feel clean, confident and more at ease in one’s body, and our products are designed by professionals with this goal in mind. </p>"
+    },
+    "section3": {
+      "h2": "Comprehensive solutions for every skin type",
+      "h3": "A diverse range of products",
+      "content": "<p>Laboratoires VIVACY offers three distinct ranges of skincare products to meet all needs. The Vivacy Beauty range for women was created to complement our fillers and ensure long-lasting results with anti-aging, repairing, refreshing, and nourishing products. It also makes the VIVACY expertise accessible through easy-to-use products that protect the skin from harmful external elements such as the wind, sun, and artificial blue light.</p><p>The Monsieur Skincare range is specially designed for men, providing a complete skincare routine with various creams, serums, and an after-shave cream to ensure healthy and revitalized skin. Finally, our fragrance range adds a touch of luxury and sophistication with elegant and refined scents. These three ranges, each specialized and innovative, meet all the demands of our clients and patients.</p>"
+    },
+    "section4": {
+      "h2": "Dermatologically tested high-quality formulas",
+      "h3": "Innovative dermo-cosmetic solutions",
+      "content": "<p>Laboratoires VIVACY offers three distinct ranges of skincare products to meet all needs. The Vivacy Beauty range for women was created to complement our fillers and ensure long-lasting results with anti-aging, repairing, refreshing, and nourishing products. It also makes the VIVACY expertise accessible through easy-to-use products that protect the skin from harmful external elements such as the wind, sun, and artificial blue light.</p><p>The Monsieur Skincare range is specially designed for men, providing a complete skincare routine with various creams, serums, and an after-shave cream to ensure healthy and revitalized skin. Finally, our fragrance range adds a touch of luxury and sophistication with elegant and refined scents. These three ranges, each specialized and innovative, meet all the demands of our clients and patients. </p>"
+    }
+  },
+  "BiSoft": {
+    "title": "Bi-soft® injection technology1",
+    "span": "Expert in hyaluronic acid",
+    "cta": {
+      "title": "Learn more",
+      "path": ""
+    },
+    "section1": {
+      "h2": "Unique & ergonomic design",
+      "h3": "A patented injection system",
+      "content": "<p>In its continuing quest for innovative excellence in the medical aesthetic market, Laboratoires VIVACY has developed a unique delivery system, Bi-SOFT® Injection Technology. This state-of-the-art syringe offers greater precision and comfort, specifically designed to offer greater precision and comfort.</p>  <p>It is specifically designed to help practitioners in their daily practice of aesthetic treatments. The system’s ergonomic design and advanced features ensure that it stands out as a significant advancement in injection technology.</p> <p>97% of practitioners are extremely satisfied with the use of BI-SOFT® injection system2. This statistic reflects the confidence and appreciation users have for the performance of this technology and its reliability in meeting practitioner expectations and improving procedural outcomes.</p> "
+    },
+    "section2": {
+      "h2": "Evaluating physician satisfaction",
+      "ratings": {
+        "first": {
+          "title": "Comfort of use",
+          "rate": "9.6"
+        },
+        "second": {
+          "title": "Easy Injection",
+          "rate": "9.6"
+        },
+        "third": {
+          "title": "Injection Control",
+          "rate": "9.6"
+        },
+        "fourth": {
+          "title": "Control of injection depth",
+          "rate": "9.8"
+        }
+      }
+    }
+  },
   "NotFoundPage": {
     "title": "Page not found"
   }
