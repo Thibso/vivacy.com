@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  .container {
-    @apply max-w-screen-2xl mx-auto p-16;
+  .myContainer {
+    max-width: 1920px;
+    @apply mx-auto px-5 py-16 lg:px-20 lg:py-24 xl:px-28 xl:py-32;
   }
 
   .titles-container {
@@ -12,10 +13,10 @@
   }
 
   .h2-perso {
-    @apply text-blue uppercase font-semibold text-xl leading-none;
+    @apply text-blue uppercase font-semibold max-lg:text-center text-base lg:text-xl leading-none;
   }
 
   .h3-perso {
-    @apply font-light text-5xl uppercase leading-none;
+    @apply font-light text-2xl lg:text-5xl max-lg:text-center uppercase leading-none;
   }
 }

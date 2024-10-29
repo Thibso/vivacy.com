@@ -7,22 +7,22 @@
         "item1": {
           "id": "1",
           "title": "About us",
-          "path": "#"
+          "path": "/en/vivacy"
         },
         "item2": {
           "id": "2",
           "title": "Our brands",
-          "path": "#"
+          "path": "/en/brands"
         },
         "item3": {
           "id": "3",
           "title": "Our corporate commitments",
-          "path": "#"
+          "path": "/en/commitments"
         },
         "item4": {
           "id": "4",
           "title": "Research & development (R&D)",
-          "path": "#"
+          "path": "/en/r&d"
         },
         "item5": {
           "id": "5",
@@ -77,12 +77,12 @@
         "item1": {
           "id": "1",
           "title": "Aesthetic medicine: Stylage®",
-          "path": "#"
+          "path": "/en/stylage"
         },
         "item2": {
           "id": "2",
           "title": "Intimate medicine: Desirial® & Desirial Plus®",
-          "path": "#"
+          "path": "/en/desirial"
         },
         "item3": {
           "id": "3",
@@ -92,7 +92,7 @@
         "item4": {
           "id": "4",
           "title": "Mobile application: MyVivacy",
-          "path": "#"
+          "path": "/en/myvivacy"
         }
       },
       "images": {
@@ -151,7 +151,7 @@
     "section1": {
       "h2": "Innovative injectable solutions",
       "h3": "Unlock the full power of ha",
-      "text": "<p>Thanks to our comprehensive offer from beauty to medical usages (aesthetic medicine, gynecology, rheumatology, ophthalmology, anti-ageing skincare), we create life-changing solutions.</p><p>We believe hyaluronic acid (HA) is an exceptional ingredient that has just started proving its powers. Our goal? Explore further and take it to the next level.</p><p>Mobilising our state-of-the art R&D capabilities, we constantly disrupt markets with advanced bio-compatible technologies and new reversible usages, setting the highest quality standards.</p><p>As impact-driven entrepreneurs, we aim to build on HA to positively impact people’s everyday life.</p>",
+      "text": "<p>Thanks to our comprehensive offer from beauty to medical usages (aesthetic medicine, gynecology, rheumatology, ophthalmology, anti-ageing skincare), we create life-changing solutions. We believe hyaluronic acid (HA) is an exceptional ingredient that has just started proving its powers. Our goal? Explore further and take it to the next level.</p> <p>Mobilising our state-of-the art R&D capabilities, we constantly disrupt markets with advanced bio-compatible technologies and new reversible usages, setting the highest quality standards. As impact-driven entrepreneurs, we aim to build on HA to positively impact people’s everyday life.</p>",
       "button": "Discover our history",
       "buttonPath": "/#",
       "imgText": "Archamps, Haute-Savoie"
@@ -192,6 +192,239 @@
       "h3": "Our brands",
       "button": "Learn more",
       "buttonPath": "/#"
+    }
+  },
+  "Global": {
+    "vivacySecurity": {
+      "h2": "Vivacy is with you every day",
+      "h3": "Our mobile application",
+      "content": "Scan a product to verify its authenticity using RFID technology and access our digitized instructions. Explore our pre and post-injection advice for a serene treatment experience."
+    }
+  },
+  "Brands": {
+    "title": "Our brands",
+    "span": "Expert in hyaluronic acid",
+    "section1": {
+      "h2": "Designed & manufactured in france",
+      "h3": "premium aesthetic solutions",
+      "content": "<p>Laboratoires VIVACY stands out in aesthetic and anti-aging treatments with hyaluronic acid-based fillers, particularly the STYLAGE® range, renowned for its patented technology and long-lasting results. In 2011, VIVACY innovated in functional and aesthetic gynecology with the first injectable gel for vulvo-vaginal restoration.</p><p>Pursuing excellence, VIVACY offers premium skincare lines for women and men, developed with dermatologists and skin biology experts. These products use the VIVASÔME complex, which encapsulates active ingredients for optimal absorption by the skin.</p><p>Collaborating with over 250,000 doctors worldwide, VIVACY designs and tests its products in close cooperation with healthcare professionals. The company also supports dermatological research, scientific training, and social initiatives, reflecting a deep commitment to the medical community and patient well-being.</p>"
+    },
+    "brandsDescriptions": {
+      "stylage": {
+        "title": "The Stylage®",
+        "content": {
+          "c1": "The STYLAGE® range by Laboratoires VIVACY stands out with innovative solutions for diverse aesthetic needs. STYLAGE® S, M, and L are specifically formulated to fill wrinkles, while STYLAGE® Special Lips Lidocaine and STYLAGE® Lips Plus focus on hydrating and volumizing lips.",
+          "c2": "To restore or enhance facial volumes, STYLAGE® offers XL, XL LIDOCAINE, and XXL versions. Lastly, STYLAGE® HYDRO and HYDROMAX are designed to improve skin hydration and elasticity. With these versatile products, STYLAGE® meets a wide range of needs for both patients and healthcare professionals."
+        },
+        "cta": {
+          "content": "Discover Stylage",
+          "path": ""
+        }
+      },
+      "desirial": {
+        "title": "Desirial®",
+        "content": {
+          "c1": "DESIRIAL® is specifically designed to restore hydration and firmness in the vulvo-vaginal area for women experiencing vaginal dryness. With innovative formulations incorporating hyaluronic acid and antioxidants, DESIRIAL® provides effective solutions to enhance comfort and improve quality of life for affected women."
+        },
+        "cta": {
+          "content": "Discover Desirial",
+          "path": ""
+        }
+      }
+    }
+  },
+  "History": {
+    "title": "Our history",
+    "span": "Expert in hyaluronic acid",
+    "section1": {
+      "h2": "A leading aesthetic industry player",
+      "h3": "Vivacy",
+      "content": "<p>Laboratoires VIVACY is a prominent player in the field of medical aesthetics and anti-aging. Established in 2007, this esteemed French company has rapidly specialized in creating, producing, and distributing cutting-edge medical devices based on hyaluronic acid. Operating primarily in France, Vivacy has expanded its reach across more than 75 countries globally, craving out a significant niche in the competitive landscape of medical aesthetic.</p> <p>For over 16 years, Laboratoires VIVACY has demonstrated unwavering dedication to the development of injectable medical devices specifically tailored for healthcare professionals. The aim of the company is enhance the natural beauty of individuals, achieving remarkable results without drastic alterations. This core philosophy is deeply embedded in the brand’s identity and has been primordial in earning the trust of medical practitioners and patients.</p>"
+    },
+    "section2": {
+      "h2": "Innovating beyond boundaries",
+      "h3": "About us",
+      "content": "<p>Consequently, VIVACY is committed to providing practitioners worldwide with the finest medical innovations in terms of quality, effectiveness, and safety. Its product range encompasses three main categories:</p>   <ul><li>STYLAGE® series focusing on facial aesthetics</li><li>DESIRIAL® line addressing gynecological applications </li><li>VIVACY BEAUTY range of dermo-cosmetic productsAdditionally</li></ul><p>Laboratoires Vivacy manufactures hyaluronic acid gels for ophthalmic surgery like I-SPACE®, along with viscosupplementation products such as KARTILAGE® for treating knee osteoarthritis pain.</p><p>With its unparalleled expertise, VIVACY has cultivated an extensive portfolio of premium products featuring innovative medical properties. These injectable formulations are meticulously designed by expert teams and serve as the basis for numerous clinical studies.</p>"
+    },
+    "section3": {
+      "h2": "Prioritising safety in manufacturing",
+      "content": "<p>Laboratoires VIVACY’s advanced production facility in Archamps, France, highlights the company’s dedication to excellence. Complying with strict EU medical device regulations, this facility ensures all products are safe and effective. These products are then distributed globally to meet the growing demand from aesthetic doctors and healthcare professionals.</p><p>Healthcare professionals around the world trust VIVACY’s hyaluronic acid products for their ability to enhance natural beauty subtly and effectively. This trust is based on the consistent quality and innovation of VIVACY’s offerings, making the company a leading partner in medical aesthetics and anti-ageing solutions.</p>"
+    },
+    "section4": {
+      "h2": "Discovering the heart of laboratoires vivacy",
+      "h3": "Our corporate vision"
+    },
+    "section5": {
+      "h2": "Retracing our historic steps",
+      "h3": "Key milestones"
+    }
+  },
+  "Commitments": {
+    "title": "Our commitments",
+    "span": "Expert in hyaluronic acid",
+    "section1": {
+      "h2": "Building trust by being authentic",
+      "h3": "Corporate values",
+      "quality": {
+        "title": "Quality",
+        "content": "For 16 years, Laboratoires VIVACY’s objective has always been to offer practitioners and patients the best products in terms of quality, performance and security. All products are meticulously manufactured in France at the advanced facility in Archamps Technopole, a hub of French research and innovation. Laboratoires VIVACY maintain complete control over every stage of production without compromise."
+      },
+      "security": {
+        "title": "Security",
+        "content": "Laboratoires VIVACY uses pharmaceutical-grade raw materials and operates in highly secure white rooms to ensure the purity and safety of the gel manufacturing process. Each syringe undergoes manual inspection by trained operators before market release."
+      },
+      "authenticity": {
+        "title": "Authenticity",
+        "content": "In its commitment to guaranteeing safe, quality products for practitioners and patients worldwide, Laboratoires VIVACY launched an innovative authentication system for the injectable products in 2017. Each box is equipped with a uniquely numbered RFID* chip to verify the origin of STYLAGE® or DESIRIAL® injectables and combat counterfeiting. Practitioners can verify product’s authenticity using the « MY VIVACY » mobile app."
+      },
+      "efficiency": {
+        "title": "Efficiency",
+        "content": "Laboratoires VIVACY have developed clinical studies for the injectable products to prove the good tolerance and efficiency when it comes to the desired results. All studies are conducted with expert oversight and patient panels managed by certified centers. The STYLAGE® range holds CE marking in Europe and certifications in several countries, supported by over 16 years of clinical experience."
+      },
+      "cta": {
+        "title": "See more",
+        "path": ""
+      },
+      "references": {
+        "rifd": "Radio Frequency Identification"
+      }
+    },
+    "section2": {
+      "h2": "Promoting well-being of people and the planet",
+      "h3": "Social & environmental responsibilities",
+      "first": {
+        "content": "<p>During the Odyssea event, 171 members of our VIVACY teams and associated distributors worldwide walked and ran to support this vital cause. For us, maintaining our commitment to this cause is crucial, as we shine a spotlight on women’s health and provide medical professionals with the knowledge and tools to shape a better future. </p><p>Together, we stand united in the fight against breast cancer.At VIVACY, we firmly believe in the importance of raising awareness about this disease and providing tangible support to initiatives working towards its eradication. Participating in events like Odyssea is a concrete way for us to demonstrate our solidarity and commitment to this crucial cause.</p>"
+      },
+      "second": {
+        "h2": "Ethics at the heart of our actions",
+        "h3": "Gender equality",
+        "content": "<p>At Laboratoires VIVACY, we take pride in our commitment to gender equality. The law for the Freedom to Choose One’s Professional Future of September 5, 2018, imposes on companies an obligation to achieve results regarding gender equality.</p> <p>At VIVACY, gender parity is not just about legal compliance; it is a fundamental value that we nurture every day. We firmly believe that gender diversity is a strength that fuels our innovation and growth. Our commitment to gender parity is reflected in our outstanding rating of 99/100 on the Gender Equality Index for the year 2023.</p>"
+      },
+      "third": {
+        "h2": "Our sustainable development approach",
+        "h3": "Environmental challenge",
+        "content": "<p>The Laboratoires VIVACY, aware of the current environmental challenges, have equipped their new industrial site with innovative ecological solutions. Featuring vegetated parking lots and a large-scale photovoltaic installation, this site stands out as one of the pioneers in sustainability in the Auvergne Rhône-Alpes region.</p><p>In partnership with local companies such as Syan’EnR, VOLTEC Solar, and EPC Solaire, VIVACY has installed no less than 830 solar panels on the site’s roof. This collaboration demonstrates VIVACY’s commitment to the development of renewable energies and the local economy.</p>"
+      },
+      "fourth": {
+        "content": "The Auvergne-Rhône-Alpes region supports part of Laboratoires VIVACY’s investments, which demonstrates their strong local presence. This financial support underscores the regional authorities’ confidence in the quality and innovation of Laboratoires VIVACY. Consequently, Laboratoires VIVACY continues to contribute to the economic dynamism of the region.  This partnership shows the importance of the biomedical industry in the Auvergne-Rhône-Alpes economic fabric."
+      }
+    }
+  },
+  "R&D": {
+    "title": "Research & development",
+    "span": "Expert in hyaluronic acid",
+    "section1": {
+      "h2": "Transforming ideas into reality",
+      "h3": "Innovation at heart",
+      "content": "Our Research & Development laboratory, based in Archamps, is a site entirely dedicated to innovation in the fields of Anti-Aging and Aesthetics. It is here that our injectable products are born, designed and developed by a team of passionate experts."
+    },
+    "section2": {
+      "h2": "Continuous commitment to innovation ",
+      "h3": "Investment in innovation",
+      "content": "We invest 10% of our annual revenue in R&D, thus demonstrating our ongoing commitment to innovation. With 16 years of experience, we have developed a strong expertise in our field. Over the past 8 years, our production capacity has increased by 11-fold, reflecting our commitment to meeting the growing demand for our products."
+    },
+    "section3": {
+      "first": {
+        "h2": "Innovation at the heart of vivacy",
+        "h3": "Patented technologies",
+        "content": "We are proud of our 2 patented technologies: IPN-Like and Bi-SOFT®, which exemplify our dedication to innovation and our pursuit of advanced solutions in the field of aesthetic injections. The IPN-Like technology enhances the durability and performance of our dermal fillers, while the Bi-SOFT® injection system provides practitioners with a more precise and comfortable injection experience. "
+      },
+      "second": {
+        "h2": "Building strong relations with physicians and patients ",
+        "h3": "Trust and reliability",
+        "content": "<p>Trust and reliability are the cornerstones of our relationship with healthcare professionals and patients. With over 7 million syringes sold worldwide between 2008 and 2018, we have established ourselves as a trusted partner in the field of aesthetic medicine. Our products are renowned for their safety and effectiveness, and they are used by practitioners around the globe. </p> <p>This trust is built on a foundation of rigorous testing,  quality control, and unwavering commitment to upholding the highest standards across all aspects of our operations.</p>"
+      }
+    },
+    "section4": {
+      "h2": "Adapting to the needs of  anti-ageing market",
+      "h3": "Continued innovation",
+      "content": "At Laboratoires VIVACY, we continue our investment in research and development. We understand that the fields of Anti-Ageing and Aesthetics are constantly evolving, and we strive to stay ahead by developing cutting-edge solutions that meet the changing needs of the market. Our dedication to quality is reflected in our products, designed to help our customers achieve their aesthetic goals with confidence."
+    }
+  },
+  "Desirial": {
+    "title": "Desirial®",
+    "span": "Expert in hyaluronic acid",
+    "cta": {
+      "title": "Visit website",
+      "path": ""
+    },
+    "section1": {
+      "h2": "Desirial®: pioneer of intimate medicine",
+      "h3": "Desirial",
+      "content": "<p>An expert in the use of hyaluronic acid in the anti-ageing and aesthetic medicine field for over 16 years, Laboratoires VIVACY also focuses on the well-being of women in matters of intimate health.</p>"
+    },
+    "section2": {
+      "h2": "Innovative solutions for intimate care",
+      "h3": "Empowering women’s health",
+      "content": "In 2011, Laboratoires VIVACY revolutionized the field of aesthetic and functional gynecology by introducing on the market the very first injectable hyaluronic acid gel for female vulvovaginal restoration. This innovation provides a vital solution for women suffering from vaginal discomfort, chronic irritation, or pain during intercourse. This treatment helps to restore hydration and elasticity to the vaginal tissues, offering significant relief, and improving sexual health and overall comfort. By addressing these intimate health concerns, Laboratoires VIVACY encourages women to regain confidence and ameliorate their quality of life. "
+    },
+    "section3": {
+      "h2": "Addressing intimate health needs",
+      "h3": "A diverse range of products ",
+      "content": "<p>The Desirial range offers a variety of medical products tailored to the diverse needs of intimate medicine and guarantees revolutionary results.</p> <p>Desirial® is primarily used for the treatment of vaginal dryness. It restores moisture and improves the elasticity of the vaginal tissues, thereby enhancing comfort and reducing symptoms of dryness that can lead to discomfort and irritation.</p> <p>Desirial Plus® is specifically formulated for more severe cases of vulvo-vaginal atrophy and offers an intensive treatment. After menopause, women can suffer from atrophy, a condition that is characterized by the thinning, drying and inflammation of the vaginal walls. Desirial Plus® helps to rejuvenate and restore the vaginal tissues, alleviating symptoms and improving overall vaginal health.</p>"
+    },
+    "section4": {
+      "h2": "Ensuring reliable treatments",
+      "h3": "Safety and quality",
+      "content": "<p>Laboratoires VIVACY is committed to ensuring the highest standards of safety and quality of their products. The Desirial® range is administered by qualified healthcare professionals, such as aesthetic doctors or gynecologists who are trained in safe and precise injection techniques. This professional administration ensures that patients receive effective and reliable treatments. </p> <p>Our dedication to rigorous research and development, along with their commitment to patient safety, has established the Desirial® range as a trusted and respected option in the field of intimate medicine. The company’s innovative solutions not only address physical symptoms but also contribute to the emotional and psychological well-being of women, helping them lead more comfortable and confident lives.</p>"
+    },
+    "section5": {
+      "h2": "Commitment to women’s health",
+      "h3": "Safety and quality guaranteed",
+      "content": "<p>Beyond their product offerings, Laboratoires VIVACY is deeply committed to advancing women’s health. They continuously invest in research and development to further improve their treatments and address emerging needs in the field of intimate medicine. Their pioneering work in this area reflects a broader mission to provide women all over the world with effective solutions to intimate health issues that have long been overlooked or inadequately addressed.</p><p>Through education and awareness initiatives, Laboratoires VIVACY also strives to reduce the stigma associated with intimate health problems, encouraging more women to seek the treatment they need. By breaking down barriers and promoting open conversations about intimate health, we are helping to create a more supportive and informed healthcare environment for women.</p>"
+    }
+  },
+  "Stylage": {
+    "title": "Stylage®",
+    "span": "Expert in hyaluronic acid",
+    "cta": {
+      "title": "Visit website",
+      "path": ""
+    },
+    "section1": {
+      "h2": "Stylage® : excellence in aesthetic medicine and anti-ageing treatments",
+      "h3": "Stylage",
+      "content": "<p>Laboratoires VIVACY’s STYLAGE® range embodies exigence in the field of aesthetic medicine. Founded in 2007, our brand has established itself as an undisputed leader, offering a comprehensive range of aesthetic and anti-aging treatments. Beyond our diverse product offerings, STYLAGE® is committed to the education and support of aesthetic professionals worldwide. </p><p>We provide comprehensive training programs and resources to ensure that practitioners can deliver the best possible outcomes for their patients. Our global network of experts and partners reflects our dedication to high quality and our position at the forefront of the aesthetic medicine field.</p>"
+    },
+    "section2": {
+      "h2": "Commitment to provide educational support for physicians",
+      "h3": "An innovative brand",
+      "content": "<p>We invest heavily in research and development to ensure that our products remain at the forefront of technology. Our dedicated team of scientists and researchers strive to push the boundaries of what is possible in the field of aesthetic treatments and continually explore new methods and formulas to enhance the efficacy, safety, and comfort of our products. </p><p>Our team collaborates with leading experts and institutions globally, ensuring that we stay up to date with the latest trends and breakthroughs in science and technology. </p>"
+    },
+    "section3": {
+      "h2": "Solutions for every aesthetic need",
+      "h3": "A diverse range of products",
+      "content": "<p>Our STYLAGE® range includes a variety of filling solutions tailored to every aesthetic need including volume restoration. These products are specifically formulated to restore lost facial volume3 and to provide a young and natural look. Wrinkle smoothing1 fillers target and smooth out wrinkles, thus helping create a rejuvenated and refreshed facial appearance. </p><p>Deep hydration improves the health1, elasticity and overall appearance of skin tissues. Lip embellishment and correction2 safely improves hydration and lip contour and increases volume4. Each product is designed to deliver optimal results for each and every need or desire that our clients might have and to make them feel more comfortable and confident in their own skin. </p>"
+    },
+    "section4": {
+      "h2": "Stylage",
+      "h3": "Safety and quality guaranteed",
+      "content": "<p>Safety and quality are paramount in all STYLAGE® products. Our flagship range is trusted by aesthetic doctors, surgeons, and dermatologists worldwide. This trust is based on our patented hyaluronic acid stabilization technology, which ensures long-lasting and natural-looking results. </p> <p>With over 16 years of clinical experience, the STYLAGE® range has received CE marking in Europe, attesting to its compliance with the highest safety and quality standards and building our reputation as a leader in the aesthetic industry. Our commitment to safety and quality involves rigorous testing and advanced manufacturing, ensuring each batch of STYLAGE® exceeds industry standards. </p>",
+      "references": "<li>1 Masson, F. Acide hyaluronique et hydratation cutanée. Annales de dermatologie, 2010 ; 137(1), 23-25</li><li>2 Monnet-Corti, V. Antezack, A. Pignoly, M._Comment parfaire l’esthétique du sourire : toujours en rose !_L’Orthodontie française_2018 ; 89(1) : 71-80</li><li>3 Saban, Y. Polselli, R._Anatomie du visage et du cou en chirurgie et cosmétologie _Elsevier Masson_2015</li><li>4 Muller, C. Alouini, O. Chouvin, M._Objectif sourire : et si l’on s’intéressait aux lèvres ?_ L’Orthodontie française_2018 ; 89(1) : 21-40</li>"
+    }
+  },
+  "MyVivacy": {
+    "title": "My vivacy",
+    "span": "Expert in hyaluronic acid",
+    "cta": {
+      "title": "Visit website",
+      "path": ""
+    },
+    "section1": {
+      "h2": "Quality & safety : a part of the vivacy DNA",
+      "h3": "My Vivacy",
+      "content": "<p>With the MYVIVACY app, scan a product to verify its authenticity using Radio Frequency Identification technology and access our digitized instructions. Explore our pre and post-injection advice for a serene treatment experience.</p><p>MYVIVACY: The app that accompanies you every day!</p>"
+    },
+    "section2": {
+      "h2": "Verification and authencity",
+      "content": "<p>As a manufacturer, Laboratoires VIVACY pays particular attention to product security and no compromise is made. Our clients’ health and safety are our top priority: we know medical interventions are never something to take lightly and we believe that everyone has a right to know where the products that they are using come from. In keeping with this line of conduct, Laboratoires VIVACY decided to design an innovative traceability system in 2017 using Radio Frequency Identification (RFID) technology. </p><p>This system allows clients all over the world to verify the authenticity of their Laboratoires VIVACY products, such as STYLAGE® and DESIRIAL®, by scanning their tags with a smartphone via a dedicated application: « MYVIVACY” This feature allows our clients to access serial numbers and expiration dates and protects them from counterfeit products by guaranteeing the authenticity of our offerings. </p>"
+    },
+    "section3": {
+      "h2": "Transforming aesthetic medicine",
+      "content": "<p>Additionally, the MYVIVACY app provides users with comprehensive digitized instructions and valuable advice. Users can access detailed pre- and post-injection guidelines to prepare for their treatments and ensure optimal results. Pre-injection advice includes tips on avoiding medication and supplements that could cause bruising or bleeding and recommendations on skincare routines to optimize results, while post-injection guidance provides steps to care for the treated area, manage any potential side effects, and maintain the achieved results for as long as possible. </p><p>This holistic approach enhances the treatment experience, offering clients total peace of mind by providing the information and support they need for optimal aesthetic results. The MYVIVACY app is a testament to Laboratoires VIVACY’s philosophy of combining cutting-edge technology with practical, user-friendly features. This ensures that every client has access to the information and support they need, fostering a sense of trust in their aesthetic treatments. </p> <p>Through MYVIVACY, Laboratoires VIVACY reaffirms its dedication to innovation, safety, and client satisfaction. The app serves as a reliable companion that offers support and information every step of the way to ensure that all users have a secure and informed aesthetic journey. This comprehensive approach underscores Laboratoires VIVACY’s position as a leader in the aesthetic industry, committed to delivering excellence through every facet of its operations.</p>"
+    },
+    "section4": {
+      "h2": "An innovative solution for product authenticity"
     }
   },
   "NotFoundPage": {

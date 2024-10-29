@@ -7,7 +7,7 @@ import LogoSlider from "../components/sliders/LogoSlider";
 import FromTopTitles from "../components/titles/FromTopTitles";
 import productsBg from "../img/experts-acide-hyaluronique-laboratoires-vivacy.jpg";
 import syringe from "../img/stylage-specialiste-acide-hyaluronique-premium.png";
-import premisesArchamps from "../img/vivacy-archamps-locaux.jpg";
+import haPower from "../img/vivacy-hyaluronic-acid-experts.jpg";
 import innovationsBg from "../img/vivacy-laboratoire-esthetique-france.jpg";
 import experienceBg from "../img/vivacy-laboratoires-experience-esthetique.jpg";
 
@@ -35,10 +35,22 @@ export default function Home() {
   const t = useTranslations("HomePage");
   return (
     <main>
-      <section>
-        <div className="container">
+      <section className="relative z-[1]">
+        <Image
+          src={haPower}
+          alt=""
+          quality={100}
+          fill
+          style={{
+            objectFit: "cover",
+            objectPosition: "35% 100%",
+            zIndex: "-1",
+            position: "absolute",
+          }}
+        />
+        <div className="myContainer">
           <div className="grid grid-cols-2 gap-36 justify-between">
-            <div className="py-16 space-y-28 my-auto">
+            <div className="pt-16 space-y-28 my-auto">
               <FromTopTitles
                 titleH2={t("section1.h2")}
                 titleH3={t("section1.h3")}
@@ -56,28 +68,12 @@ export default function Home() {
                 path={t("section1.buttonPath")}
               />
             </div>
-            <div className="relative">
-              <Image
-                src={premisesArchamps}
-                alt=""
-                quality={100}
-                fill
-                sizes="100vw"
-                style={{
-                  objectFit: "cover",
-                }}
-              />
-              <span className="font-light italic text-sm text-white absolute bottom-2 right-4">
-                {t("section1.imgText")}
-              </span>
-            </div>
           </div>
         </div>
       </section>
 
       <section className="relative max-w-[2550px] mx-auto min-h-screen flex">
         <Image
-          className="-z-[1]"
           src={experienceBg}
           alt=""
           quality={100}
@@ -86,13 +82,15 @@ export default function Home() {
           style={{
             objectFit: "cover",
             objectPosition: "0% 100%",
+            zIndex: "-1",
           }}
         />
-        <div className="container h-[auto] flex flex-col justify-around">
+        <div className="myContainer h-[auto] flex flex-col justify-around space-y-28">
           <div className="titles-container text-center">
             <h2 className="h2-perso">{t("section2.h2")}</h2>
             <h3 className="h3-perso text-white">{t("section2.h3")}</h3>
           </div>
+
           <div className="grid grid-cols-2 gap-36">
             <div className="col-start-2 space-y-28">
               <div className="space-y-4">
@@ -111,7 +109,7 @@ export default function Home() {
       </section>
 
       <section className="bg-blue max-w-[2550px] m-auto">
-        <div className="container space-y-28 text-white flex flex-col items-center">
+        <div className="myContainer space-y-28 text-white flex flex-col items-center">
           <div className="titles-container w-full">
             <h2 className="h2-perso text-white">{t("section3.h2")}</h2>
             <h3 className="h3-perso text-white">{t("section3.h3")}</h3>
@@ -168,7 +166,7 @@ export default function Home() {
             objectFit: "cover",
           }}
         />
-        <div className="container space-y-28">
+        <div className="myContainer space-y-28">
           <div className="titles-container text-center">
             <h2 className="h2-perso">{t("section4.h2")}</h2>
             <h3 className="h3-perso">{t("section4.h3")}</h3>
@@ -224,7 +222,7 @@ export default function Home() {
             objectFit: "cover",
           }}
         />
-        <div className="container space-y-28">
+        <div className="myContainer space-y-28">
           <div className="titles-container w-full">
             <h2 className="h2-perso">{t("section5.h2")}</h2>
             <h3 className="h3-perso">{t("section5.h3")}</h3>
@@ -235,7 +233,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="container space-y-28 flex flex-col items-center">
+        <div className="myContainer space-y-28 flex flex-col items-center">
           <div className="titles-container">
             <h2 className="h2-perso">{t("section6.h2")}</h2>
             <h3 className="h3-perso">{t("section6.h3")}</h3>
