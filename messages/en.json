@@ -487,7 +487,49 @@
           "rate": "9.8"
         }
       }
-    }
+    },
+    "seringe": {
+      "first": {
+        "title": "Injection volume control",
+        "content": {
+          "first": "Top white graduation.",
+          "second": "Top-down blue graduations for better readability."
+        }
+      },
+      "second": {
+        "title": "Handling ability",
+        "content": {
+          "first": "Reduction of the injection force sensation.",
+          "second": "Provides extra grip and stability between the surface of the syringe and the gloves."
+        }
+      },
+      "third": {
+        "title": "Bi-material technology",
+        "content": {
+          "first": "Made of polycarbonate and thermoplastic elastomer (TPE)",
+          "second": "A « soft-touch » surface",
+          "third": "Highly transparent material",
+          "fourth": "Designed in 4 different colours to differentiate between the products"
+        }
+      },
+      "fourth": {
+        "title": "Precise and secure injection",
+        "content": {
+          "first": "Ergonomic design for increased practitioner comfort.",
+          "second": "A larger oval grip plate3 for better handling of the syringe and easier product administration.",
+          "third": "Easy toppling, which facilitates smoother and more controlled injections."
+        }
+      },
+      "fifth": {
+        "title": "Optimised center of gravitiy",
+        "content": {
+          "first": "The optimized center of gravity of the Bi-SOFT® Injection Technology ensures a balanced and stable grip, reducing the risk of hand fatigue during procedures. This feature is particularly beneficial for practitioners performing multiple injections, as it enhances overall efficiency and comfort.",
+          "second": "By addressing these key areas—handling ability, bi-material technology, precise and secure injection, injection volume control, and optimized center of gravity—Bi-SOFT® Injection Technology sets a new standard in the field of medical aesthetics.",
+          "third": "It combines cutting-edge materials with an intuitive design, providing a tool that not only meets but exceeds the high demands of modern aesthetic procedures. This innovation by Laboratoires VIVACY is a testament to our commitment to enhancing both practitioner performance and patient outcomes through superior technology."
+        }
+      }
+    },
+    "references": "<li>1. Laboratoires VIVACY (France). Optimised centre of gravity syringue. WO2018/185406 A1. 2018.</li> <li>2. A customer satisfaction survey of 97 practitioners from 5 European countries. 2018 Laboratoires VIVACY data.</li> <li>3. Plunger: Grip plate surface increased by 80% compared to conventional syringes. Finger Grip: Grip surface increased by 90% compared to conventional syringes</li>"
   },
   "NotFoundPage": {
     "title": "Page not found"
