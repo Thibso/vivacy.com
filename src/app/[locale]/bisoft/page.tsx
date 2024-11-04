@@ -3,6 +3,7 @@ import BlueButton from "@/app/components/buttons/BlueButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import HeaderSpan from "@/app/components/globals/headerSpan";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
+import bg from "@/app/img/background-grained.jpg";
 import bgHeader from "@/app/img/beauty/vivacy-beauty.jpg";
 import section1Bg from "@/app/img/bisoft/background-bisoft.png";
 import logoBiSoft from "@/app/img/bisoft/BI-SOFT.png";
@@ -104,11 +105,11 @@ export default function BiSoft() {
           src={section1Bg}
           alt=""
           quality={75}
-          className="h-full absolute left-auto right-0 top-0 -z-[1]"
+          className="max-lg:hidden h-full absolute left-auto right-0 top-0 -z-[1]"
         />
 
-        <div className="myContainer grid grid-cols-12">
-          <div className="col-span-5 space-y-14">
+        <div className="myContainer lg:grid lg:grid-cols-12">
+          <div className="lg:col-span-5 space-y-8 lg:space-y-14">
             <FromTopTitles
               titleH2={t("section1.h2")}
               titleH3={t("section1.h3")}
@@ -121,7 +122,7 @@ export default function BiSoft() {
               })}
             </div>
 
-            <div className="grid grid-cols-2 justify-start items-center">
+            <div className="flex max-lg:gap-14 lg:grid lg:grid-cols-2 justify-center lg:justify-start items-center">
               <div>
                 <BlueButton content={t("cta.title")} path={t("cta.path")} />
               </div>
@@ -136,7 +137,7 @@ export default function BiSoft() {
               />
             </div>
           </div>
-          <div className="col-span-5 col-start-8 relative">
+          <div className="lg:col-span-5 lg:col-start-8 max-lg:h-[350px] relative max-lg:mt-14">
             <Image
               src={section1}
               alt=""
@@ -152,11 +153,21 @@ export default function BiSoft() {
         </div>
       </section>
 
-      <section>
-        <div className="myContainer space-y-8 lg:space-y-28">
+      <section className="relative">
+        <Image
+          src={bg}
+          alt=""
+          quality={75}
+          fill
+          style={{
+            objectFit: "cover",
+            zIndex: "-1",
+          }}
+        />
+        <div className="myContainer space-y-14 lg:space-y-28">
           <h2 className="h2-perso">{t("section2.h2")}</h2>
 
-          <div className="grid grid-cols-4 gap-x-20">
+          <div className="lg:grid lg:grid-cols-4 lg:gap-x-20 max-lg:space-y-14 max-lg:w-[80%] max-lg:mx-auto">
             <div className="col-span-1 space-y-4">
               <div className="relative h-[275px]">
                 <Image
@@ -170,7 +181,7 @@ export default function BiSoft() {
                     borderRadius: "12px",
                   }}
                 />
-                <div className="bg-blue rounded-full text-white py-3 px-6 absolute z-[1] bottom-0 -right-8">
+                <div className="bg-blue rounded-full text-white py-3 px-6 absolute z-[1] bottom-0 -right-2 lg:-right-8">
                   <span>{t("section2.ratings.first.rate")} / 10</span>
                 </div>
               </div>
@@ -191,7 +202,7 @@ export default function BiSoft() {
                     borderRadius: "12px",
                   }}
                 />
-                <div className="bg-blue rounded-full text-white py-3 px-6 absolute z-[1] bottom-0 -right-8">
+                <div className="bg-blue rounded-full text-white py-3 px-6 absolute z-[1] bottom-0 -right-2 lg:-right-8">
                   <span>{t("section2.ratings.second.rate")} / 10</span>
                 </div>
               </div>
@@ -212,7 +223,7 @@ export default function BiSoft() {
                     borderRadius: "12px",
                   }}
                 />
-                <div className="bg-blue rounded-full text-white py-3 px-6 absolute z-[1] bottom-0 -right-8">
+                <div className="bg-blue rounded-full text-white py-3 px-6 absolute z-[1] bottom-0 -right-2 lg:-right-8">
                   <span>{t("section2.ratings.third.rate")} / 10</span>
                 </div>
               </div>
@@ -233,7 +244,7 @@ export default function BiSoft() {
                     borderRadius: "12px",
                   }}
                 />
-                <div className="bg-blue rounded-full text-white py-3 px-6 absolute z-[1] bottom-0 -right-8">
+                <div className="bg-blue rounded-full text-white py-3 px-6 absolute z-[1] bottom-0 -right-2 lg:-right-8">
                   <span>{t("section2.ratings.fourth.rate")} / 10</span>
                 </div>
               </div>
@@ -245,14 +256,22 @@ export default function BiSoft() {
         </div>
       </section>
 
-      <section className="relative h-[200vh]">
-        <SeringeBiSoft
-          first={seringeTextFirst}
-          second={seringeTextSecond}
-          third={seringeTextThird}
-          fourth={seringeTextFourth}
-          fifth={seringeTextFifth}
-        />
+      <SeringeBiSoft
+        h2={t("seringe.h2")}
+        h3={t("seringe.h3")}
+        first={seringeTextFirst}
+        second={seringeTextSecond}
+        third={seringeTextThird}
+        fourth={seringeTextFourth}
+        fifth={seringeTextFifth}
+      />
+
+      <section className="px-5 pb-16 lg:px-20 lg:pb-24 xl:px-28 xl:pb-32">
+        <ol className="">
+          {t.rich("references", {
+            li: (chunks) => <li className="text-sm">{chunks}</li>,
+          })}
+        </ol>
       </section>
     </main>
   );
