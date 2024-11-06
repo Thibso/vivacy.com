@@ -39,7 +39,7 @@ export default function OurBrands() {
 
   return (
     <main>
-      <section className="relative min-h-[400px] lg:min-h-[550px] grid">
+      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <Image
           src={bgHeader}
           alt=""
@@ -76,7 +76,7 @@ export default function OurBrands() {
 
       <section className="lg:grid lg:grid-cols-2 lg:gap-36">
         <div className="grid grid-cols-6">
-          <div className="col-span-3 relative max-lg:h-[350px]">
+          <div className="col-span-3 relative max-lg:h-[350px] z-[1]">
             <Image
               src={seringe1}
               alt=""
@@ -89,7 +89,7 @@ export default function OurBrands() {
               }}
             />
           </div>
-          <div className="col-span-2 relative">
+          <div className="col-span-2 relative z-[1]">
             <Image
               src={seringe2}
               alt=""
@@ -102,7 +102,7 @@ export default function OurBrands() {
               }}
             />
           </div>
-          <div className="col-span-1 relative">
+          <div className="col-span-1 relative z-[1]">
             <Image
               src={seringe3}
               alt=""
@@ -117,7 +117,7 @@ export default function OurBrands() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden px-5 py-16 lg:py-20 lg:pr-16">
+        <div className="relative overflow-hidden px-5 py-16 lg:py-20 lg:pr-16 z-[1]">
           <Image
             src={bgVivacy}
             alt=""
@@ -143,7 +143,7 @@ export default function OurBrands() {
         </div>
       </section>
 
-      <section className="relative lg:mt-28">
+      <section className="relative lg:mt-28 z-[1]">
         <Image
           src={office}
           alt=""

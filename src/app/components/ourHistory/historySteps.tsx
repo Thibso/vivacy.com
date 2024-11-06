@@ -71,7 +71,7 @@ export default function HistorySteps(props: Props) {
       className="relative"
       ref={ref}
     >
-      <div className="myContainer sticky top-0">
+      <div className="myContainer sticky -top-[75px]">
         <FromTopTitles
           titleH2={props.h2}
           titleH3={props.h3}

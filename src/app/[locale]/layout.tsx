@@ -5,6 +5,7 @@ import { getMessages } from "next-intl/server";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import React from "react";
+import Footer from "../components/globals/footer";
 import NavBar from "../components/globals/NavBar";
 import "./globals.css";
 
@@ -35,14 +36,22 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={mona.className}>
+      <head>
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
       <body className="relative overflow-x-hidden">
         <NavBar localeActive={locale} />
 
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <div className="bg-white">{children}</div>
         </NextIntlClientProvider>
 
-        <footer>Footer</footer>
+        <Footer />
       </body>
     </html>
   );

@@ -37,7 +37,7 @@ export default function MyVivacy() {
 
   return (
     <main>
-      <section className="relative min-h-[400px] lg:min-h-[550px] grid">
+      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <Image
           src={bgHeader}
           alt=""
@@ -118,7 +118,7 @@ export default function MyVivacy() {
         </div>
       </section>
 
-      <section className="relative">
+      <section className="relative z-[1]">
         <Image
           src={bg}
           alt=""
@@ -155,7 +155,7 @@ export default function MyVivacy() {
           </div>
         </div>
 
-        <div className="space-y-8 lg:space-y-28">
+        <div className="space-y-8 lg:space-y-28 pb-16 lg:pb-24 xl:pb-32">
           <h2 className="h3-perso w-full lg:w-[50%] text-center lg:mx-auto">
             {t("section4.h2")}
           </h2>

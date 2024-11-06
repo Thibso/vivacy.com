@@ -21,11 +21,19 @@ export default function SyringeRotate() {
 
   const rotateProgresse = useTransform(scaleY, [0, 0.4], [0, -180]);
   const opacityProgress = useTransform(scaleY, [0.7, 0.85], [1, 0]);
+  const displayProgress = useTransform(
+    scaleY,
+    [0, 0.7, 0.85, 1],
+    [51, 51, 51, -10]
+  );
   const translateXProgress = useTransform(scaleY, [0.5, 0.7], ["0", "60%"]);
   const scaleProgress = useTransform(scaleY, [0.65, 0.85], [1, 1.5]);
 
   return (
-    <section className="min-h-[150vh] relative z-[51]">
+    <motion.section
+      className="max-lg:hidden lg:min-h-[150vh] relative"
+      style={{ zIndex: displayProgress }}
+    >
       <motion.section
         ref={ref}
         className=" min-h-[250vh] absolute top-0 left-0 w-full"
@@ -70,6 +78,6 @@ export default function SyringeRotate() {
           </motion.div>
         </div>
       </motion.section>
-    </section>
+    </motion.section>
   );
 }

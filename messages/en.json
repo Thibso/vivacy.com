@@ -45,22 +45,22 @@
         "item1": {
           "id": "1",
           "title": "IPN-LIKE®",
-          "path": "#"
+          "path": "/en/ipnlike"
         },
         "item2": {
           "id": "2",
           "title": "BI-SOFT®",
-          "path": "#"
+          "path": "/en/bisoft"
         },
         "item3": {
           "id": "3",
           "title": "Vivasôme",
-          "path": "#"
+          "path": "/en/vivasome"
         },
         "item4": {
           "id": "4",
           "title": "Vivacy Security",
-          "path": "#"
+          "path": "/en/myvivacy"
         }
       },
       "images": {
@@ -87,7 +87,7 @@
         "item3": {
           "id": "3",
           "title": "Dermo-cosmetics: Vivacy Beauty",
-          "path": "#"
+          "path": "/en/beauty"
         },
         "item4": {
           "id": "4",
@@ -129,12 +129,12 @@
         "item1": {
           "id": "1",
           "title": "World map",
-          "path": "#"
+          "path": "/en/map"
         },
         "item2": {
           "id": "2",
           "title": "Contact form",
-          "path": "#"
+          "path": "/en/contact"
         }
       },
       "images": {
@@ -147,11 +147,59 @@
       "path": "/en/"
     }
   },
+  "Footer": {
+    "vivacy": {
+      "title": "Vivacy",
+      "content": {
+        "vivacyAcademy": "Vivacy Academy",
+        "vivacyBeauty": "Vivacy Beauty",
+        "desirial": "Desirial",
+        "desirialPlus": "Desirial Plus",
+        "stylage": "Stylage"
+      },
+      "links": {
+        "vivacyAcademy": "",
+        "vivacyBeauty": "",
+        "desirial": "",
+        "desirialPlus": "",
+        "stylage": ""
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "content": {
+        "blog": "Blog",
+        "faq": "FAQ",
+        "contact": "Contact",
+        "newsletter": "Newsletter"
+      },
+      "links": {
+        "blog": "",
+        "faq": "",
+        "contact": "",
+        "newsletter": ""
+      }
+    },
+    "socials": {
+      "instagram": "",
+      "facebook": "",
+      "linkedin": "",
+      "twitter": "",
+      "youtube": ""
+    },
+    "legals": {
+      "copyright": "© Laboratoires Vivacy Paris - 2024",
+      "notice": "legal notice",
+      "notice_link": "",
+      "confidentiality": "confidentiality",
+      "confidentiality_link": ""
+    }
+  },
   "HomePage": {
     "section1": {
       "h2": "Innovative injectable solutions",
       "h3": "Unlock the full power of ha",
-      "text": "<p>Thanks to our comprehensive offer from beauty to medical usages (aesthetic medicine, gynecology, rheumatology, ophthalmology, anti-ageing skincare), we create life-changing solutions. We believe hyaluronic acid (HA) is an exceptional ingredient that has just started proving its powers. Our goal? Explore further and take it to the next level.</p> <p>Mobilising our state-of-the art R&D capabilities, we constantly disrupt markets with advanced bio-compatible technologies and new reversible usages, setting the highest quality standards. As impact-driven entrepreneurs, we aim to build on HA to positively impact people’s everyday life.</p>",
+      "text": "<p>Laboratories VIVACY, based in Paris, are renowned pioneers of Hyaluronic Acid in the field of aesthetic medicine. With over 16 years of experience, VIVACY specializes in developing, manufacturing, and distributing injectable medical devices for healthcare professionals.</p><p>Their historical promise is to enhance the beauty of both women and men without altering their natural appearance. Therefore, VIVACY's mission is to provide practitioners worldwide with the highest quality, efficiency, and security in medical innovations.</p>",
       "button": "Discover our history",
       "buttonPath": "/#",
       "imgText": "Archamps, Haute-Savoie"
@@ -425,6 +473,257 @@
     },
     "section4": {
       "h2": "An innovative solution for product authenticity"
+    }
+  },
+  "Beauty": {
+    "title": "Vivacy Beauty",
+    "span": "Expert in hyaluronic acid",
+    "cta": {
+      "title": "Visit website",
+      "path": ""
+    },
+    "section1": {
+      "h2": "Vivacy beauty: explore our universe dedicated to dermo-cosmetics on our e-commerce site vivacy beauty ",
+      "h3": "Vivacy Beauty",
+      "content": "<p>Laboratoires VIVACY offers a range of professional quality dermo cosmetic products based on expert and innovative formulas to complement aesthetic interventions and help men and women alike preserve their natural beauty beyond the doctor’s office. </p> <p>Laboratoires VIVACY is committed to producing high-quality dermal treatments in the form of its premium range of cosmetic products called VIVACY BEAUTY. We strive to make professional skincare accessible by making our expertise in aesthetic medicine available to all through a comprehensive e-commerce website.</p>"
+    },
+    "section2": {
+      "h2": "Professional quality dermo-cosmetic products",
+      "h3": "Elevating skincare",
+      "content": "<p>With over 16 years of experience, the brand decided to create professional quality dermo-cosmetic products to soothe the skin after an aesthetic medicine intervention, but also to preserve its youthful appearance in day-to-day life for people who are merely seeking to take care of their skin through an effective routine. </p> <p>Offering a facecare routine to our clients was primordial for us to prolong the results of our treatments. More generally, having a good skincare is the first step to feel clean, confident and more at ease in one’s body, and our products are designed by professionals with this goal in mind. </p>"
+    },
+    "section3": {
+      "h2": "Comprehensive solutions for every skin type",
+      "h3": "A diverse range of products",
+      "content": "<p>Laboratoires VIVACY offers three distinct ranges of skincare products to meet all needs. The Vivacy Beauty range for women was created to complement our fillers and ensure long-lasting results with anti-aging, repairing, refreshing, and nourishing products. It also makes the VIVACY expertise accessible through easy-to-use products that protect the skin from harmful external elements such as the wind, sun, and artificial blue light.</p><p>The Monsieur Skincare range is specially designed for men, providing a complete skincare routine with various creams, serums, and an after-shave cream to ensure healthy and revitalized skin. Finally, our fragrance range adds a touch of luxury and sophistication with elegant and refined scents. These three ranges, each specialized and innovative, meet all the demands of our clients and patients.</p>"
+    },
+    "section4": {
+      "h2": "Dermatologically tested high-quality formulas",
+      "h3": "Innovative dermo-cosmetic solutions",
+      "content": "<p>Laboratoires VIVACY offers three distinct ranges of skincare products to meet all needs. The Vivacy Beauty range for women was created to complement our fillers and ensure long-lasting results with anti-aging, repairing, refreshing, and nourishing products. It also makes the VIVACY expertise accessible through easy-to-use products that protect the skin from harmful external elements such as the wind, sun, and artificial blue light.</p><p>The Monsieur Skincare range is specially designed for men, providing a complete skincare routine with various creams, serums, and an after-shave cream to ensure healthy and revitalized skin. Finally, our fragrance range adds a touch of luxury and sophistication with elegant and refined scents. These three ranges, each specialized and innovative, meet all the demands of our clients and patients. </p>"
+    }
+  },
+  "BiSoft": {
+    "title": "Bi-soft® injection technology1",
+    "span": "Expert in hyaluronic acid",
+    "cta": {
+      "title": "Learn more",
+      "path": ""
+    },
+    "section1": {
+      "h2": "Unique & ergonomic design",
+      "h3": "A patented injection system",
+      "content": "<p>In its continuing quest for innovative excellence in the medical aesthetic market, Laboratoires VIVACY has developed a unique delivery system, Bi-SOFT® Injection Technology. This state-of-the-art syringe offers greater precision and comfort, specifically designed to offer greater precision and comfort.</p>  <p>It is specifically designed to help practitioners in their daily practice of aesthetic treatments. The system’s ergonomic design and advanced features ensure that it stands out as a significant advancement in injection technology.</p> <p>97% of practitioners are extremely satisfied with the use of BI-SOFT® injection system2. This statistic reflects the confidence and appreciation users have for the performance of this technology and its reliability in meeting practitioner expectations and improving procedural outcomes.</p> "
+    },
+    "section2": {
+      "h2": "Evaluating physician satisfaction",
+      "ratings": {
+        "first": {
+          "title": "Comfort of use",
+          "rate": "9.6"
+        },
+        "second": {
+          "title": "Easy Injection",
+          "rate": "9.6"
+        },
+        "third": {
+          "title": "Injection Control",
+          "rate": "9.6"
+        },
+        "fourth": {
+          "title": "Control of injection depth",
+          "rate": "9.8"
+        }
+      }
+    },
+    "seringe": {
+      "h2": "Improving the physician experience",
+      "h3": "The benefits of bi-soft®",
+      "first": {
+        "title": "Injection volume control",
+        "content": {
+          "first": "Top white graduation.",
+          "second": "Top-down blue graduations for better readability."
+        }
+      },
+      "second": {
+        "title": "Handling ability",
+        "content": {
+          "first": "Reduction of the injection force sensation.",
+          "second": "Provides extra grip and stability between the surface of the syringe and the gloves."
+        }
+      },
+      "third": {
+        "title": "Bi-material technology",
+        "content": {
+          "first": "Made of polycarbonate and thermoplastic elastomer (TPE)",
+          "second": "A « soft-touch » surface",
+          "third": "Highly transparent material",
+          "fourth": "Designed in 4 different colours to differentiate between the products"
+        }
+      },
+      "fourth": {
+        "title": "Precise and secure injection",
+        "content": {
+          "first": "Ergonomic design for increased practitioner comfort.",
+          "second": "A larger oval grip plate3 for better handling of the syringe and easier product administration.",
+          "third": "Easy toppling, which facilitates smoother and more controlled injections."
+        }
+      },
+      "fifth": {
+        "title": "Optimised center of gravitiy",
+        "content": {
+          "first": "The optimized center of gravity of the Bi-SOFT® Injection Technology ensures a balanced and stable grip, reducing the risk of hand fatigue during procedures. This feature is particularly beneficial for practitioners performing multiple injections, as it enhances overall efficiency and comfort.",
+          "second": "By addressing these key areas—handling ability, bi-material technology, precise and secure injection, injection volume control, and optimized center of gravity—Bi-SOFT® Injection Technology sets a new standard in the field of medical aesthetics.",
+          "third": "It combines cutting-edge materials with an intuitive design, providing a tool that not only meets but exceeds the high demands of modern aesthetic procedures. This innovation by Laboratoires VIVACY is a testament to our commitment to enhancing both practitioner performance and patient outcomes through superior technology."
+        }
+      }
+    },
+    "references": "<li>1. Laboratoires VIVACY (France). Optimised centre of gravity syringue. WO2018/185406 A1. 2018.</li> <li>2. A customer satisfaction survey of 97 practitioners from 5 European countries. 2018 Laboratoires VIVACY data.</li> <li>3. Plunger: Grip plate surface increased by 80% compared to conventional syringes. Finger Grip: Grip surface increased by 90% compared to conventional syringes</li>"
+  },
+  "IpnLike": {
+    "title": "IPN-LIKE® technology",
+    "span": "Expert in hyaluronic acid",
+    "cta": {
+      "title": "Learn more",
+      "path": ""
+    },
+    "section1": {
+      "h2": "A molecule of youth",
+      "h3": "Hyaluronic acid",
+      "content": "<p>All VIVACY’s products are hyaluronic acid-based. Hyaluronic acid (HA) is a naturally occurring molecule in the human body, particularly in the skin and mucous membranes. It can retain up to 1,000 times its weight in water2, consequently contributing to the hydration and toning of the concerned tissues3.</p><p>HA has a short life span and is soluble in water, meaning it needs to be stabilised before injection into skin tissues. To do so, a special technical process called “cross-linking” is used to bind HA molecules together to obtain a cohesive HA gel for a skin smoothing, lifting and/or volumising effect that will last for several months.</p> <p>The duration of the treatment depends on many factors, such as the patient’s skin type and structure, age, lifestyle, the area treated, and the injection technique used by the practitioner.</p>"
+    },
+    "section2": {
+      "h2": "Unique viscoelastic properties",
+      "h3": "A patented cross-linking",
+      "content": "<p>Laboratoires VIVACY has developed “IPN-Like Technology” (InterPenetrated Networks), a unique cross-linking technology for hyaluronic acid that accurately defines each product’s viscoelastic properties4 :  From a clinical standpoint, the main product characteristics sought after by Physicians are their ability to lift skin tissues, provide mechanical support and spread easily. To obtain these desired effects, the HA gel must have a unique combination of elasticity and viscosity5 . These specific viscoelastic properties determine where the gel will be injected, allowing it to respond to the various mechanical stresses to which it will be subjected in the tissues. As a result, the interpenetration of HA cross-linked networks4:</p><ul><li>Optimises the products’ rheology, in particular the viscosity to guarantee good product injectability.</li><li>Preserves the partial independence of the interpenetrated HA networks, whilst increasing the density of chemical nodes.</li><li>Guarantees the cohesion of the HA gel and its monophasic properties.</li></ul>"
+    },
+    "section3": {
+      "h2": "Products adapted to every treatment",
+      "h3": "Enhanced patient outcomes",
+      "content": "<p>The use of IPN-Like Technology in VIVACY’s HA products not only ensures superior hydration and structural support but also promotes natural-looking results that last longer. </p><p>This advanced cross-linking technique is designed to integrate seamlessly with the patient’s tissue, minimizing the risk of adverse reactions and ensuring a smooth, even distribution of the product. Patients can expect improved skin texture, elasticity, and a reduction in fine lines and wrinkles, resulting in a youthful and rejuvenated appearance.  </p>"
+    },
+    "section4": {
+      "h3": "Commitment to research and development",
+      "content": "<p>VIVACY’s commitment to innovation and excellence is demonstrated by its research and development efforts. Our team of scientists continuously work on refining and enhancing the IPN-Like Technology to meet the evolving needs of patients and healthcare professionals alike.</p><p>As the demand for non-surgical cosmetic treatments continues to grow, VIVACY’s innovative approach positions it as a leader in providing safe, effective, and aesthetically pleasing solutions. This dedication to research and innovation ensures that the brand remains at the forefront of aesthetic medicine, providing cutting-edge solutions that deliver natural-looking high-quality results. </p>"
+    },
+    "references": "<li>1-apakonstantinou, E. & Al. Hyaluronic acid - A key molecule in skin aging. Dermato-Endocrinology 4:3, 253–258; July–December 2012.</li><li>2-Ulf Anderegg, J. C. S. & Al. More than just a filler – the role of hyaluronan for skin homeostasis. Experimental Dermatology, 2014, 23, 295–303.</li><li>3-Becker, L. C. & Al. “Final Report of the Safety Assessment of Hyaluronic Acid, Potassium Hyaluronate, and Sodium Hyaluronate” International Journal of Toxicology, 2009, volume 28 Number 4S, 5-67.</li><li>4-IPN-Like Technology Patent delivered WO2009/071697 in 2008.</li><li>5-undaram, H. & Al., “Biophysical characteristics of hyaluronic acid soft-tissue fillers and their relevance to aesthetic applications”. American Society of Plastic Surgeons, Plast. Reconstr. Surg. 132: 5S, 2013.</li>"
+  },
+  "Vivasome": {
+    "title": "VIVASÔME®",
+    "span": "Expert in hyaluronic acid",
+    "cta": {
+      "title": "Learn more",
+      "path": ""
+    },
+    "section1": {
+      "h2": "The science of anti-ageing",
+      "h3": "Unique skincare formulations",
+      "content": "With extensive expertise in Aesthetic Medicine and anti-ageing solutions, Laboratoires VIVACY have collaborated with cosmetology experts and dermatologists to develop a professional line of dermo-cosmetics centered around the exclusive VIVASÔME® complex*. This innovative complex incorporates hyaluronic acid and antioxidants to offer advanced skincare solutions."
+    },
+    "section2": {
+      "h2": "advanced skincare solutions",
+      "h3": "Vivasôme® complex",
+      "content": "<p>The VIVASÔME® complex represents a breakthrough in skincare technology, offering advanced solutions that not only maintain but enhance the quality of all skin types on a daily basis. It is specially formulated to soothe and protect the skin, particularly after aesthetic medical treatments, ensuring comprehensive care.</p>",
+      "h3Bis": "Active enscapsulation technology",
+      "contentBis": "<p>Central to the effectiveness of the VIVASÔME® complex is its active encapsulation technology utilizing liposomes. These microscopic lipid-based spheres mimic the skin’s natural hydro-lipid film, facilitating the efficient penetration of active ingredients deep into the skin’s layers. This innovative approach ensures that key nutrients and antioxidants are delivered precisely to targeted cells, maximizing their efficacy.</p>"
+    },
+    "section3": {
+      "h2": "The main active ingredients",
+      "h3": "At the heart of our formulas",
+      "content": "<li>Treignac Mineral Water: Known for its low mineral content, Treignac Mineral Water helps maintain optimal skin hydration, essential for skin health and vitality. Its unique properties make it a high-quality base for the VIVASÔME® complex and ensures that the skin remains well-hydrated and balanced. </li><li>Sorbitol: With its antioxidant properties, sorbitol is able to trap free radicals, which are responsible for skin ageing. This ingredient plays a crucial role in protecting the skin from oxidative stress, thereby preserving its youthful appearance.</li><li>Boosters of Hyaluronic Acid and Collagen: These active ingredients are the precursors for the production of hyaluronic acid and collagen, which are compounds that give the skin its anti-ageing properties. By stimulating the natural synthesis of these essential components, the VIVASÔME® complex helps maintain the skin’s firmness and elasticity.</li>"
+    },
+    "section4": {
+      "content": "<li>Hyaluronic Acid: Specifically selected for its low molecular weight, hyaluronic acid penetrates deeply into the skin, replenishing moisture and improving skin texture and resilience. It is instrumental in reducing the appearance of fine lines and wrinkles. This deeply hydrating ingredient is a cornerstone of anti-ageing skincare, providing lasting moisture and a plumping effect. </li><li>Stabilized Vitamin C: This ingredient is a strong antioxidant. It is known to protect the skin from the stress of oxidisation caused by free radicals, generated during the physiological ageing process. Its stabilised form helps prolong its effectiveness.</li>"
+    },
+    "section5": {
+      "h2": "Superior formulation philosophy",
+      "content": "<p>Discover the effectiveness of the VIVASÔME® complex and elevate your skincare routine with scientifically advanced formulations for immediate and long-term anti-ageing benefits.</p>"
+    }
+  },
+  "Contact": {
+    "h2": "Vivacy, expert in hyaluronic acid",
+    "h3": "Contact us",
+    "form": {
+      "lastname": "* Last Name",
+      "firstname": "* First Name",
+      "country": "* Country",
+      "specialisation": "* Specialisation",
+      "email": "* E-mail adress",
+      "subject": "* Subject",
+      "message": "* Message",
+      "submit": "Send"
+    },
+    "legal": "In accordance with applicable regulations, you have a right of access to, a right of rectification and, for legitimate grounds, a right to object to your data being used for commercial marketing purposes, a right of limitation, a right to erasure and a right to the portability of the data you have transmitted to us, by sending a signed and dated letter to Laboratoires VIVACY, 44 rue Paul Valéry 75116 Paris, France or an e-mail to dpo@vivacy.fr. Your application must be accompanied by a copy of your ID document. You may lodge a complaint with the CNIL (France) if you consider your personal data has been breached under the applicable regulations relating to the protection of personal data. For further information, you may consult our Privacy Policy.",
+    "checked": "I agree that the data I have provided will be used by VIVACY for the purpose of contacting me. The data collected in this form will be processed by VIVACY, the data controller, for the following purposes: managing and processing your contact request and commercial marketing via email and phone.. Answers marked with an asterisk (*) are mandatory. If you do not reply, we will not be able to process your request.",
+    "toast": {
+      "title": "Message sent successfully",
+      "description": "We will get back to you as soon as possible.",
+      "error_title": "An error has occurred",
+      "error_description": "An error occurred while sending the form"
+    },
+    "annotation": "<p>Incidents requiring regulatory reporting should be submitted to <a>https://signalement.social-sante.gouv.fr</a>.</p><p>All other incidents can be reported directly to Laboratoires VIVACY at: customer.complaint@vivacy.fr</p>"
+  },
+  "Map": {
+    "title": "Reliable partners across the globe",
+    "sub": "Our global network",
+    "h2": "A network of expertise driving innovation",
+    "h3": "Our subsidiaries worldwide",
+    "subsidiary": {
+      "title": "Subsidiary",
+      "1": "Headquarters: Marketing & Sales",
+      "2": "Factory: Production & Logistics",
+      "3": "Geneva Office",
+      "4": "Moscow Office",
+      "5": "London Office",
+      "6": "Warsaw Poland",
+      "7": "Montreal Office",
+      "8": "Dubai Office",
+      "9": "Italy Office"
+    },
+    "adresses": {
+      "title": "Adresses",
+      "1": "Laboratoires VIVACY<br></br>44 rue Paul Valéry, 75116 Paris, FRANCE",
+      "2": "Laboratoires VIVACY,<br></br>252, rue Douglas Engelbart, Archamps Technopole, <br></br>74160 Archamps, FRANCE",
+      "3": "Vivacy International SA<br></br>13 Rue du Rhône, 1204 Geneva, SWITZERLAND",
+      "4": "ООО «Виваси Лаборатуар»<br></br>Россия – Москва – 127051, Цветной бульвар 26 с.1",
+      "5": "Laboratoires VIVACY LTD,<br></br>14, Berkeley Street, London, W1J 8DX, <br></br>United Kingdom",
+      "6": "LABORATOIRES VIVACY POLSKA SP. Z O.O.<br></br>ul. MOKOTOWSKA 59 Iok, 102<br></br>00-542 Warszawa",
+      "7": "MD Medical Vivacy<br></br>2575, Chomedey Boulevard, Laval, <br></br>QC, H7T 2R2, Canada",
+      "8": "VIVACY DUBAI<br></br>Jumeirah First, Villa 012 – Dubaï, UAE",
+      "9": "Strada Traversante San Leonardo, 13/A - <br></br>43122 Parma, Italia"
+    },
+    "details": {
+      "title": "Contact details",
+      "1": "TEL: +33 (0)1 56 90 08 08",
+      "2": "TEL: +33 (0)4 50 31 71 81",
+      "3": "TEL: +41 (0)22 316 03 72",
+      "4": "TEL: +7 (495) 935-85-53<br></br>MAIL: info@laboratoires-vivacy.ru",
+      "5": "TEL: +44 203 928 9302<br></br>MAIL: contact@vivacylab.co.uk",
+      "6": "TEL : 22/ 886 72 15<br></br>MAIL : marketing@vivacy.pl",
+      "7": "TEL: +1 866 600 5553<br></br>MAIL: md@mdmedical.ca",
+      "8": "TEL: +971 (04) 321 3944<br></br>MAIL: contact@vivacy.ae",
+      "9": "TEL: +39 0521 1411900<br></br>MAIL: informazioni@vivacy.it "
+    },
+    "section2": {
+      "h2": "A network of trusted partners",
+      "h3": "Our global network of distributors"
+    },
+    "distribution": {
+      "titles": {
+        "europe": "Europe",
+        "asia": "Asia",
+        "africa": "Africa",
+        "northAmerica": "North America",
+        "southAmerica": "South America",
+        "oceania": "Oceania"
+      },
+      "europe": "<li>Albania</li><li>Austria</li><li>Belarus</li><li>Belgium</li><li>Bosnia And Herzegovina</li><li>Bulgaria</li><li>Croatia</li><li>Cyprus</li><li>Czech Republic</li><li>Denmark</li><li>Estonia</li><li>Finland</li><li>France</li><li>Georgia</li><li>Germany</li><li>Greece</li><li>Hungary</li><li>Ireland</li><li>Italy</li><li>Latvia</li><li>Lithuania</li><li>Luxembourg</li><li>Macedonia</li><li>Malta</li><li>Moldova</li><li>Netherlands</li><li>Norway</li><li>Poland</li><li>Portugal</li><li>Romania</li><li>Russia</li><li>Serbia</li><li>Slovakia</li><li>Slovenia</li><li>Spain</li><li>Sweden</li><li>Switzerland</li><li>Ukraine</li><li>United Kingdom</li>",
+      "asia": "<li>Azerbaidjan</li><li>Hong-kong</li><li>Indonesia</li><li>Israel</li><li>Japan</li><li>Jordan</li><li>Kazakhstan</li><li>Koweit</li><li>Kyrgyzstan</li><li>Lebanon</li><li>Malaysia</li><li>Oman</li><li>Qatar</li><li>Saudi Arabia</li><li>Singapore</li><li>South Korea</li><li>Taïwan</li><li>Turkey</li><li>United Arab Emirates</li><li>Uzbekistan</li><li>Vietnam</li>",
+      "africa": "<li>Egypt</li><li>Libya</li><li>Morocco</li><li>Tunisia</li>",
+      "northAmerica": "<li>Canada</li><li>Mexico</li>",
+      "southAmerica": "<li>Brazil</li><li>Chile</li><li>Colombia</li><li>Ecuador</li><li>Peru</li>",
+      "oceania": "<li>Australia</li>"
     }
   },
   "NotFoundPage": {

@@ -91,7 +91,7 @@ export default function OurBrands() {
 
   return (
     <main>
-      <section className="relative min-h-[400px] lg:min-h-[550px] grid">
+      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <Image
           src={bgHeader}
           alt=""

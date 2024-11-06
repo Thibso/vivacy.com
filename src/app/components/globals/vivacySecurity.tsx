@@ -11,7 +11,7 @@ import FromTopTitles from "../titles/FromTopTitles";
 export default function VivacySecurity() {
   const t = useTranslations("Global.vivacySecurity");
   return (
-    <section className="relative">
+    <section className="relative z-[1]">
       <Image
         src={bgSection}
         alt=""
