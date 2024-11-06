@@ -39,16 +39,21 @@ export default function ProductsCarousel() {
     <div>
       <AnimatePresence mode="wait" initial={false}>
         <motion.div
+          key={"div"}
           ref={constraintsRef}
           drag="x"
           dragConstraints={constraintsRef}
           className="relative lg:grid lg:grid-cols-2 lg:items-center cursor-pointer"
         >
           <motion.div
+            key={"dragzone"}
             onPanEnd={onPanEnd}
             className="absolute bg-black/0 w-full h-[85%] top-0 left-0 z-[15]"
           ></motion.div>
-          <motion.div className="space-y-8 lg:space-y-20 max-lg:flex max-lg:flex-col max-lg:items-center">
+          <motion.div
+            key={"content"}
+            className="space-y-8 lg:space-y-20 max-lg:flex max-lg:flex-col max-lg:items-center"
+          >
             <div className="space-y-4">
               <motion.div
                 key={"img-" + state}
