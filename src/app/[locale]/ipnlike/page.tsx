@@ -107,7 +107,7 @@ export default function IpnLike() {
         </div>
       </section>
 
-      <section className="relative">
+      <section className="relative z-[1]">
         <Image
           src={bg}
           alt=""

@@ -3,9 +3,14 @@ import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import HeaderSpan from "@/app/components/globals/headerSpan";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
-import bg from "@/app/img/background-grained.jpg";
 import bgHeader from "@/app/img/ipn/ipn-like-technology.jpg";
-import section1First from "@/app/img/ipn/vivacy-ipn-like-technology.jpg";
+import vivacyLogo from "@/app/img/vivacy-laboratories-hyaluronic-acid-france.png";
+import section4 from "@/app/img/vivasome/AdobeStock_503863962_Preview.jpg";
+import bg from "@/app/img/vivasome/bg-vivasome.jpg";
+import section3 from "@/app/img/vivasome/plateau-vivacy-vivasome.png";
+import section5 from "@/app/img/vivasome/vivacy-cosmetics-vivasome.jpg";
+import section2 from "@/app/img/vivasome/vivasome-vivacy-cosmetics.jpg";
+import section1 from "@/app/img/vivasome/vivasome-vivacy-laboratories.jpg";
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -54,7 +59,20 @@ export default function Vivasome() {
         <HeaderSpan content={t("span")} />
       </section>
 
-      <section className="relative">
+      <section className="relative z-[1]">
+        <Image
+          src={vivacyLogo}
+          alt=""
+          quality={75}
+          style={{
+            objectFit: "contain",
+            zIndex: "-1",
+            left: 0,
+            position: "absolute",
+            opacity: 0.05,
+          }}
+          className="max-lg:hidden w-full lg:w-[60%] top-[15%]"
+        />
         <div className="myContainer space-y-8 lg:space-y-28">
           <FromTopTitles
             titleH2={t("section1.h2")}
@@ -62,8 +80,8 @@ export default function Vivasome() {
             h3Classes="text-black"
           />
 
-          <div className="grid grid-cols-12">
-            <div className="col-span-4 space-y-8 lg:space-y-14 py-36">
+          <div className="lg:grid lg:grid-cols-12 max-lg:space-y-8">
+            <div className="lg:col-span-4 space-y-8 lg:space-y-14 lg:py-36">
               <div className="space-y-4">
                 {t.rich("section1.content", {
                   p: (chunks) => <p className="text-lg">{chunks}</p>,
@@ -77,9 +95,9 @@ export default function Vivasome() {
               </div>
             </div>
 
-            <div className="relative col-span-5 col-start-8">
+            <div className="relative lg:col-span-5 lg:col-start-8 max-lg:h-[350px]">
               <Image
-                src={section1First}
+                src={section1}
                 alt=""
                 quality={75}
                 className="object-cover size-full rounded-xl"
@@ -89,11 +107,11 @@ export default function Vivasome() {
         </div>
       </section>
 
-      <section className="relative">
+      <section className="relative z-[1]">
         <Image
           src={bg}
           alt=""
-          quality={75}
+          quality={100}
           fill
           style={{
             objectFit: "cover",
@@ -101,20 +119,21 @@ export default function Vivasome() {
           }}
         />
 
-        <div className="myContainer space-y-28">
+        <div className="myContainer space-y-8 lg:space-y-28">
           <h2 className="h3-perso">{t("section2.h2")}</h2>
 
-          <div className="grid grid-cols-12 gap-x-20">
-            <div className="col-span-7 relative">
+          <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-12 lg:gap-x-20">
+            <div className="col-span-7 relative max-lg:h-[350px]">
               <Image
-                src={section1First}
+                src={section2}
                 alt=""
+                fill
                 quality={75}
                 className="object-cover size-full rounded-xl"
               />
             </div>
 
-            <div className="col-span-5 space-y-8 pt-20">
+            <div className="lg:col-span-5 space-y-8 lg:pt-20">
               <h3 className="h2-perso">{t("section2.h3")}</h3>
 
               <div className="space-y-4">
@@ -139,28 +158,33 @@ export default function Vivasome() {
             h3Classes="text-black"
           />
 
-          <div className="grid grid-cols-2 gap-x-28">
+          <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-2 lg:gap-x-28 lg:items-center">
             <div>
-              <Image src={section1First} alt="" quality={75} className="" />
+              <Image
+                src={section3}
+                alt=""
+                quality={75}
+                className="h-full w-auto object-contain mx-auto"
+              />
             </div>
 
-            <ul className="space-y-4 list-disc ml-4 py-8">
+            <ul className="space-y-4 list-disc ml-4 lg:py-8">
               {t.rich("section3.content", {
                 li: (chunks) => <li className="text-lg">{chunks}</li>,
               })}
             </ul>
           </div>
 
-          <div className="grid grid-cols-2 gap-x-28">
-            <ul className="space-y-4 list-disc ml-4 pt-28 pb-14">
+          <div className="max-lg:space-y-8 lg:grid lg:grid-cols-2 lg:gap-x-28">
+            <ul className="space-y-4 list-disc ml-4 lg:pt-28 lg:pb-14">
               {t.rich("section4.content", {
                 li: (chunks) => <li className="text-lg">{chunks}</li>,
               })}
             </ul>
 
-            <div className="relative">
+            <div className="relative max-lg:h-[350px]">
               <Image
-                src={section1First}
+                src={section4}
                 alt=""
                 quality={75}
                 fill
@@ -172,16 +196,17 @@ export default function Vivasome() {
       </section>
 
       <section>
-        <div className="myContainer grid grid-cols-2 gap-x-28">
-          <div>
+        <div className="myContainer max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-2 lg:gap-x-28">
+          <div className="relative max-lg:h-[350px]">
             <Image
-              src={section1First}
+              src={section5}
               alt=""
               quality={75}
+              fill
               className="object-cover size-full rounded-xl"
             />
           </div>
-          <div className="space-y-14 my-auto">
+          <div className="space-y-8 lg:space-y-14 lg:py-28">
             <h2 className="h2-perso">{t("section5.h2")}</h2>
             <div className="space-y-4">
               {t.rich("section5.content", {

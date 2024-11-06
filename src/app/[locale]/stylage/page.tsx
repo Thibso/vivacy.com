@@ -41,7 +41,7 @@ export default function Stylage() {
 
   return (
     <main>
-      <section className="relative min-h-[400px] lg:min-h-[550px] grid">
+      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <Image
           src={bgHeader}
           alt=""
@@ -60,7 +60,7 @@ export default function Stylage() {
         <HeaderSpan content={t("span")} />
       </section>
 
-      <section className="relative">
+      <section className="relative z-[1]">
         <Image
           src={vivacyLogo}
           alt=""
@@ -163,7 +163,7 @@ export default function Stylage() {
         </div>
       </section>
 
-      <section className="relative">
+      <section className="relative z-[1]">
         <Image
           src={section3Bg}
           alt=""
@@ -194,7 +194,7 @@ export default function Stylage() {
         </div>
       </section>
 
-      <section className="relative">
+      <section className="relative z-[1]">
         <Image
           src={bg}
           alt=""

@@ -105,7 +105,7 @@ export default function VivacyBeauty() {
         </div>
       </section>
 
-      <section className="bg-white z-[1]">
+      <section className="bg-white relative z-[2]">
         <div className="myContainer max-lg:space-y-8 max-lg:pt-0 lg:pr-0 lg:pt-0 lg:grid lg:grid-cols-2 lg:space-y-12">
           <div className="space-y-8 lg:space-y-28 lg:pr-28 lg:pb-20">
             <FromTopTitles
@@ -141,17 +141,17 @@ export default function VivacyBeauty() {
         </div>
       </section>
 
-      <section className="relative">
+      <section className="relative z-[1]">
         <Image
           src={section3}
           alt=""
           quality={100}
+          fill
           style={{
             objectFit: "cover",
             objectPosition: "50% 50%",
             zIndex: "-2",
           }}
-          className="h-full fixed top-0"
         />
 
         <div className="myContainer lg:grid lg:grid-cols-2 ">

@@ -127,7 +127,7 @@ export default function SeringeBiSoft(props: Props) {
 
   return (
     <section ref={ref} className="relative lg:h-[250vh]">
-      <div className="myContainer lg:sticky lg:top-[00px]">
+      <div className="myContainer lg:sticky lg:top-[0px]">
         <div className="titles-container text-center ">
           <motion.h2
             initial={{

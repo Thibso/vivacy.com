@@ -7,6 +7,7 @@ type Props = {
   titleH3: string;
   containerClasses?: string;
   h3Classes?: string;
+  h2Classes?: string;
 };
 
 export default function FromTopTitles(props: Props) {
@@ -31,7 +32,7 @@ export default function FromTopTitles(props: Props) {
           amount: "all",
           once: true,
         }}
-        className="h2-perso"
+        className={`h2-perso ${props.h2Classes ? props.h2Classes : null}`}
       >
         {props.titleH2}
       </motion.h2>
@@ -53,7 +54,7 @@ export default function FromTopTitles(props: Props) {
           once: true,
         }}
         className={`h3-perso text-center ${
-          props.h3Classes ? props.h3Classes : ""
+          props.h3Classes ? props.h3Classes : null
         }`}
       >
         {props.titleH3}

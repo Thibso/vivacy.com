@@ -45,22 +45,22 @@
         "item1": {
           "id": "1",
           "title": "IPN-LIKE®",
-          "path": "#"
+          "path": "/en/ipnlike"
         },
         "item2": {
           "id": "2",
           "title": "BI-SOFT®",
-          "path": "#"
+          "path": "/en/bisoft"
         },
         "item3": {
           "id": "3",
           "title": "Vivasôme",
-          "path": "#"
+          "path": "/en/vivasome"
         },
         "item4": {
           "id": "4",
           "title": "Vivacy Security",
-          "path": "#"
+          "path": "/en/myvivacy"
         }
       },
       "images": {
@@ -87,7 +87,7 @@
         "item3": {
           "id": "3",
           "title": "Dermo-cosmetics: Vivacy Beauty",
-          "path": "#"
+          "path": "/en/beauty"
         },
         "item4": {
           "id": "4",
@@ -129,12 +129,12 @@
         "item1": {
           "id": "1",
           "title": "World map",
-          "path": "#"
+          "path": "/en/map"
         },
         "item2": {
           "id": "2",
           "title": "Contact form",
-          "path": "#"
+          "path": "/en/contact"
         }
       },
       "images": {
@@ -145,6 +145,54 @@
     "carreers": {
       "title": "Carreers",
       "path": "/en/"
+    }
+  },
+  "Footer": {
+    "vivacy": {
+      "title": "Vivacy",
+      "content": {
+        "vivacyAcademy": "Vivacy Academy",
+        "vivacyBeauty": "Vivacy Beauty",
+        "desirial": "Desirial",
+        "desirialPlus": "Desirial Plus",
+        "stylage": "Stylage"
+      },
+      "links": {
+        "vivacyAcademy": "",
+        "vivacyBeauty": "",
+        "desirial": "",
+        "desirialPlus": "",
+        "stylage": ""
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "content": {
+        "blog": "Blog",
+        "faq": "FAQ",
+        "contact": "Contact",
+        "newsletter": "Newsletter"
+      },
+      "links": {
+        "blog": "",
+        "faq": "",
+        "contact": "",
+        "newsletter": ""
+      }
+    },
+    "socials": {
+      "instagram": "",
+      "facebook": "",
+      "linkedin": "",
+      "twitter": "",
+      "youtube": ""
+    },
+    "legals": {
+      "copyright": "© Laboratoires Vivacy Paris - 2024",
+      "notice": "legal notice",
+      "notice_link": "",
+      "confidentiality": "confidentiality",
+      "confidentiality_link": ""
     }
   },
   "HomePage": {
@@ -591,6 +639,91 @@
     "section5": {
       "h2": "Superior formulation philosophy",
       "content": "<p>Discover the effectiveness of the VIVASÔME® complex and elevate your skincare routine with scientifically advanced formulations for immediate and long-term anti-ageing benefits.</p>"
+    }
+  },
+  "Contact": {
+    "h2": "Vivacy, expert in hyaluronic acid",
+    "h3": "Contact us",
+    "form": {
+      "lastname": "* Last Name",
+      "firstname": "* First Name",
+      "country": "* Country",
+      "specialisation": "* Specialisation",
+      "email": "* E-mail adress",
+      "subject": "* Subject",
+      "message": "* Message",
+      "submit": "Send"
+    },
+    "legal": "In accordance with applicable regulations, you have a right of access to, a right of rectification and, for legitimate grounds, a right to object to your data being used for commercial marketing purposes, a right of limitation, a right to erasure and a right to the portability of the data you have transmitted to us, by sending a signed and dated letter to Laboratoires VIVACY, 44 rue Paul Valéry 75116 Paris, France or an e-mail to dpo@vivacy.fr. Your application must be accompanied by a copy of your ID document. You may lodge a complaint with the CNIL (France) if you consider your personal data has been breached under the applicable regulations relating to the protection of personal data. For further information, you may consult our Privacy Policy.",
+    "checked": "I agree that the data I have provided will be used by VIVACY for the purpose of contacting me. The data collected in this form will be processed by VIVACY, the data controller, for the following purposes: managing and processing your contact request and commercial marketing via email and phone.. Answers marked with an asterisk (*) are mandatory. If you do not reply, we will not be able to process your request.",
+    "toast": {
+      "title": "Message sent successfully",
+      "description": "We will get back to you as soon as possible.",
+      "error_title": "An error has occurred",
+      "error_description": "An error occurred while sending the form"
+    },
+    "annotation": "<p>Incidents requiring regulatory reporting should be submitted to <a>https://signalement.social-sante.gouv.fr</a>.</p><p>All other incidents can be reported directly to Laboratoires VIVACY at: customer.complaint@vivacy.fr</p>"
+  },
+  "Map": {
+    "title": "Reliable partners across the globe",
+    "sub": "Our global network",
+    "h2": "A network of expertise driving innovation",
+    "h3": "Our subsidiaries worldwide",
+    "subsidiary": {
+      "title": "Subsidiary",
+      "1": "Headquarters: Marketing & Sales",
+      "2": "Factory: Production & Logistics",
+      "3": "Geneva Office",
+      "4": "Moscow Office",
+      "5": "London Office",
+      "6": "Warsaw Poland",
+      "7": "Montreal Office",
+      "8": "Dubai Office",
+      "9": "Italy Office"
+    },
+    "adresses": {
+      "title": "Adresses",
+      "1": "Laboratoires VIVACY<br></br>44 rue Paul Valéry, 75116 Paris, FRANCE",
+      "2": "Laboratoires VIVACY,<br></br>252, rue Douglas Engelbart, Archamps Technopole, <br></br>74160 Archamps, FRANCE",
+      "3": "Vivacy International SA<br></br>13 Rue du Rhône, 1204 Geneva, SWITZERLAND",
+      "4": "ООО «Виваси Лаборатуар»<br></br>Россия – Москва – 127051, Цветной бульвар 26 с.1",
+      "5": "Laboratoires VIVACY LTD,<br></br>14, Berkeley Street, London, W1J 8DX, <br></br>United Kingdom",
+      "6": "LABORATOIRES VIVACY POLSKA SP. Z O.O.<br></br>ul. MOKOTOWSKA 59 Iok, 102<br></br>00-542 Warszawa",
+      "7": "MD Medical Vivacy<br></br>2575, Chomedey Boulevard, Laval, <br></br>QC, H7T 2R2, Canada",
+      "8": "VIVACY DUBAI<br></br>Jumeirah First, Villa 012 – Dubaï, UAE",
+      "9": "Strada Traversante San Leonardo, 13/A - <br></br>43122 Parma, Italia"
+    },
+    "details": {
+      "title": "Contact details",
+      "1": "TEL: +33 (0)1 56 90 08 08",
+      "2": "TEL: +33 (0)4 50 31 71 81",
+      "3": "TEL: +41 (0)22 316 03 72",
+      "4": "TEL: +7 (495) 935-85-53<br></br>MAIL: info@laboratoires-vivacy.ru",
+      "5": "TEL: +44 203 928 9302<br></br>MAIL: contact@vivacylab.co.uk",
+      "6": "TEL : 22/ 886 72 15<br></br>MAIL : marketing@vivacy.pl",
+      "7": "TEL: +1 866 600 5553<br></br>MAIL: md@mdmedical.ca",
+      "8": "TEL: +971 (04) 321 3944<br></br>MAIL: contact@vivacy.ae",
+      "9": "TEL: +39 0521 1411900<br></br>MAIL: informazioni@vivacy.it "
+    },
+    "section2": {
+      "h2": "A network of trusted partners",
+      "h3": "Our global network of distributors"
+    },
+    "distribution": {
+      "titles": {
+        "europe": "Europe",
+        "asia": "Asia",
+        "africa": "Africa",
+        "northAmerica": "North America",
+        "southAmerica": "South America",
+        "oceania": "Oceania"
+      },
+      "europe": "<li>Albania</li><li>Austria</li><li>Belarus</li><li>Belgium</li><li>Bosnia And Herzegovina</li><li>Bulgaria</li><li>Croatia</li><li>Cyprus</li><li>Czech Republic</li><li>Denmark</li><li>Estonia</li><li>Finland</li><li>France</li><li>Georgia</li><li>Germany</li><li>Greece</li><li>Hungary</li><li>Ireland</li><li>Italy</li><li>Latvia</li><li>Lithuania</li><li>Luxembourg</li><li>Macedonia</li><li>Malta</li><li>Moldova</li><li>Netherlands</li><li>Norway</li><li>Poland</li><li>Portugal</li><li>Romania</li><li>Russia</li><li>Serbia</li><li>Slovakia</li><li>Slovenia</li><li>Spain</li><li>Sweden</li><li>Switzerland</li><li>Ukraine</li><li>United Kingdom</li>",
+      "asia": "<li>Azerbaidjan</li><li>Hong-kong</li><li>Indonesia</li><li>Israel</li><li>Japan</li><li>Jordan</li><li>Kazakhstan</li><li>Koweit</li><li>Kyrgyzstan</li><li>Lebanon</li><li>Malaysia</li><li>Oman</li><li>Qatar</li><li>Saudi Arabia</li><li>Singapore</li><li>South Korea</li><li>Taïwan</li><li>Turkey</li><li>United Arab Emirates</li><li>Uzbekistan</li><li>Vietnam</li>",
+      "africa": "<li>Egypt</li><li>Libya</li><li>Morocco</li><li>Tunisia</li>",
+      "northAmerica": "<li>Canada</li><li>Mexico</li>",
+      "southAmerica": "<li>Brazil</li><li>Chile</li><li>Colombia</li><li>Ecuador</li><li>Peru</li>",
+      "oceania": "<li>Australia</li>"
     }
   },
   "NotFoundPage": {
