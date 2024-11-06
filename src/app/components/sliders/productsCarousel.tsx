@@ -127,6 +127,7 @@ export default function ProductsCarousel() {
             (step, index) => {
               return (
                 <Circle
+                  key={"circle-" + index}
                   onClick={() => setState(index)}
                   className={`${
                     state === index ? "fill-blue" : ""
