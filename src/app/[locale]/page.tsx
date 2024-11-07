@@ -37,6 +37,27 @@ export default function Home() {
   const t = useTranslations("HomePage");
   return (
     <main>
+      <section className="h-[100vh] relative z-[1] grid pb-6">
+        <video
+          className="absolute w-full-full top-0 left-1/2 -translate-x-1/2 object-cover -z-[1]"
+          autoPlay
+          muted
+          playsInline
+          loop
+        >
+          <source
+            src="/videos/vivacy-laboratories-video-presentation.mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        <div className="m-auto mb-0 space-y-8">
+          <h1 className="h3-perso text-white text-center">{t("title")}</h1>
+          <span className="block max-lg:text-center max-lg:w-[60%] bg-whiteGrey/50 py-3 px-8 rounded-full uppercase text-sm text-blue backdrop-blur-sm">
+            {t("span")}
+          </span>
+        </div>
+      </section>
       <section className="relative z-[1]">
         <Image
           src={haPower}
