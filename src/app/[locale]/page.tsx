@@ -39,7 +39,7 @@ export default function Home() {
     <main>
       <section className="h-[100vh] relative z-[1] grid pb-6">
         <video
-          className="absolute w-full-full top-0 left-1/2 -translate-x-1/2 object-cover -z-[1]"
+          className="absolute size-full top-0 left-1/2 -translate-x-1/2 object-cover -z-[1]"
           autoPlay
           muted
           playsInline
