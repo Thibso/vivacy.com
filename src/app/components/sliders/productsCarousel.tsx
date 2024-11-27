@@ -43,6 +43,7 @@ export default function ProductsCarousel() {
           ref={constraintsRef}
           drag="x"
           dragConstraints={constraintsRef}
+          dragElastic={1}
           className="relative lg:grid lg:grid-cols-2 lg:items-center cursor-pointer"
         >
           <motion.div

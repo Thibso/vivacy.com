@@ -19,15 +19,15 @@ export default function SyringeRotate() {
     restDelta: 0.001,
   });
 
-  const rotateProgresse = useTransform(scaleY, [0, 0.4], [0, -180]);
-  const opacityProgress = useTransform(scaleY, [0.7, 0.85], [1, 0]);
+  const rotateProgresse = useTransform(scaleY, [0, 0.3], [0, -180]);
+  const opacityProgress = useTransform(scaleY, [0.6, 0.7], [1, 0]);
   const displayProgress = useTransform(
     scaleY,
-    [0, 0.7, 0.85, 1],
-    [51, 51, 51, -10]
+    [0, 0.7, 0.75, 1],
+    [51, 51, -1, -10]
   );
-  const translateXProgress = useTransform(scaleY, [0.5, 0.7], ["0", "60%"]);
-  const scaleProgress = useTransform(scaleY, [0.65, 0.85], [1, 1.5]);
+  const translateXProgress = useTransform(scaleY, [0.35, 0.55], ["0", "60%"]);
+  const scaleProgress = useTransform(scaleY, [0.5, 0.7], [1, 1.5]);
 
   return (
     <motion.section

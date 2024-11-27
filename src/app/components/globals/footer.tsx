@@ -12,14 +12,14 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="sticky bottom-0 -z-[1] pt-20">
-      <div className="px-5 lg:px-20 grid grid-cols-3">
-        <div className="grid grid-cols-2 gap-x-8">
+    <footer className="sticky bottom-0 z-[1] pt-8 lg:pt-20">
+      <div className="px-5 lg:px-20 lg:grid lg:grid-cols-3">
+        <div className="grid grid-cols-2 lg:gap-x-8 sm:w-[60%] lg:w-full sm:mx-auto sm:text-center lg:text-left">
           <div className="space-y-4">
             <h4 className="text-blue uppercase">{t("vivacy.title")}</h4>
             <ul className="space-y-2">
-              <li>
-                <a href={t("vivacy.links.vivacyAcademy")}>
+              <li className="cursor-pointer">
+                <a className="block" href={t("vivacy.links.vivacyAcademy")}>
                   {t("vivacy.content.vivacyAcademy")}
                 </a>
               </li>
@@ -71,15 +71,23 @@ export default function Footer() {
         </div>
 
         <div>
-          <Image src={logo} alt="" className="w-auto h-[100px] mx-auto" />
+          <Image
+            src={logo}
+            alt=""
+            className="max-lg:hidden w-auto h-[100px] mx-auto"
+          />
         </div>
 
         <div>
-          <Image src={map} alt="" className="" />
+          <Image
+            src={map}
+            alt=""
+            className="max-sm:w-[100%] max-lg:w-[70%] max-lg:mx-auto"
+          />
         </div>
       </div>
 
-      <div className="flex gap-x-6 justify-center pb-24">
+      <div className="flex gap-x-6 justify-center pb-8 lg:pb-24">
         <a href={t("socials.instagram")}>
           <Image src={instagram} alt="" className="size-8 object-contain" />
         </a>
@@ -97,7 +105,7 @@ export default function Footer() {
         </a>
       </div>
 
-      <div className="bg-blue px-8 py-3 text-white flex justify-center gap-x-8">
+      <div className="bg-blue px-8 py-3 text-white flex max-lg:flex-wrap justify-center gap-2 lg:gap-x-8">
         <span>{t("legals.copyright")}</span>
         <a href={t("legals.notice_link")}>{t("legals.notice")}</a>
         <a href={t("legals.confidentiality_link")}>

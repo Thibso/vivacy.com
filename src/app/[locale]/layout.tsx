@@ -48,7 +48,7 @@ export default async function LocaleLayout({
         <NavBar localeActive={locale} />
 
         <NextIntlClientProvider messages={messages}>
-          <div className="bg-white">{children}</div>
+          <div className="bg-white relative z-[2]">{children}</div>
         </NextIntlClientProvider>
 
         <Footer />

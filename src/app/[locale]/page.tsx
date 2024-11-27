@@ -2,6 +2,8 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import BlueButton from "../components/buttons/BlueButton";
 import WhiteButton from "../components/buttons/WhiteButton";
+import IncrementNumber from "../components/globals/testNumbers";
+import WorldMap from "../components/globals/worldMap";
 import SyringeRotate from "../components/scrollEffects/SyringeRotate";
 import LogoSlider from "../components/sliders/LogoSlider";
 import ProductsCarousel from "../components/sliders/productsCarousel";
@@ -147,30 +149,34 @@ export default function Home() {
           <div className="max-lg:space-y-14 lg:grid lg:grid-cols-4 lg:gap-20">
             <div className="text-center">
               <p>
-                <span className="font-bold text-3xl">x</span>
-                <span className="font-bold text-7xl ml-2">5</span>
+                <IncrementNumber number={15} />
               </p>
               <p className="mt-4 lg:mt-14">{t("section3.keyNumbers.1")}</p>
             </div>
 
             <div className="text-center">
               <p>
-                <span className="font-bold text-3xl">+</span>
-                <span className="font-bold text-7xl ml-2">20%</span>
+                <IncrementNumber number={85} speed={37.5} />
               </p>
               <p className="mt-4 lg:mt-14">{t("section3.keyNumbers.2")}</p>
             </div>
 
             <div className="text-center">
               <p>
-                <span className="font-bold text-7xl ml-2">80</span>
+                <IncrementNumber number={1} />
+                <span className="font-bold text-3xl -top-[1em] relative">
+                  st
+                </span>
               </p>
               <p className="mt-4 lg:mt-14">{t("section3.keyNumbers.3")}</p>
             </div>
 
             <div className="text-center">
               <p>
-                <span className="font-bold text-7xl ml-2">5</span>
+                <IncrementNumber number={1} />
+                <span className="font-bold text-3xl -top-[1em] relative">
+                  st
+                </span>
               </p>
               <p className="mt-4 lg:mt-14">{t("section3.keyNumbers.4")}</p>
             </div>
@@ -256,10 +262,11 @@ export default function Home() {
           }}
         />
         <div className="myContainer space-y-14 lg:space-y-28">
-          <div className="titles-container w-full">
-            <h2 className="h2-perso">{t("section5.h2")}</h2>
-            <h3 className="h3-perso">{t("section5.h3")}</h3>
-          </div>
+          <FromTopTitles
+            titleH2={t("section5.h2")}
+            titleH3={t("section5.h3")}
+            h3Classes="text-black"
+          />
 
           {/* SLIDER COMPONENTS */}
           <ProductsCarousel />
@@ -267,11 +274,12 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="myContainer space-y-28 flex flex-col items-center">
-          <div className="titles-container">
-            <h2 className="h2-perso">{t("section6.h2")}</h2>
-            <h3 className="h3-perso">{t("section6.h3")}</h3>
-          </div>
+        <div className="myContainer space-y-28 flex flex-col items-center overflow-hidden">
+          <FromTopCenteredTitles
+            titleH2={t("section6.h2")}
+            titleH3={t("section6.h3")}
+            h3Classes="text-black"
+          />
 
           <LogoSlider />
 
@@ -279,6 +287,18 @@ export default function Home() {
             content={t("section6.button")}
             path={t("section6.buttonPath")}
           />
+        </div>
+      </section>
+
+      <section className="border-b-2 border-blue">
+        <div className="myContainer pt-0 lg:pl-8 space-y-14 lg:space-y-20">
+          <FromTopCenteredTitles
+            titleH2={t("section7.h2")}
+            titleH3={t("section7.h3")}
+            h3Classes="text-black"
+          />
+          <p className="lg:w-[50%] mx-auto text-center">{t("section7.text")}</p>
+          <WorldMap />
         </div>
       </section>
     </main>

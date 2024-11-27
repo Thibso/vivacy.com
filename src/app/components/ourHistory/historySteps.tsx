@@ -20,20 +20,32 @@ type Props = {
 
 export default function HistorySteps(props: Props) {
   // STEPS
-  const steps = Array.from({ length: 7 }, (_, i) => i + 1);
+  const steps = Array.from({ length: 9 }, (_, i) => i + 1);
   const stepPosition = 100 / (steps.length - 1);
   const imagePosition = 100 / steps.length;
 
   // STEPS VALUE
-  const years = ["2007", "2008", "2010", "2012", "2015", "2018", "2023"];
+  const years = [
+    "2007",
+    "2008",
+    "2010",
+    "2013",
+    "2015",
+    "2017",
+    "2018",
+    "2020",
+    "2021",
+  ];
   const achievements = [
     "Creation of the Laboratoires VIVACY.",
     "First CE marking of STYLAGE® products.",
-    "Creation of the Laboratoires VIVACY.",
-    "First CE marking of STYLAGE® products.",
-    "Creation of the Laboratoires VIVACY.",
-    "First CE marking of STYLAGE® products.",
-    "Creation of the Laboratoires VIVACY.",
+    "Launch of STYLAGE® HydroMax.",
+    "Opening of the new production site in Archamps.",
+    "Launch of a premium dermo-cosmetics range",
+    "Launch of « MY VIVACY » application.",
+    "Launch of a new-generation injection delivery system, Bi-SOFT® Injection Technology.",
+    "Launch of new perfume range, DESIRIAL® Paris and the new VIVACY dermo-cosmetics range.",
+    "Launch of STYLAGE® Lips Plus and dermo-cosmetic range for men, Monsieur Skin Care®",
   ];
 
   // SCROLL SETTINGS
@@ -67,7 +79,7 @@ export default function HistorySteps(props: Props) {
 
   return (
     <section
-      style={{ height: 100 * steps.length - 1 + "vh" }}
+      style={{ height: 70 * steps.length - 1 + "vh" }}
       className="relative"
       ref={ref}
     >
@@ -126,6 +138,22 @@ export default function HistorySteps(props: Props) {
             <li className="h-full w-[65vw]">
               <Image
                 src={img2}
+                alt=""
+                quality={50}
+                className="size-full object-cover"
+              />
+            </li>
+            <li className="h-full w-[65vw]">
+              <Image
+                src={img1}
+                alt=""
+                quality={50}
+                className="size-full object-cover"
+              />
+            </li>
+            <li className="h-full w-[65vw]">
+              <Image
+                src={img1}
                 alt=""
                 quality={50}
                 className="size-full object-cover"

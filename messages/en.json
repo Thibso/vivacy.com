@@ -2,7 +2,7 @@
   "Navigation": {
     "about": {
       "title": "About us",
-      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
+      "content": "Explore Laboratoires VIVACY: our expertise in aesthetic and anti-aging medicine, our premium product ranges, our commitment to innovation and safety, as well as our latest news and social initiatives. Discover our dedication to excellence and well-being.",
       "items": {
         "item1": {
           "id": "1",
@@ -31,16 +31,16 @@
         }
       },
       "images": {
-        "1": "/images/nav/image-1.jpg",
-        "2": "/images/nav/image-2.jpg",
+        "1": "/images/nav/about-us/vivacy-history.jpg",
+        "2": "/images/nav/about-us/vivacy-brands.jpg",
         "3": "/images/nav/image-1.jpg",
-        "4": "/images/nav/image-1.jpg",
-        "5": "/images/nav/image-1.jpg"
+        "4": "/images/nav/about-us/commitments-vivacy.jpg",
+        "5": "/images/nav/about-us/vivacy-news.jpg"
       }
     },
     "innovations": {
-      "title": "Innovations",
-      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
+      "title": "Technologies",
+      "content": "Explore Laboratoires VIVACY’s latest innovations: IPN-LIKE® for advanced formulations, Bi-SOFT for enhanced precision, VIVASÔME for cutting-edge skincare, and VIVACY SECURITY for guaranteed product authenticity. Discover how these technologies are transforming aesthetics and ensuring exceptional quality.",
       "items": {
         "item1": {
           "id": "1",
@@ -64,15 +64,15 @@
         }
       },
       "images": {
-        "1": "/images/nav/image-1.jpg",
-        "2": "/images/nav/image-2.jpg",
+        "1": "/images/nav/technologies/bisoft.jpg",
+        "2": "/images/nav/technologies/ipnlike.jpg",
         "3": "/images/nav/image-1.jpg",
-        "4": "/images/nav/image-1.jpg"
+        "4": "/images/nav/technologies/myvivacy.jpg"
       }
     },
     "products": {
-      "title": "Products",
-      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
+      "title": "Brands",
+      "content": "Discover Laboratoires VIVACY’s brands: STYLAGE® for aesthetic medicine, DESIRIAL® for intimate medicine, VIVACY BEAUTY for premium skincare, and MY VIVACY for product authenticity and safety.",
       "items": {
         "item1": {
           "id": "1",
@@ -88,27 +88,21 @@
           "id": "3",
           "title": "Dermo-cosmetics: Vivacy Beauty",
           "path": "/en/beauty"
-        },
-        "item4": {
-          "id": "4",
-          "title": "Mobile application: MyVivacy",
-          "path": "/en/myvivacy"
         }
       },
       "images": {
-        "1": "/images/nav/image-1.jpg",
-        "2": "/images/nav/image-2.jpg",
-        "3": "/images/nav/image-1.jpg",
-        "4": "/images/nav/image-1.jpg"
+        "1": "/images/nav/brands/stylage.jpg",
+        "2": "/images/nav/brands/desirial.jpg",
+        "3": "/images/nav/brands/vivacy-beauty.jpg"
       }
     },
     "professionals": {
       "title": "Healthcare professionals",
-      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
+      "content": "Explore our dedicated section for healthcare professionals. Access the VIVACY ACADEMY platform to benefit from specialized training and exclusive resources. Learn how VIVACY ACADEMY can enhance your skills and support your professional development.",
       "items": {
         "item1": {
           "id": "1",
-          "title": "Training platform: Vivacy Academy",
+          "title": "HCPs PORTAL",
           "path": "#"
         },
         "item2": {
@@ -118,27 +112,27 @@
         }
       },
       "images": {
-        "1": "/images/nav/image-1.jpg",
+        "1": "/images/nav/professionals/portals.jpg",
         "2": "/images/nav/image-2.jpg"
       }
     },
     "contact": {
       "title": "Contact",
-      "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna",
+      "content": "Get in touch through our contact form and explore our global network. Discover how our international presence ensures that our advanced aesthetic solutions are accessible wherever you are.",
       "items": {
         "item1": {
           "id": "1",
-          "title": "World map",
+          "title": "Our global network",
           "path": "/en/map"
         },
         "item2": {
           "id": "2",
-          "title": "Contact form",
+          "title": "Contact us",
           "path": "/en/contact"
         }
       },
       "images": {
-        "1": "/images/nav/image-1.jpg",
+        "1": "/images/nav/contact/contact.jpg",
         "2": "/images/nav/image-2.jpg"
       }
     },
@@ -158,7 +152,7 @@
         "stylage": "Stylage"
       },
       "links": {
-        "vivacyAcademy": "",
+        "vivacyAcademy": "/en/#",
         "vivacyBeauty": "",
         "desirial": "",
         "desirialPlus": "",
@@ -217,10 +211,10 @@
       "h2": "Vivacy outstanding performance",
       "h3": "Key figures",
       "keyNumbers": {
-        "1": "In 10 years, the production capacity has increased by a factor of 5 (3 million syringes per year)",
-        "2": "Sales growth of over 20% per year for 15 years",
-        "3": "More than 80 countries 80% of sales generated outside France",
-        "4": "Top 5 hyaluronic acid manufacturers worldwide"
+        "1": "15 patent families",
+        "2": "Present in over 85 countries globally",
+        "3": "Enriched HA-based dermal fillers",
+        "4": "1st injectable hyaluronic acid gel developed for women’s intimate health*"
       },
       "button": "See more",
       "buttonPath": "/#"
@@ -242,6 +236,11 @@
       "h3": "Our brands",
       "button": "Learn more",
       "buttonPath": "/#"
+    },
+    "section7": {
+      "h2": "Reliable partners across the globe",
+      "h3": "Our global network",
+      "text": "Explore this global map to discover our international subsidiaries. VIVACY is committed to global expansion, providing advanced solutions in aesthetic medicine worldwide. With strategically located offices and a global distribution network, VIVACY is at your service wherever you are. Whether you’re a healthcare professional or a patient, our global presence ensures easy access to high-quality products and services. Check out this map to locate your local subsidiary."
     }
   },
   "Global": {
