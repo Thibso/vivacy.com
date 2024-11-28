@@ -15,7 +15,7 @@ export default function MobileNavItem(props: Props) {
     <li className="space-y-2">
       <span
         onClick={() => setIsOpen(!isOpen)}
-        className="uppercase text-lg cursor-pointer flex gap-x-2"
+        className="uppercase text-lg cursor-pointer flex w-full justify-between gap-x-2"
       >
         {props.title}
         <ChevronDown
