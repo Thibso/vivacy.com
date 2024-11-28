@@ -1,11 +1,11 @@
 "use client";
 
+import bgVivacy from "@/app/img/vivacy-laboratories-hyaluronic-acid-france.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { useMediaQuery } from "react-responsive";
 import logo from "../../img/logo-vivacy-white.png";
 import MobileNavItem from "./MobileNavItem";
 import NavItem from "./NavItem";
@@ -54,10 +54,6 @@ type Props = {
 };
 
 export default function NavList(props: Props) {
-  const isDesktop = useMediaQuery({
-    query: "(min-width: 1024px)",
-  });
-
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -216,6 +212,7 @@ export default function NavList(props: Props) {
           </a>
         </li>
       </ul>
+
       <div className="block lg:hidden">
         <Menu
           color="white"
@@ -231,6 +228,12 @@ export default function NavList(props: Props) {
               exit={{ opacity: 0, bottom: "500px" }}
               className={`fixed flex flex-col top-8 left-[1.25%] right-[1.25%] bottom-8 bg-blue rounded-[44px] px-8 py-5`}
             >
+              <Image
+                src={bgVivacy}
+                alt=""
+                fill
+                className="absolute size-full object-cover -z-[1] invert opacity-5"
+              />
               <div className="flex justify-between">
                 <Link href={"/"}>
                   <Image
@@ -250,7 +253,7 @@ export default function NavList(props: Props) {
                 />
               </div>
 
-              <ul className="text-white my-8 flex flex-col items-end gap-y-4 max-h-[70vh] overflow-scroll">
+              <ul className="text-white my-8 flex flex-col gap-y-4 max-h-[70vh] overflow-scroll">
                 <MobileNavItem
                   title={props.about.title}
                   items={[
