@@ -85,7 +85,7 @@ export default function IpnLike() {
 
             <div className="space-y-4">
               {t.rich("section1.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
               })}
             </div>
@@ -130,9 +130,9 @@ export default function IpnLike() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-x-20 max-lg:space-y-8">
             <div className="space-y-4 lg:py-14">
               {t.rich("section2.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 ul: (chunks) => <ul className="list-disc ml-4">{chunks}</ul>,
-                li: (chunks) => <li className="text-lg">{chunks}</li>,
+                li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
                 sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
               })}
             </div>
@@ -158,7 +158,7 @@ export default function IpnLike() {
             <div className="space-y-8 lg:space-y-14 lg:py-8">
               <div className="space-y-4">
                 {t.rich("section3.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
 
@@ -166,7 +166,7 @@ export default function IpnLike() {
 
               <div className="space-y-4">
                 {t.rich("section4.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
 

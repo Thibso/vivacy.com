@@ -17,7 +17,7 @@ export default function AccordionItem(props: Props) {
       <div
         className={`${
           active ? "bg-blue text-white" : null
-        } flex justify-between items-center uppercase text-lg font-bold px-4 lg:px-8 py-2 cursor-pointer transition-all duration-300`}
+        } flex justify-between items-center uppercase lg:text-lg font-bold px-4 lg:px-8 py-2 cursor-pointer transition-all duration-300`}
         onClick={() => setActive(!active)}
       >
         <span>{props.title}</span>

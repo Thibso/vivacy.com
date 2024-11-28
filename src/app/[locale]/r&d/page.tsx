@@ -119,7 +119,7 @@ export default function OurCommitments() {
               </div>
             </div>
             <div className="col-span-5 max-lg:mt-8 lg:py-32">
-              <p className="text-lg">{t("section1.content")}</p>
+              <p className="lg:text-lg">{t("section1.content")}</p>
             </div>
           </div>
         </div>
@@ -142,9 +142,9 @@ export default function OurCommitments() {
             <FromTopTitles
               titleH2={t("section2.h2")}
               titleH3={t("section2.h3")}
-              h3Classes="text-white"
+              h3Classes="lg:text-white"
             />
-            <p className="text-blue text-lg">{t("section2.content")}</p>
+            <p className="text-blue lg:text-lg">{t("section2.content")}</p>
           </div>
         </div>
       </section>
@@ -172,7 +172,7 @@ export default function OurCommitments() {
                 />
                 <div className="space-y-4 lg:w-[80%]">
                   {t.rich("section3.first.content", {
-                    p: (chunks) => <p className="text-lg">{chunks}</p>,
+                    p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                   })}
                 </div>
               </div>
@@ -185,7 +185,7 @@ export default function OurCommitments() {
                 />
                 <div className="space-y-4 lg:w-[80%]">
                   {t.rich("section3.second.content", {
-                    p: (chunks) => <p className="text-lg">{chunks}</p>,
+                    p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                   })}
                 </div>
               </div>
@@ -227,7 +227,7 @@ export default function OurCommitments() {
               />
               <div className="space-y-4 lg:w-[70%]">
                 {t.rich("section4.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
             </div>

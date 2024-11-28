@@ -57,9 +57,12 @@ export default function Contact() {
             <div className="lg:col-span-4 lg:my-auto">
               <div className="space-y-4 text-center">
                 {t.rich("annotation", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                   a: (chunks) => (
-                    <a href={chunks?.toString()} className="text-lg underline">
+                    <a
+                      href={chunks?.toString()}
+                      className="lg:text-lg underline"
+                    >
                       {chunks}
                     </a>
                   ),

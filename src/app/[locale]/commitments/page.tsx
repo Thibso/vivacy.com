@@ -104,7 +104,7 @@ export default function OurCommitments() {
                   <h4 className="text-lg font-semibold text-center uppercase text-blue">
                     {value[1]}
                   </h4>
-                  <p className="text-center">{value[2]}</p>
+                  <p className="text-center lg:text-lg">{value[2]}</p>
                 </div>
               );
             })}
@@ -153,7 +153,7 @@ export default function OurCommitments() {
             </div>
             <div className="lg:myContainer space-y-4">
               {t.rich("section2.first.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
             </div>
           </div>
@@ -169,7 +169,7 @@ export default function OurCommitments() {
 
               <div className="space-y-4">
                 {t.rich("section2.second.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
             </div>
@@ -204,7 +204,7 @@ export default function OurCommitments() {
               />
               <div className="space-y-4">
                 {t.rich("section2.third.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
             </div>
@@ -221,7 +221,7 @@ export default function OurCommitments() {
               />
               <div className="space-y-4">
                 {t.rich("section2.third.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
             </div>

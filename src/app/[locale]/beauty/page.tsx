@@ -98,7 +98,7 @@ export default function VivacyBeauty() {
 
             <div className="space-y-4">
               {t.rich("section1.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function VivacyBeauty() {
 
             <div className="space-y-4">
               {t.rich("section2.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
             </div>
 
@@ -164,7 +164,7 @@ export default function VivacyBeauty() {
 
             <div className="space-y-4">
               {t.rich("section3.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
             </div>
 
@@ -197,7 +197,7 @@ export default function VivacyBeauty() {
             <div className="lg:col-span-1 lg:py-28">
               <div className="space-y-4">
                 {t.rich("section4.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
             </div>

@@ -129,7 +129,7 @@ export default function BrandsDescriptions(props: Props) {
             >
               {props.texts[brand].content.map((p, index) => {
                 return (
-                  <p key={"p" + index} className="text-lg">
+                  <p key={"p" + index} className="lg:text-lg">
                     {p}
                   </p>
                 );

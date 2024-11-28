@@ -84,7 +84,7 @@ export default function Desirial() {
 
             <div className="space-y-4 mx-auto text-center lg:w-[60%]">
               {t.rich("section1.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function Desirial() {
               />
               <div className="space-y-4 lg:w-[80%]">
                 {t.rich("section2.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
 
@@ -141,11 +141,11 @@ export default function Desirial() {
             <FromTopTitles
               titleH2={t("section3.h2")}
               titleH3={t("section3.h3")}
-              h3Classes="text-white"
+              h3Classes="lg:text-white"
             />
             <div className="xl:w-[70%]">
               {t.rich("section3.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
             </div>
             <div className="max-lg:flex max-lg:justify-center">
@@ -195,7 +195,7 @@ export default function Desirial() {
             <div className="col-span-5 col-start-8 space-y-14 lg:py-4">
               <div className="space-y-4">
                 {t.rich("section4.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
               <div className="max-lg:flex max-lg:justify-center">
@@ -216,8 +216,9 @@ export default function Desirial() {
             objectFit: "cover",
             zIndex: "-1",
           }}
+          className="max-lg:hidden"
         />
-        <div className="myContainer max-lg:space-y-8">
+        <div className="myContainer max-lg:pt-0 max-lg:space-y-8">
           <FromTopTitles
             titleH2={t("section5.h2")}
             titleH3={t("section5.h3")}
@@ -228,7 +229,7 @@ export default function Desirial() {
             <div className="lg:col-span-6 lg:flex lg:flex-col lg:justify-around max-lg:space-y-8">
               <div className="space-y-4">
                 {t.rich("section5.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
               <div className="max-lg:flex max-lg:justify-center">

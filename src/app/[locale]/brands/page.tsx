@@ -134,7 +134,7 @@ export default function OurBrands() {
 
             <div className="space-y-4">
               {t.rich("section1.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
             </div>
           </div>

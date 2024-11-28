@@ -112,22 +112,22 @@ export default function Contact() {
 
           <Accordion
             europe={t.rich("distribution.europe", {
-              li: (chunks) => <li className="text-lg">{chunks}</li>,
+              li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
             })}
             asia={t.rich("distribution.asia", {
-              li: (chunks) => <li className="text-lg">{chunks}</li>,
+              li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
             })}
             africa={t.rich("distribution.africa", {
-              li: (chunks) => <li className="text-lg">{chunks}</li>,
+              li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
             })}
             northAmerica={t.rich("distribution.northAmerica", {
-              li: (chunks) => <li className="text-lg">{chunks}</li>,
+              li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
             })}
             southAmerica={t.rich("distribution.southAmerica", {
-              li: (chunks) => <li className="text-lg">{chunks}</li>,
+              li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
             })}
             oceania={t.rich("distribution.oceania", {
-              li: (chunks) => <li className="text-lg">{chunks}</li>,
+              li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
             })}
           />
         </div>

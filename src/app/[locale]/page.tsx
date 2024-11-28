@@ -75,7 +75,7 @@ export default function Home() {
             zIndex: "-1",
             position: "absolute",
           }}
-          className="max-lg:opacity-60"
+          className=""
         />
         <div className="myContainer">
           <div className="lg:grid lg:grid-cols-2 lg:gap-36 lg:justify-between">
@@ -88,7 +88,7 @@ export default function Home() {
 
               <div className="space-y-4">
                 {t.rich("section1.text", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
 
@@ -127,7 +127,9 @@ export default function Home() {
             <div className="col-start-2 space-y-8 lg:space-y-28">
               <div className="space-y-4">
                 {t.rich("section2.text", {
-                  p: (chunks) => <p className="text-lg text-white">{chunks}</p>,
+                  p: (chunks) => (
+                    <p className="lg:text-lg text-white">{chunks}</p>
+                  ),
                 })}
               </div>
 
@@ -216,13 +218,15 @@ export default function Home() {
             <div className="space-y-8 lg:space-y-14">
               <div className="space-y-3">
                 {t.rich("section4.textTop", {
-                  p: (chunks) => <p className=" last:ml-8 text-lg">{chunks}</p>,
+                  p: (chunks) => (
+                    <p className="last:ml-8 text-sm lg:text-lg">{chunks}</p>
+                  ),
                 })}
               </div>
 
               <div className="space-y-4">
                 {t.rich("section4.textCore", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                   sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
                 })}
               </div>
@@ -301,7 +305,7 @@ export default function Home() {
             titleH3={t("section7.h3")}
             h3Classes="text-black"
           />
-          <p className="lg:w-[50%] mx-auto text-center text-lg">
+          <p className="lg:w-[50%] mx-auto text-center lg:text-lg">
             {t("section7.text")}
           </p>
           <WorldMap />

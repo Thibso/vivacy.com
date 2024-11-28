@@ -69,7 +69,7 @@ export default function OurBrands() {
 
           <div className="space-y-4 lg:max-w-[70%] lg:text-center mx-auto">
             {t.rich("section1.content", {
-              p: (chunks) => <p className="text-lg">{chunks}</p>,
+              p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
             })}
           </div>
         </div>
@@ -134,11 +134,11 @@ export default function OurBrands() {
 
           <div className="space-y-4 mt-8 lg:mt-12">
             {t.rich("section2.content", {
-              p: (chunks) => <p className="text-lg">{chunks}</p>,
+              p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               ul: (chunks) => (
-                <ul className="text-lg list-disc ml-10">{chunks}</ul>
+                <ul className="lg:text-lg list-disc ml-10">{chunks}</ul>
               ),
-              li: (chunks) => <li className="text-lg">{chunks}</li>,
+              li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
             })}
           </div>
         </div>
@@ -165,7 +165,7 @@ export default function OurBrands() {
             <h2 className="h2-perso">{t("section3.h2")}</h2>
             <div className="space-y-4">
               {t.rich("section3.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
             </div>
           </div>

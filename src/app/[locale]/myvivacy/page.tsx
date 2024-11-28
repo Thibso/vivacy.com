@@ -66,7 +66,7 @@ export default function MyVivacy() {
             />
             <div className="space-y-4">
               {t.rich("section1.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function MyVivacy() {
             <div className="lg:my-4 lg:col-span-6 lg:col-start-7 p-4 lg:p-10 space-y-14 lg:space-y-20 bg-whiteGrey/20 backdrop-blur-md rounded-xl">
               <div className="space-y-8 lg:space-y-14 text-white">
                 {t.rich("section2.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
               <div className="flex justify-center lg:justify-end">
@@ -135,7 +135,7 @@ export default function MyVivacy() {
             <h2 className="h2-perso">{t("section3.h2")}</h2>
             <div className="space-y-4">
               {t.rich("section3.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
             </div>
           </div>

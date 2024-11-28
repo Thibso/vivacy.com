@@ -97,7 +97,15 @@ export default function BiSoft() {
           }}
         />
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
-        <HeaderBigTitle title={t("title")} />
+        <HeaderBigTitle
+          title={t.rich("title", {
+            sup: (chunks) => (
+              <sup className="text-lg lg:text-6xl -top-[25px] md:-top-[55px] lg:-top-[75px]">
+                {chunks}
+              </sup>
+            ),
+          })}
+        />
 
         <HeaderSpan content={t("span")} />
       </section>
@@ -120,7 +128,7 @@ export default function BiSoft() {
 
             <div className="space-y-4">
               {t.rich("section1.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
               })}
             </div>

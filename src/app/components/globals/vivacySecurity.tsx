@@ -43,7 +43,7 @@ export default function VivacySecurity() {
               }}
               className="max-h-[64px] lg:max-h-[105px]"
             />
-            <p className="text-center">{t("content")}</p>
+            <p className="text-center lg:text-lg">{t("content")}</p>
             <div className="flex gap-4 justify-center">
               <Link
                 href="https://apps.apple.com/fr/app/my-vivacy/id1206429694"

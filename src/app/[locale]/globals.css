@@ -9,15 +9,15 @@
   }
 
   .titles-container {
-    @apply flex flex-col-reverse gap-5;
+    @apply flex flex-col-reverse gap-3 lg:gap-5;
   }
 
   .h2-perso {
-    @apply text-blue uppercase font-semibold max-lg:text-center text-base lg:text-xl leading-none;
+    @apply text-blue uppercase font-semibold max-lg:text-center text-sm leading-4 lg:text-xl lg:leading-none;
   }
 
   .h3-perso {
-    @apply font-light text-2xl lg:text-5xl max-lg:text-center uppercase leading-none;
+    @apply font-light text-xl lg:text-5xl max-lg:text-center uppercase leading-none;
   }
   :root {
     --background: 0 0% 100%;

@@ -85,7 +85,7 @@ export default function Stylage() {
             <div className="lg:col-span-5 space-y-8 lg:space-y-28 py-4">
               <div className="space-y-4">
                 {t.rich("section1.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
 
@@ -151,7 +151,7 @@ export default function Stylage() {
             <div className="lg:col-span-5 lg:col-start-8 lg:pt-48 lg:pb-40 space-y-8 lg:space-y-28">
               <div className="space-y-4">
                 {t.rich("section2.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
 
@@ -180,11 +180,11 @@ export default function Stylage() {
             <FromTopTitles
               titleH2={t("section3.h2")}
               titleH3={t("section3.h3")}
-              h3Classes="text-white"
+              h3Classes="lg:text-white"
             />
             <div className="xl:w-[70%]">
               {t.rich("section3.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
               })}
             </div>
@@ -245,7 +245,7 @@ export default function Stylage() {
             <div className="col-span-5 col-start-8 space-y-14 lg:py-4">
               <div className="space-y-4">
                 {t.rich("section4.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
               <div className="max-lg:flex max-lg:justify-center">

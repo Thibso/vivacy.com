@@ -268,7 +268,7 @@ export default function SeringeBiSoft(props: Props) {
               return (
                 <div key={"texts-" + index} className="space-y-2 relative">
                   <h4 className="uppercase text-lg text-blue">{texts.title}</h4>
-                  <ul className=" list-disc ml-8 text-lg">
+                  <ul className=" list-disc ml-8 lg:text-lg">
                     {texts.content.map((li, i) => {
                       return <li key={"texts-ul-" + i}>{li}</li>;
                     })}
@@ -290,7 +290,7 @@ export default function SeringeBiSoft(props: Props) {
           <div className="space-y-4">
             {props.fifth.content.map((p, i) => {
               return (
-                <p className="text-lg" key={"texts-p-" + i}>
+                <p className="lg:text-lg" key={"texts-p-" + i}>
                   {p}
                 </p>
               );

@@ -84,7 +84,7 @@ export default function Vivasome() {
             <div className="lg:col-span-4 space-y-8 lg:space-y-14 lg:py-36">
               <div className="space-y-4">
                 {t.rich("section1.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
 
@@ -139,7 +139,7 @@ export default function Vivasome() {
 
               <div className="space-y-4">
                 {t.rich("section2.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
 
@@ -147,7 +147,7 @@ export default function Vivasome() {
 
               <div className="space-y-4">
                 {t.rich("section2.contentBis", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function Vivasome() {
 
             <ul className="space-y-4 list-disc ml-4 lg:py-8">
               {t.rich("section3.content", {
-                li: (chunks) => <li className="text-lg">{chunks}</li>,
+                li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
               })}
             </ul>
           </div>
@@ -179,7 +179,7 @@ export default function Vivasome() {
           <div className="max-lg:space-y-8 lg:grid lg:grid-cols-2 lg:gap-x-28">
             <ul className="space-y-4 list-disc ml-4 lg:pt-28 lg:pb-14">
               {t.rich("section4.content", {
-                li: (chunks) => <li className="text-lg">{chunks}</li>,
+                li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
               })}
             </ul>
 
@@ -211,7 +211,7 @@ export default function Vivasome() {
             <h2 className="h2-perso">{t("section5.h2")}</h2>
             <div className="space-y-4">
               {t.rich("section5.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
+                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
             </div>
           </div>

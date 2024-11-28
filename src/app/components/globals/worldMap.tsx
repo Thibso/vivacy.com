@@ -43,8 +43,8 @@ function MapText(props: Props) {
               </div>
               <div className="space-y-2 col-span-4 sm:col-span-3 lg:col-span-4">
                 <p className="font-bold">{country[0]}</p>
-                <p>{country[1]}</p>
-                <p>{country[2]}</p>
+                <p className="max-lg:text-sm">{country[1]}</p>
+                <p className="max-lg:text-sm">{country[2]}</p>
               </div>
             </div>
           );
