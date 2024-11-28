@@ -230,7 +230,7 @@ export default function NavList(props: Props) {
             >
               <Image
                 src={bgVivacy}
-                alt=""
+                alt="Vivacy"
                 fill
                 className="absolute size-full object-cover -z-[1] invert opacity-5"
               />
@@ -366,7 +366,7 @@ export default function NavList(props: Props) {
 
                 <li>
                   <a
-                    className="uppercase text-lg text-right cursor-pointer"
+                    className="uppercase text-lg cursor-pointer"
                     href={props.carreers.path}
                     target="_blank"
                   >
