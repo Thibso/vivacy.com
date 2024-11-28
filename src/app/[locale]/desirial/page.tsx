@@ -43,7 +43,7 @@ export default function Desirial() {
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <Image
           src={bgHeader}
-          alt=""
+          alt={t("alt")}
           quality={100}
           fill
           style={{
@@ -62,7 +62,7 @@ export default function Desirial() {
       <section className="relative z-[1]">
         <Image
           src={vivacyLogo}
-          alt=""
+          alt="Vivacy"
           quality={75}
           style={{
             objectFit: "contain",
@@ -110,7 +110,7 @@ export default function Desirial() {
             <div className="col-span-1 relative max-lg:h-[350px]">
               <Image
                 src={section2}
-                alt=""
+                alt={t("section2.alt")}
                 quality={75}
                 fill
                 style={{
@@ -127,7 +127,7 @@ export default function Desirial() {
       <section className="relative z-[1]">
         <Image
           src={section3Bg}
-          alt=""
+          alt={t("section3.alt")}
           quality={100}
           fill
           style={{
@@ -167,7 +167,7 @@ export default function Desirial() {
               <div className="col-span-2 relative h-full">
                 <Image
                   src={section4First}
-                  alt=""
+                  alt={t("section4.alt1")}
                   quality={75}
                   fill
                   style={{
@@ -180,7 +180,7 @@ export default function Desirial() {
               <div className="col-span-3 relative h-full">
                 <Image
                   src={section4Second}
-                  alt=""
+                  alt={t("section4.alt2")}
                   quality={75}
                   fill
                   style={{
@@ -209,7 +209,7 @@ export default function Desirial() {
       <section className="relative z-[1]">
         <Image
           src={bg}
-          alt=""
+          alt="texture"
           quality={75}
           fill
           style={{
@@ -239,7 +239,7 @@ export default function Desirial() {
             <div className="col-span-6 relative h-[350px] lg:h-[750px]">
               <Image
                 src={section5}
-                alt=""
+                alt={t("section5.alt")}
                 quality={75}
                 fill
                 style={{

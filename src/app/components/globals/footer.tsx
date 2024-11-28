@@ -73,7 +73,7 @@ export default function Footer() {
         <div>
           <Image
             src={logo}
-            alt=""
+            alt={t("vivacy.logoAlt")}
             className="max-lg:hidden w-auto h-[100px] mx-auto"
           />
         </div>
@@ -81,7 +81,7 @@ export default function Footer() {
         <div>
           <Image
             src={map}
-            alt=""
+            alt={t("vivacy.mapAlt")}
             className="max-sm:w-[100%] max-lg:w-[70%] max-lg:mx-auto"
           />
         </div>
@@ -89,19 +89,39 @@ export default function Footer() {
 
       <div className="flex gap-x-6 justify-center pb-8 lg:pb-24">
         <a href={t("socials.instagram")}>
-          <Image src={instagram} alt="" className="size-8 object-contain" />
+          <Image
+            src={instagram}
+            alt="Instagram"
+            className="size-8 object-contain"
+          />
         </a>
         <a href={t("socials.facebook")}>
-          <Image src={facebook} alt="" className="size-8 object-contain" />
+          <Image
+            src={facebook}
+            alt="Facebook"
+            className="size-8 object-contain"
+          />
         </a>
         <a href={t("socials.linkedin")}>
-          <Image src={linkedin} alt="" className="size-8 object-contain" />
+          <Image
+            src={linkedin}
+            alt="Linkedin"
+            className="size-8 object-contain"
+          />
         </a>
         <a href={t("socials.twitter")}>
-          <Image src={twitter} alt="" className="size-8 object-contain" />
+          <Image
+            src={twitter}
+            alt="Twitter"
+            className="size-8 object-contain"
+          />
         </a>
         <a href={t("socials.youtube")}>
-          <Image src={youtube} alt="" className="size-8 object-contain" />
+          <Image
+            src={youtube}
+            alt="Youtube"
+            className="size-8 object-contain"
+          />
         </a>
       </div>
 

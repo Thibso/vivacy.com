@@ -160,9 +160,7 @@ export default function NavBar(props: Props) {
             src={logo}
             alt="Vivacy logo"
             height={23}
-            style={{
-              objectFit: "contain",
-            }}
+            className=" object-contain h-auto block"
           />
         </Link>
 

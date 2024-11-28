@@ -83,19 +83,19 @@ export default function HistorySteps(props: Props) {
       className="relative"
       ref={ref}
     >
-      <div className="myContainer sticky -top-[75px]">
+      <div className="myContainer sticky top-[50px] lg:-top-[75px]">
         <FromTopTitles
           titleH2={props.h2}
           titleH3={props.h3}
           h3Classes="text-black"
         />
 
-        <div className="mt-8 lg:mt-28 relative h-[400px] lg:h-[600px] w-[80vw] lg:w-[65vw] mx-auto overflow-hidden z-[1]">
+        <div className="mt-8 lg:mt-28 relative h-[40vh] max-lg:grid lg:h-[600px] w-[90vw] lg:w-[65vw] mx-auto overflow-hidden z-[1]">
           <motion.ul
             style={{ x: "-" + stepValue * imagePosition + "%" }}
             className="flex absolute opacity-35 transition-all duration-1000 -z-[1] h-full"
           >
-            <li className="h-full w-[65vw]">
+            <li className="h-full w-[90vw] lg:w-[65vw]">
               <Image
                 src={img1}
                 alt=""
@@ -103,7 +103,7 @@ export default function HistorySteps(props: Props) {
                 className="size-full object-cover"
               />
             </li>
-            <li className="h-full w-[65vw]">
+            <li className="h-full w-[90vw] lg:w-[65vw]">
               <Image
                 src={img2}
                 alt=""
@@ -111,7 +111,7 @@ export default function HistorySteps(props: Props) {
                 className="size-full object-cover"
               />
             </li>
-            <li className="h-full w-[65vw]">
+            <li className="h-full w-[90vw] lg:w-[65vw]">
               <Image
                 src={img1}
                 alt=""
@@ -119,7 +119,7 @@ export default function HistorySteps(props: Props) {
                 className="size-full object-cover"
               />
             </li>
-            <li className="h-full w-[65vw]">
+            <li className="h-full w-[90vw] lg:w-[65vw]">
               <Image
                 src={img2}
                 alt=""
@@ -127,7 +127,7 @@ export default function HistorySteps(props: Props) {
                 className="size-full object-cover"
               />
             </li>
-            <li className="h-full w-[65vw]">
+            <li className="h-full w-[90vw] lg:w-[65vw]">
               <Image
                 src={img1}
                 alt=""
@@ -135,7 +135,7 @@ export default function HistorySteps(props: Props) {
                 className="size-full object-cover"
               />
             </li>
-            <li className="h-full w-[65vw]">
+            <li className="h-full w-[90vw] lg:w-[65vw]">
               <Image
                 src={img2}
                 alt=""
@@ -143,7 +143,7 @@ export default function HistorySteps(props: Props) {
                 className="size-full object-cover"
               />
             </li>
-            <li className="h-full w-[65vw]">
+            <li className="h-full w-[90vw] lg:w-[65vw]">
               <Image
                 src={img1}
                 alt=""
@@ -151,7 +151,7 @@ export default function HistorySteps(props: Props) {
                 className="size-full object-cover"
               />
             </li>
-            <li className="h-full w-[65vw]">
+            <li className="h-full w-[90vw] lg:w-[65vw]">
               <Image
                 src={img1}
                 alt=""
@@ -159,7 +159,7 @@ export default function HistorySteps(props: Props) {
                 className="size-full object-cover"
               />
             </li>
-            <li className="h-full w-[65vw]">
+            <li className="h-full w-[90vw] lg:w-[65vw]">
               <Image
                 src={img1}
                 alt=""
@@ -168,26 +168,27 @@ export default function HistorySteps(props: Props) {
               />
             </li>
           </motion.ul>
-          <div className="z-10 mt-[5%]">
+
+          <div className="z-10 my-auto lg:mt-[5%]">
             <p className="text-[12vw] font-bold text-blue text-center">
               {years[stepValue]}
             </p>
-            <p className="text-blue text-center uppercase text-lg">
+            <p className="text-blue text-center uppercase text-base lg:text-lg">
               {achievements[stepValue]}
             </p>
           </div>
         </div>
 
-        <motion.div className="absolute bg-blue/20 w-[90%] h-[5px] left-1/2 -translate-x-1/2 top-[75%] rounded-2xl z-[2]">
+        <motion.div className="absolute bg-blue/20 w-[90%] h-[5px] left-1/2 -translate-x-1/2 max-lg:bottom-8 lg:top-[75%] rounded-2xl z-[2]">
           {steps.map((step) => {
             const position = stepPosition * (step - 1);
             return (
               <span
                 key={step}
                 style={{ left: position + "%" }}
-                className={`absolute size-4 ${
+                className={`absolute size-3 lg:size-4 ${
                   scrollValue * 100 >= position
-                    ? "bg-blue ring-offset-2 ring-1 ring-blue"
+                    ? "bg-blue ring-offset-1 lg:ring-offset-2 ring-1 ring-blue"
                     : "bg-blue/50"
                 }  rounded-full top-1/2 -translate-y-1/2 -translate-x-1/2 z-10`}
               ></span>

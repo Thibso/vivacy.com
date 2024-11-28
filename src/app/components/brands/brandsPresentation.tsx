@@ -6,6 +6,7 @@ import kartilage from "@/app/img/logos/kartilge-by-vivacy.png";
 import stylage from "@/app/img/logos/stylage-by-vivacy.png";
 import vivacy from "@/app/img/logos/vivacy-beauty.png";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import BlueButton from "../buttons/BlueButton";
@@ -27,6 +28,17 @@ type Props = {
 };
 
 export default function BrandsDescriptions(props: Props) {
+  const t = useTranslations("Brands");
+
+  const altLogos = [
+    t("brandsDescriptions.stylage.alt"),
+    t("brandsDescriptions.desirial.alt"),
+    t("brandsDescriptions.desirial.alt"),
+    t("brandsDescriptions.desirial.alt"),
+    t("brandsDescriptions.desirial.alt"),
+    t("brandsDescriptions.desirial.alt"),
+  ];
+
   const [brand, setBrand] = useState(0);
 
   return (
@@ -44,7 +56,7 @@ export default function BrandsDescriptions(props: Props) {
               >
                 <Image
                   src={logo}
-                  alt=""
+                  alt={altLogos[index]}
                   quality={75}
                   style={{
                     filter: "saturate(0%)",
@@ -82,7 +94,7 @@ export default function BrandsDescriptions(props: Props) {
             >
               <Image
                 src={logos[brand]}
-                alt=""
+                alt={altLogos[brand]}
                 quality={100}
                 style={{
                   filter: "saturate(0%) invert(1)",
@@ -94,7 +106,7 @@ export default function BrandsDescriptions(props: Props) {
             </motion.div>
           </AnimatePresence>
         </div>
-        <div className="lg:col-span-7 p-4 lg:px-20 lg:py-12 space-y-8 lg:space-y-10 grid transition-all">
+        <div className="lg:col-span-7 p-4 max-lg:pl-0 lg:px-20 lg:py-12 space-y-8 lg:space-y-10 grid transition-all">
           <AnimatePresence mode="wait" initial={false}>
             <motion.h2
               key={props.texts[brand].keys[1]}
@@ -102,7 +114,7 @@ export default function BrandsDescriptions(props: Props) {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -10, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="uppercase text-blue font-semibold"
+              className="uppercase text-blue font-semibold text-lg"
             >
               {props.texts[brand].title}
             </motion.h2>
@@ -116,7 +128,11 @@ export default function BrandsDescriptions(props: Props) {
               className="space-y-4"
             >
               {props.texts[brand].content.map((p, index) => {
-                return <p key={"p" + index}>{p}</p>;
+                return (
+                  <p key={"p" + index} className="text-lg">
+                    {p}
+                  </p>
+                );
               })}
             </motion.div>
 

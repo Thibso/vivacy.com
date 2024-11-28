@@ -2,12 +2,18 @@
 
 import seringe from "@/app/img/bisoft/seringe-bi-soft.png";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useRef } from "react";
+import { ReactNode, useRef } from "react";
 
 type Contents = {
   title: string;
   content: string[];
+};
+
+type ContentsHtml = {
+  title: string;
+  content: ReactNode[];
 };
 
 type Props = {
@@ -16,11 +22,13 @@ type Props = {
   first: Contents;
   second: Contents;
   third: Contents;
-  fourth: Contents;
+  fourth: ContentsHtml;
   fifth: Contents;
 };
 
 export default function SeringeBiSoft(props: Props) {
+  const t = useTranslations("BiSoft");
+
   const textRight = [props.first, props.second, props.third, props.fourth];
 
   // SCROLL SETTINGS
@@ -176,7 +184,7 @@ export default function SeringeBiSoft(props: Props) {
           <div className="max-lg:hidden absolute lg:top-[42px] xl:top-[40px] 2xl:top-[50px] lg:left-0 2xl:left-32 lg:h-[900px] xl:h-[900px] 2xl:h-[900px]">
             <Image
               src={seringe}
-              alt=""
+              alt={t("seringe.alt")}
               quality={75}
               className="h-full object-contain"
             />

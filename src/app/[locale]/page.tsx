@@ -39,7 +39,8 @@ export default function Home() {
   const t = useTranslations("HomePage");
   return (
     <main>
-      <section className="h-[100vh] relative z-[1] grid pb-6">
+      {/* VIDEO HEADER */}
+      <section className="h-[70vh] lg:h-[100vh] relative z-[1] grid pb-6">
         <video
           className="absolute size-full top-0 left-1/2 -translate-x-1/2 object-cover -z-[1]"
           autoPlay
@@ -55,15 +56,17 @@ export default function Home() {
 
         <div className="m-auto mb-0 space-y-8">
           <h1 className="h3-perso text-white text-center">{t("title")}</h1>
-          <span className="block max-lg:text-center max-lg:w-[60%] bg-whiteGrey/50 py-3 px-8 rounded-full uppercase text-sm text-blue backdrop-blur-sm">
+
+          <span className="block max-lg:text-center bg-whiteGrey/50 py-3 px-8 rounded-full uppercase text-sm text-blue backdrop-blur-sm">
             {t("span")}
           </span>
         </div>
       </section>
+
       <section className="relative z-[1]">
         <Image
           src={haPower}
-          alt=""
+          alt={t("section1.alt")}
           quality={100}
           fill
           style={{
@@ -103,7 +106,7 @@ export default function Home() {
       <section className="relative z-[1] lg:max-w-[2550px] lg:mx-auto lg:min-h-screen lg:flex">
         <Image
           src={experienceBg}
-          alt=""
+          alt={t("section2.alt")}
           quality={100}
           fill
           sizes="100vw"
@@ -195,7 +198,7 @@ export default function Home() {
         <Image
           className="-z-[1]"
           src={innovationsBg}
-          alt=""
+          alt="texture"
           quality={100}
           fill
           style={{
@@ -220,6 +223,7 @@ export default function Home() {
               <div className="space-y-4">
                 {t.rich("section4.textCore", {
                   p: (chunks) => <p className="text-lg">{chunks}</p>,
+                  sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
                 })}
               </div>
 
@@ -234,7 +238,7 @@ export default function Home() {
             <div className="max-lg:hidden flex justify-end items-end">
               <Image
                 src={syringe}
-                alt=""
+                alt={t("section4.alt")}
                 height={650}
                 style={{
                   transformOrigin: "top center",
@@ -253,7 +257,7 @@ export default function Home() {
         <Image
           className="-z-[1]"
           src={productsBg}
-          alt=""
+          alt="texture"
           quality={100}
           fill
           sizes="100vw"
@@ -297,7 +301,9 @@ export default function Home() {
             titleH3={t("section7.h3")}
             h3Classes="text-black"
           />
-          <p className="lg:w-[50%] mx-auto text-center">{t("section7.text")}</p>
+          <p className="lg:w-[50%] mx-auto text-center text-lg">
+            {t("section7.text")}
+          </p>
           <WorldMap />
         </div>
       </section>

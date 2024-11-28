@@ -14,7 +14,7 @@ export default function VivacySecurity() {
     <section className="relative z-[1]">
       <Image
         src={bgSection}
-        alt=""
+        alt="texture"
         quality={100}
         fill
         style={{
@@ -35,7 +35,7 @@ export default function VivacySecurity() {
           <div className="space-y-8 lg:space-y-16">
             <Image
               src={logo}
-              alt=""
+              alt={t("alts.logo")}
               quality={75}
               style={{
                 objectFit: "contain",
@@ -48,10 +48,11 @@ export default function VivacySecurity() {
               <Link
                 href="https://apps.apple.com/fr/app/my-vivacy/id1206429694"
                 target="_blank"
+                title={t("titles.appleStore")}
               >
                 <Image
                   src={apple}
-                  alt=""
+                  alt={t("alts.appleStore")}
                   quality={75}
                   style={{
                     height: "40px",
@@ -63,10 +64,11 @@ export default function VivacySecurity() {
               <Link
                 href="https://play.google.com/store/apps/details?id=eu.vivacy.vivacysecurity&hl=fr"
                 target="_blank"
+                title={t("titles.googlePlay")}
               >
                 <Image
                   src={google}
-                  alt=""
+                  alt={t("alts.googlePlay")}
                   quality={75}
                   style={{
                     height: "40px",
@@ -79,7 +81,7 @@ export default function VivacySecurity() {
           <div>
             <Image
               src={phoneMockup}
-              alt=""
+              alt={t("alts.mockup")}
               quality={75}
               style={{
                 objectFit: "contain",

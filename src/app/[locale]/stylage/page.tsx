@@ -44,7 +44,7 @@ export default function Stylage() {
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <Image
           src={bgHeader}
-          alt=""
+          alt={t("alt")}
           quality={100}
           fill
           style={{
@@ -63,7 +63,7 @@ export default function Stylage() {
       <section className="relative z-[1]">
         <Image
           src={vivacyLogo}
-          alt=""
+          alt="Vivacy"
           quality={75}
           style={{
             objectFit: "contain",
@@ -98,7 +98,7 @@ export default function Stylage() {
               <div className="row-span-1 relative">
                 <Image
                   src={secrtion1First}
-                  alt=""
+                  alt={t("section1.alt1")}
                   quality={75}
                   fill
                   style={{
@@ -111,7 +111,7 @@ export default function Stylage() {
               <div className="row-span-1 relative">
                 <Image
                   src={secrtion1Second}
-                  alt=""
+                  alt={t("section1.alt2")}
                   quality={75}
                   fill
                   style={{
@@ -137,7 +137,7 @@ export default function Stylage() {
             <div className="lg:col-span-6 relative max-lg:h-[350px]">
               <Image
                 src={section2}
-                alt=""
+                alt={t("section2.alt")}
                 quality={75}
                 fill
                 style={{
@@ -166,7 +166,7 @@ export default function Stylage() {
       <section className="relative z-[1]">
         <Image
           src={section3Bg}
-          alt=""
+          alt={t("section3.alt")}
           quality={100}
           fill
           style={{
@@ -185,6 +185,7 @@ export default function Stylage() {
             <div className="xl:w-[70%]">
               {t.rich("section3.content", {
                 p: (chunks) => <p className="text-lg">{chunks}</p>,
+                sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
               })}
             </div>
             <div className="max-lg:flex max-lg:justify-center">
@@ -197,7 +198,7 @@ export default function Stylage() {
       <section className="relative z-[1]">
         <Image
           src={bg}
-          alt=""
+          alt="texture"
           quality={75}
           fill
           style={{
@@ -216,7 +217,7 @@ export default function Stylage() {
               <div className="col-span-2 relative h-full">
                 <Image
                   src={section4First}
-                  alt=""
+                  alt={t("section4.alt1")}
                   quality={75}
                   fill
                   style={{
@@ -229,7 +230,7 @@ export default function Stylage() {
               <div className="col-span-3 relative h-full">
                 <Image
                   src={section4Second}
-                  alt=""
+                  alt={t("section4.alt2")}
                   quality={75}
                   fill
                   style={{

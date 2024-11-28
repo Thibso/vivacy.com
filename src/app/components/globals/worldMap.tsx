@@ -37,7 +37,7 @@ function MapText(props: Props) {
               <div className="col-span-2 sm:col-start-2 lg:col-start-1">
                 <Image
                   src={props.images[index]}
-                  alt=""
+                  alt={"Vivacy " + country[0]?.toString()}
                   className="object-cover h-[150px]"
                 />
               </div>

@@ -43,7 +43,7 @@ export default function Vivasome() {
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <Image
           src={bgHeader}
-          alt=""
+          alt={t("alt")}
           quality={100}
           fill
           style={{
@@ -62,7 +62,7 @@ export default function Vivasome() {
       <section className="relative z-[1]">
         <Image
           src={vivacyLogo}
-          alt=""
+          alt="Vivacy"
           quality={75}
           style={{
             objectFit: "contain",
@@ -98,7 +98,7 @@ export default function Vivasome() {
             <div className="relative lg:col-span-5 lg:col-start-8 max-lg:h-[350px]">
               <Image
                 src={section1}
-                alt=""
+                alt={t("section1.alt")}
                 quality={75}
                 className="object-cover size-full rounded-xl"
               />
@@ -110,23 +110,24 @@ export default function Vivasome() {
       <section className="relative z-[1]">
         <Image
           src={bg}
-          alt=""
+          alt="texture"
           quality={100}
           fill
           style={{
             objectFit: "cover",
             zIndex: "-1",
           }}
+          className="max-lg:hidden"
         />
 
-        <div className="myContainer space-y-8 lg:space-y-28">
+        <div className="myContainer max-lg:py-0 space-y-8 lg:space-y-28">
           <h2 className="h3-perso">{t("section2.h2")}</h2>
 
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-12 lg:gap-x-20">
             <div className="col-span-7 relative max-lg:h-[350px]">
               <Image
                 src={section2}
-                alt=""
+                alt={t("section2.alt")}
                 fill
                 quality={75}
                 className="object-cover size-full rounded-xl"
@@ -162,7 +163,7 @@ export default function Vivasome() {
             <div>
               <Image
                 src={section3}
-                alt=""
+                alt={t("section3.alt")}
                 quality={75}
                 className="h-full w-auto object-contain mx-auto"
               />
@@ -185,7 +186,7 @@ export default function Vivasome() {
             <div className="relative max-lg:h-[350px]">
               <Image
                 src={section4}
-                alt=""
+                alt={t("section4.alt")}
                 quality={75}
                 fill
                 className=" object-cover size-full rounded-xl"
@@ -200,7 +201,7 @@ export default function Vivasome() {
           <div className="relative max-lg:h-[350px]">
             <Image
               src={section5}
-              alt=""
+              alt={t("section5.alt")}
               quality={75}
               fill
               className="object-cover size-full rounded-xl"

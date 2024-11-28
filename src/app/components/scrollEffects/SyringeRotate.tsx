@@ -1,12 +1,14 @@
 "use client";
 
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef } from "react";
 import front from "../../img/syringe-effect/expert-acide-hyaluronique.png";
 import bg from "../../img/syringe-effect/vivacy-seringue-speciale.png";
 
 export default function SyringeRotate() {
+  const t = useTranslations("HomePage");
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -46,7 +48,7 @@ export default function SyringeRotate() {
           >
             <Image
               src={bg}
-              alt=""
+              alt={t("effect.alt1")}
               quality={100}
               fill
               sizes="100vw"
@@ -66,7 +68,7 @@ export default function SyringeRotate() {
             >
               <Image
                 src={front}
-                alt=""
+                alt={t("effect.alt2")}
                 quality={100}
                 fill
                 sizes="100vw"

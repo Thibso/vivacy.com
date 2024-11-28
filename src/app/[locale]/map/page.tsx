@@ -41,7 +41,7 @@ export default function Contact() {
       <section className="mt-14 relative">
         <Image
           src={vivacyLogo}
-          alt=""
+          alt="Vivacy"
           quality={75}
           style={{
             objectFit: "contain",

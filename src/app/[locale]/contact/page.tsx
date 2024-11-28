@@ -33,7 +33,7 @@ export default function Contact() {
       <section className="relative pt-[75px] z-[1]">
         <Image
           src={vivacyLogo}
-          alt=""
+          alt="Vivacy"
           quality={75}
           style={{
             objectFit: "contain",

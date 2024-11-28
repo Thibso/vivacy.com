@@ -55,12 +55,19 @@ export default function OurCommitments() {
     ],
   ];
 
+  const valuesAlt = [
+    t("section1.quality.title"),
+    t("section1.security.title"),
+    t("section1.authenticity.title"),
+    t("section1.efficiency.title"),
+  ];
+
   return (
     <main>
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <Image
           src={bgHeader}
-          alt=""
+          alt={t("alt")}
           quality={100}
           fill
           style={{
@@ -90,7 +97,7 @@ export default function OurCommitments() {
                 <div key={index} className="space-y-4">
                   <Image
                     src={value[0]}
-                    alt=""
+                    alt={valuesAlt[index]}
                     quality={75}
                     className="mx-auto"
                   />
@@ -116,15 +123,15 @@ export default function OurCommitments() {
         </div>
       </section>
 
-      <section className="relative z-[1]">
+      <section className="relative z-[1] pb-16 lg:pb-24 xl:pb-32">
         <Image
           src={bg}
-          alt=""
+          alt="texture"
           quality={100}
           className="absolute object-contain w-full -z-[1]"
         />
 
-        <div className="myContainer">
+        <div className="myContainer max-lg:pb-8">
           <FromTopTitles
             titleH2={t("section2.h2")}
             titleH3={t("section2.h3")}
@@ -132,13 +139,13 @@ export default function OurCommitments() {
           />
         </div>
 
-        <div className="max-lg:space-y-28">
+        <div className="max-lg:space-y-14">
           {/* first */}
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:px-5 max-lg:gap-8 lg:grid lg:grid-cols-2">
             <div className="relative max-lg:h-[350px]">
               <Image
                 src={first}
-                alt=""
+                alt={t("section2.first.alt")}
                 quality={75}
                 fill
                 className="object-cover object-center"
@@ -170,7 +177,7 @@ export default function OurCommitments() {
             <div className="relative max-lg:h-[350px] lg:mr-14">
               <Image
                 src={second}
-                alt=""
+                alt={t("section2.second.alt")}
                 quality={100}
                 fill
                 className="object-cover object-left"
@@ -183,7 +190,7 @@ export default function OurCommitments() {
             <div className="relative max-lg:h-[350px]">
               <Image
                 src={first}
-                alt=""
+                alt={t("section2.third.alt")}
                 quality={75}
                 fill
                 className="object-cover object-center"
@@ -208,7 +215,7 @@ export default function OurCommitments() {
             <div className="lg:myContainer space-y-8 lg:space-y-20">
               <Image
                 src={rhoneAlpes}
-                alt=""
+                alt={t("section2.fourth.alt")}
                 quality={75}
                 className="max-lg:w-[60%] max-lg:mx-auto"
               />
@@ -221,7 +228,7 @@ export default function OurCommitments() {
             <div className="relative max-lg:h-[350px]">
               <Image
                 src={fourth}
-                alt=""
+                alt={t("section2.fourth.alt")}
                 quality={75}
                 fill
                 className="object-cover object-center"

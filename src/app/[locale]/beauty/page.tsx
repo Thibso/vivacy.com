@@ -43,7 +43,7 @@ export default function VivacyBeauty() {
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <Image
           src={bgHeader}
-          alt=""
+          alt={t("alt")}
           quality={100}
           fill
           style={{
@@ -62,7 +62,7 @@ export default function VivacyBeauty() {
       <section className="relative bg-white z-[2]">
         <Image
           src={vivacyLogo}
-          alt=""
+          alt="Vivacy"
           quality={75}
           style={{
             objectFit: "contain",
@@ -78,7 +78,7 @@ export default function VivacyBeauty() {
           <div className="relative lg:col-span-1 max-lg:h-[350px]">
             <Image
               src={section1}
-              alt=""
+              alt={t("section1.alt")}
               quality={75}
               fill
               style={{
@@ -128,7 +128,7 @@ export default function VivacyBeauty() {
           <div className="relative max-lg:h-[350px]">
             <Image
               src={section2}
-              alt=""
+              alt={t("section2.alt")}
               quality={75}
               fill
               style={{
@@ -144,7 +144,7 @@ export default function VivacyBeauty() {
       <section className="relative z-[1]">
         <Image
           src={section3}
-          alt=""
+          alt={t("section3.alt")}
           quality={100}
           fill
           style={{
@@ -178,7 +178,7 @@ export default function VivacyBeauty() {
       <section className="relative bg-white z-[1]">
         <Image
           src={bg}
-          alt=""
+          alt="texture"
           quality={75}
           fill
           style={{
@@ -205,7 +205,7 @@ export default function VivacyBeauty() {
             <div className="col-span-1 relative max-lg:h-[450px]">
               <Image
                 src={section4First}
-                alt=""
+                alt={t("section4.alt1")}
                 quality={75}
                 style={{
                   objectFit: "cover",
@@ -214,7 +214,7 @@ export default function VivacyBeauty() {
               />
               <Image
                 src={section4Second}
-                alt=""
+                alt={t("section4.alt2")}
                 quality={75}
                 style={{
                   objectFit: "cover",

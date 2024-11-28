@@ -42,7 +42,7 @@ export default function IpnLike() {
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <Image
           src={bgHeader}
-          alt=""
+          alt={t("alt")}
           quality={100}
           fill
           style={{
@@ -63,14 +63,14 @@ export default function IpnLike() {
           <div className="flex flex-col lg:justify-between gap-8 lg:gap-20 max-lg:w-full max-lg:max-w-[650px] max-lg:mx-auto">
             <Image
               src={section1First}
-              alt=""
+              alt={t("section1.alts.first")}
               quality={75}
               className="object-cover w-full h-[250px] lg:h-[300px] rounded-xl"
             />
 
             <Image
               src={section1Second}
-              alt=""
+              alt={t("section1.alts.second")}
               quality={75}
               className="object-cover w-full h-[250px] lg:h-[300px] rounded-xl"
             />
@@ -86,16 +86,17 @@ export default function IpnLike() {
             <div className="space-y-4">
               {t.rich("section1.content", {
                 p: (chunks) => <p className="text-lg">{chunks}</p>,
+                sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
               })}
             </div>
 
             <div className="flex max-lg:gap-14 lg:grid lg:grid-cols-2 justify-center lg:justify-start items-center">
-              <div>
+              <div className="max-lg:w-full">
                 <BlueButton content={t("cta.title")} path={t("cta.path")} />
               </div>
               <Image
                 src={logoIpn}
-                alt=""
+                alt={t("section1.alts.logo")}
                 quality={75}
                 style={{
                   objectFit: "contain",
@@ -110,7 +111,7 @@ export default function IpnLike() {
       <section className="relative z-[1]">
         <Image
           src={bg}
-          alt=""
+          alt="texture"
           quality={75}
           fill
           style={{
@@ -132,13 +133,14 @@ export default function IpnLike() {
                 p: (chunks) => <p className="text-lg">{chunks}</p>,
                 ul: (chunks) => <ul className="list-disc ml-4">{chunks}</ul>,
                 li: (chunks) => <li className="text-lg">{chunks}</li>,
+                sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
               })}
             </div>
 
             <div className="relative max-lg:h-[350px] ">
               <Image
                 src={section2}
-                alt=""
+                alt={t("section2.alt")}
                 quality={75}
                 fill
                 className="object-cover size-full rounded-xl"
@@ -168,14 +170,14 @@ export default function IpnLike() {
                 })}
               </div>
 
-              <div>
+              <div className="max-lg:grid max-lg:justify-center">
                 <BlueButton content={t("cta.title")} path={t("cta.path")} />
               </div>
             </div>
             <div className="relative max-lg:h-[350px]">
               <Image
                 src={section3}
-                alt=""
+                alt={t("section3.alt")}
                 quality={75}
                 fill
                 className=" object-cover size-full rounded-xl"

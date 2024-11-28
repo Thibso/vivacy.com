@@ -43,7 +43,7 @@ export default function OurCommitments() {
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <Image
           src={bgHeader}
-          alt=""
+          alt={t("alt")}
           quality={100}
           fill
           style={{
@@ -72,7 +72,7 @@ export default function OurCommitments() {
               <div className="col-span-4 relative">
                 <Image
                   src={research1}
-                  alt=""
+                  alt={t("section1.alts.first")}
                   quality={75}
                   fill
                   style={{
@@ -84,7 +84,7 @@ export default function OurCommitments() {
               <div className="col-span-3 relative">
                 <Image
                   src={research2}
-                  alt=""
+                  alt={t("section1.alts.second")}
                   quality={75}
                   fill
                   style={{
@@ -96,7 +96,7 @@ export default function OurCommitments() {
               <div className="col-span-2 relative">
                 <Image
                   src={research3}
-                  alt=""
+                  alt={t("section1.alts.third")}
                   quality={75}
                   fill
                   style={{
@@ -108,7 +108,7 @@ export default function OurCommitments() {
               <div className="col-span-1 relative">
                 <Image
                   src={research4}
-                  alt=""
+                  alt={t("section1.alts.fourth")}
                   quality={75}
                   fill
                   style={{
@@ -119,7 +119,7 @@ export default function OurCommitments() {
               </div>
             </div>
             <div className="col-span-5 max-lg:mt-8 lg:py-32">
-              <p>{t("section1.content")}</p>
+              <p className="text-lg">{t("section1.content")}</p>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function OurCommitments() {
       <section className="relative z-[1]">
         <Image
           src={section2Bg}
-          alt=""
+          alt={t("section2.alt")}
           quality={100}
           fill
           style={{
@@ -144,7 +144,7 @@ export default function OurCommitments() {
               titleH3={t("section2.h3")}
               h3Classes="text-white"
             />
-            <p className="text-blue">{t("section2.content")}</p>
+            <p className="text-blue text-lg">{t("section2.content")}</p>
           </div>
         </div>
       </section>
@@ -152,7 +152,7 @@ export default function OurCommitments() {
       <section className="relative bgTextureReapeated z-[1]">
         <Image
           src={bg}
-          alt=""
+          alt="texture"
           quality={75}
           fill
           style={{
@@ -162,7 +162,7 @@ export default function OurCommitments() {
           }}
         />
         <div className="myContainer space-y-16 lg:space-y-28">
-          <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-16 lg:grid lg:grid-cols-12 lg:gap-x-16 xl:gap-x-24">
+          <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-14 lg:grid lg:grid-cols-12 lg:gap-x-16 xl:gap-x-24">
             <div className="lg:col-span-6 lg:py-6 space-y-16 lg:space-y-28">
               <div className="space-y-8 lg:space-y-20">
                 <FromTopTitles
@@ -193,7 +193,7 @@ export default function OurCommitments() {
             <div className="max-lg:h-[350px] lg:col-span-6 relative">
               <Image
                 src={section3First}
-                alt=""
+                alt={t("section3.first.alt")}
                 quality={100}
                 fill
                 style={{
@@ -209,7 +209,7 @@ export default function OurCommitments() {
             <div className="lg:col-span-5 relative h-[350px] lg:h-[600px]">
               <Image
                 src={section3Second}
-                alt=""
+                alt={t("section3.second.alt")}
                 quality={100}
                 fill
                 style={{

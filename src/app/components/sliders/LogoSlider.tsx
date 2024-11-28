@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { useTranslations } from "next-intl";
 import desirial from "../../img/logos/desirial-by-vivacy.png";
 import desirialPlus from "../../img/logos/desirial-plus-by-vivacy.png";
 import ispace from "../../img/logos/ispace-vivacy.png";
@@ -10,6 +11,15 @@ import vivacy from "../../img/logos/vivacy-beauty.png";
 const images = [stylage, desirial, desirialPlus, vivacy, ispace, kartilage];
 
 export default function LogoSlider() {
+  const t = useTranslations("HomePage");
+  const alts = [
+    t("brands.stylage"),
+    t("brands.desirial"),
+    t("brands.desirialPlus"),
+    t("brands.vivacy"),
+    t("brands.ispace"),
+    t("brands.kartilage"),
+  ];
   return (
     <div className="relative m-auto w-[1024px] overflow-hidden bg-white before:absolute before:left-0 before:top-0 before:z-[2] before:h-full before:w-[100px] before:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] before:content-[''] after:absolute after:right-0 after:top-0 after:z-[2] after:h-full after:w-[100px] after:-scale-x-100 after:bg-[linear-gradient(to_right,white_0%,rgba(255,255,255,0)_100%)] after:content-['']">
       {/* animate-infinite-slider */}
@@ -20,7 +30,7 @@ export default function LogoSlider() {
             key={index}
           >
             <a href="/#" target="_blank">
-              <Image src={image} alt="" />
+              <Image src={image} alt={alts[index]} />
             </a>
           </div>
         ))}
@@ -30,7 +40,7 @@ export default function LogoSlider() {
             key={index}
           >
             <a href="/#" target="_blank">
-              <Image src={image} alt="" />
+              <Image src={image} alt={alts[index]} />
             </a>
           </div>
         ))}

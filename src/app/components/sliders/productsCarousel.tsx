@@ -6,12 +6,14 @@ import desirialIllustration from "@/app/img/products/desirial-intimate-medicine.
 import stylageIllustration from "@/app/img/products/stylage-injectable-gamme-lips-vivacy.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Circle } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import BlueButton from "../buttons/BlueButton";
 
 export default function ProductsCarousel() {
+  const t = useTranslations("HomePage");
   const isMobile = useMediaQuery({ query: "(max-width: 1024px)" });
 
   const [state, setState] = useState(0);
@@ -22,6 +24,8 @@ export default function ProductsCarousel() {
   ];
   const logos = [stylage, desirial];
   const packages = [stylageIllustration, desirialIllustration];
+  const alts = [t("products.stylage"), t("products.desirial")];
+  const LogoAlts = [t("products.stylageLogo"), t("products.desirialLogo")];
   const products = 2;
 
   const constraintsRef = useRef(null);
@@ -69,7 +73,7 @@ export default function ProductsCarousel() {
               >
                 <Image
                   src={logos[state]}
-                  alt=""
+                  alt={LogoAlts[state]}
                   className="max-lg:mx-auto max-lg:h-[50px] object-contain"
                 />
               </motion.div>
@@ -105,7 +109,7 @@ export default function ProductsCarousel() {
           >
             <Image
               src={packages[state]}
-              alt=""
+              alt={alts[state]}
               className="object-contain m-auto"
             />
           </motion.div>

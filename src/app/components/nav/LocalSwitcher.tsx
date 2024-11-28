@@ -19,12 +19,16 @@ export default function LocalSwitcher() {
     <label className="max-lg:hidden">
       <select
         defaultValue={localActive}
-        className="bg-transparent text-white"
+        className="bg-blue text-white"
         onChange={onSelectChange}
         disabled={isPending}
       >
-        <option value="en">EN</option>
-        <option value="fr">FR</option>
+        <option className="bg-blue text-white" value="en">
+          English
+        </option>
+        <option className="bg-blue text-white" value="fr">
+          Français
+        </option>
       </select>
     </label>
   );

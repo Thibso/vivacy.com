@@ -94,7 +94,7 @@ export default function OurBrands() {
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <Image
           src={bgHeader}
-          alt=""
+          alt={t("alt")}
           quality={100}
           fill
           style={{
@@ -115,7 +115,7 @@ export default function OurBrands() {
           <div className="lg:col-span-5 relative max-lg:h-[350px]">
             <Image
               src={firstSectionImg}
-              alt=""
+              alt={t("section1.alt")}
               quality={75}
               fill
               style={{
@@ -125,7 +125,7 @@ export default function OurBrands() {
               }}
             />
           </div>
-          <div className="col-span-6 space-y-8 lg:space-y-28 col-start-7 py-8">
+          <div className="col-span-6 space-y-8 lg:space-y-28 col-start-7 py-8 max-lg:pt-0">
             <FromTopTitles
               titleH2={t("section1.h2")}
               titleH3={t("section1.h3")}
