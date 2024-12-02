@@ -33,8 +33,8 @@
       "images": {
         "1": "/images/nav/about-us/vivacy-history.jpg",
         "2": "/images/nav/about-us/vivacy-brands.jpg",
-        "3": "/images/nav/image-1.jpg",
-        "4": "/images/nav/about-us/commitments-vivacy.jpg",
+        "3": "/images/nav/about-us/commitments-vivacy.jpg",
+        "4": "/images/nav/about-us/research-development.jpg",
         "5": "/images/nav/about-us/vivacy-news.jpg"
       }
     },
@@ -66,7 +66,7 @@
       "images": {
         "1": "/images/nav/technologies/bisoft.jpg",
         "2": "/images/nav/technologies/ipnlike.jpg",
-        "3": "/images/nav/image-1.jpg",
+        "3": "/images/nav/technologies/vivasome.jpg",
         "4": "/images/nav/technologies/myvivacy.jpg"
       }
     },
@@ -112,8 +112,8 @@
         }
       },
       "images": {
-        "1": "/images/nav/professionals/portals.jpg",
-        "2": "/images/nav/image-2.jpg"
+        "1": "/images/nav/professionals/hcps-portal.jpg",
+        "2": "/images/nav/professionals/vivacy-academy.jpg"
       }
     },
     "contact": {
@@ -132,8 +132,8 @@
         }
       },
       "images": {
-        "1": "/images/nav/contact/contact.jpg",
-        "2": "/images/nav/image-2.jpg"
+        "1": "/images/nav/contact/global-network.jpg",
+        "2": "/images/nav/contact/contact.jpg"
       }
     },
     "carreers": {
@@ -312,7 +312,51 @@
           "c1": "DESIRIAL® is specifically designed to restore hydration and firmness in the vulvo-vaginal area for women experiencing vaginal dryness. With innovative formulations incorporating hyaluronic acid and antioxidants, DESIRIAL® provides effective solutions to enhance comfort and improve quality of life for affected women."
         },
         "cta": {
-          "content": "Discover Desirial",
+          "content": "Discover DESIRIAL®",
+          "path": ""
+        }
+      },
+      "desirialPlus": {
+        "title": "DESIRIAL® Plus",
+        "alt": "Desirial Plus logo",
+        "content": {
+          "c1": "DESIRIAL® Plus is indicated for women suffering from moderate hypotrophy or atrophy (volume loss) of the vulvar labia majora. By injecting DESIRIAL® Plus, volume is restored, vaginal mucous membrane is rehydrated and the tone and tension of the connective tissues are restored. It also strengthens the protective role of the labia majora and improves the aesthetic appearance of the vulvo-vaginal area."
+        },
+        "cta": {
+          "content": "Discover DESIRIAL® Plus",
+          "path": ""
+        }
+      },
+      "vivacyBeauty": {
+        "title": "Vivacy Beauty",
+        "alt": "Vivacy Beauty logo",
+        "content": {
+          "c1": "Laboratoires VIVACY is committed to producing high-quality dermal treatments in the form of its premium range of cosmetic products called VIVACY BEAUTY. We strive to make professional skincare accessible by making our expertise in aesthetic medicine available to all through a comprehensive e-commerce website."
+        },
+        "cta": {
+          "content": "Discover Vivacy Beauty",
+          "path": ""
+        }
+      },
+      "ispace": {
+        "title": "I.SPACE®",
+        "alt": "Desirial logo",
+        "content": {
+          "c1": "As a main component of the vitreous body of the eye, hyaluronic acid is applied via intraocular injection to act as a cushion in many surgical procedures, e.g. during cataract removals, corneal transplantations or reparation of a detached retina. I.SPACE® is a high molecular weight hyaluronic acid-based viscoelastic gel containing the antioxidant, Mannitol. It is specifically designed for anterior segment surgery, protection of the corneal endothelium and maintenance of the intraocular space."
+        },
+        "cta": {
+          "content": "Discover I.SPACE®",
+          "path": ""
+        }
+      },
+      "kartilage": {
+        "title": "KARTILAGE®",
+        "alt": "KARTILAGE logo",
+        "content": {
+          "c1": "KARTILAGE® range is a hyaluronic acid injectable gel indicated in the treatment of pain in osteoarthritis of the knee joint particularly after failure of or intolerance to analgesics (NSAIDs, SAIDs)."
+        },
+        "cta": {
+          "content": "Discover KARTILAGE®",
           "path": ""
         }
       }

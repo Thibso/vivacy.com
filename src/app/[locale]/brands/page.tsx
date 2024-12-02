@@ -66,25 +66,46 @@ export default function OurBrands() {
         "desirialplus.content",
         "desirialplus.cta",
       ],
-      title: "Desirial®",
-      content: [
-        "DESIRIAL® is specifically designed to restore hydration and firmness in the vulvo-vaginal area for women experiencing vaginal dryness. With innovative formulations incorporating hyaluronic acid and antioxidants, DESIRIAL® provides effective solutions to enhance comfort and improve quality of life for affected women.",
-      ],
+      title: t("brandsDescriptions.desirialPlus.title"),
+      content: [t("brandsDescriptions.desirialPlus.content.c1")],
       cta: {
-        content: "Discover Desirial",
-        path: "",
+        content: t("brandsDescriptions.desirialPlus.cta.content"),
+        path: t("brandsDescriptions.desirialPlus.cta.path"),
       },
     },
 
     {
       keys: ["vivacy.img", "vivacy.title", "vivacy.content", "vivacy.cta"],
-      title: "Desirial®",
-      content: [
-        "DESIRIAL® is specifically designed to restore hydration and firmness in the vulvo-vaginal area for women experiencing vaginal dryness. With innovative formulations incorporating hyaluronic acid and antioxidants, DESIRIAL® provides effective solutions to enhance comfort and improve quality of life for affected women.",
-      ],
+      title: t("brandsDescriptions.vivacyBeauty.title"),
+      content: [t("brandsDescriptions.vivacyBeauty.content.c1")],
       cta: {
-        content: "Discover Desirial",
-        path: "",
+        content: t("brandsDescriptions.vivacyBeauty.cta.content"),
+        path: t("brandsDescriptions.vivacyBeauty.cta.path"),
+      },
+    },
+
+    {
+      keys: ["ispace.img", "ispace.title", "ispace.content", "ispace.cta"],
+      title: t("brandsDescriptions.ispace.title"),
+      content: [t("brandsDescriptions.ispace.content.c1")],
+      cta: {
+        content: t("brandsDescriptions.ispace.cta.content"),
+        path: t("brandsDescriptions.ispace.cta.path"),
+      },
+    },
+
+    {
+      keys: [
+        "kartilage.img",
+        "kartilage.title",
+        "kartilage.content",
+        "kartilage.cta",
+      ],
+      title: t("brandsDescriptions.kartilage.title"),
+      content: [t("brandsDescriptions.kartilage.content.c1")],
+      cta: {
+        content: t("brandsDescriptions.kartilage.cta.content"),
+        path: t("brandsDescriptions.kartilage.cta.path"),
       },
     },
   ];

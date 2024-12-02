@@ -5,11 +5,11 @@ import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bgHeader from "@/app/img/ipn/ipn-like-technology.jpg";
 import vivacyLogo from "@/app/img/vivacy-laboratories-hyaluronic-acid-france.png";
-import section4 from "@/app/img/vivasome/AdobeStock_503863962_Preview.jpg";
 import bg from "@/app/img/vivasome/bg-vivasome.jpg";
 import section3 from "@/app/img/vivasome/plateau-vivacy-vivasome.png";
 import section5 from "@/app/img/vivasome/vivacy-cosmetics-vivasome.jpg";
 import section2 from "@/app/img/vivasome/vivasome-vivacy-cosmetics.jpg";
+import section4 from "@/app/img/vivasome/vivasome-vivacy-hyaluronic-acid-cosmetic.jpg";
 import section1 from "@/app/img/vivasome/vivasome-vivacy-laboratories.jpg";
 
 import { useTranslations } from "next-intl";
@@ -99,7 +99,7 @@ export default function Vivasome() {
               <Image
                 src={section1}
                 alt={t("section1.alt")}
-                quality={75}
+                quality={100}
                 className="object-cover size-full rounded-xl"
               />
             </div>
@@ -129,7 +129,7 @@ export default function Vivasome() {
                 src={section2}
                 alt={t("section2.alt")}
                 fill
-                quality={75}
+                quality={100}
                 className="object-cover size-full rounded-xl"
               />
             </div>
@@ -164,7 +164,7 @@ export default function Vivasome() {
               <Image
                 src={section3}
                 alt={t("section3.alt")}
-                quality={75}
+                quality={100}
                 className="h-full w-auto object-contain mx-auto"
               />
             </div>
@@ -187,7 +187,7 @@ export default function Vivasome() {
               <Image
                 src={section4}
                 alt={t("section4.alt")}
-                quality={75}
+                quality={100}
                 fill
                 className=" object-cover size-full rounded-xl"
               />
@@ -202,7 +202,7 @@ export default function Vivasome() {
             <Image
               src={section5}
               alt={t("section5.alt")}
-              quality={75}
+              quality={100}
               fill
               className="object-cover size-full rounded-xl"
             />

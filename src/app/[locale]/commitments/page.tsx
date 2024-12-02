@@ -7,6 +7,7 @@ import fourth from "@/app/img/auvergne-rhone-alpes-vivacy.jpg";
 import bg from "@/app/img/background-grained.jpg";
 import authenticity from "@/app/img/badge-check.png";
 import efficiency from "@/app/img/crosshair.png";
+import environment from "@/app/img/environment-challenge-vivacy.jpeg";
 import rhoneAlpes from "@/app/img/Groupe 66.png";
 import security from "@/app/img/lock-keyhole.png";
 import bgHeader from "@/app/img/our-brands-hyaluronic-acid.jpg";
@@ -189,7 +190,7 @@ export default function OurCommitments() {
           <div className="max-lg:px-5 max-lg:flex max-lg:flex-col-reverse max-lg:gap-8 lg:grid lg:grid-cols-2 lg:mt-40">
             <div className="relative max-lg:h-[350px]">
               <Image
-                src={first}
+                src={environment}
                 alt={t("section2.third.alt")}
                 quality={75}
                 fill
