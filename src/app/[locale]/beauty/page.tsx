@@ -119,10 +119,6 @@ export default function VivacyBeauty() {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
             </div>
-
-            <div className="max-lg:flex max-lg:justify-center">
-              <BlueButton content={t("cta.title")} path={t("cta.path")} />
-            </div>
           </div>
 
           <div className="relative max-lg:h-[350px]">
@@ -155,7 +151,7 @@ export default function VivacyBeauty() {
         />
 
         <div className="myContainer lg:grid lg:grid-cols-2 ">
-          <div className="p-4 lg:p-10 lg:col-span-1 lg:col-start-2 backdrop-blur rounded-xl bg-white/15 space-y-8 lg:space-y-14">
+          <div className="p-4 lg:p-10 lg:col-span-1 lg:col-start-2 backdrop-blur-md rounded-xl bg-white/15 space-y-8 lg:space-y-14">
             <FromTopTitles
               titleH2={t("section3.h2")}
               titleH3={t("section3.h3")}

@@ -10,7 +10,6 @@ import efficiency from "@/app/img/crosshair.png";
 import environment from "@/app/img/environment-challenge-vivacy.jpeg";
 import rhoneAlpes from "@/app/img/Groupe 66.png";
 import security from "@/app/img/lock-keyhole.png";
-import bgHeader from "@/app/img/our-brands-hyaluronic-acid.jpg";
 import quality from "@/app/img/shield-check.png";
 import first from "@/app/img/vivacy-laboratories-commitments.jpg";
 import second from "@/app/img/vivacy-photo-from-top.jpg";
@@ -66,25 +65,22 @@ export default function OurCommitments() {
   return (
     <main>
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
-        <Image
-          src={bgHeader}
-          alt={t("alt")}
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "50% 50%",
-            zIndex: "-2",
-            position: "absolute",
-          }}
-        />
-        <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
+        <video
+          className="absolute max-md:h-[150%] max-xl:h-[140%] xl:size-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover -z-[2]"
+          autoPlay
+          muted
+          playsInline
+          loop
+        >
+          <source src="/videos/our-commitments-vivacy.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-25"></div>
         <HeaderBigTitle title={t("title")} />
 
         <HeaderSpan content={t("span")} />
       </section>
 
-      <section>
+      <section className="relative z-[1] bg-white">
         <div className="myContainer space-y-8 lg:space-y-28">
           <FromTopCenteredTitles
             titleH2={t("section1.h2")}

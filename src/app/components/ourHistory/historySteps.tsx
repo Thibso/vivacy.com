@@ -20,7 +20,7 @@ type Props = {
 
 export default function HistorySteps(props: Props) {
   // STEPS
-  const steps = Array.from({ length: 9 }, (_, i) => i + 1);
+  const steps = Array.from({ length: 16 }, (_, i) => i + 1);
   const stepPosition = 100 / (steps.length - 1);
   const imagePosition = 100 / steps.length;
 
@@ -28,24 +28,38 @@ export default function HistorySteps(props: Props) {
   const years = [
     "2007",
     "2008",
+    "2009",
     "2010",
+    "2011",
+    "2012",
     "2013",
     "2015",
+    "2016",
     "2017",
     "2018",
+    "2019",
     "2020",
     "2021",
+    "2023",
+    "2023",
   ];
   const achievements = [
     "Creation of the Laboratoires VIVACY.",
     "First CE marking of STYLAGE® products.",
+    "First CE marking of STYLAGE® with Lidocaïne products.",
     "Launch of STYLAGE® HydroMax.",
+    "CE marking of DESIRIAL® & KARTILAGE® ranges.",
+    "Launch of STYLAGE® XXL.",
     "Opening of the new production site in Archamps.",
-    "Launch of a premium dermo-cosmetics range",
-    "Launch of « MY VIVACY » application.",
-    "Launch of a new-generation injection delivery system, Bi-SOFT® Injection Technology.",
-    "Launch of new perfume range, DESIRIAL® Paris and the new VIVACY dermo-cosmetics range.",
+    "Launch of Dermo-cosmetics range.",
+    "Opening of a subsidiary in Geneva",
+    "Launch of My VIVACY and VIVACY ACADEMY",
+    "Launch of a new-generation injection delivery system, Bi-SOFT® Injection Technology",
+    "Opening of London and Moscow subsidiaries",
+    "Launch of DESIRIAL® Paris Perfumes and update of dermo-cosmetics range",
     "Launch of STYLAGE® Lips Plus and dermo-cosmetic range for men, Monsieur Skin Care®",
+    "Opening of Itlalia and Canada subsidiaries",
+    "Prix ACE du meilleur fabricant",
   ];
 
   // SCROLL SETTINGS
@@ -138,6 +152,62 @@ export default function HistorySteps(props: Props) {
             <li className="h-full w-[90vw] lg:w-[65vw]">
               <Image
                 src={img2}
+                alt=""
+                quality={50}
+                className="size-full object-cover"
+              />
+            </li>
+            <li className="h-full w-[90vw] lg:w-[65vw]">
+              <Image
+                src={img1}
+                alt=""
+                quality={50}
+                className="size-full object-cover"
+              />
+            </li>
+            <li className="h-full w-[90vw] lg:w-[65vw]">
+              <Image
+                src={img1}
+                alt=""
+                quality={50}
+                className="size-full object-cover"
+              />
+            </li>
+            <li className="h-full w-[90vw] lg:w-[65vw]">
+              <Image
+                src={img1}
+                alt=""
+                quality={50}
+                className="size-full object-cover"
+              />
+            </li>
+            <li className="h-full w-[90vw] lg:w-[65vw]">
+              <Image
+                src={img1}
+                alt=""
+                quality={50}
+                className="size-full object-cover"
+              />
+            </li>
+            <li className="h-full w-[90vw] lg:w-[65vw]">
+              <Image
+                src={img1}
+                alt=""
+                quality={50}
+                className="size-full object-cover"
+              />
+            </li>
+            <li className="h-full w-[90vw] lg:w-[65vw]">
+              <Image
+                src={img1}
+                alt=""
+                quality={50}
+                className="size-full object-cover"
+              />
+            </li>
+            <li className="h-full w-[90vw] lg:w-[65vw]">
+              <Image
+                src={img1}
                 alt=""
                 quality={50}
                 className="size-full object-cover"

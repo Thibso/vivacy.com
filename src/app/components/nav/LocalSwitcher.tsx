@@ -17,7 +17,8 @@ export default function LocalSwitcher() {
   };
   return (
     <label className="max-lg:hidden">
-      <select
+      <p className="bg-blue text-white">English</p>
+      {/* <select
         defaultValue={localActive}
         className="bg-blue text-white"
         onChange={onSelectChange}
@@ -29,7 +30,7 @@ export default function LocalSwitcher() {
         <option className="bg-blue text-white" value="fr">
           Français
         </option>
-      </select>
+      </select> */}
     </label>
   );
 }

@@ -143,13 +143,10 @@ export default function Desirial() {
               titleH3={t("section3.h3")}
               h3Classes="lg:text-white"
             />
-            <div className="xl:w-[70%]">
+            <div className="xl:w-[70%] space-y-4">
               {t.rich("section3.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
-            </div>
-            <div className="max-lg:flex max-lg:justify-center">
-              <BlueButton content={t("cta.title")} path={t("cta.path")} />
             </div>
           </div>
         </div>
@@ -197,9 +194,6 @@ export default function Desirial() {
                 {t.rich("section4.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
-              <div className="max-lg:flex max-lg:justify-center">
-                <BlueButton content={t("cta.title")} path={t("cta.path")} />
               </div>
             </div>
           </div>

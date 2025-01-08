@@ -4,7 +4,6 @@ import HeaderSpan from "@/app/components/globals/headerSpan";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
-import bgHeader from "@/app/img/desirial/desirial-vivacy-laboratories.jpg";
 import secrtion1Second from "@/app/img/stylage/specialist-hyaluronic-acid-laboratory-vivacy-stylage.jpg";
 import secrtion1First from "@/app/img/stylage/stylage-acid-hyaluronic-expert.jpg";
 import section4First from "@/app/img/stylage/stylage-acid-hyaluronic-quality.jpg";
@@ -42,25 +41,22 @@ export default function Stylage() {
   return (
     <main>
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
-        <Image
-          src={bgHeader}
-          alt={t("alt")}
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "50% 50%",
-            zIndex: "-2",
-            position: "absolute",
-          }}
-        />
-        <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
+        <video
+          className="absolute max-md:h-[150%] max-xl:h-[140%] xl:size-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover -z-[2]"
+          autoPlay
+          muted
+          playsInline
+          loop
+        >
+          <source src="/videos/stylage-vivacy.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-25"></div>
         <HeaderBigTitle title={t("title")} />
 
         <HeaderSpan content={t("span")} />
       </section>
 
-      <section className="relative z-[1]">
+      <section className="relative z-[1] bg-white">
         <Image
           src={vivacyLogo}
           alt="Vivacy"
@@ -182,11 +178,12 @@ export default function Stylage() {
               titleH3={t("section3.h3")}
               h3Classes="lg:text-white"
             />
-            <div className="xl:w-[70%]">
+            <div className="xl:w-[70%] space-y-4">
               {t.rich("section3.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
               })}
+              <p className="text-sm">{t("section3.asterisk")}</p>
             </div>
             <div className="max-lg:flex max-lg:justify-center">
               <BlueButton content={t("cta.title")} path={t("cta.path")} />
@@ -254,11 +251,11 @@ export default function Stylage() {
             </div>
           </div>
 
-          <ul className="max-lg pt-4">
+          <ol className="max-lg pt-4 list-decimal">
             {t.rich("section4.references", {
               li: (chunks) => <li className="text-sm">{chunks}</li>,
             })}
-          </ul>
+          </ol>
         </div>
       </section>
     </main>

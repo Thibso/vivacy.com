@@ -17,11 +17,11 @@ export default function ProductsCarousel() {
   const isMobile = useMediaQuery({ query: "(max-width: 1024px)" });
 
   const [state, setState] = useState(0);
-  const titles = ["Médecine esthétique", "Médecine intime"];
   const texts = [
-    "Explore our range of Stylage® dermal fillers, formulated with hyaluronic acid and specifically designed for aesthetic and anti-aging treatments. These products provide a comprehensive and safe solution to restore youthfulness and vitality to the skin",
-    "Discover our products: Desirial® and Desirial® Plus. Designed with an exclusive formulation, they offer various properties to meet specific needs in intimate comfort.",
+    "Laboratoires VIVACY’s STYLAGE® range embodies exigence in the field of aesthetic medicine. Founded in 2007, our brand has established itself as an undisputed leader, offering a comprehensive range of aesthetic and anti-aging treatments. Beyond our diverse product offerings, STYLAGE® is committed to the education and support of aesthetic professionals worldwide.",
+    "In 2011, Laboratoires VIVACY revolutionized the field of aesthetic and functional gynecology by introducing on the market the very first injectable hyaluronic acid gel for female vulvovaginal restoration. This innovation provides a solution for women suffering from vaginal discomfort, chronic irritation, or pain during intercourse. This treatment helps to restore hydration and elasticity to the vaginal tissues, offering significant relief, and improving sexual health and overall comfort.",
   ];
+  const links = ["/en/stylage", "/en/desirial"];
   const logos = [stylage, desirial];
   const packages = [stylageIllustration, desirialIllustration];
   const alts = [t("products.stylage"), t("products.desirial")];
@@ -77,16 +77,6 @@ export default function ProductsCarousel() {
                   className="max-lg:mx-auto max-lg:h-[50px] object-contain"
                 />
               </motion.div>
-              <motion.h4
-                key={"title-" + state}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ delay: 0.1, duration: 0.3 }}
-                className="h2-perso"
-              >
-                {titles[state]}
-              </motion.h4>
             </div>
             <motion.p
               key={"text-" + state}
@@ -97,7 +87,7 @@ export default function ProductsCarousel() {
             >
               {texts[state]}
             </motion.p>
-            <BlueButton content="Learn More" path="" />
+            <BlueButton content="Learn More" path={links[state]} />
           </motion.div>
           <motion.div
             key={"product-" + state}

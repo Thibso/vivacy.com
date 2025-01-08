@@ -35,12 +35,12 @@ type Props = {
     items: Item[];
     images: string[];
   };
-  professionals: {
-    title: string;
-    content: string;
-    items: Item[];
-    images: string[];
-  };
+  // professionals: {
+  //   title: string;
+  //   content: string;
+  //   items: Item[];
+  //   images: string[];
+  // };
   contact: {
     title: string;
     content: string;
@@ -49,7 +49,6 @@ type Props = {
   };
   carreers: {
     title: string;
-    path: string;
   };
 };
 
@@ -84,18 +83,12 @@ export default function NavList(props: Props) {
               props.about.items[3].title,
               props.about.items[3].path,
             ],
-            [
-              props.about.items[4].id,
-              props.about.items[4].title,
-              props.about.items[4].path,
-            ],
           ]}
           images={[
             props.about.images[0],
             props.about.images[1],
             props.about.images[2],
             props.about.images[3],
-            props.about.images[4],
           ]}
         />
 
@@ -161,7 +154,7 @@ export default function NavList(props: Props) {
           ]}
         />
 
-        <NavItem
+        {/* <NavItem
           title={props.professionals.title}
           path="#"
           content={props.professionals.content}
@@ -181,7 +174,7 @@ export default function NavList(props: Props) {
             props.professionals.images[0],
             props.professionals.images[1],
           ]}
-        />
+        /> */}
 
         <NavItem
           title={props.contact.title}
@@ -205,7 +198,7 @@ export default function NavList(props: Props) {
         <li>
           <a
             className="uppercase font-light text-base"
-            href={props.carreers.path}
+            href="https://careers.werecruit.io/fr/vivacy"
             target="_blank"
           >
             {props.carreers.title}
@@ -277,11 +270,6 @@ export default function NavList(props: Props) {
                       props.about.items[3].title,
                       props.about.items[3].path,
                     ],
-                    [
-                      props.about.items[4].id,
-                      props.about.items[4].title,
-                      props.about.items[4].path,
-                    ],
                   ]}
                 />
 
@@ -332,7 +320,7 @@ export default function NavList(props: Props) {
                   ]}
                 />
 
-                <MobileNavItem
+                {/* <MobileNavItem
                   title={props.professionals.title}
                   items={[
                     [
@@ -346,7 +334,7 @@ export default function NavList(props: Props) {
                       props.professionals.items[1].path,
                     ],
                   ]}
-                />
+                /> */}
 
                 <MobileNavItem
                   title={props.contact.title}
@@ -367,7 +355,7 @@ export default function NavList(props: Props) {
                 <li>
                   <a
                     className="uppercase text-lg cursor-pointer"
-                    href={props.carreers.path}
+                    href="https://careers.werecruit.io/fr/vivacy"
                     target="_blank"
                   >
                     {props.carreers.title}

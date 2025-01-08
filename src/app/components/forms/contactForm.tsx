@@ -14,6 +14,13 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { useTranslations } from "next-intl";
@@ -88,16 +95,19 @@ export default function ContactForm() {
     });
 
     const responseJson = await response.json();
+
     if (responseJson.id) {
       toast({
         title: t("toast.title"),
         description: t("toast.description"),
+        variant: "success",
       });
     }
     if (responseJson.error) {
       toast({
         title: t("toast.error_title"),
         description: t("toast.error_description"),
+        variant: "destructive",
       });
     }
   }
@@ -171,7 +181,57 @@ export default function ContactForm() {
                     {t("form.specialisation")}
                   </FormLabel>
                   <FormControl>
-                    <Input className="border-blue" placeholder="" {...field} />
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
+                      <FormControl>
+                        <SelectTrigger style={{ borderColor: "#000f9f" }}>
+                          <SelectValue placeholder="" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value={t("form.specialisations.1")}>
+                          {t("form.specialisations.1")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.2")}>
+                          {t("form.specialisations.2")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.3")}>
+                          {t("form.specialisations.3")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.4")}>
+                          {t("form.specialisations.4")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.5")}>
+                          {t("form.specialisations.5")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.6")}>
+                          {t("form.specialisations.6")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.7")}>
+                          {t("form.specialisations.7")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.8")}>
+                          {t("form.specialisations.8")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.9")}>
+                          {t("form.specialisations.9")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.10")}>
+                          {t("form.specialisations.10")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.11")}>
+                          {t("form.specialisations.11")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.12")}>
+                          {t("form.specialisations.12")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.13")}>
+                          {t("form.specialisations.13")}
+                        </SelectItem>
+                      </SelectContent>
+                    </Select>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -208,7 +268,33 @@ export default function ContactForm() {
                     {t("form.subject")}
                   </FormLabel>
                   <FormControl>
-                    <Input className="border-blue" placeholder="" {...field} />
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
+                      <FormControl>
+                        <SelectTrigger style={{ borderColor: "#000f9f" }}>
+                          <SelectValue placeholder="" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value={t("form.subjects.1")}>
+                          {t("form.subjects.1")}
+                        </SelectItem>
+                        <SelectItem value={t("form.subjects.2")}>
+                          {t("form.subjects.2")}
+                        </SelectItem>
+                        <SelectItem value={t("form.subjects.3")}>
+                          {t("form.subjects.3")}
+                        </SelectItem>
+                        <SelectItem value={t("form.subjects.4")}>
+                          {t("form.subjects.4")}
+                        </SelectItem>
+                        <SelectItem value={t("form.subjects.5")}>
+                          {t("form.subjects.5")}
+                        </SelectItem>
+                      </SelectContent>
+                    </Select>
                   </FormControl>
                   <FormMessage />
                 </FormItem>

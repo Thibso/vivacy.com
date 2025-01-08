@@ -3,11 +3,9 @@ import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import HeaderSpan from "@/app/components/globals/headerSpan";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
-import bgHeader from "@/app/img/ipn/ipn-like-technology.jpg";
 import vivacyLogo from "@/app/img/vivacy-laboratories-hyaluronic-acid-france.png";
 import bg from "@/app/img/vivasome/bg-vivasome.jpg";
 import section3 from "@/app/img/vivasome/plateau-vivacy-vivasome.png";
-import section5 from "@/app/img/vivasome/vivacy-cosmetics-vivasome.jpg";
 import section2 from "@/app/img/vivasome/vivasome-vivacy-cosmetics.jpg";
 import section4 from "@/app/img/vivasome/vivasome-vivacy-hyaluronic-acid-cosmetic.jpg";
 import section1 from "@/app/img/vivasome/vivasome-vivacy-laboratories.jpg";
@@ -41,25 +39,22 @@ export default function Vivasome() {
   return (
     <main>
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
-        <Image
-          src={bgHeader}
-          alt={t("alt")}
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "50% 50%",
-            zIndex: "-2",
-            position: "absolute",
-          }}
-        />
-        <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
+        <video
+          className="absolute max-md:h-[150%] max-xl:h-[140%] xl:size-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover -z-[2]"
+          autoPlay
+          muted
+          playsInline
+          loop
+        >
+          <source src="/videos/vivasome-vivacy.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-25"></div>
         <HeaderBigTitle title={t("title")} />
 
         <HeaderSpan content={t("span")} />
       </section>
 
-      <section className="relative z-[1]">
+      <section className="relative z-[1] bg-white">
         <Image
           src={vivacyLogo}
           alt="Vivacy"
@@ -172,16 +167,25 @@ export default function Vivasome() {
             <ul className="space-y-4 list-disc ml-4 lg:py-8">
               {t.rich("section3.content", {
                 li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
+                b: (chunks) => (
+                  <strong className="lg:text-lg text-bold">{chunks}</strong>
+                ),
               })}
             </ul>
           </div>
 
           <div className="max-lg:space-y-8 lg:grid lg:grid-cols-2 lg:gap-x-28">
-            <ul className="space-y-4 list-disc ml-4 lg:pt-28 lg:pb-14">
-              {t.rich("section4.content", {
-                li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
-              })}
-            </ul>
+            <div className="lg:pt-28 space-y-8 lg:space-y-16">
+              <h3 className="h2-perso">{t("section4.h3")}</h3>
+              <ul className="space-y-4 list-disc ml-4  lg:pb-14">
+                {t.rich("section4.content", {
+                  li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
+                  b: (chunks) => (
+                    <strong className="lg:text-lg text-bold">{chunks}</strong>
+                  ),
+                })}
+              </ul>
+            </div>
 
             <div className="relative max-lg:h-[350px]">
               <Image
@@ -196,7 +200,7 @@ export default function Vivasome() {
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div className="myContainer max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-2 lg:gap-x-28">
           <div className="relative max-lg:h-[350px]">
             <Image
@@ -216,7 +220,7 @@ export default function Vivasome() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

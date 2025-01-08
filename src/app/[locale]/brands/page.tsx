@@ -3,8 +3,8 @@ import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import HeaderSpan from "@/app/components/globals/headerSpan";
 import VivacySecurity from "@/app/components/globals/vivacySecurity";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
-import bgHeader from "@/app/img/our-brands-hyaluronic-acid.jpg";
 import firstSectionImg from "@/app/img/vivacy-brands-hyaluronic-acid.jpg";
+import bgHeader from "@/app/img/vivacy-brands.jpg";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -35,10 +35,7 @@ export default function OurBrands() {
     {
       keys: ["stylage.img", "stylage.title", "stylage.content", "stylage.cta"],
       title: t("brandsDescriptions.stylage.title"),
-      content: [
-        t("brandsDescriptions.stylage.content.c1"),
-        t("brandsDescriptions.stylage.content.c2"),
-      ],
+      content: [t("brandsDescriptions.stylage.content.c1")],
       cta: {
         content: t("brandsDescriptions.stylage.cta.content"),
         path: t("brandsDescriptions.stylage.cta.path"),
@@ -85,16 +82,6 @@ export default function OurBrands() {
     },
 
     {
-      keys: ["ispace.img", "ispace.title", "ispace.content", "ispace.cta"],
-      title: t("brandsDescriptions.ispace.title"),
-      content: [t("brandsDescriptions.ispace.content.c1")],
-      cta: {
-        content: t("brandsDescriptions.ispace.cta.content"),
-        path: t("brandsDescriptions.ispace.cta.path"),
-      },
-    },
-
-    {
       keys: [
         "kartilage.img",
         "kartilage.title",
@@ -106,6 +93,16 @@ export default function OurBrands() {
       cta: {
         content: t("brandsDescriptions.kartilage.cta.content"),
         path: t("brandsDescriptions.kartilage.cta.path"),
+      },
+    },
+
+    {
+      keys: ["ispace.img", "ispace.title", "ispace.content", "ispace.cta"],
+      title: t("brandsDescriptions.ispace.title"),
+      content: [t("brandsDescriptions.ispace.content.c1")],
+      cta: {
+        content: t("brandsDescriptions.ispace.cta.content"),
+        path: t("brandsDescriptions.ispace.cta.path"),
       },
     },
   ];

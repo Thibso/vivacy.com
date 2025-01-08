@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
 type Props = {
   titleH2: string;
-  titleH3: string;
+  titleH3: string | ReactNode;
   containerClasses?: string;
   h3Classes?: string;
 };

@@ -88,35 +88,35 @@ export default function Footer() {
       </div>
 
       <div className="flex gap-x-6 justify-center pb-8 lg:pb-24">
-        <a href={t("socials.instagram")}>
+        <a href={t("socials.instagram")} target="_blank">
           <Image
             src={instagram}
             alt="Instagram"
             className="size-8 object-contain"
           />
         </a>
-        <a href={t("socials.facebook")}>
+        <a href={t("socials.facebook")} target="_blank">
           <Image
             src={facebook}
             alt="Facebook"
             className="size-8 object-contain"
           />
         </a>
-        <a href={t("socials.linkedin")}>
+        <a href={t("socials.linkedin")} target="_blank">
           <Image
             src={linkedin}
             alt="Linkedin"
             className="size-8 object-contain"
           />
         </a>
-        <a href={t("socials.twitter")}>
+        <a href={t("socials.twitter")} target="_blank">
           <Image
             src={twitter}
             alt="Twitter"
             className="size-8 object-contain"
           />
         </a>
-        <a href={t("socials.youtube")}>
+        <a href={t("socials.youtube")} target="_blank">
           <Image
             src={youtube}
             alt="Youtube"

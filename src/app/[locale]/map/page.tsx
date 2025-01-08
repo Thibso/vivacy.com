@@ -120,13 +120,7 @@ export default function Contact() {
             africa={t.rich("distribution.africa", {
               li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
             })}
-            northAmerica={t.rich("distribution.northAmerica", {
-              li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
-            })}
-            southAmerica={t.rich("distribution.southAmerica", {
-              li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
-            })}
-            oceania={t.rich("distribution.oceania", {
+            americas={t.rich("distribution.americas", {
               li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
             })}
           />

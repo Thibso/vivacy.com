@@ -154,14 +154,14 @@ export default function Home() {
           <div className="max-lg:space-y-14 lg:grid lg:grid-cols-4 lg:gap-20">
             <div className="text-center">
               <p>
-                <IncrementNumber number={15} />
+                <IncrementNumber number={85} speed={27.5} />
               </p>
               <p className="mt-4 lg:mt-14">{t("section3.keyNumbers.1")}</p>
             </div>
 
             <div className="text-center">
               <p>
-                <IncrementNumber number={85} speed={37.5} />
+                <IncrementNumber number={15} />
               </p>
               <p className="mt-4 lg:mt-14">{t("section3.keyNumbers.2")}</p>
             </div>
@@ -185,6 +185,12 @@ export default function Home() {
               </p>
               <p className="mt-4 lg:mt-14">{t("section3.keyNumbers.4")}</p>
             </div>
+          </div>
+
+          <div className="m-auto lg:ml-0">
+            <p className="text-sm max-lg:text-center">
+              {t("section3.annotation")}
+            </p>
           </div>
 
           <div className="max-lg:flex max-lg:justify-center">
@@ -221,6 +227,7 @@ export default function Home() {
                   p: (chunks) => (
                     <p className="last:ml-8 text-sm lg:text-lg">{chunks}</p>
                   ),
+                  sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
                 })}
               </div>
 
@@ -231,10 +238,20 @@ export default function Home() {
                 })}
               </div>
 
+              <div className="space-y-4">
+                <p className="text-[10px]">* {t("section4.asterisk")}</p>
+
+                <ul className="list-decimal">
+                  {t.rich("section4.annotations", {
+                    li: (chunks) => <li className="text-[10px]">{chunks}</li>,
+                  })}
+                </ul>
+              </div>
+
               <div className="max-lg:flex max-lg:justify-center">
                 <BlueButton
-                  content={t("section2.button")}
-                  path={t("section2.buttonPath")}
+                  content={t("section4.button")}
+                  path={t("section4.buttonPath")}
                 />
               </div>
             </div>

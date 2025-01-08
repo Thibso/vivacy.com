@@ -1,10 +1,8 @@
 import SeringeBiSoft from "@/app/components/bisoft/seringeBiSoft";
 import BlueButton from "@/app/components/buttons/BlueButton";
-import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import HeaderSpan from "@/app/components/globals/headerSpan";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
-import bgHeader from "@/app/img/beauty/vivacy-beauty.jpg";
 import section1Bg from "@/app/img/bisoft/background-bisoft.png";
 import logoBiSoft from "@/app/img/bisoft/BI-SOFT.png";
 import ratings3 from "@/app/img/bisoft/hyaluronic-acid-bisoft-seringe.jpg";
@@ -51,25 +49,25 @@ export default function BiSoft() {
     content: [
       t("seringe.second.content.first"),
       t("seringe.second.content.second"),
+      t("seringe.second.content.third"),
+      t("seringe.second.content.fourth"),
     ],
   };
   const seringeTextThird = {
     title: t("seringe.third.title"),
     content: [
       t("seringe.third.content.first"),
-      t("seringe.third.content.second"),
+      t.rich("seringe.third.content.second", {
+        sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
+      }),
       t("seringe.third.content.third"),
-      t("seringe.third.content.fourth"),
     ],
   };
   const seringeTextFourth = {
     title: t("seringe.fourth.title"),
     content: [
       t("seringe.fourth.content.first"),
-      t.rich("seringe.fourth.content.second", {
-        sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
-      }),
-      t("seringe.fourth.content.third"),
+      t("seringe.fourth.content.second"),
     ],
   };
   const seringeTextFifth = {
@@ -77,40 +75,33 @@ export default function BiSoft() {
     content: [
       t("seringe.fifth.content.first"),
       t("seringe.fifth.content.second"),
-      t("seringe.fifth.content.third"),
     ],
   };
 
   return (
     <main>
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
-        <Image
-          src={bgHeader}
-          alt={t("alt")}
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "50% 50%",
-            zIndex: "-2",
-            position: "absolute",
-          }}
-        />
-        <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
-        <HeaderBigTitle
-          title={t.rich("title", {
-            sup: (chunks) => (
-              <sup className="text-lg lg:text-6xl -top-[25px] md:-top-[55px] lg:-top-[75px]">
-                {chunks}
-              </sup>
-            ),
-          })}
-        />
+        <video
+          className="absolute max-md:h-[150%] max-xl:h-[140%] xl:size-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover -z-[2]"
+          autoPlay
+          muted
+          playsInline
+          loop
+        >
+          <source src="/videos/bisoft-vivacy.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-25"></div>
+        {/* <HeaderBigTitle title={t("title")} /> */}
+        <div className="m-auto px-5 lg:px-28 lg:py-32">
+          <h1 className="text-[8vw] font-mona uppercase font-bold text-whiteGrey text-center leading-none">
+            {t("title")}
+          </h1>
+        </div>
 
         <HeaderSpan content={t("span")} />
       </section>
 
-      <section className="relative z-[1]">
+      <section className="relative z-[1] bg-white">
         <Image
           src={section1Bg}
           alt="texture"
@@ -122,7 +113,9 @@ export default function BiSoft() {
           <div className="lg:col-span-5 space-y-8 lg:space-y-14">
             <FromTopTitles
               titleH2={t("section1.h2")}
-              titleH3={t("section1.h3")}
+              titleH3={t.rich("section1.h3", {
+                sup: (chunks) => <sup>{chunks}</sup>,
+              })}
               h3Classes="text-black"
             />
 
@@ -278,7 +271,7 @@ export default function BiSoft() {
       />
 
       <section className="px-5 pb-16 lg:px-20 lg:pb-24 xl:px-28 xl:pb-32">
-        <ol className="">
+        <ol className="list-decimal">
           {t.rich("references", {
             li: (chunks) => <li className="text-sm">{chunks}</li>,
           })}

@@ -11,7 +11,7 @@ import Image from "next/image";
 import { useState } from "react";
 import BlueButton from "../buttons/BlueButton";
 
-const logos = [stylage, desirial, desirialPlus, vivacy, ispace, kartilage];
+const logos = [stylage, desirial, desirialPlus, vivacy, kartilage, ispace];
 
 type Text = {
   keys: Array<string>;

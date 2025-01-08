@@ -173,14 +173,19 @@ export default function OurBrands() {
       </section>
 
       <section>
-        <div className="myContainer max-lg:pt-0">
+        <div className="myContainer max-lg:pt-0 space-y-16">
           <FromTopCenteredTitles
             titleH2={t("section4.h2")}
             titleH3={t("section4.h3")}
             h3Classes="text-black"
           />
 
-          <p className="text-center">VIDEO</p>
+          <video className="lg:max-w-[70%] mx-auto" playsInline loop controls>
+            <source
+              src="/videos/vivacy-presentation.mp4#t=1.5"
+              type="video/mp4"
+            />
+          </video>
         </div>
       </section>
 
@@ -194,14 +199,14 @@ export default function OurBrands() {
           <div className="max-lg:space-y-14 lg:grid lg:grid-cols-4 lg:gap-20">
             <div className="text-center">
               <p>
-                <IncrementNumber number={15} />
+                <IncrementNumber number={85} speed={27.5} />
               </p>
               <p className="mt-4 lg:mt-14">{h("section3.keyNumbers.1")}</p>
             </div>
 
             <div className="text-center">
               <p>
-                <IncrementNumber number={85} speed={37.5} />
+                <IncrementNumber number={15} />
               </p>
               <p className="mt-4 lg:mt-14">{h("section3.keyNumbers.2")}</p>
             </div>
@@ -225,6 +230,12 @@ export default function OurBrands() {
               </p>
               <p className="mt-4 lg:mt-14">{h("section3.keyNumbers.4")}</p>
             </div>
+          </div>
+
+          <div className="m-auto lg:ml-0">
+            <p className="text-sm max-lg:text-center">
+              {h("section3.annotation")}
+            </p>
           </div>
 
           <div className="max-lg:flex max-lg:justify-center">

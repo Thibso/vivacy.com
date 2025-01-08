@@ -6,9 +6,7 @@ type Props = {
   europe: ReactNode;
   asia: ReactNode;
   africa: ReactNode;
-  northAmerica: ReactNode;
-  southAmerica: ReactNode;
-  oceania: ReactNode;
+  americas: ReactNode;
 };
 
 export default function Accordion(props: Props) {
@@ -29,16 +27,8 @@ export default function Accordion(props: Props) {
         content={props.africa}
       />
       <AccordionItem
-        title={t(`distribution.titles.northAmerica`)}
-        content={props.northAmerica}
-      />
-      <AccordionItem
-        title={t(`distribution.titles.southAmerica`)}
-        content={props.southAmerica}
-      />
-      <AccordionItem
-        title={t(`distribution.titles.oceania`)}
-        content={props.oceania}
+        title={t(`distribution.titles.americas`)}
+        content={props.americas}
       />
     </div>
   );

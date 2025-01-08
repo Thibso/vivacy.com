@@ -189,10 +189,15 @@ export default function IpnLike() {
 
       {/* VIDEO */}
       <section>
-        <div className="myContainer">VIDEO</div>
+        <video className="max-w-[70%] mx-auto" playsInline loop controls>
+          <source
+            src="/videos/vivacy-ipnlike-technology.mp4#t=1.5"
+            type="video/mp4"
+          />
+        </video>
 
         <div className="myContainer">
-          <ol className="space-y-2">
+          <ol className="space-y-2 list-decimal">
             {t.rich("references", {
               li: (chunks) => <li className="text-sm">{chunks}</li>,
             })}

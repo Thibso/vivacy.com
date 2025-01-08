@@ -36,18 +36,12 @@ export default function NavBar(props: Props) {
         title: t("about.items.item4.title"),
         path: t("about.items.item4.path"),
       },
-      {
-        id: t("about.items.item5.id"),
-        title: t("about.items.item5.title"),
-        path: t("about.items.item5.path"),
-      },
     ],
     images: [
       t("about.images.1"),
       t("about.images.2"),
       t("about.images.3"),
       t("about.images.4"),
-      t("about.images.5"),
     ],
   };
 
@@ -129,23 +123,23 @@ export default function NavBar(props: Props) {
     images: [t("contact.images.1"), t("contact.images.2")],
   };
 
-  const ProfessionalsProps = {
-    title: t("professionals.title"),
-    content: t("professionals.content"),
-    items: [
-      {
-        id: t("professionals.items.item1.id"),
-        title: t("professionals.items.item1.title"),
-        path: t("professionals.items.item1.path"),
-      },
-      {
-        id: t("professionals.items.item2.id"),
-        title: t("professionals.items.item2.title"),
-        path: t("professionals.items.item2.path"),
-      },
-    ],
-    images: [t("professionals.images.1"), t("professionals.images.2")],
-  };
+  // const ProfessionalsProps = {
+  //   title: t("professionals.title"),
+  //   content: t("professionals.content"),
+  //   items: [
+  //     {
+  //       id: t("professionals.items.item1.id"),
+  //       title: t("professionals.items.item1.title"),
+  //       path: t("professionals.items.item1.path"),
+  //     },
+  //     {
+  //       id: t("professionals.items.item2.id"),
+  //       title: t("professionals.items.item2.title"),
+  //       path: t("professionals.items.item2.path"),
+  //     },
+  //   ],
+  //   images: [t("professionals.images.1"), t("professionals.images.2")],
+  // };
 
   const Carreersprops = {
     title: t("carreers.title"),
@@ -168,7 +162,7 @@ export default function NavBar(props: Props) {
           about={AboutProps}
           innovations={InnovationsProps}
           products={ProductsProps}
-          professionals={ProfessionalsProps}
+          // professionals={ProfessionalsProps}
           contact={ContactProps}
           carreers={Carreersprops}
         />

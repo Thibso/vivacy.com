@@ -8,12 +8,7 @@ import { ReactNode, useRef } from "react";
 
 type Contents = {
   title: string;
-  content: string[];
-};
-
-type ContentsHtml = {
-  title: string;
-  content: ReactNode[];
+  content: string[] | ReactNode[];
 };
 
 type Props = {
@@ -22,7 +17,7 @@ type Props = {
   first: Contents;
   second: Contents;
   third: Contents;
-  fourth: ContentsHtml;
+  fourth: Contents;
   fifth: Contents;
 };
 
@@ -189,7 +184,7 @@ export default function SeringeBiSoft(props: Props) {
               className="h-full object-contain"
             />
             {/* 1ST */}
-            <span className="max-lg:hidden absolute lg:top-[257px] lg:left-[232px] lg:w-[21vw] xl:top-[288px] xl:w-[18vw] 2xl:top-[283px] 2xl:w-[547px] h-2 z-10 flex items-center">
+            <span className="max-lg:hidden absolute lg:top-[248px] lg:left-[232px] lg:w-[21vw] xl:top-[283px] xl:w-[18vw] 2xl:top-[273px] 2xl:w-[547px] h-2 z-10 flex items-center">
               <span className="block bg-blue size-3 rounded-full"></span>
               <motion.span
                 style={{ width: widthFirst }}
@@ -198,7 +193,7 @@ export default function SeringeBiSoft(props: Props) {
             </span>
 
             {/* 2ND */}
-            <span className="max-lg:hidden absolute lg:top-[367px] lg:left-[315px] lg:w-[14vw] xl:top-[399px] xl:left-[315px] xl:w-[12vw] 2xl:top-[393px] 2xl:left-[315px] 2xl:w-[464px] lg:h-[150px] xl:h-[120px] 2xl:h-[125px] z-10 flex items-end">
+            <span className="max-lg:hidden absolute lg:top-[387px] lg:left-[315px] lg:w-[14vw] xl:top-[395px] xl:left-[315px] xl:w-[12vw] 2xl:top-[413px] 2xl:left-[315px] 2xl:w-[464px] lg:h-[135px] xl:h-[120px] 2xl:h-[105px] z-10 flex items-end">
               <span className="block bg-blue size-3 rounded-full -mr-[7px]"></span>
               <motion.span
                 style={{ height: heightSecond }}
@@ -211,7 +206,7 @@ export default function SeringeBiSoft(props: Props) {
             </span>
 
             {/* 2ND - BIS */}
-            <span className="max-lg:hidden absolute lg:top-[367px] xl:top-[400px] 2xl:top-[395px] lg:left-[288px] lg:w-[140px] 2xl:w-[200px] lg:h-[455px] xl:h-[420px] 2xl:h-[427px] z-10 flex items-end">
+            <span className="max-lg:hidden absolute lg:top-[387px] xl:top-[395px] 2xl:top-[415px] lg:left-[288px] lg:w-[140px] 2xl:w-[200px] lg:h-[435px] xl:h-[425px] 2xl:h-[407px] z-10 flex items-end">
               <span className="block bg-blue size-3 rounded-full -mb-[5px]"></span>
               <motion.span
                 style={{ width: heightSecond }}
@@ -224,7 +219,7 @@ export default function SeringeBiSoft(props: Props) {
             </span>
 
             {/* 3RD */}
-            <span className="max-lg:hidden absolute lg:top-[504px] xl:top-[507px] 2xl:top-[530px] lg:left-[235px] xl:left-[235px] 2xl:w-[530px] xl:w-[18vw] lg:w-[21vw] lg:h-[338px] xl:h-[338px] 2xl:h-[320px] z-10 flex items-end">
+            <span className="max-lg:hidden absolute lg:top-[580px] xl:top-[557px] 2xl:top-[575px] lg:left-[235px] xl:left-[235px] 2xl:w-[530px] xl:w-[18vw] lg:w-[21vw] lg:h-[285px] xl:h-[310px] 2xl:h-[290px] z-10 flex items-end">
               <span className="block bg-blue size-3 rounded-full -mb-[5px]"></span>
               <motion.span
                 style={{ width: widthThird }}
@@ -241,7 +236,7 @@ export default function SeringeBiSoft(props: Props) {
             </span>
 
             {/* 3RD - BIS */}
-            <span className="max-lg:hidden absolute lg:top-[695px] xl:top-[672px] 2xl:top-[721px] lg:left-[399px] xl:left-[414px] 2xl:left-[592px] lg:w-[7vw] xl:w-[6vw] 2xl:w-[168px] h-2 z-10">
+            <span className="max-lg:hidden absolute lg:top-[771px] xl:top-[722px] 2xl:top-[769px] lg:left-[399px] xl:left-[414px] 2xl:left-[592px] lg:w-[7vw] xl:w-[6vw] 2xl:w-[168px] h-2 z-10">
               <motion.span
                 style={{ width: widthFourth }}
                 className="block border-blue border-t-2 border-dashed"
@@ -249,7 +244,7 @@ export default function SeringeBiSoft(props: Props) {
             </span>
 
             {/* 4TH */}
-            <span className="max-lg:hidden absolute lg:top-[760px] lg:left-[90px] 2xl:left-[85px] lg:w-[155px] 2xl:w-[160px] lg:h-[190px] 2xl:h-[220px] z-10 flex">
+            <span className="max-lg:hidden absolute lg:top-[760px] lg:left-[90px] 2xl:left-[85px] lg:w-[155px] 2xl:w-[160px] lg:h-[190px] 2xl:h-[200px] z-10 flex">
               <span className="absolute block bg-blue size-3 rounded-full -mt-[5px] right-0"></span>
               <motion.span
                 style={{ width: widthFifth }}
