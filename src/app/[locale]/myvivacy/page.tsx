@@ -164,6 +164,13 @@ export default function MyVivacy() {
             {t("section4.h2")}
           </h2>
 
+          <video className="lg:max-w-[70%] mx-auto" playsInline loop controls>
+            <source
+              src="/videos/presentation-myvivacy.mp4#t=1.5"
+              type="video/mp4"
+            />
+          </video>
+
           <div className="flex justify-center">
             <BlueButton content={t("cta.title")} path={t("cta.path")} />
           </div>
