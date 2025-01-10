@@ -20,7 +20,7 @@ type Props = {
 
 export default function HistorySteps(props: Props) {
   // STEPS
-  const steps = Array.from({ length: 16 }, (_, i) => i + 1);
+  const steps = Array.from({ length: 17 }, (_, i) => i + 1);
   const stepPosition = 100 / (steps.length - 1);
   const imagePosition = 100 / steps.length;
 
@@ -41,7 +41,8 @@ export default function HistorySteps(props: Props) {
     "2020",
     "2021",
     "2023",
-    "2023",
+    "2024",
+    "2024",
   ];
   const achievements = [
     "Creation of the Laboratoires VIVACY.",
@@ -58,8 +59,9 @@ export default function HistorySteps(props: Props) {
     "Opening of London and Moscow subsidiaries",
     "Launch of DESIRIAL® Paris Perfumes and update of dermo-cosmetics range",
     "Launch of STYLAGE® Lips Plus and dermo-cosmetic range for men, Monsieur Skin Care®",
-    "Opening of Itlalia and Canada subsidiaries",
-    "Prix ACE du meilleur fabricant",
+    "Opening of Italia and Canada subsidiaries",
+    "ACE Award for Best Manufacturer",
+    "Opening of Spain and Benelux subsidiaries",
   ];
 
   // SCROLL SETTINGS
@@ -152,6 +154,14 @@ export default function HistorySteps(props: Props) {
             <li className="h-full w-[90vw] lg:w-[65vw]">
               <Image
                 src={img2}
+                alt=""
+                quality={50}
+                className="size-full object-cover"
+              />
+            </li>
+            <li className="h-full w-[90vw] lg:w-[65vw]">
+              <Image
+                src={img1}
                 alt=""
                 quality={50}
                 className="size-full object-cover"
