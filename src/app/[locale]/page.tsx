@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <main>
       {/* VIDEO HEADER */}
-      <section className="h-[70vh] lg:h-[100vh] relative z-[1] grid pb-6">
+      <section className="h-[70vh] lg:h-[100vh] relative z-[2] grid pb-6">
         <video
           className="absolute size-full top-0 left-1/2 -translate-x-1/2 object-cover -z-[1]"
           autoPlay
@@ -68,14 +68,17 @@ export default function Home() {
           src={haPower}
           alt={t("section1.alt")}
           quality={100}
-          fill
           style={{
             objectFit: "cover",
-            objectPosition: "35% 100%",
+            objectPosition: "0% 0%",
             zIndex: "-1",
             position: "absolute",
+            top: "50%",
+            transform: "translateY(-50%)",
+            left: "0",
+            maxWidth: "inherit",
           }}
-          className=""
+          className="max-md:size-full max-md:object-center md:h-[auto] md:w-[125%]"
         />
         <div className="myContainer">
           <div className="lg:grid lg:grid-cols-2 lg:gap-36 lg:justify-between">
@@ -144,8 +147,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* KEY NUMBERS */}
       <section className="bg-blue lg:max-w-[2550px] lg:m-auto">
-        <div className="myContainer space-y-14 lg:space-y-28 text-white lg:flex lg:flex-col lg:items-center">
+        <div className="myContainer space-y-14 lg:space-y-22 text-white lg:flex lg:flex-col lg:items-center">
           <div className="titles-container w-full">
             <h2 className="h2-perso text-white">{t("section3.h2")}</h2>
             <h3 className="h3-perso text-white">{t("section3.h3")}</h3>
@@ -156,14 +160,18 @@ export default function Home() {
               <p>
                 <IncrementNumber number={85} speed={27.5} />
               </p>
-              <p className="mt-4 lg:mt-14">{t("section3.keyNumbers.1")}</p>
+              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
+                {t("section3.keyNumbers.1")}
+              </p>
             </div>
 
             <div className="text-center">
               <p>
                 <IncrementNumber number={15} />
               </p>
-              <p className="mt-4 lg:mt-14">{t("section3.keyNumbers.2")}</p>
+              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
+                {t("section3.keyNumbers.2")}
+              </p>
             </div>
 
             <div className="text-center">
@@ -173,7 +181,9 @@ export default function Home() {
                   st
                 </span>
               </p>
-              <p className="mt-4 lg:mt-14">{t("section3.keyNumbers.3")}</p>
+              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
+                {t("section3.keyNumbers.3")}
+              </p>
             </div>
 
             <div className="text-center">
@@ -183,7 +193,9 @@ export default function Home() {
                   st
                 </span>
               </p>
-              <p className="mt-4 lg:mt-14">{t("section3.keyNumbers.4")}</p>
+              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
+                {t("section3.keyNumbers.4")}
+              </p>
             </div>
           </div>
 
@@ -316,7 +328,7 @@ export default function Home() {
       </section>
 
       <section className="border-b-2 border-blue">
-        <div className="myContainer pt-0 lg:pl-8 space-y-14 lg:space-y-20">
+        <div className="myContainer pt-0 space-y-14 lg:space-y-20">
           <FromTopCenteredTitles
             titleH2={t("section7.h2")}
             titleH3={t("section7.h3")}

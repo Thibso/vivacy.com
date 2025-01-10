@@ -38,7 +38,7 @@ export default function IncrementNumber(props: Props) {
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : {}}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="font-bold text-7xl ml-2"
+      className="font-bold text-7xl lg:text-8xl ml-2"
     >
       {count}
     </motion.span>

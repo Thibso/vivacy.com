@@ -158,14 +158,10 @@
     "contact": {
       "title": "Contact",
       "content": {
-        "blog": "Blog",
-        "faq": "FAQ",
         "contact": "Contact",
         "newsletter": "Newsletter"
       },
       "links": {
-        "blog": "",
-        "faq": "",
         "contact": "",
         "newsletter": ""
       }
@@ -174,7 +170,6 @@
       "instagram": "https://www.instagram.com/laboratoiresvivacy/",
       "facebook": "https://www.facebook.com/laboratoiresvivacy",
       "linkedin": "https://www.linkedin.com/company/laboratoires-vivacy-sas/?viewAsMember=true",
-      "twitter": "https://twitter.com/Lab_Vivacy",
       "youtube": "https://www.youtube.com/channel/UCkYK7mHfG637Se0SY_kQIQg"
     },
     "legals": {
@@ -224,7 +219,7 @@
       "textCore": "<p>All VIVACY’s products are hyaluronic acid-based. Hyaluronic acid (HA) is a naturally occurring molecule in the human body, particularly in the skin and mucous membranes. It can retain up to 1,000 times its weight in water<sup>2</sup>, consequently contributing to the hydration and toning of the concerned tissues<sup>3</sup>.</p><p>HA has a short life span and is soluble in water, meaning it needs to be stabilised before injection into skin tissues. To do so, a special technical process called “cross-linking” <sup>*</sup> is used to bind HA molecules together to obtain a cohesive HA gel for a skin smoothing, lifting and/or volumising effect that will last for several months. The duration of the treatment depends on many factors, such as the patient’s skin type and structure, age, lifestyle, the area treated and the injection technique used by the practitioner.</p>",
       "asterisk": "not all products are cross-linked, refer to the IFU",
       "annotations": "<li>Papakonstantinou, E. & Al. Hyaluronic acid - A key molecule in skin aging. Dermato-Endocrinology 4:3, 253–258; July–December 2012.</li><li>Ulf Anderegg, J. C. S. & Al. More than just a filler – the role of hyaluronan for skin homeostasis. Experimental Dermatology, 2014, 23, 295–303.</li><li>Becker, L. C. & Al. “Final Report of the Safety Assessment of Hyaluronic Acid, Potassium Hyaluronate, and Sodium Hyaluronate” International Journal of Toxicology, 2009, volume 28 Number 4S, 5-67.</li>",
-      "button": "MORE INFORMATIONS",
+      "button": "MORE INFORMATION",
       "buttonPath": "/#",
       "alt": "Vivacy seringe"
     },

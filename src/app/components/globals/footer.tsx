@@ -1,7 +1,6 @@
 import facebook from "@/app/img/social-medias/facebook.png";
 import instagram from "@/app/img/social-medias/instagram.png";
 import linkedin from "@/app/img/social-medias/linkedin.png";
-import twitter from "@/app/img/social-medias/twitter.png";
 import youtube from "@/app/img/social-medias/youtube.png";
 import logo from "@/app/img/vivacy-logo-official.png";
 import map from "@/app/img/world-map.png";
@@ -48,14 +47,6 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-blue uppercase">{t("contact.title")}</h4>
             <ul className="space-y-2">
-              <li>
-                <a href={t("contact.links.blog")}>
-                  {t("contact.content.blog")}
-                </a>
-              </li>
-              <li>
-                <a href={t("contact.links.faq")}>{t("contact.content.faq")}</a>
-              </li>
               <li>
                 <a href={t("contact.links.contact")}>
                   {t("contact.content.contact")}
@@ -106,13 +97,6 @@ export default function Footer() {
           <Image
             src={linkedin}
             alt="Linkedin"
-            className="size-8 object-contain"
-          />
-        </a>
-        <a href={t("socials.twitter")} target="_blank">
-          <Image
-            src={twitter}
-            alt="Twitter"
             className="size-8 object-contain"
           />
         </a>

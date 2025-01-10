@@ -1,10 +1,10 @@
 import Image from "next/image";
 
+import kartilage from "@/app/img/logos/kartilge-by-vivacy.png";
 import { useTranslations } from "next-intl";
 import desirial from "../../img/logos/desirial-by-vivacy.png";
 import desirialPlus from "../../img/logos/desirial-plus-by-vivacy.png";
 import ispace from "../../img/logos/ispace-vivacy.png";
-import kartilage from "../../img/logos/kartilge-by-vivacy.png";
 import stylage from "../../img/logos/stylage-by-vivacy.png";
 import vivacy from "../../img/logos/vivacy-beauty.png";
 
@@ -30,7 +30,11 @@ export default function LogoSlider() {
             key={index}
           >
             <a href="/#" target="_blank">
-              <Image src={image} alt={alts[index]} />
+              <Image
+                style={{ filter: "saturate(0%)" }}
+                src={image}
+                alt={alts[index]}
+              />
             </a>
           </div>
         ))}
@@ -40,7 +44,11 @@ export default function LogoSlider() {
             key={index}
           >
             <a href="/#" target="_blank">
-              <Image src={image} alt={alts[index]} />
+              <Image
+                style={{ filter: "saturate(0%)" }}
+                src={image}
+                alt={alts[index]}
+              />
             </a>
           </div>
         ))}
