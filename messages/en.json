@@ -165,11 +165,11 @@
       "title": "Contact",
       "content": {
         "contact": "Contact",
-        "newsletter": "Newsletter"
+        "network": "Our global network"
       },
       "links": {
-        "contact": "",
-        "newsletter": ""
+        "contact": "/en/contact",
+        "network": "/en/map"
       }
     },
     "socials": {
@@ -179,11 +179,13 @@
       "youtube": "https://www.youtube.com/channel/UCkYK7mHfG637Se0SY_kQIQg"
     },
     "legals": {
-      "copyright": "© Laboratoires Vivacy Paris - 2025",
-      "notice": "legal notice",
+      "copyright": "© Laboratoires VIVACY Paris",
+      "notice": "Legal notice",
       "notice_link": "/en/legal-notice",
-      "confidentiality": "confidentiality",
-      "confidentiality_link": "/en/confidentiality"
+      "confidentiality": "Confidentiality",
+      "confidentiality_link": "/en/confidentiality",
+      "author": "Handmade by HEALTHCIE",
+      "author_link": "https://healthcie.fr"
     }
   },
   "HomePage": {

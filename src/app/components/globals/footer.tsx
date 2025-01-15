@@ -12,7 +12,7 @@ export default function Footer() {
 
   return (
     <footer className="sticky bottom-0 z-[1] pt-8 lg:pt-20">
-      <div className="px-5 lg:px-20 lg:grid lg:grid-cols-3">
+      <div className="px-5 lg:px-20 xl:px-24 lg:grid lg:grid-cols-3">
         <div className="grid grid-cols-2 lg:gap-x-8 sm:w-[60%] lg:w-full sm:mx-auto sm:text-center lg:text-left">
           <div className="space-y-4">
             <h4 className="text-blue uppercase">{t("vivacy.title")}</h4>
@@ -53,8 +53,16 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href={t("contact.links.newsletter")}>
-                  {t("contact.content.newsletter")}
+                <a href={t("contact.links.network")}>
+                  {t("contact.content.network")}
+                </a>
+              </li>
+              <li>
+                <a href={t("legals.notice_link")}>{t("legals.notice")}</a>
+              </li>
+              <li>
+                <a href={t("legals.confidentiality_link")}>
+                  {t("legals.confidentiality")}
                 </a>
               </li>
             </ul>
@@ -78,7 +86,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex gap-x-6 justify-center pb-8 lg:pb-24">
+      <div className="flex gap-x-6 justify-center pb-8 lg:pb-20">
         <a href={t("socials.instagram")} target="_blank">
           <Image
             src={instagram}
@@ -109,11 +117,10 @@ export default function Footer() {
         </a>
       </div>
 
-      <div className="bg-blue px-8 py-3 text-white flex max-lg:flex-wrap justify-center gap-2 lg:gap-x-8">
+      <div className="bg-blue px-5 lg:px-20 xl:px-24 py-2 text-white flex justify-between max-lg:flex-wrap w-full gap-2 lg:gap-x-8 text-[10px]">
         <span>{t("legals.copyright")}</span>
-        <a href={t("legals.notice_link")}>{t("legals.notice")}</a>
-        <a href={t("legals.confidentiality_link")}>
-          {t("legals.confidentiality")}
+        <a className="hover:underline" href={t("legals.author_link")}>
+          {t("legals.author")}
         </a>
       </div>
     </footer>

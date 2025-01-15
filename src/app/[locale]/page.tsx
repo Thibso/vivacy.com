@@ -99,7 +99,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative z-[1]">
+      <section className="relative z-[1] overflow-hidden">
         <Image
           src={haPower}
           alt={t("section1.alt")}
@@ -284,7 +284,7 @@ export default function Home() {
       </section>
 
       <section className="bg-[#fafbfc]">
-        <div className="myContainer space-y-28 flex flex-col items-center overflow-hidden">
+        <div className="myContainer space-y-20 flex flex-col items-center overflow-hidden">
           <FromTopCenteredTitles
             titleH2={t("section6.h2")}
             titleH3={t("section6.h3")}
