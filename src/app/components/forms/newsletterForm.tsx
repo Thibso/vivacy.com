@@ -5,6 +5,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+
 import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
@@ -15,6 +17,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
+import axios from "axios";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
@@ -46,37 +49,62 @@ export default function NewsletterForm() {
     },
   });
 
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
   async function onSubmit(data: FormData) {
     const { firstname, lastname, email, country } = data;
 
-    const response = await fetch("/api/newsletter", {
-      method: "POST",
+    if (!executeRecaptcha) {
+      console.log("not available to execute recaptcha");
+      return;
+    }
+
+    const gRecaptchaToken = await executeRecaptcha("inquirySubmit");
+
+    const response: any = await axios({
+      method: "post",
+      url: "/api/recaptcha",
+      data: {
+        gRecaptchaToken,
+      },
       headers: {
+        Accept: "application/json, text/plain, */*",
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        firstname,
-        lastname,
-        email,
-        country,
-      }),
     });
 
-    const responseJson = await response.json();
+    if (response.data.success === true) {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstname,
+          lastname,
+          email,
+          country,
+        }),
+      });
 
-    if (responseJson.id) {
-      toast({
-        title: t("toast.title"),
-        description: t("toast.description"),
-        variant: "success",
-      });
-    }
-    if (responseJson.error) {
-      toast({
-        title: t("toast.error_title"),
-        description: t("toast.error_description"),
-        variant: "destructive",
-      });
+      const responseJson = await response.json();
+
+      if (responseJson.id) {
+        toast({
+          title: t("toast.title"),
+          description: t("toast.description"),
+          variant: "success",
+        });
+      }
+      if (responseJson.error) {
+        toast({
+          title: t("toast.error_title"),
+          description: t("toast.error_description"),
+          variant: "destructive",
+        });
+      }
+    } else {
+      window.alert("Recaptcha failed");
     }
   }
 
@@ -181,12 +209,15 @@ export default function NewsletterForm() {
 
           <div className="flex gap-x-4">
             <Checkbox
-              id="accept"
+              id="acceptNL"
               checked={checked}
               onCheckedChange={() => setChecked(!checked)}
               className="border-white bg-blue checked:bg-blue"
             />
-            <label htmlFor="accept" className="leading-none text-sm text-white">
+            <label
+              htmlFor="acceptNL"
+              className="leading-none text-sm text-white"
+            >
               <p>{t("checked")}</p>
             </label>
           </div>
@@ -194,4 +225,7 @@ export default function NewsletterForm() {
       </Form>
     </div>
   );
+}
+function executeRecaptcha(arg0: string) {
+  throw new Error("Function not implemented.");
 }

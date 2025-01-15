@@ -245,7 +245,7 @@ export default function Stylage() {
             </div>
           </div>
 
-          <ol className="max-lg pt-4 list-decimal">
+          <ol className="max-lg pt-4 list-decimal mx-4">
             {t.rich("section4.references", {
               li: (chunks) => <li className="text-sm">{chunks}</li>,
             })}

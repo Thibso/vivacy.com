@@ -7,6 +7,7 @@ import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import React from "react";
 import Footer from "../components/globals/footer";
+import GoogleReCaptchaWrapper from "../components/globals/googleCaptchaWrapper";
 import MobileBar from "../components/globals/mobileBar";
 import NavBar from "../components/globals/NavBar";
 import Newsletter from "../components/globals/newsletter";
@@ -56,8 +57,13 @@ export default async function LocaleLayout({
         <NavBar localeActive={locale} />
 
         <NextIntlClientProvider messages={messages}>
-          <div className="bg-white relative z-[2]">{children}</div>
-          <Newsletter />
+          <div className="bg-white relative z-[2]">
+            <GoogleReCaptchaWrapper>
+              {children}
+              <Newsletter />
+            </GoogleReCaptchaWrapper>
+          </div>
+
           <ToTopButton />
           <Toaster />
         </NextIntlClientProvider>

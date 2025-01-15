@@ -135,7 +135,7 @@ export default function HistorySteps(props: Props) {
   return (
     <section
       style={{ height: 60 * steps.length - 1 + "vh" }}
-      className="relative"
+      className="relative max-md:hidden"
       ref={ref}
     >
       <div className="myContainer sticky top-[50px] lg:-top-[75px]">

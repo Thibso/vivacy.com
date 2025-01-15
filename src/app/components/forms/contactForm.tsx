@@ -5,6 +5,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+
 import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
@@ -23,6 +25,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import axios from "axios";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
@@ -55,6 +58,8 @@ export default function ContactForm() {
   const [checked, setChecked] = useState(false);
   const [emailTo, setEmailTo] = useState("marketing@vivacy.fr");
 
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
   const form = useForm({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -76,7 +81,7 @@ export default function ContactForm() {
     }
   }
 
-  async function onSubmit(data: FormData) {
+  async function handleSubmit(data: FormData) {
     const {
       firstname,
       lastname,
@@ -87,38 +92,61 @@ export default function ContactForm() {
       message,
     } = data;
 
-    const response = await fetch("/api/send", {
-      method: "POST",
+    if (!executeRecaptcha) {
+      console.log("not available to execute recaptcha");
+      return;
+    }
+
+    const gRecaptchaToken = await executeRecaptcha("inquirySubmit");
+
+    const response = await axios({
+      method: "post",
+      url: "/api/recaptcha",
+      data: {
+        gRecaptchaToken,
+      },
       headers: {
+        Accept: "application/json, text/plain, */*",
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        emailTo,
-        firstname,
-        lastname,
-        email,
-        country,
-        specialisation,
-        subject,
-        message,
-      }),
     });
 
-    const responseJson = await response.json();
+    if (response.data.success === true) {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          emailTo,
+          firstname,
+          lastname,
+          email,
+          country,
+          specialisation,
+          subject,
+          message,
+        }),
+      });
 
-    if (responseJson.id) {
-      toast({
-        title: t("toast.title"),
-        description: t("toast.description"),
-        variant: "success",
-      });
-    }
-    if (responseJson.error) {
-      toast({
-        title: t("toast.error_title"),
-        description: t("toast.error_description"),
-        variant: "destructive",
-      });
+      const responseJson = await response.json();
+
+      if (responseJson.id) {
+        toast({
+          title: t("toast.title"),
+          description: t("toast.description"),
+          variant: "success",
+        });
+      }
+      if (responseJson.error) {
+        toast({
+          title: t("toast.error_title"),
+          description: t("toast.error_description"),
+          variant: "destructive",
+        });
+      }
+    } else {
+      window.alert("Recaptcha failed");
     }
   }
 
@@ -126,7 +154,7 @@ export default function ContactForm() {
     <div>
       <Form {...form}>
         <form
-          onSubmit={form.handleSubmit(onSubmit)}
+          onSubmit={form.handleSubmit(handleSubmit)}
           className="space-y-4 lg:grid"
         >
           <div className="lg:grid lg:grid-cols-2 lg:gap-4">
