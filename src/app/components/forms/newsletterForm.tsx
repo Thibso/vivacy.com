@@ -173,7 +173,7 @@ export default function NewsletterForm() {
             <button
               disabled={!checked}
               type="submit"
-              className="disabled:cursor-not-allowed max-lg:col-start-2 block self-end max-lg:w-fit max-lg:mr-0 max-lg:m-auto bg-white py-2 px-8 border-white border-[1px] rounded-3xl text-blue uppercase font-normal text-sm sm:text-base hover:bg-blue hover:text-white transition-all"
+              className="disabled:cursor-not-allowed max-lg:col-start-2 block self-end max-lg:w-fit max-lg:mr-0 max-lg:m-auto bg-transparent py-2 px-8 border-white border-[1px] rounded-3xl text-white uppercase font-normal text-sm sm:text-base hover:bg-white hover:text-blue transition-all"
             >
               {t("form.submit")}
             </button>

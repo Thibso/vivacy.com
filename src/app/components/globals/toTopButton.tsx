@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronsUp } from "lucide-react";
+import { ChevronUp } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const useScrollY = () => {
@@ -37,9 +37,9 @@ export default function ToTopButton() {
         onClick={scrollToTop}
         className={`${
           scrollY > 1000 ? "opacity-100" : "opacity-0"
-        } bg-blue p-2 fixed rounded-sm right-2 bottom-14 z-[99] shadow shadow-black/25 transition-all`}
+        } bg-blue p-2 fixed rounded-sm right-4 bottom-16 z-[99] shadow shadow-black/25 transition-all`}
       >
-        <ChevronsUp color="white" />
+        <ChevronUp color="white" />
       </button>
     </>
   );

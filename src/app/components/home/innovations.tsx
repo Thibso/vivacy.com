@@ -214,10 +214,11 @@ export default function Innovations() {
                       <Image
                         src={images[index]}
                         alt=""
-                        height={600}
+                        height={500}
                         style={{
                           transformOrigin: "center",
                           transform: "rotate(45deg)",
+                          objectFit: "contain",
                         }}
                       />
                     ) : (

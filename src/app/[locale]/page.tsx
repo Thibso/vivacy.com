@@ -18,18 +18,55 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN = "";
+const descriptionEN = "";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "Titre EN",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   }
 }
@@ -81,7 +118,7 @@ export default function Home() {
         />
         <div className="myContainer">
           <div className="lg:grid lg:grid-cols-2 lg:gap-36 lg:justify-between">
-            <div className="lg:pt-16 space-y-8 lg:space-y-28 lg:my-auto">
+            <div className="space-y-8 lg:space-y-28 lg:my-auto lg:pr-16">
               <FromTopTitles
                 titleH2={t("section1.h2")}
                 titleH3={t("section1.h3")}
@@ -148,10 +185,14 @@ export default function Home() {
 
       {/* KEY NUMBERS */}
       <section className="bg-blue lg:max-w-[2550px] lg:m-auto">
-        <div className="myContainer space-y-14 lg:space-y-22 text-white lg:flex lg:flex-col lg:items-center">
+        <div className="myContainer relative space-y-14 lg:space-y-22 text-white lg:flex lg:flex-col lg:items-center ">
           <div className="titles-container w-full">
-            <h2 className="h2-perso text-white">{t("section3.h2")}</h2>
-            <h3 className="h3-perso text-white">{t("section3.h3")}</h3>
+            <FromTopTitles
+              titleH2={t("section3.h2")}
+              titleH3={t("section3.h3")}
+              h3Classes="text-white"
+              h2Classes="text-[#e1e1e1]"
+            />
           </div>
 
           <div className="max-lg:space-y-14 lg:grid lg:grid-cols-4 lg:gap-20">
@@ -198,7 +239,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="m-auto lg:ml-0">
+          <div className="m-auto lg:ml-0 lg:absolute lg:left-8 lg:bottom-8">
             <p className="text-sm max-lg:text-center">
               {t("section3.annotation")}
             </p>
@@ -242,7 +283,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="bg-[#fafbfc]">
         <div className="myContainer space-y-28 flex flex-col items-center overflow-hidden">
           <FromTopCenteredTitles
             titleH2={t("section6.h2")}
@@ -260,13 +301,13 @@ export default function Home() {
       </section>
 
       <section className="border-b-2 border-blue">
-        <div className="myContainer pt-0 space-y-14 lg:space-y-20">
+        <div className="myContainer space-y-14 lg:space-y-20">
           <FromTopCenteredTitles
             titleH2={t("section7.h2")}
             titleH3={t("section7.h3")}
             h3Classes="text-black"
           />
-          <p className="lg:w-[50%] mx-auto text-center lg:text-lg">
+          <p className="lg:w-[90%] mx-auto text-center lg:text-lg">
             {t("section7.text")}
           </p>
           <WorldMap />
