@@ -24,7 +24,7 @@ const useScrollY = () => {
   return scrollY;
 };
 
-export default function toTopButton() {
+export default function ToTopButton() {
   const scrollY = useScrollY();
 
   function scrollToTop() {
