@@ -2,8 +2,10 @@ import BlueButton from "@/app/components/buttons/BlueButton";
 import WhiteButton from "@/app/components/buttons/WhiteButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import HeaderSpan from "@/app/components/globals/headerSpan";
-import FromTopTitles from "@/app/components/titles/FromTopTitles";
+import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
+import apple from "@/app/img/apple-store.jpg";
 import bg from "@/app/img/background-grained.jpg";
+import google from "@/app/img/google-store.jpg";
 import bgHeader from "@/app/img/vivacy-security-check-products-provenance.jpg";
 import section1 from "@/app/img/vivacy-security-logo.png";
 import section3 from "@/app/img/vivacy-security.jpg";
@@ -11,6 +13,7 @@ import section2 from "@/app/img/vivacy-security.png";
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 
 type Params = {
   params: { locale: string };
@@ -34,6 +37,7 @@ export async function generateMetadata({ params }: Params) {
 
 export default function MyVivacy() {
   const t = useTranslations("MyVivacy");
+  const h = useTranslations("Global.vivacySecurity");
 
   return (
     <main>
@@ -57,30 +61,44 @@ export default function MyVivacy() {
       </section>
 
       <section className="relative">
-        <div className="myContainer max-lg:space-y-14 lg:grid lg:grid-cols-12 lg:items-center">
-          <div className="col-span-5 space-y-8 lg:space-y-24">
-            <FromTopTitles
-              titleH2={t("section1.h2")}
-              titleH3={t("section1.h3")}
-              h3Classes="text-black"
-            />
-            <div className="space-y-4">
-              {t.rich("section1.content", {
-                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
-              })}
-            </div>
+        <div className="myContainer space-y-8 lg:space-20">
+          <FromTopCenteredTitles
+            titleH2={t("section1.h2")}
+            titleH3={t("section1.h3")}
+            h3Classes="text-black"
+          />
+          <div className="space-y-4 text-center xl:max-w-[70%] mx-auto">
+            {t.rich("section1.content", {
+              p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+            })}
           </div>
 
-          <div className="col-span-3 col-start-8">
-            <Image
-              src={section1}
-              alt={t("section1.alt")}
-              quality={75}
-              style={{
-                objectFit: "contain",
-              }}
-              className="max-lg:mx-auto max-lg:w-[50%]"
-            />
+          <div className="space-y-8 lg:space-y-20 pt-20">
+            <h2 className="h3-perso w-full xl:w-[70%] text-center lg:mx-auto">
+              {t("section4.h2")}
+            </h2>
+
+            <video className="xl:max-w-[70%] mx-auto" playsInline loop controls>
+              <source
+                src="/videos/presentation-myvivacy.mp4#t=1.5"
+                type="video/mp4"
+              />
+            </video>
+
+            <div className="flex justify-center items-center gap-28">
+              <BlueButton content={t("cta.title")} path={t("cta.path")} />
+              <div>
+                <Image
+                  src={section1}
+                  alt={t("section1.alt")}
+                  quality={75}
+                  style={{
+                    objectFit: "contain",
+                  }}
+                  className="h-[75px] w-fit"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -91,7 +109,7 @@ export default function MyVivacy() {
             {t("section2.h2")}
           </h2>
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-12">
-            <div className="col-span-5">
+            <div className="col-span-5 flex flex-col justify-center">
               <Image
                 src={section2}
                 alt={t("section2.alt")}
@@ -101,8 +119,44 @@ export default function MyVivacy() {
                   objectPosition: "50% 50%",
                   borderRadius: "12px",
                 }}
-                className="max-lg:mx-auto max-lg:w-[60%] lg:h-full"
+                className="max-lg:mx-auto max-lg:w-[60%] lg:h-fit"
               />
+
+              <div className="flex gap-4 justify-center mt-10">
+                <Link
+                  href="https://apps.apple.com/fr/app/my-vivacy/id1206429694"
+                  target="_blank"
+                  title={h("titles.appleStore")}
+                >
+                  <Image
+                    src={apple}
+                    alt={h("alts.appleStore")}
+                    quality={75}
+                    style={{
+                      height: "40px",
+                      objectFit: "contain",
+                      borderRadius: "9px",
+                    }}
+                  />
+                </Link>
+
+                <Link
+                  href="https://play.google.com/store/apps/details?id=eu.vivacy.vivacysecurity&hl=fr"
+                  target="_blank"
+                  title={h("titles.googlePlay")}
+                >
+                  <Image
+                    src={google}
+                    alt={h("alts.googlePlay")}
+                    quality={75}
+                    style={{
+                      height: "40px",
+                      objectFit: "contain",
+                      borderRadius: "9px",
+                    }}
+                  />
+                </Link>
+              </div>
             </div>
             <div className="lg:my-4 lg:col-span-6 lg:col-start-7 p-4 lg:p-10 space-y-14 lg:space-y-20 bg-whiteGrey/20 backdrop-blur-md rounded-xl">
               <div className="space-y-8 lg:space-y-14 text-white">
@@ -156,23 +210,6 @@ export default function MyVivacy() {
               }}
               className="h-full"
             />
-          </div>
-        </div>
-
-        <div className="space-y-8 lg:space-y-28 pb-16 lg:pb-24 xl:pb-32">
-          <h2 className="h3-perso w-full lg:w-[50%] text-center lg:mx-auto">
-            {t("section4.h2")}
-          </h2>
-
-          <video className="lg:max-w-[70%] mx-auto" playsInline loop controls>
-            <source
-              src="/videos/presentation-myvivacy.mp4#t=1.5"
-              type="video/mp4"
-            />
-          </video>
-
-          <div className="flex justify-center">
-            <BlueButton content={t("cta.title")} path={t("cta.path")} />
           </div>
         </div>
       </section>

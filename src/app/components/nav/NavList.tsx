@@ -146,11 +146,17 @@ export default function NavList(props: Props) {
               props.products.items[2].title,
               props.products.items[2].path,
             ],
+            [
+              props.products.items[3].id,
+              props.products.items[3].title,
+              props.products.items[3].path,
+            ],
           ]}
           images={[
             props.products.images[0],
             props.products.images[1],
             props.products.images[2],
+            props.products.images[3],
           ]}
         />
 
@@ -317,6 +323,11 @@ export default function NavList(props: Props) {
                       props.products.items[2].title,
                       props.products.items[2].path,
                     ],
+                    [
+                      props.products.items[3].id,
+                      props.products.items[3].title,
+                      props.products.items[3].path,
+                    ],
                   ]}
                 />
 
@@ -367,10 +378,10 @@ export default function NavList(props: Props) {
                 <Link href={"/en"} className=" underline text-base">
                   English
                 </Link>
-                <span> | </span>
+                {/* <span> | </span>
                 <Link href={"/fr"} className=" underline text-base">
                   Français
-                </Link>
+                </Link> */}
               </div>
             </motion.div>
           ) : null}

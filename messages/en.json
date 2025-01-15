@@ -82,12 +82,18 @@
           "id": "3",
           "title": "Dermo-cosmetics: Vivacy Beauty",
           "path": "/en/beauty"
+        },
+        "item4": {
+          "id": "4",
+          "title": "Vivacy Academy",
+          "path": "/en/academy"
         }
       },
       "images": {
         "1": "/images/nav/brands/stylage.jpg",
         "2": "/images/nav/brands/desirial.jpg",
-        "3": "/images/nav/brands/vivacy-beauty.jpg"
+        "3": "/images/nav/brands/vivacy-beauty.jpg",
+        "4": "/images/nav/brands/vivacy-academy.jpg"
       }
     },
     "professionals": {
@@ -215,13 +221,42 @@
     "section4": {
       "h2": "Creating breakthrough customer experience",
       "h3": "Our innovation",
-      "textTop": "<p>IPN-LIKE TECHNOLOGY</p><p>TECHNOLOGY ON THE MOVE : HYALURONIC ACID, A “MOLECULE TO MOISTURIZE”<sup>1</sup></p>",
-      "textCore": "<p>All VIVACY’s products are hyaluronic acid-based. Hyaluronic acid (HA) is a naturally occurring molecule in the human body, particularly in the skin and mucous membranes. It can retain up to 1,000 times its weight in water<sup>2</sup>, consequently contributing to the hydration and toning of the concerned tissues<sup>3</sup>.</p><p>HA has a short life span and is soluble in water, meaning it needs to be stabilised before injection into skin tissues. To do so, a special technical process called “cross-linking” <sup>*</sup> is used to bind HA molecules together to obtain a cohesive HA gel for a skin smoothing, lifting and/or volumising effect that will last for several months. The duration of the treatment depends on many factors, such as the patient’s skin type and structure, age, lifestyle, the area treated and the injection technique used by the practitioner.</p>",
-      "asterisk": "not all products are cross-linked, refer to the IFU",
-      "annotations": "<li>Papakonstantinou, E. & Al. Hyaluronic acid - A key molecule in skin aging. Dermato-Endocrinology 4:3, 253–258; July–December 2012.</li><li>Ulf Anderegg, J. C. S. & Al. More than just a filler – the role of hyaluronan for skin homeostasis. Experimental Dermatology, 2014, 23, 295–303.</li><li>Becker, L. C. & Al. “Final Report of the Safety Assessment of Hyaluronic Acid, Potassium Hyaluronate, and Sodium Hyaluronate” International Journal of Toxicology, 2009, volume 28 Number 4S, 5-67.</li>",
-      "button": "MORE INFORMATION",
-      "buttonPath": "/#",
-      "alt": "Vivacy seringe"
+      "biSoft": {
+        "textTop": "<h2>BI-SOFT® INJECTION TECHNOLOGY</h2><h3>UNIQUE AND ERGONOMIC SYSTEM</h3>",
+        "textCore": "<p>An innovative patented<sup>1</sup> delivery system with a unique and ergonomic design.</p><p>In its continuing quest for innovative excellence in Medical Aesthetics, Laboratoires VIVACY has developed the patented next generation injection delivery system, Bi-SOFT® Injection Technology.</p><p>This syringe offers greater precision, comfort and control to physicians in their daily aesthetic practice.</p>",
+        "asterisk": "",
+        "annotations": "<li>Laboratoires VIVACY (France). Optimised centre of gravity syringe. WO2018/185406 A1. 2018</li>",
+        "button": "MORE INFORMATION",
+        "buttonPath": "/#",
+        "alt": "Vivacy seringe"
+      },
+      "ipn": {
+        "textTop": "<h2>IPN-LIKE TECHNOLOGY</h2><h3>TECHNOLOGY ON THE MOVE : HYALURONIC ACID, A “MOLECULE TO MOISTURIZE”<sup>1</sup></h3>",
+        "textCore": "<p>All VIVACY’s products are hyaluronic acid-based. Hyaluronic acid (HA) is a naturally occurring molecule in the human body, particularly in the skin and mucous membranes. It can retain up to 1,000 times its weight in water<sup>2</sup>, consequently contributing to the hydration and toning of the concerned tissues<sup>3</sup>.</p><p>HA has a short life span and is soluble in water, meaning it needs to be stabilised before injection into skin tissues. To do so, a special technical process called “cross-linking” <sup>*</sup> is used to bind HA molecules together to obtain a cohesive HA gel for a skin smoothing, lifting and/or volumising effect that will last for several months. The duration of the treatment depends on many factors, such as the patient’s skin type and structure, age, lifestyle, the area treated and the injection technique used by the practitioner.</p>",
+        "asterisk": "not all products are cross-linked, refer to the IFU",
+        "annotations": "<li>Papakonstantinou, E. & Al. Hyaluronic acid - A key molecule in skin aging. Dermato-Endocrinology 4:3, 253–258; July–December 2012.</li><li>Ulf Anderegg, J. C. S. & Al. More than just a filler – the role of hyaluronan for skin homeostasis. Experimental Dermatology, 2014, 23, 295–303.</li><li>Becker, L. C. & Al. “Final Report of the Safety Assessment of Hyaluronic Acid, Potassium Hyaluronate, and Sodium Hyaluronate” International Journal of Toxicology, 2009, volume 28 Number 4S, 5-67.</li>",
+        "button": "MORE INFORMATION",
+        "buttonPath": "/#",
+        "alt": "Vivacy seringe"
+      },
+      "vivasome": {
+        "textTop": "<h2>THE VIVASÔME® COMPLEX</h2><h3>THE SCIENCE OF ANTI AGEING</h3>",
+        "textCore": "<p>The dermo-cosmetic products integrate an exclusive technology, resulting from the advanced research of Laboratoires VIVACY: the VIVASÔME®, complex, an anti-ageing trilogy.The VIVASÔME®, complex is based on the principle of encapsulating active ingredients using liposomes. Similar to small 'spheres', their structure is similar to the hydrolipidic film of the skin.These liposomes can find their way through the surface layers of the skin, thus enhancing the penetration of the active ingredients.</p>",
+        "asterisk": "",
+        "annotations": "",
+        "button": "MORE INFORMATION",
+        "buttonPath": "/#",
+        "alt": "Vivacy seringe"
+      },
+      "security": {
+        "textTop": "<h2>VIVACY SECURITY</h2><h3>AUTHENTIC PRODUCTS</h3>",
+        "textCore": "<p>As a manufacturer, Laboratoires VIVACY pays particular attention to product security and no compromise is made. In regards to this engagement, VIVACY launched in 2017 an innovative product tracability system using RFID (Radio Frequency IDentification) so that clients from all around the world can verify the authenticity of their VIVACY products: STYLAGE® and DESIRIAL®, scan with a smartphone via the dedicated application: «My Vivacy». Special RFID chips* with a unique number are integrated into each product pack to ensure security and better protection from counterfeit products.</p>",
+        "asterisk": "Not all products are fitted with the RFID chip",
+        "annotations": "",
+        "button": "MORE INFORMATION",
+        "buttonPath": "/#",
+        "alt": "Vivacy seringe"
+      }
     },
     "effect": {
       "alt1": "background",
@@ -249,7 +284,15 @@
       "desirialPlus": "DesirialPlus logo",
       "vivacy": "Vivacy Beauty logo",
       "ispace": "Ispace logo",
-      "kartilage": "Kartilage logo"
+      "kartilage": "Kartilage logo",
+      "links": {
+        "stylage": "#",
+        "desirial": "#",
+        "desirialPlus": "#",
+        "vivacy": "#",
+        "ispace": "#",
+        "kartilage": "#"
+      }
     },
     "section7": {
       "h2": "Reliable partners across the globe",
@@ -529,7 +572,7 @@
     "span": "Expert in hyaluronic acid",
     "alt": "Stylage by Vivacy",
     "cta": {
-      "title": "Visit website",
+      "title": "VISIT THE WEBSITE",
       "path": ""
     },
     "section1": {
@@ -590,7 +633,7 @@
     }
   },
   "Beauty": {
-    "title": "VIVACYBEAUTY",
+    "title": "VIVACY BEAUTY",
     "span": "Expert in hyaluronic acid",
     "alt": "Vivacy beauty range",
     "cta": {
@@ -599,7 +642,7 @@
     },
     "section1": {
       "h2": "EXPLORE OUR UNIVERSE DEDICATED TO DERMO-COSMETICS ON OUR E-COMMERCE SITE VIVACY BEAUTY",
-      "h3": "VIVACYBEAUTY",
+      "h3": "VIVACY BEAUTY",
       "content": "<p>Laboratoires VIVACY offers a range of professional quality dermo cosmetic products based on expert and innovative formulas to complement aesthetic interventions and help men and women alike preserve their natural beauty beyond the doctor’s office. Laboratoires VIVACY is committed to producing high-quality dermal treatments in the form of its premium range of cosmetic products called VIVACY BEAUTY. We strive to make professional skincare accessible by making our expertise in aesthetic medicine available to all through a comprehensive e-commerce website.</p>",
       "alt": "Vivacy beauty cosmetic range"
     },
@@ -639,7 +682,7 @@
       "altLogo": "Bi-Soft injection technology logo"
     },
     "section2": {
-      "h2": "Practitioners have given excellent ratings:",
+      "h2": "Practitioners have given excellent ratings",
       "ratings": {
         "first": {
           "title": "Comfort of use",
@@ -789,7 +832,7 @@
     "form": {
       "lastname": "Last name *",
       "firstname": "First name *",
-      "country": "* Country",
+      "country": "Country *",
       "specialisation": "Specialisation *",
       "specialisations": {
         "1": "Anatomist",
@@ -827,6 +870,23 @@
       "error_description": "An error occurred while sending the form"
     },
     "annotation": "<p>Incidents requiring regulatory reporting should be submitted to <a>https://signalement.social-sante.gouv.fr</a>.</p><p>All other incidents can be reported directly to Laboratoires VIVACY at: customer.complaint@vivacy.fr</p>"
+  },
+  "Newsletter": {
+    "content": "Stay in touch with the latest from Vivacy",
+    "form": {
+      "lastname": "Last name",
+      "firstname": "First name",
+      "country": "Country",
+      "email": "Email Address",
+      "submit": "Send"
+    },
+    "checked": "I agree to receive the newsletter and understand that my details will be used in accordance with the privacy policy.",
+    "toast": {
+      "title": "You will receive our newsletter from now on",
+      "description": " ",
+      "error_title": "An error has occurred",
+      "error_description": "An error occurred while sending the form"
+    }
   },
   "Map": {
     "title": "Reliable partners across the globe",
@@ -880,10 +940,46 @@
         "africa": "Africa",
         "americas": "Americas"
       },
-      "europe": "<li>Albania</li><li>Germany</li><li>Austria</li><li>Belarus</li><li>Belgium</li><li>Bosnia and Herzegovina</li><li>Bulgaria</li><li>Cyprus</li><li>Croatia</li><li>Denmark</li><li>Spain</li><li>Estonia</li><li>Finland</li><li>France</li><li>Georgia</li><li>Greece</li><li>Hungary</li><li>Ireland</li><li>Italy</li><li>Latvia</li><li>Lithuania</li><li>Luxembourg</li><li>Macedonia</li><li>Malta</li><li>Moldova</li><li>Norway</li><li>Netherlands</li><li>Poland</li><li>Portugal</li><li>Czech Republic</li><li>Romania</li><li>United Kingdom</li><li>Russia</li><li>Serbia</li><li>Slovakia</li><li>Slovenia</li><li>Sweden</li><li>Switzerland</li><li>Ukraine</li>",
-      "asia": "<li>Saudi Arabia</li><li>Azerbaijan</li><li>South Korea</li><li>Hong Kong</li><li>Indonesia</li><li>Israel</li><li>Japan</li><li>Jordan</li><li>Kazakhstan</li><li>Kuwait</li><li>Kyrgyzstan</li><li>Lebanon</li><li>Malaysia</li><li>Oman</li><li>Uzbekistan</li><li>Qatar</li><li>Singapore</li><li>Taiwan</li><li>Turkey</li><li>Vietnam</li>",
+      "europe": "<li>Albania</li><li>Austria</li><li>Belarus</li><li>Belgium</li><li>Bosnia and Herzegovina</li><li>Bulgaria</li><li>Croatia</li><li>Cyprus</li><li>Czech Republic</li><li>Denmark</li><li>Estonia</li><li>Finland</li><li>France</li><li>Georgia</li><li>Germany</li><li>Greece</li><li>Hungary</li><li>Ireland</li><li>Italy</li><li>Latvia</li><li>Lithuania</li><li>Luxembourg</li><li>Macedonia</li><li>Malta</li><li>Moldova</li><li>Netherlands</li><li>Norway</li><li>Poland</li><li>Portugal</li><li>Romania</li><li>Russia</li><li>Serbia</li><li>Slovakia</li><li>Slovenia</li><li>Spain</li><li>Sweden</li><li>Switzerland</li><li>Ukraine</li><li>United Kingdom</li>",
+      "asia": "<li>Azerbaijan</li><li>Hong Kong</li><li>Indonesia</li><li>Israel</li><li>Japan</li><li>Jordan</li><li>Kazakhstan</li><li>Kuwait</li><li>Kyrgyzstan</li><li>Lebanon</li><li>Malaysia</li><li>Oman</li><li>Qatar</li><li>Saudi Arabia</li><li>Singapore</li><li>South Korea</li><li>Taiwan</li><li>Turkey</li><li>Uzbekistan</li><li>Vietnam</li>",
       "africa": "<li>Egypt</li><li>Libya</li><li>Morocco</li><li>Tunisia</li>",
       "americas": "<li>Australia</li><li>Brazil</li><li>Canada</li><li>Chile</li><li>Colombia</li><li>Ecuador</li><li>Peru</li>"
+    }
+  },
+  "Academy": {
+    "title": "VIVACY ACADEMY",
+    "span": "Expert in hyaluronic acid",
+    "alt": "VIVACY ACADEMY lesson",
+    "cta": {
+      "title": "Learn more",
+      "path": ""
+    },
+    "section1": {
+      "h2": "EMPOWERING HEALTHCARE PROFESSIONALS WORLDWIDE",
+      "h3": "WELCOME TO VIVACY ACADEMY",
+      "content": "<p>Discover VIVACY Academy, our training platform exclusively dedicated to healthcare professionals interested in deepening their knowledge and expertise on our product range all around the world. Create an account now to access specialized resources on our STYLAGE® range and DESIRIAL® & DESIRIAL PLUS® injectable intimate hydrogels and refine your skills to provide your patients with high quality aesthetic and intimate solutions.</p>",
+      "alt": "VIVACY ACADEMY lesson"
+    },
+    "section2": {
+      "h2": "EXPERT-LED TRAINING WITH UNLIMITED ACCESS",
+      "h3": "PREMIUM TRAINING FOR HEALTHCARE PROFESSIONALS ON STYLAGE® AND DESIRIAL®",
+      "steps": {
+        "1": "<p>HIGH LEVEL<br></br> TRAININGS</p>",
+        "2": "<p>KEY OPINION<br></br> LEADERS</p>",
+        "3": "<p>NEW VIDEOS<br></br> EACH MONTH</p>",
+        "4": "<p>REGULAR LIVE<br></br> WEBINARS</p>",
+        "5": "<p>FACIAL & INTIMATE<br></br> AESTHETICS</p>"
+      }
+    },
+    "section3": {
+      "h2": "OUR PLATFORM 100% DEDICATED TO THE TRAINING OF HEALTHCARE PROFESSIONALS WORLDWIDE",
+      "h3": "VIVACY ACADEMY",
+      "content": "<p>Our mission is to provide healthcare professionals with the resources necessary to excel in their practice and offer the best care possible to their patients. VIVACY ACADEMY will allow you to stay up to date on the latest trends and techniques in the field of aesthetic medicine by providing free online formations, high level safety trainings, educational videos, regular webinars, events, and recent scientific articles to enrich your knowledge. At Laboratoires VIVACY we are also committed to making quality healthcare accessible for all, no matter where they live or what language they speak. Our online courses are available to practitioners all around the world and all our resources are multi-lingual: we propose content in several languages to facilitate learning, ensure a good understanding by health workers internationally, help them master new methods and guarantee qualitative results to customers worldwide. The main objective of this website is to offer a centralized platform compiling everything today’s doctors need to know to ensure client satisfaction.</p>"
+    },
+    "section4": {
+      "h2": "VIVACY ACADEMY",
+      "h3": "CUTTING-EDGE TRAINING",
+      "content": "<p>At Laboratoires VIVACY, we believe that knowledge sharing is the driving force of human progress. Whether you are an experienced aesthetic physician or a novice seeking to learn from top practitioners, VIVACY Academy is here to support you at every stage of your journey. It's a platform created by professionals for professionals, where practitioners can exchange experiences and techniques. On the VIVACY Academy platform, you'll find a wealth of content including scientific articles, course videos, live webinars, and replay options. These resources are regularly updated, with new videos added monthly to ensure our members have access to the most relevant and current information. Additionally, all our webinars are available for replay, allowing you to learn at your own pace. By signing up, you'll receive notifications whenever new content is published, ensuring you never miss an opportunity to advance and distinguish yourself among the best.</p>"
     }
   },
   "LegalNotice": {

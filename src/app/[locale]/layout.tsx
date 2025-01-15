@@ -7,7 +7,10 @@ import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import React from "react";
 import Footer from "../components/globals/footer";
+import MobileBar from "../components/globals/mobileBar";
 import NavBar from "../components/globals/NavBar";
+import Newsletter from "../components/globals/newsletter";
+import ToTopButton from "../components/globals/toTopButton";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -50,10 +53,13 @@ export default async function LocaleLayout({
 
         <NextIntlClientProvider messages={messages}>
           <div className="bg-white relative z-[2]">{children}</div>
+          <Newsletter />
+          <ToTopButton />
           <Toaster />
         </NextIntlClientProvider>
 
         <Footer />
+        <MobileBar />
       </body>
     </html>
   );

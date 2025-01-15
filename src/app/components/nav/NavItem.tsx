@@ -20,11 +20,13 @@ export default function NavItem(props: Props) {
     <li
       onMouseEnter={() => setDisplay(true)}
       onMouseLeave={() => setDisplay(false)}
+      onFocus={() => setDisplay(true)}
+      onBlur={() => setDisplay(false)}
       className="group"
     >
-      <span className="uppercase font-light text-base cursor-pointer">
+      <a href="" className="uppercase font-light text-base cursor-pointer">
         {props.title}
-      </span>
+      </a>
 
       {/* hidden group-hover: hidden group-hover:block */}
       <AnimatePresence>
@@ -37,7 +39,7 @@ export default function NavItem(props: Props) {
             transition={{ duration: 0.2, ease: "easeInOut" }}
             className="absolute left-0 w-full pt-5"
           >
-            <div className="grid grid-cols-4 gap-32 justify-between bg-background text-blue px-20 py-12 rounded-b-3xl ">
+            <div className="grid grid-cols-4 gap-12 xl:gap-32 justify-between bg-background text-blue px-10 xl:px-20 py-8 xl:py-12 rounded-b-3xl ">
               <div className="col-span-1">
                 <span className="uppercase">{props.title}</span>
                 <p className="mt-8 text-sm font-normal">{props.content}</p>

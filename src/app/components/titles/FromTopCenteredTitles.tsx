@@ -39,7 +39,7 @@ export default function FromTopTitles(props: Props) {
       <motion.h3
         initial={{
           opacity: 0,
-          y: -45,
+          y: -100,
         }}
         whileInView={{
           opacity: 1,
@@ -47,7 +47,7 @@ export default function FromTopTitles(props: Props) {
         }}
         transition={{
           ease: "circOut",
-          duration: 0.5,
+          duration: 0.8,
         }}
         viewport={{
           amount: "all",

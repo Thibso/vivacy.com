@@ -64,19 +64,20 @@ export default function Vivasome() {
             zIndex: "-1",
             left: 0,
             position: "absolute",
-            opacity: 0.05,
+            opacity: 0.02,
           }}
           className="max-lg:hidden w-full lg:w-[60%] top-[15%]"
         />
-        <div className="myContainer space-y-8 lg:space-y-28">
-          <FromTopTitles
-            titleH2={t("section1.h2")}
-            titleH3={t("section1.h3")}
-            h3Classes="text-black"
-          />
 
-          <div className="lg:grid lg:grid-cols-12 max-lg:space-y-8">
-            <div className="lg:col-span-4 space-y-8 lg:space-y-14 lg:py-36">
+        <div className="myContainer space-y-8 lg:space-y-28">
+          <div className="max-lg:space-y-8 lg:grid lg:grid-cols-2 lg:space-x-14">
+            <div className="lg:col-span-1 space-y-8 lg:space-y-14 lg:mb-36">
+              <FromTopTitles
+                titleH2={t("section1.h2")}
+                titleH3={t("section1.h3")}
+                h3Classes="text-black"
+              />
+
               <div className="space-y-4">
                 {t.rich("section1.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
@@ -90,12 +91,17 @@ export default function Vivasome() {
               </div>
             </div>
 
-            <div className="relative lg:col-span-5 lg:col-start-8 max-lg:h-[350px]">
+            <div className="col-span-1 relative max-lg:h-[350px]">
               <Image
                 src={section1}
                 alt={t("section1.alt")}
-                quality={100}
-                className="object-cover size-full rounded-xl"
+                quality={75}
+                fill
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "50% 50%",
+                  borderRadius: "12px",
+                }}
               />
             </div>
           </div>
@@ -106,7 +112,7 @@ export default function Vivasome() {
         <Image
           src={bg}
           alt="texture"
-          quality={100}
+          quality={75}
           fill
           style={{
             objectFit: "cover",

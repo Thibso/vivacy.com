@@ -37,6 +37,7 @@ export default function OurBrands() {
       title: t("brandsDescriptions.stylage.title"),
       content: [t("brandsDescriptions.stylage.content.c1")],
       cta: {
+        display: true,
         content: t("brandsDescriptions.stylage.cta.content"),
         path: t("brandsDescriptions.stylage.cta.path"),
       },
@@ -51,6 +52,7 @@ export default function OurBrands() {
       title: t("brandsDescriptions.desirial.title"),
       content: [t("brandsDescriptions.desirial.content.c1")],
       cta: {
+        display: true,
         content: t("brandsDescriptions.desirial.cta.content"),
         path: t("brandsDescriptions.desirial.cta.path"),
       },
@@ -66,6 +68,7 @@ export default function OurBrands() {
       title: t("brandsDescriptions.desirialPlus.title"),
       content: [t("brandsDescriptions.desirialPlus.content.c1")],
       cta: {
+        display: true,
         content: t("brandsDescriptions.desirialPlus.cta.content"),
         path: t("brandsDescriptions.desirialPlus.cta.path"),
       },
@@ -76,6 +79,7 @@ export default function OurBrands() {
       title: t("brandsDescriptions.vivacyBeauty.title"),
       content: [t("brandsDescriptions.vivacyBeauty.content.c1")],
       cta: {
+        display: true,
         content: t("brandsDescriptions.vivacyBeauty.cta.content"),
         path: t("brandsDescriptions.vivacyBeauty.cta.path"),
       },
@@ -91,6 +95,7 @@ export default function OurBrands() {
       title: t("brandsDescriptions.kartilage.title"),
       content: [t("brandsDescriptions.kartilage.content.c1")],
       cta: {
+        display: false,
         content: t("brandsDescriptions.kartilage.cta.content"),
         path: t("brandsDescriptions.kartilage.cta.path"),
       },
@@ -101,6 +106,7 @@ export default function OurBrands() {
       title: t("brandsDescriptions.ispace.title"),
       content: [t("brandsDescriptions.ispace.content.c1")],
       cta: {
+        display: false,
         content: t("brandsDescriptions.ispace.cta.content"),
         path: t("brandsDescriptions.ispace.cta.path"),
       },
@@ -143,7 +149,7 @@ export default function OurBrands() {
               }}
             />
           </div>
-          <div className="col-span-6 space-y-8 lg:space-y-28 col-start-7 py-8 max-lg:pt-0">
+          <div className="col-span-6 space-y-8 lg:space-y-20 col-start-7 py-8 max-lg:pt-0">
             <FromTopTitles
               titleH2={t("section1.h2")}
               titleH3={t("section1.h3")}

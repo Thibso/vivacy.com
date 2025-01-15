@@ -1,7 +1,6 @@
 import BlueButton from "@/app/components/buttons/BlueButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import HeaderSpan from "@/app/components/globals/headerSpan";
-import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
 import bgHeader from "@/app/img/ipn/ipn-like-technology.jpg";
@@ -59,7 +58,7 @@ export default function IpnLike() {
       </section>
 
       <section className="relative">
-        <div className="myContainer max-lg:flex max-lg:flex-col-reverse max-lg:gap-8 lg:grid lg:grid-cols-2 lg:gap-x-28">
+        <div className="myContainer max-lg:flex max-lg:flex-col-reverse max-lg:gap-8 lg:grid lg:grid-cols-2 lg:gap-x-20 xl:gap-x-28">
           <div className="flex flex-col lg:justify-between gap-8 lg:gap-20 max-lg:w-full max-lg:max-w-[650px] max-lg:mx-auto">
             <Image
               src={section1First}
@@ -120,14 +119,14 @@ export default function IpnLike() {
           }}
         />
 
-        <div className="myContainer space-y-8 lg:space-y-28">
+        <div className="myContainer space-y-8 lg:space-y-20">
           <FromTopTitles
             titleH2={t("section2.h2")}
             titleH3={t("section2.h3")}
             h3Classes="text-black"
           />
 
-          <div className="lg:grid lg:grid-cols-2 lg:gap-x-20 max-lg:space-y-8">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-x-20 xl:gap-x-28 max-lg:space-y-8">
             <div className="space-y-4 lg:py-14">
               {t.rich("section2.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
@@ -148,14 +147,12 @@ export default function IpnLike() {
             </div>
           </div>
 
-          <FromTopCenteredTitles
-            titleH2={t("section3.h2")}
-            titleH3={t("section3.h3")}
-            h3Classes="text-black"
-          />
+          <h2 className="h3-perso text-center">{t("section3.h3")}</h2>
 
-          <div className="lg:grid lg:grid-cols-2 lg:gap-x-36 max-lg:space-y-8">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-x-20 xl:gap-x-36 max-lg:space-y-8">
             <div className="space-y-8 lg:space-y-14 lg:py-8">
+              <h3 className="h2-perso">{t("section3.h2")}</h3>
+
               <div className="space-y-4">
                 {t.rich("section3.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
@@ -188,8 +185,8 @@ export default function IpnLike() {
       </section>
 
       {/* VIDEO */}
-      <section>
-        <video className="max-w-[70%] mx-auto" playsInline loop controls>
+      <section className="max-lg:px-4">
+        <video className="lg:max-w-[70%] mx-auto" playsInline loop controls>
           <source
             src="/videos/vivacy-ipnlike-technology.mp4#t=1.5"
             type="video/mp4"

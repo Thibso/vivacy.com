@@ -46,7 +46,7 @@ export default function Contact() {
           style={{
             objectFit: "contain",
             zIndex: "-1",
-            opacity: 0.05,
+            opacity: 0.02,
           }}
           className="max-lg:hidden absolute -right-[30%] top-[15%]"
         />
@@ -61,7 +61,7 @@ export default function Contact() {
       </section>
 
       <section className="bg-blue">
-        <div className="myContainer space-y-8 lg:space-y-28">
+        <div className="myContainer space-y-8 lg:space-y-20">
           <FromTopCenteredTitles
             titleH2={t("h2")}
             titleH3={t("h3")}
@@ -103,7 +103,7 @@ export default function Contact() {
       </section>
 
       <section>
-        <div className="myContainer space-y-8 lg:space-y-28">
+        <div className="myContainer space-y-8 lg:space-y-20">
           <FromTopCenteredTitles
             titleH2={t("section2.h2")}
             titleH3={t("section2.h3")}

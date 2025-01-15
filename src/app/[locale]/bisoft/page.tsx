@@ -157,6 +157,16 @@ export default function BiSoft() {
         </div>
       </section>
 
+      <SeringeBiSoft
+        h2={t("seringe.h2")}
+        h3={t("seringe.h3")}
+        first={seringeTextFirst}
+        second={seringeTextSecond}
+        third={seringeTextThird}
+        fourth={seringeTextFourth}
+        fifth={seringeTextFifth}
+      />
+
       <section className="relative">
         <Image
           src={bg}
@@ -168,7 +178,7 @@ export default function BiSoft() {
             zIndex: "-1",
           }}
         />
-        <div className="myContainer space-y-14 lg:space-y-28">
+        <div className="myContainer space-y-14 lg:space-y-20">
           <h2 className="h2-perso">{t("section2.h2")}</h2>
 
           <div className="lg:grid lg:grid-cols-4 lg:gap-x-20 max-lg:space-y-14 max-lg:w-[80%] max-lg:mx-auto">
@@ -185,14 +195,17 @@ export default function BiSoft() {
                     borderRadius: "12px",
                   }}
                 />
+
                 <div className="bg-blue rounded-full text-white py-3 px-6 absolute z-[1] bottom-0 -right-2 lg:-right-8">
                   <span>{t("section2.ratings.first.rate")} / 10</span>
                 </div>
               </div>
-              <h4 className="font-light text-xl">
+
+              <h4 className="font-light text-xl text-center">
                 {t("section2.ratings.first.title")}
               </h4>
             </div>
+
             <div className="col-span-1 space-y-4">
               <div className="relative h-[275px]">
                 <Image
@@ -210,7 +223,7 @@ export default function BiSoft() {
                   <span>{t("section2.ratings.second.rate")} / 10</span>
                 </div>
               </div>
-              <h4 className="font-light text-xl">
+              <h4 className="font-light text-xl text-center">
                 {t("section2.ratings.second.title")}
               </h4>
             </div>
@@ -231,7 +244,7 @@ export default function BiSoft() {
                   <span>{t("section2.ratings.third.rate")} / 10</span>
                 </div>
               </div>
-              <h4 className="font-light text-xl">
+              <h4 className="font-light text-xl text-center">
                 {t("section2.ratings.third.title")}
               </h4>
             </div>
@@ -252,30 +265,18 @@ export default function BiSoft() {
                   <span>{t("section2.ratings.fourth.rate")} / 10</span>
                 </div>
               </div>
-              <h4 className="font-light text-xl">
+              <h4 className="font-light text-xl text-center">
                 {t("section2.ratings.fourth.title")}
               </h4>
             </div>
           </div>
+
+          <ol className="list-decimal">
+            {t.rich("references", {
+              li: (chunks) => <li className="text-sm">{chunks}</li>,
+            })}
+          </ol>
         </div>
-      </section>
-
-      <SeringeBiSoft
-        h2={t("seringe.h2")}
-        h3={t("seringe.h3")}
-        first={seringeTextFirst}
-        second={seringeTextSecond}
-        third={seringeTextThird}
-        fourth={seringeTextFourth}
-        fifth={seringeTextFifth}
-      />
-
-      <section className="px-5 pb-16 lg:px-20 lg:pb-24 xl:px-28 xl:pb-32">
-        <ol className="list-decimal">
-          {t.rich("references", {
-            li: (chunks) => <li className="text-sm">{chunks}</li>,
-          })}
-        </ol>
       </section>
     </main>
   );

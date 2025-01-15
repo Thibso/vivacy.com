@@ -36,7 +36,7 @@ export default function AccordionItem(props: Props) {
             }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <ul className="list-disc lg:flex lg:flex-col lg:flex-wrap lg:max-h-[600px] px-14 py-4 lg:px-20 lg:py-8">
+            <ul className="list-disc lg:flex lg:flex-col lg:flex-wrap lg:max-h-[500px] px-14 py-4 lg:px-20 lg:py-8">
               {props.content}
             </ul>
           </motion.div>

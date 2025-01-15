@@ -66,7 +66,7 @@ export default function Stylage() {
             zIndex: "-1",
             left: 0,
             position: "absolute",
-            opacity: 0.05,
+            opacity: 0.02,
           }}
           className="w-full lg:w-[60%] bottom-[200px] lg:-bottom-[300px]"
         />
@@ -78,7 +78,7 @@ export default function Stylage() {
           />
 
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-12">
-            <div className="lg:col-span-5 space-y-8 lg:space-y-28 py-4">
+            <div className="lg:col-span-5 space-y-8 lg:space-y-28 lg:py-4">
               <div className="space-y-4">
                 {t.rich("section1.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
@@ -95,7 +95,7 @@ export default function Stylage() {
                 <Image
                   src={secrtion1First}
                   alt={t("section1.alt1")}
-                  quality={75}
+                  quality={100}
                   fill
                   style={{
                     objectFit: "cover",
@@ -108,7 +108,7 @@ export default function Stylage() {
                 <Image
                   src={secrtion1Second}
                   alt={t("section1.alt2")}
-                  quality={75}
+                  quality={100}
                   fill
                   style={{
                     objectFit: "cover",
@@ -122,19 +122,14 @@ export default function Stylage() {
         </div>
       </section>
 
-      <section>
-        <div className="myContainer max-lg:pt-0 space-y-8 lg:space-y-28">
-          <FromTopTitles
-            titleH2={t("section2.h2")}
-            titleH3={t("section2.h3")}
-            h3Classes="text-black"
-          />
+      <section className="relative z-[1]">
+        <div className="myContainer max-lg:pt-0">
           <div className="lg:grid lg:grid-cols-12 max-lg:space-y-8">
             <div className="lg:col-span-6 relative max-lg:h-[350px]">
               <Image
                 src={section2}
                 alt={t("section2.alt")}
-                quality={75}
+                quality={100}
                 fill
                 style={{
                   objectFit: "cover",
@@ -144,15 +139,17 @@ export default function Stylage() {
               />
             </div>
 
-            <div className="lg:col-span-5 lg:col-start-8 lg:pt-48 lg:pb-40 space-y-8 lg:space-y-28">
+            <div className="lg:col-span-5 lg:col-start-8 space-y-8 lg:space-y-20 lg:py-8">
+              <FromTopTitles
+                titleH2={t("section2.h2")}
+                titleH3={t("section2.h3")}
+                h3Classes="text-black"
+              />
+
               <div className="space-y-4">
                 {t.rich("section2.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
-
-              <div className="max-lg:flex max-lg:justify-center">
-                <BlueButton content={t("cta.title")} path={t("cta.path")} />
               </div>
             </div>
           </div>
@@ -172,11 +169,11 @@ export default function Stylage() {
           }}
         />
         <div className="myContainer lg:grid lg:grid-cols-10 ">
-          <div className="p-4 lg:p-10 lg:col-span-7 backdrop-blur rounded-xl bg-white/15 space-y-8 lg:space-y-14">
+          <div className="p-4 lg:p-10 lg:col-span-7 backdrop-blur rounded-xl bg-white/15 space-y-8 lg:space-y-20">
             <FromTopTitles
               titleH2={t("section3.h2")}
               titleH3={t("section3.h3")}
-              h3Classes="lg:text-white"
+              h3Classes="lg:text-black"
             />
             <div className="xl:w-[70%] space-y-4">
               {t.rich("section3.content", {
@@ -184,9 +181,6 @@ export default function Stylage() {
                 sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
               })}
               <p className="text-sm">{t("section3.asterisk")}</p>
-            </div>
-            <div className="max-lg:flex max-lg:justify-center">
-              <BlueButton content={t("cta.title")} path={t("cta.path")} />
             </div>
           </div>
         </div>
@@ -203,7 +197,7 @@ export default function Stylage() {
             zIndex: "-1",
           }}
         />
-        <div className="myContainer space-y-8 lg:space-y-28">
+        <div className="myContainer space-y-8 lg:space-y-20">
           <FromTopCenteredTitles
             titleH2={t("section4.h2")}
             titleH3={t("section4.h3")}
@@ -215,7 +209,7 @@ export default function Stylage() {
                 <Image
                   src={section4First}
                   alt={t("section4.alt1")}
-                  quality={75}
+                  quality={100}
                   fill
                   style={{
                     objectFit: "cover",
@@ -228,7 +222,7 @@ export default function Stylage() {
                 <Image
                   src={section4Second}
                   alt={t("section4.alt2")}
-                  quality={75}
+                  quality={100}
                   fill
                   style={{
                     objectFit: "cover",

@@ -59,15 +59,15 @@ export default function OurCommitments() {
       </section>
 
       <section className="relative z-[1] bg-white">
-        <div className="myContainer space-y-8 lg:space-y-28">
+        <div className="myContainer space-y-8 lg:space-y-20">
           <FromTopCenteredTitles
             titleH2={t("section1.h2")}
             titleH3={t("section1.h3")}
             h3Classes="text-black"
           />
 
-          <div className="lg:grid lg:grid-cols-12 lg:gap-x-28">
-            <div className="lg:col-span-7 max-lg:h-[250px] grid grid-cols-10 gap-x-2 lg:gap-x-10">
+          <div className="lg:grid lg:grid-cols-12 lg:space-x-12 xl:space-x-28">
+            <div className="lg:col-span-7 max-lg:h-[250px] grid grid-cols-10 gap-x-2 lg:gap-x-5 xl:gap-x-10">
               <div className="col-span-4 relative">
                 <Image
                   src={research1}
@@ -117,7 +117,7 @@ export default function OurCommitments() {
                 />
               </div>
             </div>
-            <div className="col-span-5 max-lg:mt-8 lg:py-32">
+            <div className="col-span-5 max-lg:mt-8 lg:py-24 xl:py-32">
               <p className="lg:text-lg">{t("section1.content")}</p>
             </div>
           </div>
@@ -137,13 +137,13 @@ export default function OurCommitments() {
           }}
         />
         <div className="myContainer lg:grid lg:grid-cols-10 ">
-          <div className="p-4 lg:p-10 lg:col-span-6 backdrop-blur rounded-xl bg-white/15 space-y-8 lg:space-y-28">
+          <div className="p-4 lg:p-10 lg:col-span-6 backdrop-blur rounded-xl bg-white/15 space-y-8 lg:space-y-20">
             <FromTopTitles
               titleH2={t("section2.h2")}
               titleH3={t("section2.h3")}
-              h3Classes="lg:text-white"
+              h3Classes="text-black"
             />
-            <div className="space-y-4 text-blue">
+            <div className="space-y-4">
               {t.rich("section2.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
@@ -164,8 +164,8 @@ export default function OurCommitments() {
             zIndex: "-1",
           }}
         />
-        <div className="myContainer space-y-16 lg:space-y-28">
-          <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-14 lg:grid lg:grid-cols-12 lg:gap-x-16 xl:gap-x-24">
+        <div className="myContainer space-y-16 lg:space-y-20">
+          <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-14 lg:grid lg:grid-cols-12 lg:space-x-10 xl:space-x-24">
             <div className="lg:col-span-6 lg:py-6 space-y-16 lg:space-y-28">
               <div className="space-y-8 lg:space-y-20">
                 <FromTopTitles
@@ -208,7 +208,7 @@ export default function OurCommitments() {
             </div>
           </div>
 
-          <div className="max-lg:space-y-16 lg:grid lg:grid-cols-12 lg:gap-x-24">
+          <div className="max-lg:space-y-16 lg:grid lg:grid-cols-12 lg:space-x-14 xl:space-x-24">
             <div className="lg:col-span-5 relative h-[350px] lg:h-[600px]">
               <Image
                 src={section3Second}
@@ -222,7 +222,7 @@ export default function OurCommitments() {
                 }}
               />
             </div>
-            <div className="max-lg:space-y-8 lg:col-span-7 lg:gap-y-20 lg:flex lg:flex-col lg:justify-end">
+            <div className="space-y-8 lg:py-8 lg:col-span-7 lg:space-y-20 lg:flex lg:flex-col">
               <FromTopTitles
                 titleH2={t("section4.h2")}
                 titleH3={t("section4.h3")}

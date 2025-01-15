@@ -60,7 +60,7 @@ export default function OurBrands() {
       </section>
 
       <section>
-        <div className="myContainer space-y-8 lg:space-y-28">
+        <div className="myContainer space-y-8 lg:space-y-16">
           <FromTopCenteredTitles
             titleH2={t("section1.h2")}
             titleH3={t("section1.h3")}
@@ -72,6 +72,23 @@ export default function OurBrands() {
               p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
             })}
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="myContainer pt-0 space-y-8 lg:space-y-16">
+          <FromTopCenteredTitles
+            titleH2={t("section4.h2")}
+            titleH3={t("section4.h3")}
+            h3Classes="text-black"
+          />
+
+          <video className="lg:max-w-[70%] mx-auto" playsInline loop controls>
+            <source
+              src="/videos/vivacy-presentation.mp4#t=1.5"
+              type="video/mp4"
+            />
+          </video>
         </div>
       </section>
 
@@ -123,7 +140,7 @@ export default function OurBrands() {
             src={bgVivacy}
             alt="Vivacy logo"
             quality={50}
-            className="absolute top-[30%] lg:-top-[10%] left-0 lg:left-[5%] w-full lg:size-[115%] object-cover object-left-top opacity-[0.05] -z-[1]"
+            className="absolute top-[30%] lg:-top-[10%] left-0 lg:left-[5%] w-full lg:size-[115%] object-cover object-left-top opacity-[0.02] -z-[1]"
           />
 
           <FromTopTitles
@@ -132,7 +149,7 @@ export default function OurBrands() {
             h3Classes="text-black"
           />
 
-          <div className="space-y-4 mt-8 lg:mt-12">
+          <div className="space-y-4 mt-8 lg:mt-16">
             {t.rich("section2.content", {
               p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               ul: (chunks) => (
@@ -144,7 +161,9 @@ export default function OurBrands() {
         </div>
       </section>
 
-      <section className="relative lg:mt-28 z-[1]">
+      <HistorySteps h2={t("section5.h2")} h3={t("section5.h3")} />
+
+      <section className="relative lg:mt-20 z-[1]">
         <Image
           src={office}
           alt={t("section3.alt")}
@@ -172,25 +191,9 @@ export default function OurBrands() {
         </div>
       </section>
 
-      <section>
-        <div className="myContainer max-lg:pt-0 space-y-16">
-          <FromTopCenteredTitles
-            titleH2={t("section4.h2")}
-            titleH3={t("section4.h3")}
-            h3Classes="text-black"
-          />
-
-          <video className="lg:max-w-[70%] mx-auto" playsInline loop controls>
-            <source
-              src="/videos/vivacy-presentation.mp4#t=1.5"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-      </section>
-
+      {/* KEY NUMBERS */}
       <section className="bg-blue lg:max-w-[2550px] lg:m-auto">
-        <div className="myContainer space-y-14 lg:space-y-28 text-white lg:flex lg:flex-col lg:items-center">
+        <div className="myContainer space-y-14 lg:space-y-22 text-white lg:flex lg:flex-col lg:items-center">
           <div className="titles-container w-full">
             <h2 className="h2-perso text-white">{h("section3.h2")}</h2>
             <h3 className="h3-perso text-white">{h("section3.h3")}</h3>
@@ -201,14 +204,18 @@ export default function OurBrands() {
               <p>
                 <IncrementNumber number={85} speed={27.5} />
               </p>
-              <p className="mt-4 lg:mt-14">{h("section3.keyNumbers.1")}</p>
+              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
+                {h("section3.keyNumbers.1")}
+              </p>
             </div>
 
             <div className="text-center">
               <p>
                 <IncrementNumber number={15} />
               </p>
-              <p className="mt-4 lg:mt-14">{h("section3.keyNumbers.2")}</p>
+              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
+                {h("section3.keyNumbers.2")}
+              </p>
             </div>
 
             <div className="text-center">
@@ -218,7 +225,9 @@ export default function OurBrands() {
                   st
                 </span>
               </p>
-              <p className="mt-4 lg:mt-14">{h("section3.keyNumbers.3")}</p>
+              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
+                {h("section3.keyNumbers.3")}
+              </p>
             </div>
 
             <div className="text-center">
@@ -228,7 +237,9 @@ export default function OurBrands() {
                   st
                 </span>
               </p>
-              <p className="mt-4 lg:mt-14">{h("section3.keyNumbers.4")}</p>
+              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
+                {h("section3.keyNumbers.4")}
+              </p>
             </div>
           </div>
 
@@ -246,8 +257,6 @@ export default function OurBrands() {
           </div>
         </div>
       </section>
-
-      <HistorySteps h2={t("section5.h2")} h3={t("section5.h3")} />
     </main>
   );
 }

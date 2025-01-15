@@ -1,4 +1,3 @@
-import BlueButton from "@/app/components/buttons/BlueButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import HeaderSpan from "@/app/components/globals/headerSpan";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
@@ -81,14 +80,14 @@ export default function OurCommitments() {
       </section>
 
       <section className="relative z-[1] bg-white">
-        <div className="myContainer space-y-8 lg:space-y-28">
+        <div className="myContainer">
           <FromTopCenteredTitles
             titleH2={t("section1.h2")}
             titleH3={t("section1.h3")}
             h3Classes="text-black"
           />
 
-          <div className="max-lg:space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-20 lg:gap-y-14 relative lg:w-[80%] lg:mx-auto">
+          <div className="max-lg:space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-20 lg:gap-y-14 relative xl:w-[80%] lg:mx-auto mt-8 lg:mt-20">
             {corporateValues.map((value, index) => {
               return (
                 <div key={index} className="space-y-4">
@@ -105,17 +104,10 @@ export default function OurCommitments() {
                 </div>
               );
             })}
-
-            <div className="max-lg:flex max-lg:justify-center lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2">
-              <BlueButton
-                content={t("section1.cta.title")}
-                path={t("section1.cta.path")}
-              />
-            </div>
           </div>
 
-          <div>
-            <p>* {t("section1.references.rifd")}</p>
+          <div className="mt-8">
+            <p className="text-sm">* {t("section1.references.rifd")}</p>
           </div>
         </div>
       </section>
@@ -124,7 +116,7 @@ export default function OurCommitments() {
         <Image
           src={bg}
           alt="texture"
-          quality={100}
+          quality={75}
           className="absolute object-contain w-full -z-[1]"
         />
 
@@ -136,19 +128,19 @@ export default function OurCommitments() {
           />
         </div>
 
-        <div className="max-lg:space-y-14">
+        <div className="space-y-14 lg:space-y-20 xl:space-y-28">
           {/* first */}
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:px-5 max-lg:gap-8 lg:grid lg:grid-cols-2">
             <div className="relative max-lg:h-[350px]">
               <Image
                 src={first}
                 alt={t("section2.first.alt")}
-                quality={75}
+                quality={100}
                 fill
                 className="object-cover object-center"
               />
             </div>
-            <div className="lg:myContainer space-y-4">
+            <div className="lg:p-10 xl:px-24 xl:py-16 space-y-4">
               {t.rich("section2.first.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
@@ -156,8 +148,8 @@ export default function OurCommitments() {
           </div>
 
           {/* second */}
-          <div className="max-lg:px-5 space-y-8 lg:grid lg:grid-cols-2 lg:mt-72">
-            <div className="lg:px-28 lg:py-6 space-y-8 lg:space-y-20">
+          <div className="max-lg:px-5 max-lg:space-y-8 lg:grid lg:grid-cols-2">
+            <div className="lg:p-10 xl:px-24 xl:py-16 space-y-8 lg:space-y-20">
               <FromTopTitles
                 titleH2={t("section2.second.h2")}
                 titleH3={t("section2.second.h3")}
@@ -171,7 +163,7 @@ export default function OurCommitments() {
               </div>
             </div>
 
-            <div className="relative max-lg:h-[350px] lg:mr-14">
+            <div className="relative max-lg:h-[350px]">
               <Image
                 src={second}
                 alt={t("section2.second.alt")}
@@ -183,7 +175,7 @@ export default function OurCommitments() {
           </div>
 
           {/* third */}
-          <div className="max-lg:px-5 max-lg:flex max-lg:flex-col-reverse max-lg:gap-8 lg:grid lg:grid-cols-2 lg:mt-40">
+          <div className="max-lg:px-5 max-lg:flex max-lg:flex-col-reverse max-lg:gap-8 lg:grid lg:grid-cols-2">
             <div className="relative max-lg:h-[350px]">
               <Image
                 src={environment}
@@ -193,7 +185,7 @@ export default function OurCommitments() {
                 className="object-cover object-center"
               />
             </div>
-            <div className="lg:px-28 lg:pb-16 space-y-8 lg:space-y-20">
+            <div className="lg:p-10 xl:px-24 xl:py-16 space-y-8 lg:space-y-20">
               <FromTopTitles
                 titleH2={t("section2.third.h2")}
                 titleH3={t("section2.third.h3")}
@@ -208,8 +200,8 @@ export default function OurCommitments() {
           </div>
 
           {/* fourth */}
-          <div className="max-lg:px-5 lg:grid lg:grid-cols-2 lg:mt-10 space-y-8">
-            <div className="lg:myContainer space-y-8 lg:space-y-20">
+          <div className="max-lg:px-5 lg:grid lg:grid-cols-2 max-lg:space-y-8">
+            <div className="lg:p-10 xl:px-24 xl:py-16 space-y-8 lg:space-y-20">
               <Image
                 src={rhoneAlpes}
                 alt={t("section2.fourth.alt")}

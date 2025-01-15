@@ -4,15 +4,14 @@ import BlueButton from "../components/buttons/BlueButton";
 import WhiteButton from "../components/buttons/WhiteButton";
 import IncrementNumber from "../components/globals/testNumbers";
 import WorldMap from "../components/globals/worldMap";
+import Innovations from "../components/home/innovations";
 import SyringeRotate from "../components/scrollEffects/SyringeRotate";
 import LogoSlider from "../components/sliders/LogoSlider";
 import ProductsCarousel from "../components/sliders/productsCarousel";
 import FromTopCenteredTitles from "../components/titles/FromTopCenteredTitles";
 import FromTopTitles from "../components/titles/FromTopTitles";
 import productsBg from "../img/experts-acide-hyaluronique-laboratoires-vivacy.jpg";
-import syringe from "../img/stylage-specialiste-acide-hyaluronique-premium.png";
 import haPower from "../img/vivacy-hyaluronic-acid-experts.jpg";
-import innovationsBg from "../img/vivacy-laboratoire-esthetique-france.jpg";
 import experienceBg from "../img/vivacy-laboratoires-experience-esthetique.jpg";
 
 type Params = {
@@ -214,78 +213,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative z-[1]">
-        <Image
-          className="-z-[1]"
-          src={innovationsBg}
-          alt="texture"
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-          }}
-        />
-        <div className="myContainer space-y-8 lg:space-y-28">
-          <FromTopCenteredTitles
-            titleH2={t("section4.h2")}
-            titleH3={t("section4.h3")}
-            h3Classes="text-black"
-          />
+      <Innovations />
 
-          <div className="lg:grid lg:grid-cols-2 lg:gap-36">
-            <div className="space-y-8 lg:space-y-14">
-              <div className="space-y-3">
-                {t.rich("section4.textTop", {
-                  p: (chunks) => (
-                    <p className="last:ml-8 text-sm lg:text-lg">{chunks}</p>
-                  ),
-                  sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
-                })}
-              </div>
-
-              <div className="space-y-4">
-                {t.rich("section4.textCore", {
-                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
-                  sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
-                })}
-              </div>
-
-              <div className="space-y-4">
-                <p className="text-[10px]">* {t("section4.asterisk")}</p>
-
-                <ul className="list-decimal">
-                  {t.rich("section4.annotations", {
-                    li: (chunks) => <li className="text-[10px]">{chunks}</li>,
-                  })}
-                </ul>
-              </div>
-
-              <div className="max-lg:flex max-lg:justify-center">
-                <BlueButton
-                  content={t("section4.button")}
-                  path={t("section4.buttonPath")}
-                />
-              </div>
-            </div>
-
-            <div className="max-lg:hidden flex justify-end items-end">
-              <Image
-                src={syringe}
-                alt={t("section4.alt")}
-                height={650}
-                style={{
-                  transformOrigin: "top center",
-                  transform: "rotate(45deg)",
-                }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* AFTER EFFECT SECTIONS */}
       <SyringeRotate />
 
+      {/* AFTER EFFECT SECTIONS */}
       <section className="relative z-[1]">
         <Image
           className="-z-[1]"

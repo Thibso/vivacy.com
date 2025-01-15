@@ -53,6 +53,7 @@ export default function ContactForm() {
   const t = useTranslations("Contact");
 
   const [checked, setChecked] = useState(false);
+  const [emailTo, setEmailTo] = useState("marketing@vivacy.fr");
 
   const form = useForm({
     resolver: zodResolver(FormSchema),
@@ -66,6 +67,14 @@ export default function ContactForm() {
       message: "",
     },
   });
+
+  function emailChange(event: any) {
+    if (event.target.value === "Contact with a distributor (international)") {
+      setEmailTo("export@vivacy.com");
+    } else {
+      setEmailTo("marketing@vivacy.fr");
+    }
+  }
 
   async function onSubmit(data: FormData) {
     const {
@@ -84,6 +93,7 @@ export default function ContactForm() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        emailTo,
         firstname,
         lastname,
         email,
@@ -263,7 +273,7 @@ export default function ContactForm() {
               control={form.control}
               name="subject"
               render={({ field }) => (
-                <FormItem>
+                <FormItem onChange={emailChange}>
                   <FormLabel className="text-blue">
                     {t("form.subject")}
                   </FormLabel>
@@ -281,7 +291,10 @@ export default function ContactForm() {
                         <SelectItem value={t("form.subjects.1")}>
                           {t("form.subjects.1")}
                         </SelectItem>
-                        <SelectItem value={t("form.subjects.2")}>
+                        <SelectItem
+                          value={t("form.subjects.2")}
+                          onSelect={() => console.log("selected")}
+                        >
                           {t("form.subjects.2")}
                         </SelectItem>
                         <SelectItem value={t("form.subjects.3")}>

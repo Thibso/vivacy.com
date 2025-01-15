@@ -18,6 +18,7 @@ type Text = {
   title: string;
   content: Array<string>;
   cta: {
+    display: boolean;
     content: string;
     path: string;
   };
@@ -114,7 +115,7 @@ export default function BrandsDescriptions(props: Props) {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: -10, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="uppercase text-blue font-semibold text-lg"
+              className="uppercase text-blue font-semibold text-lg lg:text-2xl"
             >
               {props.texts[brand].title}
             </motion.h2>
@@ -142,7 +143,11 @@ export default function BrandsDescriptions(props: Props) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="m-auto lg:mr-0 max-lg:ml-0"
+              className={`${
+                props.texts[brand].cta.display === true
+                  ? "inline-block"
+                  : "hidden"
+              } m-auto lg:mr-0 max-lg:ml-0`}
             >
               <BlueButton content={props.texts[brand].cta.content} path={""} />
             </motion.div>

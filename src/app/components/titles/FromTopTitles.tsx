@@ -8,6 +8,7 @@ type Props = {
   titleH3: string | ReactNode;
   containerClasses?: string;
   h3Classes?: string;
+  h2Classes?: string;
 };
 
 export default function FromTopTitles(props: Props) {
@@ -32,14 +33,14 @@ export default function FromTopTitles(props: Props) {
           amount: "all",
           once: true,
         }}
-        className="h2-perso"
+        className={`h2-perso ${props.h2Classes ? props.h2Classes : ""}`}
       >
         {props.titleH2}
       </motion.h2>
       <motion.h3
         initial={{
           opacity: 0,
-          y: -45,
+          y: -100,
         }}
         whileInView={{
           opacity: 1,
@@ -47,7 +48,7 @@ export default function FromTopTitles(props: Props) {
         }}
         transition={{
           ease: "circOut",
-          duration: 0.5,
+          duration: 0.8,
         }}
         viewport={{
           amount: "all",

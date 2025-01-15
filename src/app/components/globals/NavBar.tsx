@@ -97,11 +97,17 @@ export default function NavBar(props: Props) {
         title: t("products.items.item3.title"),
         path: t("products.items.item3.path"),
       },
+      {
+        id: t("products.items.item4.id"),
+        title: t("products.items.item4.title"),
+        path: t("products.items.item4.path"),
+      },
     ],
     images: [
       t("products.images.1"),
       t("products.images.2"),
       t("products.images.3"),
+      t("products.images.4"),
     ],
   };
 

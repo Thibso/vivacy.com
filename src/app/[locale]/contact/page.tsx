@@ -39,7 +39,7 @@ export default function Contact() {
             objectFit: "contain",
             zIndex: "-1",
             position: "absolute",
-            opacity: 0.05,
+            opacity: 0.02,
           }}
           className="max-lg:hidden w-full lg:w-[60%] -right-[20%] top-[15%]"
         />
@@ -50,7 +50,7 @@ export default function Contact() {
             h3Classes="text-black"
           />
 
-          <div className="lg:grid lg:grid-cols-12 lg:gap-x-28 lg:px-14 max-lg:space-y-8">
+          <div className="lg:grid lg:grid-cols-12 lg:space-x-28 lg:px-14 max-lg:space-y-8">
             <div className="lg:col-span-8 rounded-xl border-[1px] p-4 lg:py-8 lg:px-14 border-blue ">
               <ContactForm />
             </div>

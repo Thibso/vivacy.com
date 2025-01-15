@@ -1,16 +1,16 @@
 "use client";
 
-import img2 from "@/app/img/vivacy-laboratoires-experience-esthetique.jpg";
 import img1 from "@/app/img/vivacy-laboratories-paris-acid-hyaluronic.jpg";
 
 import {
+  AnimatePresence,
   motion,
   useMotionValueEvent,
   useScroll,
   useSpring,
 } from "framer-motion";
 import Image from "next/image";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import FromTopTitles from "../titles/FromTopTitles";
 
 type Props = {
@@ -63,6 +63,25 @@ export default function HistorySteps(props: Props) {
     "ACE Award for Best Manufacturer",
     "Opening of Spain and Benelux subsidiaries",
   ];
+  const images = [
+    img1,
+    img1,
+    img1,
+    img1,
+    img1,
+    img1,
+    img1,
+    img1,
+    img1,
+    img1,
+    img1,
+    img1,
+    img1,
+    img1,
+    img1,
+    img1,
+    img1,
+  ];
 
   // SCROLL SETTINGS
   const ref = useRef<HTMLElement>(null);
@@ -91,11 +110,31 @@ export default function HistorySteps(props: Props) {
     }
   });
 
+  const [sectionHeight, setSectionHeight] = useState(0);
+  const [refToTop, setRefToTop] = useState(0);
+
+  useEffect(() => {
+    if (ref.current) {
+      const { height } = ref.current.getBoundingClientRect();
+      const toTop = ref.current.offsetTop;
+      setSectionHeight(height);
+      setRefToTop(toTop);
+    }
+  }, []);
+
+  const stepHeight = (sectionHeight * 0.9) / steps.length;
+
+  const scrollTo = (step: number) => {
+    const start = refToTop + stepHeight * 0.05;
+    const calc = start + step * stepHeight;
+    window.scrollTo({ top: calc, behavior: "smooth" });
+  };
+
   // const translateXProgress = useTransform(scroll, [0, 1], ["0", "-50%"]);
 
   return (
     <section
-      style={{ height: 70 * steps.length - 1 + "vh" }}
+      style={{ height: 60 * steps.length - 1 + "vh" }}
       className="relative"
       ref={ref}
     >
@@ -106,154 +145,36 @@ export default function HistorySteps(props: Props) {
           h3Classes="text-black"
         />
 
-        <div className="mt-8 lg:mt-28 relative h-[40vh] max-lg:grid lg:h-[600px] w-[90vw] lg:w-[65vw] mx-auto overflow-hidden z-[1]">
+        <div className="mt-8 lg:mt-16 relative h-[40vh] max-lg:grid lg:h-[600px] w-[90vw] lg:w-[65vw] mx-auto overflow-hidden z-[1]">
           <motion.ul
             style={{ x: "-" + stepValue * imagePosition + "%" }}
             className="flex absolute opacity-35 transition-all duration-1000 -z-[1] h-full"
           >
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img2}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img2}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img2}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
-            <li className="h-full w-[90vw] lg:w-[65vw]">
-              <Image
-                src={img1}
-                alt=""
-                quality={50}
-                className="size-full object-cover"
-              />
-            </li>
+            {images.map((img, index) => {
+              return (
+                <li
+                  key={"image_" + index}
+                  className="h-full w-[90vw] lg:w-[65vw]"
+                >
+                  <Image
+                    src={img}
+                    alt=""
+                    quality={50}
+                    className="size-full object-cover"
+                  />
+                </li>
+              );
+            })}
           </motion.ul>
 
           <div className="z-10 my-auto lg:mt-[5%]">
-            <p className="text-[12vw] font-bold text-blue text-center">
-              {years[stepValue]}
-            </p>
-            <p className="text-blue text-center uppercase text-base lg:text-lg">
+            <AnimatePresence>
+              <p className="text-[12vw] font-bold text-blue text-center">
+                {years[stepValue]}
+              </p>
+            </AnimatePresence>
+
+            <p className="text-blue text-center font-bold uppercase text-base lg:text-xl">
               {achievements[stepValue]}
             </p>
           </div>
@@ -265,8 +186,9 @@ export default function HistorySteps(props: Props) {
             return (
               <span
                 key={step}
+                onClick={() => scrollTo(step)}
                 style={{ left: position + "%" }}
-                className={`absolute size-3 lg:size-4 ${
+                className={`absolute z-[11] size-3 lg:size-4 cursor-pointer ${
                   scrollValue * 100 >= position
                     ? "bg-blue ring-offset-1 lg:ring-offset-2 ring-1 ring-blue"
                     : "bg-blue/50"

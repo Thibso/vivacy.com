@@ -1,33 +1,21 @@
-import { EmailTemplate } from "@/app/components/email/template";
+import { EmailTemplate } from "@/app/components/email/newsletterTemplate";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
-    const {
-      emailTo,
-      firstname,
-      lastname,
-      email,
-      country,
-      specialisation,
-      subject,
-      message,
-    } = await request.json();
+    const { firstname, lastname, email, country } = await request.json();
 
     const { data, error } = await resend.emails.send({
       from: "vivacy.com <contact@thibs-te.fr>",
-      to: [emailTo],
-      subject: "Contact via vivacy.com",
+      to: ["marketing@vivacy.fr"],
+      subject: "Newsletter",
       react: EmailTemplate({
         firstname,
         lastname,
         email,
         country,
-        specialisation,
-        subject,
-        message,
       }),
     });
 

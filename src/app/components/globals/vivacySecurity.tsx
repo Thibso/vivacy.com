@@ -24,7 +24,7 @@ export default function VivacySecurity() {
           position: "absolute",
         }}
       />
-      <div className="myContainer space-y-8 lg:space-y-28">
+      <div className="myContainer space-y-8 lg:space-y-20">
         <FromTopTitles
           titleH2={t("h2")}
           titleH3={t("h3")}

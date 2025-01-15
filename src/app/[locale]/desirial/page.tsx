@@ -70,7 +70,7 @@ export default function Desirial() {
             bottom: "0",
             left: 0,
             position: "absolute",
-            opacity: 0.05,
+            opacity: 0.02,
           }}
           className="w-full lg:w-[50%]"
         />

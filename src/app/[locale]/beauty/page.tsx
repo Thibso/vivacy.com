@@ -9,7 +9,6 @@ import section2 from "@/app/img/beauty/specialist-cosmetology-vivacy-beauty.jpg"
 import section1 from "@/app/img/beauty/vivacy-beauty-cosmetic-products.jpg";
 import bgHeader from "@/app/img/beauty/vivacy-beauty.jpg";
 import section3 from "@/app/img/beauty/vivacy-cosmetology-product.jpg";
-import section4Second from "@/app/img/beauty/vivacy-labratories-cosmetic.jpg";
 import vivacyLogo from "@/app/img/vivacy-laboratories-hyaluronic-acid-france.png";
 
 import { useTranslations } from "next-intl";
@@ -69,7 +68,7 @@ export default function VivacyBeauty() {
             zIndex: "-1",
             left: 0,
             position: "absolute",
-            opacity: 0.05,
+            opacity: 0.02,
           }}
           className="max-lg:hidden w-full lg:w-[60%] top-[50%] lg:top-[45%]"
         />
@@ -79,7 +78,7 @@ export default function VivacyBeauty() {
             <Image
               src={section1}
               alt={t("section1.alt")}
-              quality={75}
+              quality={100}
               fill
               style={{
                 objectFit: "cover",
@@ -89,7 +88,7 @@ export default function VivacyBeauty() {
             />
           </div>
 
-          <div className="lg:col-span-1 space-y-8 lg:space-y-28 lg:pt-20 lg:pb-28">
+          <div className="lg:col-span-1 space-y-8 lg:space-y-20 lg:py-20">
             <FromTopTitles
               titleH2={t("section1.h2")}
               titleH3={t("section1.h3")}
@@ -105,9 +104,9 @@ export default function VivacyBeauty() {
         </div>
       </section>
 
-      <section className="bg-white relative z-[2]">
-        <div className="myContainer max-lg:space-y-8 max-lg:pt-0 lg:pr-0 lg:pt-0 lg:grid lg:grid-cols-2 lg:space-y-12">
-          <div className="space-y-8 lg:space-y-28 lg:pr-28 lg:pb-20">
+      <section className="bg-transparent relative z-[2]">
+        <div className="myContainer max-lg:space-y-8 max-lg:pt-0 lg:pr-0 lg:pt-0 lg:grid lg:grid-cols-2">
+          <div className="space-y-8 lg:space-y-20 lg:pr-28 lg:pb-20">
             <FromTopTitles
               titleH2={t("section2.h2")}
               titleH3={t("section2.h3")}
@@ -125,7 +124,7 @@ export default function VivacyBeauty() {
             <Image
               src={section2}
               alt={t("section2.alt")}
-              quality={75}
+              quality={100}
               fill
               style={{
                 objectFit: "cover",
@@ -151,7 +150,7 @@ export default function VivacyBeauty() {
         />
 
         <div className="myContainer lg:grid lg:grid-cols-2 ">
-          <div className="p-4 lg:p-10 lg:col-span-1 lg:col-start-2 backdrop-blur-md rounded-xl bg-white/15 space-y-8 lg:space-y-14">
+          <div className="p-4 lg:p-10 lg:col-span-1 lg:col-start-2 backdrop-blur-md rounded-xl bg-white/15 space-y-8 lg:space-y-20">
             <FromTopTitles
               titleH2={t("section3.h2")}
               titleH3={t("section3.h3")}
@@ -190,7 +189,7 @@ export default function VivacyBeauty() {
           />
 
           <div className="lg:grid lg:grid-cols-2 lg:gap-x-28 max-lg:space-y-8">
-            <div className="lg:col-span-1 lg:py-28">
+            <div className="lg:col-span-1 lg:py-20">
               <div className="space-y-4">
                 {t.rich("section4.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
@@ -198,24 +197,16 @@ export default function VivacyBeauty() {
               </div>
             </div>
 
-            <div className="col-span-1 relative max-lg:h-[450px]">
+            <div className="col-span-1 relative max-lg:h-[350px] ">
               <Image
                 src={section4First}
                 alt={t("section4.alt1")}
-                quality={75}
+                quality={100}
+                fill
                 style={{
                   objectFit: "cover",
                 }}
-                className="absolute top-0 right-0 w-[90%] h-[65%] z-[2] max-lg:rounded-xl rounded-s-xl"
-              />
-              <Image
-                src={section4Second}
-                alt={t("section4.alt2")}
-                quality={75}
-                style={{
-                  objectFit: "cover",
-                }}
-                className="absolute bottom-0 right-0 w-full h-[60%] z-[1] max-lg:rounded-xl rounded-s-xl"
+                className="max-lg:rounded-xl rounded-s-xl "
               />
             </div>
           </div>
