@@ -121,8 +121,8 @@ export default function Vivasome() {
           className="max-lg:hidden"
         />
 
-        <div className="myContainer max-lg:py-0 space-y-8 lg:space-y-28">
-          <h2 className="h3-perso">{t("section2.h2")}</h2>
+        <div className="myContainer max-lg:py-0 space-y-8 lg:space-y-20">
+          <h2 className="h3-perso text-center">{t("section2.h2")}</h2>
 
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-12 lg:gap-x-20">
             <div className="col-span-7 relative max-lg:h-[350px]">
@@ -135,7 +135,7 @@ export default function Vivasome() {
               />
             </div>
 
-            <div className="lg:col-span-5 space-y-8 lg:pt-20">
+            <div className="lg:col-span-5 space-y-8 lg:py-8">
               <h3 className="h2-perso">{t("section2.h3")}</h3>
 
               <div className="space-y-4">
@@ -155,12 +155,12 @@ export default function Vivasome() {
           </div>
 
           <FromTopCenteredTitles
-            titleH2={t("section3.h2")}
+            titleH2={null}
             titleH3={t("section3.h3")}
             h3Classes="text-black"
           />
 
-          <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-2 lg:gap-x-28 lg:items-center">
+          <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-2 lg:gap-x-20 lg:items-center">
             <div>
               <Image
                 src={section3}
@@ -170,18 +170,21 @@ export default function Vivasome() {
               />
             </div>
 
-            <ul className="space-y-4 list-disc ml-4 lg:py-8">
-              {t.rich("section3.content", {
-                li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
-                b: (chunks) => (
-                  <strong className="lg:text-lg text-bold">{chunks}</strong>
-                ),
-              })}
-            </ul>
+            <div className="lg:py-8 space-y-8">
+              <h3 className="h2-perso">{t("section3.h2")}</h3>
+              <ul className="space-y-4 list-disc ml-4">
+                {t.rich("section3.content", {
+                  li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
+                  b: (chunks) => (
+                    <strong className="lg:text-lg text-bold">{chunks}</strong>
+                  ),
+                })}
+              </ul>
+            </div>
           </div>
 
           <div className="max-lg:space-y-8 lg:grid lg:grid-cols-2 lg:gap-x-28">
-            <div className="lg:pt-28 space-y-8 lg:space-y-16">
+            <div className="lg:pt-28 space-y-8">
               <h3 className="h2-perso">{t("section4.h3")}</h3>
               <ul className="space-y-4 list-disc ml-4  lg:pb-14">
                 {t.rich("section4.content", {

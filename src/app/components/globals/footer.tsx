@@ -18,27 +18,42 @@ export default function Footer() {
             <h4 className="text-blue uppercase">{t("vivacy.title")}</h4>
             <ul className="space-y-2">
               <li className="cursor-pointer">
-                <a className="block" href={t("vivacy.links.vivacyAcademy")}>
+                <a
+                  className="block hover:underline"
+                  href={t("vivacy.links.vivacyAcademy")}
+                >
                   {t("vivacy.content.vivacyAcademy")}
                 </a>
               </li>
               <li>
-                <a href={t("vivacy.links.vivacyBeauty")}>
+                <a
+                  className="block hover:underline"
+                  href={t("vivacy.links.vivacyBeauty")}
+                >
                   {t("vivacy.content.vivacyBeauty")}
                 </a>
               </li>
               <li>
-                <a href={t("vivacy.links.desirial")}>
+                <a
+                  className="block hover:underline"
+                  href={t("vivacy.links.desirial")}
+                >
                   {t("vivacy.content.desirial")}
                 </a>
               </li>
               <li>
-                <a href={t("vivacy.links.desirialPlus")}>
+                <a
+                  className="block hover:underline"
+                  href={t("vivacy.links.desirialPlus")}
+                >
                   {t("vivacy.content.desirialPlus")}
                 </a>
               </li>
               <li>
-                <a href={t("vivacy.links.stylage")}>
+                <a
+                  className="block hover:underline"
+                  href={t("vivacy.links.stylage")}
+                >
                   {t("vivacy.content.stylage")}
                 </a>
               </li>
@@ -48,20 +63,34 @@ export default function Footer() {
             <h4 className="text-blue uppercase">{t("contact.title")}</h4>
             <ul className="space-y-2">
               <li>
-                <a href={t("contact.links.contact")}>
+                <a
+                  className="block hover:underline"
+                  href={t("contact.links.contact")}
+                >
                   {t("contact.content.contact")}
                 </a>
               </li>
               <li>
-                <a href={t("contact.links.network")}>
+                <a
+                  className="block hover:underline"
+                  href={t("contact.links.network")}
+                >
                   {t("contact.content.network")}
                 </a>
               </li>
               <li>
-                <a href={t("legals.notice_link")}>{t("legals.notice")}</a>
+                <a
+                  className="block hover:underline"
+                  href={t("legals.notice_link")}
+                >
+                  {t("legals.notice")}
+                </a>
               </li>
               <li>
-                <a href={t("legals.confidentiality_link")}>
+                <a
+                  className="block hover:underline"
+                  href={t("legals.confidentiality_link")}
+                >
                   {t("legals.confidentiality")}
                 </a>
               </li>

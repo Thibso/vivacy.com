@@ -17,18 +17,22 @@ export default function Accordion(props: Props) {
       <AccordionItem
         title={t(`distribution.titles.europe`)}
         content={props.europe}
+        isActive={true}
       />
       <AccordionItem
         title={t(`distribution.titles.asia`)}
         content={props.asia}
+        isActive={false}
       />
       <AccordionItem
         title={t(`distribution.titles.africa`)}
         content={props.africa}
+        isActive={false}
       />
       <AccordionItem
         title={t(`distribution.titles.americas`)}
         content={props.americas}
+        isActive={false}
       />
     </div>
   );

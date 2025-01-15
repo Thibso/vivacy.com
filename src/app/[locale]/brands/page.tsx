@@ -145,8 +145,8 @@ export default function OurBrands() {
               style={{
                 objectFit: "cover",
                 objectPosition: "50% 50%",
-                borderRadius: "2rem",
               }}
+              className="rounded-xl"
             />
           </div>
           <div className="col-span-6 space-y-8 lg:space-y-20 col-start-7 py-8 max-lg:pt-0">

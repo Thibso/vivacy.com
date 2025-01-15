@@ -30,7 +30,7 @@ export default function FromTopTitles(props: Props) {
           duration: 0.5,
         }}
         viewport={{
-          amount: "all",
+          amount: "some",
           once: true,
         }}
         className={`h2-perso ${props.h2Classes ? props.h2Classes : ""}`}
@@ -51,7 +51,7 @@ export default function FromTopTitles(props: Props) {
           duration: 0.8,
         }}
         viewport={{
-          amount: "all",
+          amount: "some",
           once: true,
         }}
         className={`h3-perso ${props.h3Classes ? props.h3Classes : ""}`}

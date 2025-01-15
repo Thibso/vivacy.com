@@ -57,7 +57,7 @@ export default function NavList(props: Props) {
 
   return (
     <div>
-      <ul className="max-lg:hidden text-white flex gap-8 justify-around w-full max-w-[1200px] ">
+      <ul className="max-lg:hidden text-white flex gap-12 justify-around w-full max-w-[1200px] ">
         <NavItem
           title={props.about.title}
           path="#"

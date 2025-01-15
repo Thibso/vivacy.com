@@ -179,7 +179,7 @@
       "youtube": "https://www.youtube.com/channel/UCkYK7mHfG637Se0SY_kQIQg"
     },
     "legals": {
-      "copyright": "© Laboratoires VIVACY Paris",
+      "copyright": "Laboratoires VIVACY ©",
       "notice": "Legal notice",
       "notice_link": "/en/legal-notice",
       "confidentiality": "Confidentiality",
@@ -417,6 +417,7 @@
     },
     "section3": {
       "h2": "PRIORITISING SAFETY IN MANUFACTURING",
+      "h3": "ABOUT VIVACY",
       "content": "<p>Laboratoires VIVACY's advanced production facility in Archamps, France, highlights the company's dedication to excellence. Complying with strict EU medical device regulations, this facility ensures all products are safe and effective. These products are then distributed globally to meet the growing demand from aesthetic doctors and healthcare professionals.</p><p>Healthcare professionals around the world trust VIVACY's hyaluronic acid products for their ability to enhance natural beauty subtly and effectively. This trust is based on the consistent quality and innovation of VIVACY's offerings, making the company a leading partner in medical aesthetics and anti-ageing solutions.</p>",
       "alt": "Vivacy Archamps offices"
     },
@@ -645,25 +646,25 @@
     "section1": {
       "h2": "EXPLORE OUR UNIVERSE DEDICATED TO DERMO-COSMETICS ON OUR E-COMMERCE SITE VIVACY BEAUTY",
       "h3": "VIVACY BEAUTY",
-      "content": "<p>Laboratoires VIVACY offers a range of professional quality dermo cosmetic products based on expert and innovative formulas to complement aesthetic interventions and help men and women alike preserve their natural beauty beyond the doctor’s office. Laboratoires VIVACY is committed to producing high-quality dermal treatments in the form of its premium range of cosmetic products called VIVACY BEAUTY. We strive to make professional skincare accessible by making our expertise in aesthetic medicine available to all through a comprehensive e-commerce website.</p>",
+      "content": "<p>Laboratoires VIVACY offers a range of professional quality dermo cosmetic products based on expert and innovative formulas to complement aesthetic interventions and help men and women alike preserve their natural beauty beyond the doctor’s office.</p><p> Laboratoires VIVACY is committed to producing high-quality dermal treatments in the form of its premium range of cosmetic products called VIVACY BEAUTY.</p><p> We strive to make professional skincare accessible by making our expertise in aesthetic medicine available to all through a comprehensive e-commerce website.</p>",
       "alt": "Vivacy beauty cosmetic range"
     },
     "section2": {
       "h2": "PROFESSIONAL QUALITY DERMO-COSMETIC PRODUCTS",
       "h3": "ELEVATING SKINCARE",
-      "content": "<p>With over 16 years of experience, the brand decided to create professional quality dermo-cosmetic products to soothe the skin after an aesthetic medicine intervention, but also to preserve its youthful appearance in day-to-day life for people who are merely seeking to take care of their skin through an effective routine. Offering a facecare routine to our clients was primordial for us to prolong the results of our treatments. More generally, having a good skincare is the first step to feeling  confident and more at ease in one’s body, and our products are designed by professionals with this goal in mind.</p>",
+      "content": "<p>With over 16 years of experience, the brand decided to create professional quality dermo-cosmetic products to soothe the skin after an aesthetic medicine intervention, but also to preserve its youthful appearance in day-to-day life for people who are merely seeking to take care of their skin through an effective routine.</p><p> Offering a facecare routine to our clients was primordial for us to prolong the results of our treatments. More generally, having a good skincare is the first step to feeling  confident and more at ease in one’s body, and our products are designed by professionals with this goal in mind.</p>",
       "alt": "Vivacy beauty ambassador"
     },
     "section3": {
       "h2": "COMPREHENSIVE SOLUTIONS FOR EVERY SKIN TYPE",
       "h3": "A DIVERSE RANGE OF PRODUCTS",
-      "content": "<p>Laboratoires VIVACY offers three distinct ranges of skincare products to meet all needs. The VIVACY Beauty range for women was created to complement our fillers and ensure long-lasting results with anti-aging, repairing, refreshing, and nourishing products. It also makes the VIVACY expertise accessible through easy-to-use products that protect the skin from harmful external elements such as the wind, sun, and artificial blue light. The Monsieur Skincare range is specially designed for men, providing a complete skincare routine with various creams, serums, and an after-shave cream to ensure healthy and revitalized skin. Finally, our fragrance range adds a touch of luxury and sophistication with elegant and refined scents. These three ranges, each specialized and innovative, meet all the demands of our clients.</p>",
+      "content": "<p>Laboratoires VIVACY offers three distinct ranges of skincare products to meet all needs. The VIVACY Beauty range for women was created to complement our fillers and ensure long-lasting results with anti-aging, repairing, refreshing, and nourishing products. It also makes the VIVACY expertise accessible through easy-to-use products that protect the skin from harmful external elements such as the wind, sun, and artificial blue light.</p><p> The Monsieur Skincare range is specially designed for men, providing a complete skincare routine with various creams, serums, and an after-shave cream to ensure healthy and revitalized skin. Finally, our fragrance range adds a touch of luxury and sophistication with elegant and refined scents. These three ranges, each specialized and innovative, meet all the demands of our clients.</p>",
       "alt": "Vivacy beauty range"
     },
     "section4": {
       "h2": "DERMATOLOGICALLY TESTED HIGH-QUALITY FORMULAS",
       "h3": "INNOVATIVE DERMO-COSMESTIC SOLUTIONS",
-      "content": "<p>Inspired by dermatological research, the formulas comply with regulatory requirements and contain high quality active ingredients that have been scientifically tested. The dermo-cosmetic products integrate an exclusive technology: the VIVASÔME® complex. This innovative complex is the result of advanced research by Laboratoires VIVACY. It combines three powerful actions: intense hydration, protection against oxidative stress, and skin regeneration. Each component is meticulously selected to ensure high efficacy and safety, providing visible and long-lasting results. Our dedication to excellence ensures that our products not only meet but aim to exceed the expectations of our clients, providing them with superior solutions for their skincare needs.</p>",
+      "content": "<p>Inspired by dermatological research, the formulas comply with regulatory requirements and contain high quality active ingredients that have been scientifically tested.</p><p> The dermo-cosmetic products integrate an exclusive technology: the VIVASÔME® complex. This innovative complex is the result of advanced research by Laboratoires VIVACY. It combines three powerful actions: intense hydration, protection against oxidative stress, and skin regeneration.</p><p> Each component is meticulously selected to ensure high efficacy and safety, providing visible and long-lasting results. Our dedication to excellence ensures that our products not only meet but aim to exceed the expectations of our clients, providing them with superior solutions for their skincare needs.</p>",
       "alt1": "Vivacy beauty",
       "alt2": "Vivacy beauty illustration"
     }
@@ -774,7 +775,7 @@
     "section2": {
       "h2": "UNIQUE VISCOELASTIC PROPERTIES",
       "h3": "A PATENTED CROSS-LINKING",
-      "content": "<p>Laboratoires VIVACY has developed “IPN-Like Technology” (InterPenetrated Networks), a unique cross-linking technology for hyaluronic acid that accurately defines each product’s viscoelastic properties<sup>4</sup>:  From a clinical standpoint, the main product characteristics sought after by physicians are their ability to lift skin tissues, provide mechanical support and spread easily. To obtain these desired effects, the HA gel must have a unique combination of elasticity and viscosity<sup>5</sup>. These specific viscoelastic properties determine where the gel will be injected, allowing it to respond to the various mechanical stresses to which it will be subjected in the tissues. As a result, the interpenetration of HA cross-linked networks<sup>4</sup>:</p>    <ul>      <li>Optimizes the products’ rheology, in particular the viscosity to guarantee good product injectability.</li>    <li>Preserves the partial independence of the interpenetrated HA networks, whilst increasing the density of chemical nodes.</li>    <li>Guarantees the cohesion of the HA gel and its monophasic properties.</li>    </ul>",
+      "content": "<p>Laboratoires VIVACY has developed “IPN-Like Technology” (InterPenetrated Networks), a unique cross-linking technology for hyaluronic acid that accurately defines each product’s viscoelastic properties<sup>4</sup>:  From a clinical standpoint, the main product characteristics sought after by physicians are their ability to lift skin tissues, provide mechanical support and spread easily.</p><p> To obtain these desired effects, the HA gel must have a unique combination of elasticity and viscosity<sup>5</sup>. These specific viscoelastic properties determine where the gel will be injected, allowing it to respond to the various mechanical stresses to which it will be subjected in the tissues. As a result, the interpenetration of HA cross-linked networks<sup>4</sup>:</p>    <ul>      <li>Optimizes the products’ rheology, in particular the viscosity to guarantee good product injectability.</li>    <li>Preserves the partial independence of the interpenetrated HA networks, whilst increasing the density of chemical nodes.</li>    <li>Guarantees the cohesion of the HA gel and its monophasic properties.</li>    </ul>",
       "alt": "Hyaluronic acid in Vivacy laboratories"
     },
     "section3": {
@@ -800,7 +801,7 @@
     "section1": {
       "h2": "THE SCIENCE OF ANTI-AGEING",
       "h3": "UNIQUE SKINCARE FORMULATIONS",
-      "content": "<p>With extensive expertise in Aesthetic Medicine and anti-ageing solutions, Laboratoires VIVACY have collaborated with cosmetology experts and dermatologists to develop a professional line of dermo-cosmetics centered around the exclusive VIVASÔME® complex. This innovative complex incorporates hyaluronic acid and antioxidants to offer advanced skincare solutions.</p>",
+      "content": "<p>With extensive expertise in Aesthetic Medicine and anti-ageing solutions, Laboratoires VIVACY have collaborated with cosmetology experts and dermatologists to develop a professional line of dermo-cosmetics centered around the exclusive VIVASÔME® complex.</p><p> This innovative complex incorporates hyaluronic acid and antioxidants to offer advanced skincare solutions.</p>",
       "alt": "Vivacy cosmetic range"
     },
     "section2": {
@@ -808,7 +809,7 @@
       "h3": "VIVASÔME® COMPLEX",
       "content": "<p>The VIVASÔME® complex represents an important advancement in skincare technology, offering advanced solutions that not only maintain but enhance the quality of all skin types on a daily basis. It is specially formulated to soothe and protect the skin.</p>",
       "h3Bis": "ENCAPSULATION TECHNOLOGY FOR ENHANCED SKIN CARE",
-      "contentBis": "<p>Central to the effectiveness of the VIVASÔME® complex is its active encapsulation technology utilizing liposomes. These microscopic lipid-based spheres mimic the skin's natural hydro-lipid film, facilitating the efficient penetration of active ingredients deep into the skin's layers. This innovative approach ensures that key nutrients and antioxidants are delivered precisely to targeted cells, maximizing their efficacy.</p>",
+      "contentBis": "<p>Central to the effectiveness of the VIVASÔME® complex is its active encapsulation technology utilizing liposomes. These microscopic lipid-based spheres mimic the skin's natural hydro-lipid film, facilitating the efficient penetration of active ingredients deep into the skin's layers.</p><p> This innovative approach ensures that key nutrients and antioxidants are delivered precisely to targeted cells, maximizing their efficacy.</p>",
       "alt": "Vivacy beauty range"
     },
     "section3": {
@@ -959,7 +960,7 @@
     "section1": {
       "h2": "EMPOWERING HEALTHCARE PROFESSIONALS WORLDWIDE",
       "h3": "WELCOME TO VIVACY ACADEMY",
-      "content": "<p>Discover VIVACY Academy, our training platform exclusively dedicated to healthcare professionals interested in deepening their knowledge and expertise on our product range all around the world. Create an account now to access specialized resources on our STYLAGE® range and DESIRIAL® & DESIRIAL PLUS® injectable intimate hydrogels and refine your skills to provide your patients with high quality aesthetic and intimate solutions.</p>",
+      "content": "<p>Discover VIVACY Academy, our training platform exclusively dedicated to healthcare professionals interested in deepening their knowledge and expertise on our product range all around the world.</p><p> Create an account now to access specialized resources on our STYLAGE® range and DESIRIAL® & DESIRIAL PLUS® injectable intimate hydrogels and refine your skills to provide your patients with high quality aesthetic and intimate solutions.</p>",
       "alt": "VIVACY ACADEMY lesson"
     },
     "section2": {
@@ -976,12 +977,12 @@
     "section3": {
       "h2": "OUR PLATFORM 100% DEDICATED TO THE TRAINING OF HEALTHCARE PROFESSIONALS WORLDWIDE",
       "h3": "VIVACY ACADEMY",
-      "content": "<p>Our mission is to provide healthcare professionals with the resources necessary to excel in their practice and offer the best care possible to their patients. VIVACY ACADEMY will allow you to stay up to date on the latest trends and techniques in the field of aesthetic medicine by providing free online formations, high level safety trainings, educational videos, regular webinars, events, and recent scientific articles to enrich your knowledge. At Laboratoires VIVACY we are also committed to making quality healthcare accessible for all, no matter where they live or what language they speak. Our online courses are available to practitioners all around the world and all our resources are multi-lingual: we propose content in several languages to facilitate learning, ensure a good understanding by health workers internationally, help them master new methods and guarantee qualitative results to customers worldwide. The main objective of this website is to offer a centralized platform compiling everything today’s doctors need to know to ensure client satisfaction.</p>"
+      "content": "<p>Our mission is to provide healthcare professionals with the resources necessary to excel in their practice and offer the best care possible to their patients. VIVACY ACADEMY will allow you to stay up to date on the latest trends and techniques in the field of aesthetic medicine by providing free online formations, high level safety trainings, educational videos, regular webinars, events, and recent scientific articles to enrich your knowledge.</p><p> At Laboratoires VIVACY we are also committed to making quality healthcare accessible for all, no matter where they live or what language they speak. Our online courses are available to practitioners all around the world and all our resources are multi-lingual: we propose content in several languages to facilitate learning, ensure a good understanding by health workers internationally, help them master new methods and guarantee qualitative results to customers worldwide. The main objective of this website is to offer a centralized platform compiling everything today’s doctors need to know to ensure client satisfaction.</p>"
     },
     "section4": {
       "h2": "VIVACY ACADEMY",
       "h3": "CUTTING-EDGE TRAINING",
-      "content": "<p>At Laboratoires VIVACY, we believe that knowledge sharing is the driving force of human progress. Whether you are an experienced aesthetic physician or a novice seeking to learn from top practitioners, VIVACY Academy is here to support you at every stage of your journey. It's a platform created by professionals for professionals, where practitioners can exchange experiences and techniques. On the VIVACY Academy platform, you'll find a wealth of content including scientific articles, course videos, live webinars, and replay options. These resources are regularly updated, with new videos added monthly to ensure our members have access to the most relevant and current information. Additionally, all our webinars are available for replay, allowing you to learn at your own pace. By signing up, you'll receive notifications whenever new content is published, ensuring you never miss an opportunity to advance and distinguish yourself among the best.</p>"
+      "content": "<p>At Laboratoires VIVACY, we believe that knowledge sharing is the driving force of human progress. Whether you are an experienced aesthetic physician or a novice seeking to learn from top practitioners, VIVACY Academy is here to support you at every stage of your journey. It's a platform created by professionals for professionals, where practitioners can exchange experiences and techniques.</p><p> On the VIVACY Academy platform, you'll find a wealth of content including scientific articles, course videos, live webinars, and replay options. These resources are regularly updated, with new videos added monthly to ensure our members have access to the most relevant and current information. Additionally, all our webinars are available for replay, allowing you to learn at your own pace. By signing up, you'll receive notifications whenever new content is published, ensuring you never miss an opportunity to advance and distinguish yourself among the best.</p>"
     }
   },
   "LegalNotice": {

@@ -17,7 +17,7 @@ export default function LocalSwitcher() {
   // };
   return (
     <label className="max-lg:hidden">
-      <p className="bg-blue text-white">English</p>
+      <p className="bg-blue text-blue">English</p>
       {/* <select
         defaultValue={localActive}
         className="bg-blue text-white"

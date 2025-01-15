@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 type Props = {
-  titleH2: string;
+  titleH2: string | null;
   titleH3: string;
   containerClasses?: string;
   h3Classes?: string;
@@ -17,25 +17,28 @@ export default function FromTopTitles(props: Props) {
         props.containerClasses ? props.containerClasses : ""
       }`}
     >
-      <motion.h2
-        initial={{
-          opacity: 0,
-        }}
-        whileInView={{
-          opacity: 1,
-        }}
-        transition={{
-          ease: "circOut",
-          duration: 0.5,
-        }}
-        viewport={{
-          amount: "some",
-          once: true,
-        }}
-        className={`h2-perso ${props.h2Classes ? props.h2Classes : null}`}
-      >
-        {props.titleH2}
-      </motion.h2>
+      {props.titleH2 ? (
+        <motion.h2
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          transition={{
+            ease: "circOut",
+            duration: 0.5,
+          }}
+          viewport={{
+            amount: "some",
+            once: true,
+          }}
+          className={`h2-perso ${props.h2Classes ? props.h2Classes : null}`}
+        >
+          {props.titleH2}
+        </motion.h2>
+      ) : null}
+
       <motion.h3
         initial={{
           opacity: 0,

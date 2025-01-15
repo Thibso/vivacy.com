@@ -1,6 +1,7 @@
 import BlueButton from "@/app/components/buttons/BlueButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import HeaderSpan from "@/app/components/globals/headerSpan";
+import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import aesthetic from "@/app/img/academy/aesthetic.png";
 import kol from "@/app/img/academy/kol.png";
@@ -102,7 +103,7 @@ export default function VivacyBeauty() {
         />
         <div className="myContainer space-y-8 lg:space-y-28">
           <div className="max-lg:space-y-8 lg:grid lg:grid-cols-2 lg:gap-x-14">
-            <div className="lg:col-span-1 space-y-8 lg:space-y-14 lg:py-8">
+            <div className="lg:col-span-1 space-y-8 lg:space-y-14">
               <FromTopTitles
                 titleH2={t("section1.h2")}
                 titleH3={t("section1.h3")}
@@ -138,7 +139,7 @@ export default function VivacyBeauty() {
 
       <section className="relative z-[1] bg-blue">
         <div className="myContainer space-y-8 lg:space-y-20">
-          <FromTopTitles
+          <FromTopCenteredTitles
             titleH2={t("section2.h2")}
             titleH3={t("section2.h3")}
             h3Classes="text-white"
@@ -202,7 +203,7 @@ export default function VivacyBeauty() {
         </div>
 
         <div className="myContainer max-lg:pt-0 max-lg:space-y-8 lg:grid lg:grid-cols-2 lg:items-center lg:gap-x-20">
-          <div className="space-y-8 lg:space-y-20 lg:py-8">
+          <div className="space-y-8 lg:space-y-20">
             <FromTopTitles
               titleH2={t("section4.h2")}
               titleH3={t("section4.h3")}

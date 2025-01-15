@@ -88,7 +88,7 @@ export default function VivacyBeauty() {
             />
           </div>
 
-          <div className="lg:col-span-1 space-y-8 lg:space-y-20 lg:py-20">
+          <div className="lg:col-span-1 space-y-8 lg:space-y-20">
             <FromTopTitles
               titleH2={t("section1.h2")}
               titleH3={t("section1.h3")}
@@ -98,15 +98,20 @@ export default function VivacyBeauty() {
             <div className="space-y-4">
               {t.rich("section1.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                br: () => <br />,
               })}
+            </div>
+
+            <div className="max-lg:flex max-lg:justify-center">
+              <BlueButton content={t("cta.title")} path={t("cta.path")} />
             </div>
           </div>
         </div>
       </section>
 
       <section className="bg-transparent relative z-[2]">
-        <div className="myContainer max-lg:space-y-8 max-lg:pt-0 lg:pr-0 lg:pt-0 lg:grid lg:grid-cols-2">
-          <div className="space-y-8 lg:space-y-20 lg:pr-28 lg:pb-20">
+        <div className="myContainer max-lg:space-y-8 pt-0 lg:grid lg:grid-cols-2">
+          <div className="space-y-8 lg:space-y-20 lg:pr-28">
             <FromTopTitles
               titleH2={t("section2.h2")}
               titleH3={t("section2.h3")}
@@ -129,8 +134,8 @@ export default function VivacyBeauty() {
               style={{
                 objectFit: "cover",
                 objectPosition: "50% 50%",
-                borderRadius: "12px 0 0 12px",
               }}
+              className="rounded-xl"
             />
           </div>
         </div>
@@ -181,7 +186,7 @@ export default function VivacyBeauty() {
             zIndex: "-1",
           }}
         />
-        <div className="myContainer lg:pr-0 space-y-8 lg:space-y-20">
+        <div className="myContainer space-y-8 lg:space-y-20">
           <FromTopCenteredTitles
             titleH2={t("section4.h2")}
             titleH3={t("section4.h3")}
@@ -206,7 +211,7 @@ export default function VivacyBeauty() {
                 style={{
                   objectFit: "cover",
                 }}
-                className="max-lg:rounded-xl rounded-s-xl "
+                className="rounded-xl"
               />
             </div>
           </div>

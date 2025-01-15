@@ -67,7 +67,7 @@ export default function OurBrands() {
             h3Classes="text-black"
           />
 
-          <div className="space-y-4 lg:max-w-[70%] lg:text-center mx-auto">
+          <div className="space-y-4 lg:max-w-[80%] lg:text-center mx-auto">
             {t.rich("section1.content", {
               p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
             })}
@@ -83,7 +83,7 @@ export default function OurBrands() {
             h3Classes="text-black"
           />
 
-          <video className="lg:max-w-[70%] mx-auto" playsInline loop controls>
+          <video className="lg:max-w-[80%] mx-auto" playsInline loop controls>
             <source
               src="/videos/vivacy-presentation.mp4#t=1.5"
               type="video/mp4"
@@ -180,8 +180,12 @@ export default function OurBrands() {
           className="max-lg:hidden"
         />
         <div className="myContainer max-lg:pt-0 lg:grid lg:grid-cols-2">
-          <div className="col-span-1 space-y-8 lg:space-y-28">
-            <h2 className="h2-perso">{t("section3.h2")}</h2>
+          <div className="col-span-1 space-y-8 lg:space-y-20">
+            <FromTopTitles
+              titleH2={t("section3.h2")}
+              titleH3={t("section3.h3")}
+              h3Classes="text-black"
+            />
             <div className="space-y-4">
               {t.rich("section3.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
@@ -192,11 +196,15 @@ export default function OurBrands() {
       </section>
 
       {/* KEY NUMBERS */}
-      <section className="bg-blue lg:max-w-[2550px] lg:m-auto">
-        <div className="myContainer space-y-14 lg:space-y-22 text-white lg:flex lg:flex-col lg:items-center">
+      <section className="bg-blue lg:max-w-[2550px] lg:m-auto border-white/50 border-b-[1px]">
+        <div className="myContainer relative space-y-14 lg:space-y-22 text-white lg:flex lg:flex-col lg:items-center ">
           <div className="titles-container w-full">
-            <h2 className="h2-perso text-white">{h("section3.h2")}</h2>
-            <h3 className="h3-perso text-white">{h("section3.h3")}</h3>
+            <FromTopTitles
+              titleH2={h("section3.h2")}
+              titleH3={h("section3.h3")}
+              h3Classes="text-white"
+              h2Classes="text-[#e1e1e1]"
+            />
           </div>
 
           <div className="max-lg:space-y-14 lg:grid lg:grid-cols-4 lg:gap-20">
@@ -243,7 +251,7 @@ export default function OurBrands() {
             </div>
           </div>
 
-          <div className="m-auto lg:ml-0">
+          <div className="m-auto lg:ml-0 lg:absolute lg:left-8 lg:bottom-8">
             <p className="text-sm max-lg:text-center">
               {h("section3.annotation")}
             </p>

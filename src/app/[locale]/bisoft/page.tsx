@@ -1,6 +1,7 @@
 import SeringeBiSoft from "@/app/components/bisoft/seringeBiSoft";
 import BlueButton from "@/app/components/buttons/BlueButton";
 import HeaderSpan from "@/app/components/globals/headerSpan";
+import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
 import section1Bg from "@/app/img/bisoft/background-bisoft.png";
@@ -179,7 +180,11 @@ export default function BiSoft() {
           }}
         />
         <div className="myContainer space-y-14 lg:space-y-20">
-          <h2 className="h2-perso">{t("section2.h2")}</h2>
+          <FromTopCenteredTitles
+            titleH2={t("title")}
+            titleH3={t("section2.h2")}
+            h3Classes="text-black"
+          />
 
           <div className="lg:grid lg:grid-cols-4 lg:gap-x-20 max-lg:space-y-14 max-lg:w-[80%] max-lg:mx-auto">
             <div className="col-span-1 space-y-4">

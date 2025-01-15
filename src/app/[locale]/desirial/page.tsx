@@ -74,7 +74,7 @@ export default function Desirial() {
           }}
           className="w-full lg:w-[50%]"
         />
-        <div className="myContainer space-y-8 lg:space-y-28">
+        <div className="myContainer space-y-8 lg:space-y-20">
           <div className="space-y-8 lg:space-y-14">
             <FromTopCenteredTitles
               titleH2={t("section1.h2")}
@@ -82,7 +82,7 @@ export default function Desirial() {
               h3Classes="text-black"
             />
 
-            <div className="space-y-4 mx-auto text-center lg:w-[60%]">
+            <div className="space-y-4 mx-auto text-center lg:w-[80%]">
               {t.rich("section1.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
@@ -90,7 +90,7 @@ export default function Desirial() {
           </div>
 
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-2 lg:gap-x-14">
-            <div className="lg:col-span-1 space-y-8 lg:space-y-14 lg:mb-36">
+            <div className="lg:col-span-1 space-y-8 lg:space-y-14">
               <FromTopTitles
                 titleH2={t("section2.h2")}
                 titleH3={t("section2.h3")}
@@ -102,7 +102,7 @@ export default function Desirial() {
                 })}
               </div>
 
-              <div className="max-lg:flex max-lg:justify-center lg:pt-14">
+              <div className="max-lg:flex max-lg:justify-center">
                 <BlueButton content={t("cta.title")} path={t("cta.path")} />
               </div>
             </div>
@@ -136,14 +136,14 @@ export default function Desirial() {
             zIndex: "-1",
           }}
         />
-        <div className="myContainer lg:grid lg:grid-cols-10 ">
-          <div className="p-4 lg:p-10 lg:col-span-7 backdrop-blur rounded-xl bg-white/15 space-y-8 lg:space-y-14">
+        <div className="myContainer lg:grid lg:grid-cols-12 ">
+          <div className="p-4 lg:p-10 lg:col-span-7 backdrop-blur rounded-xl bg-white/15 space-y-8 lg:space-y-20">
             <FromTopTitles
               titleH2={t("section3.h2")}
               titleH3={t("section3.h3")}
-              h3Classes="lg:text-white"
+              h3Classes="lg:text-black"
             />
-            <div className="xl:w-[70%] space-y-4">
+            <div className="space-y-4">
               {t.rich("section3.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
@@ -212,15 +212,15 @@ export default function Desirial() {
           }}
           className="max-lg:hidden"
         />
-        <div className="myContainer max-lg:pt-0 max-lg:space-y-8">
-          <FromTopTitles
+        <div className="myContainer max-lg:pt-0 space-y-8 lg:space-y-20">
+          <FromTopCenteredTitles
             titleH2={t("section5.h2")}
             titleH3={t("section5.h3")}
             h3Classes="text-black"
           />
 
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-12 lg:gap-x-14 xl:gap-x-24">
-            <div className="lg:col-span-6 lg:flex lg:flex-col lg:justify-around max-lg:space-y-8">
+            <div className="lg:col-span-5 lg:flex lg:flex-col lg:justify-around space-y-8 lg:space-y-20">
               <div className="space-y-4">
                 {t.rich("section5.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
@@ -231,7 +231,7 @@ export default function Desirial() {
               </div>
             </div>
 
-            <div className="col-span-6 relative h-[350px] lg:h-[750px]">
+            <div className="col-span-7 relative max-lg:h-[350px] h-full">
               <Image
                 src={section5}
                 alt={t("section5.alt")}
@@ -239,8 +239,8 @@ export default function Desirial() {
                 fill
                 style={{
                   objectFit: "cover",
-                  objectPosition: "50% 50%",
-                  borderRadius: "11px",
+                  objectPosition: "50% 0%",
+                  borderRadius: "12px",
                 }}
               />
             </div>

@@ -136,8 +136,8 @@ export default function OurCommitments() {
             zIndex: "-1",
           }}
         />
-        <div className="myContainer lg:grid lg:grid-cols-10 ">
-          <div className="p-4 lg:p-10 lg:col-span-6 backdrop-blur rounded-xl bg-white/15 space-y-8 lg:space-y-20">
+        <div className="myContainer lg:grid lg:grid-cols-12 ">
+          <div className="p-4 lg:p-10 lg:col-span-7 lg:mr-8 backdrop-blur rounded-xl bg-white/15 space-y-8 lg:space-y-20">
             <FromTopTitles
               titleH2={t("section2.h2")}
               titleH3={t("section2.h3")}
@@ -204,6 +204,7 @@ export default function OurCommitments() {
                   objectPosition: "50% 50%",
                   zIndex: "-1",
                 }}
+                className="rounded-xl"
               />
             </div>
           </div>
@@ -220,6 +221,7 @@ export default function OurCommitments() {
                   objectPosition: "50% 50%",
                   zIndex: "-1",
                 }}
+                className="rounded-xl"
               />
             </div>
             <div className="space-y-8 lg:py-8 lg:col-span-7 lg:space-y-20 lg:flex lg:flex-col">
