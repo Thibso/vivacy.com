@@ -153,7 +153,7 @@ export default function NavBar(props: Props) {
   };
 
   return (
-    <nav className="bg-blue py-3 px-8 rounded-[44px] w-[97.5%] max-w-[1920px] sticky top-8 mt-8 mx-auto h-16 flex z-50 -mb-[96px]">
+    <nav className="bg-blue py-3 px-8 rounded-[44px] w-[97.5%] max-w-[1920px] sticky top-4 md:top-8 mt-4 lg:mt-8 mx-auto h-16 flex z-50 -mb-[96px]">
       <div className="relative flex justify-between items-center w-full">
         <Link href={"/" + props.localeActive}>
           <Image
