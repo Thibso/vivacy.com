@@ -11,7 +11,7 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="sticky bottom-0 z-[1] pt-8 lg:pt-20">
+    <footer className="lg:sticky lg:bottom-0 z-[1] pt-8 lg:pt-20">
       <div className="px-5 lg:px-20 xl:px-24 lg:grid lg:grid-cols-3">
         <div className="grid grid-cols-2 lg:gap-x-8 sm:w-[60%] lg:w-full sm:mx-auto sm:text-center lg:text-left">
           <div className="space-y-4">
