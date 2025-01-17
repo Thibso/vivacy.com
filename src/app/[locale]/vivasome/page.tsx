@@ -1,6 +1,5 @@
 import BlueButton from "@/app/components/buttons/BlueButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
-import HeaderSpan from "@/app/components/globals/headerSpan";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import vivacyLogo from "@/app/img/vivacy-laboratories-hyaluronic-acid-france.png";
@@ -50,8 +49,6 @@ export default function Vivasome() {
         </video>
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-25"></div>
         <HeaderBigTitle title={t("title")} />
-
-        <HeaderSpan content={t("span")} />
       </section>
 
       <section className="relative z-[1] bg-white">

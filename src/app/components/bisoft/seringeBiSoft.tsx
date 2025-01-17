@@ -76,7 +76,7 @@ export default function SeringeBiSoft(props: Props) {
   const widthThird = useTransform(
     scroll,
     [steps[1], steps[1] + steps[0] / 3, 1],
-    ["0%", "65%", "65%"]
+    ["0%", "50%", "50%"]
   );
   const heightThird = useTransform(
     scroll,
@@ -86,7 +86,7 @@ export default function SeringeBiSoft(props: Props) {
   const widthThirdBis = useTransform(
     scroll,
     [steps[1] + 2 * (steps[0] / 3), steps[3], 1],
-    ["0%", "32%", "32%"]
+    ["0%", "43%", "43%"]
   );
 
   const heightSectionThird = useTransform(
@@ -176,7 +176,7 @@ export default function SeringeBiSoft(props: Props) {
 
         <div className="lg:grid lg:grid-cols-12">
           {/* IMAGE */}
-          <div className="max-lg:hidden absolute lg:top-[5px] xl:top-[40px] 2xl:top-[50px] lg:left-0 2xl:left-32 lg:h-[900px] xl:h-[900px] 2xl:h-[900px]">
+          <div className="max-lg:hidden absolute lg:top-[5px] xl:top-[40px] 2xl:top-[50px] lg:left-0 2xl:left-24 lg:h-[900px] xl:h-[900px] 2xl:h-[900px]">
             <Image
               src={seringe}
               alt={t("seringe.alt")}
@@ -184,7 +184,7 @@ export default function SeringeBiSoft(props: Props) {
               className="h-full object-contain"
             />
             {/* 1ST */}
-            <span className="max-lg:hidden absolute lg:top-[248px] lg:left-[232px] lg:w-[21vw] xl:top-[258px] xl:w-[18vw] 2xl:top-[249px] 2xl:w-[547px] h-2 z-10 flex items-center">
+            <span className="max-lg:hidden absolute lg:top-[248px] lg:left-[232px] lg:w-[240px] xl:top-[258px] xl:w-[335px] 2xl:w-[365px] 2xl:top-[248px] h-2 z-10 flex items-center">
               <span className="block bg-blue size-3 rounded-full"></span>
               <motion.span
                 style={{ width: widthFirst }}
@@ -193,7 +193,7 @@ export default function SeringeBiSoft(props: Props) {
             </span>
 
             {/* 2ND */}
-            <span className="max-lg:hidden absolute lg:top-[387px] lg:left-[315px] lg:w-[14vw] xl:top-[370px] xl:left-[315px] xl:w-[12vw] 2xl:top-[388px] 2xl:left-[315px] 2xl:w-[464px] lg:h-[135px] xl:h-[150px] 2xl:h-[135px] z-10 flex items-end">
+            <span className="max-lg:hidden absolute lg:top-[387px] lg:left-[315px] lg:w-[157px] xl:top-[397px] 2xl:top-[387px] xl:left-[315px] xl:w-[253px] 2xl:w-[280px] lg:h-[135px] xl:h-[120px] 2xl:h-[130px] z-10 flex items-end">
               <span className="block bg-blue size-3 rounded-full -mr-[7px]"></span>
               <motion.span
                 style={{ height: heightSecond }}
@@ -206,7 +206,7 @@ export default function SeringeBiSoft(props: Props) {
             </span>
 
             {/* 2ND - BIS */}
-            <span className="max-lg:hidden absolute lg:top-[387px] xl:top-[370px] 2xl:top-[388px] lg:left-[288px] lg:w-[140px] 2xl:w-[200px] lg:h-[435px] xl:h-[450px] 2xl:h-[430px] z-10 flex items-end">
+            <span className="max-lg:hidden absolute lg:top-[387px] xl:top-[398px] 2xl:top-[388px] lg:left-[288px] lg:w-[140px] xl:w-[110px] lg:h-[435px] xl:h-[420px] 2xl:h-[430px] z-10 flex items-end">
               <span className="block bg-blue size-3 rounded-full -mb-[5px]"></span>
               <motion.span
                 style={{ width: heightSecond }}
@@ -219,11 +219,11 @@ export default function SeringeBiSoft(props: Props) {
             </span>
 
             {/* 3RD */}
-            <span className="max-lg:hidden absolute lg:top-[580px] xl:top-[532px] 2xl:top-[552px] lg:left-[235px] xl:left-[235px] 2xl:w-[545px] xl:w-[18vw] lg:w-[21vw] lg:h-[285px] xl:h-[335px] 2xl:h-[314px] z-10 flex items-end">
+            <span className="max-lg:hidden absolute lg:top-[550px] xl:top-[562px] 2xl:top-[552px] lg:left-[235px] xl:left-[235px] 2xl:w-[375px] xl:w-[344px] lg:w-[240px] lg:h-[318px] xl:h-[305px] 2xl:h-[314px] z-10 flex items-end">
               <span className="block bg-blue size-3 rounded-full -mb-[5px]"></span>
               <motion.span
                 style={{ width: widthThird }}
-                className="block border-blue border-t-2 border-dashed lg:w-[65%]"
+                className="block border-blue border-t-2 border-dashed"
               ></motion.span>
               <motion.span
                 style={{ height: heightThird }}
@@ -231,12 +231,12 @@ export default function SeringeBiSoft(props: Props) {
               ></motion.span>
               <motion.span
                 style={{ width: widthThirdBis }}
-                className="block border-blue border-t-2 border-dashed lg:w-[35%] self-start"
+                className="block border-blue border-t-2 border-dashed self-start"
               ></motion.span>
             </span>
 
             {/* 3RD - BIS */}
-            <span className="max-lg:hidden absolute lg:top-[771px] xl:top-[670px] 2xl:top-[745px] lg:left-[399px] xl:left-[414px] 2xl:left-[602px] lg:w-[7vw] xl:w-[5.5vw] 2xl:w-[178px] h-2 z-10">
+            <span className="max-lg:hidden absolute lg:top-[742px] xl:top-[753px] 2xl:top-[743px] lg:left-[368px] xl:left-[420px] 2xl:left-[435px] lg:w-[104px] xl:w-[149px] 2xl:w-[161px] h-2 z-10">
               <motion.span
                 style={{ width: widthFourth }}
                 className="block border-blue border-t-2 border-dashed"
@@ -258,7 +258,7 @@ export default function SeringeBiSoft(props: Props) {
           </div>
 
           {/* TEXT */}
-          <div className="lg:col-span-7 lg:col-start-6 xl:col-span-8 xl:col-start-5 2xl:col-span-5 2xl:col-start-8 2xl:m-auto mb-0 pt-14 lg:pt-[96px] space-y-8 lg:space-y-4">
+          <div className="lg:col-span-7 lg:col-start-6 lg:w-[600px] m-auto ml-0 pt-14 lg:pt-[96px] space-y-8 lg:space-y-4">
             {textRight.map((texts, index) => {
               return (
                 <div key={"texts-" + index} className="space-y-2 relative">

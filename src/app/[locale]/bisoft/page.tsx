@@ -1,6 +1,5 @@
 import SeringeBiSoft from "@/app/components/bisoft/seringeBiSoft";
 import BlueButton from "@/app/components/buttons/BlueButton";
-import HeaderSpan from "@/app/components/globals/headerSpan";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
@@ -98,8 +97,6 @@ export default function BiSoft() {
             {t("title")}
           </h1>
         </div>
-
-        <HeaderSpan content={t("span")} />
       </section>
 
       <section className="relative z-[1] bg-white">

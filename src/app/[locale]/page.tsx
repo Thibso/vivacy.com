@@ -92,10 +92,6 @@ export default function Home() {
 
         <div className="m-auto mb-0 space-y-8">
           <h1 className="h3-perso text-white text-center">{t("title")}</h1>
-
-          <span className="block max-lg:text-center bg-whiteGrey/50 py-3 px-8 rounded-full uppercase text-sm text-blue backdrop-blur-sm">
-            {t("span")}
-          </span>
         </div>
       </section>
 

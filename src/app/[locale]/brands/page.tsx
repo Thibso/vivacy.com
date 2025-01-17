@@ -1,6 +1,5 @@
 import BrandsDescriptions from "@/app/components/brands/brandsPresentation";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
-import HeaderSpan from "@/app/components/globals/headerSpan";
 import VivacySecurity from "@/app/components/globals/vivacySecurity";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import firstSectionImg from "@/app/img/vivacy-brands-hyaluronic-acid.jpg";
@@ -130,8 +129,6 @@ export default function OurBrands() {
         />
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
         <HeaderBigTitle title={t("title")} />
-
-        <HeaderSpan content={t("span")} />
       </section>
 
       <section>

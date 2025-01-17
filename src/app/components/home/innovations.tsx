@@ -155,7 +155,7 @@ export default function Innovations() {
           h3Classes="text-black"
         />
 
-        <div className="flex gap-4 lg:gap-8 justify-center">
+        <div className="flex gap-3 lg:gap-8 justify-center">
           {buttonsDisplay.map((text, index) => {
             return (
               <span
@@ -165,7 +165,7 @@ export default function Innovations() {
                   display === index
                     ? "bg-blue text-white"
                     : "bg-transparent text-blue"
-                } inline-block py-1 px-2 lg:py-2 lg:px-8 rounded-3xl text-blue border-[1px] border-blue uppercase font-normal text-[12px] sm:text-base hover:bg-blue hover:text-white cursor-pointer transition-all`}
+                } inline-block py-1 px-1 lg:py-2 lg:px-8 rounded-3xl text-blue border-[1px] border-blue uppercase font-normal text-[12px] sm:text-base hover:bg-blue hover:text-white cursor-pointer transition-all`}
               >
                 {text}
               </span>
