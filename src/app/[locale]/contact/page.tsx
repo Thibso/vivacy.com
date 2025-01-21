@@ -10,18 +10,56 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN = "Contact Vivacy | A question about hyaluronic acid?";
+const descriptionEN =
+  "Contact Laboratoires Vivacy. Do you have any questions about hyaluronic acid indications? Would you like to contact our sales department?";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "Contact",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }

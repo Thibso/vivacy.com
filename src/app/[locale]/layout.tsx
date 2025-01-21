@@ -54,9 +54,9 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="relative overflow-x-hidden">
-        <NavBar localeActive={locale} />
-
         <NextIntlClientProvider messages={messages}>
+          <NavBar localeActive={locale} />
+
           <div className="bg-white relative z-[2]">
             <GoogleReCaptchaWrapper>
               {children}

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { ArrowBigDownDash } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef } from "react";
@@ -77,6 +78,21 @@ export default function SyringeRotate() {
                 }}
               />
             </motion.div>
+          </motion.div>
+
+          <motion.div className="absolute bottom-[16px] left-1/2 -translate-x-1/2 text-white z-[10] flex flex-col items-center">
+            <span className="text-base">Scroll to discover</span>
+            <motion.span
+              animate={{ y: 5, opacity: 1 }}
+              transition={{
+                repeat: Infinity,
+                repeatDelay: 0.45,
+                duration: 0.5,
+                ease: "easeOut",
+              }}
+            >
+              <ArrowBigDownDash height={20} />
+            </motion.span>
           </motion.div>
         </div>
       </motion.section>

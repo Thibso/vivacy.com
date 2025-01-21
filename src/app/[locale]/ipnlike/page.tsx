@@ -1,5 +1,7 @@
 import BlueButton from "@/app/components/buttons/BlueButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
+import ImageHeader from "@/app/components/globals/ImageHeader";
+import PAnimate from "@/app/components/globals/pAnimate";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
 import bgHeader from "@/app/img/ipn/ipn-like-technology.jpg";
@@ -16,18 +18,57 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN =
+  "IPN-Like Technology | Hyaluronic acid-based medical device | Vivacy";
+const descriptionEN =
+  "IPN-Like Technology. Discover an exclusive, patented hyaluronic acid technology from Laboratoires Vivacy, French filling treatments in aesthetic medicine.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "IpnLike",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -37,21 +78,15 @@ export default function IpnLike() {
 
   return (
     <main>
-      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
-        <Image
-          src={bgHeader}
-          alt={t("alt")}
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "50% 50%",
-            zIndex: "-2",
-            position: "absolute",
-          }}
-        />
+      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1] overflow-hidden">
+        <ImageHeader src={bgHeader} alt={t("alt")} />
+
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
-        <HeaderBigTitle title={t("title")} />
+        <HeaderBigTitle
+          title={t.rich("title", {
+            sup: (chunks) => <sup>{chunks}</sup>,
+          })}
+        />
       </section>
 
       <section className="relative">
@@ -79,16 +114,16 @@ export default function IpnLike() {
               h3Classes="text-black"
             />
 
-            <div className="space-y-4">
-              {t.rich("section1.content", {
+            <PAnimate
+              content={t.rich("section1.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
               })}
-            </div>
+            />
 
             <div className="flex max-lg:gap-14 lg:grid lg:grid-cols-2 justify-center lg:justify-start items-center">
               <div className="max-lg:w-full">
-                <BlueButton content={t("cta.title")} path={t("cta.path")} />
+                <BlueButton content={t("cta_1.title")} path={t("cta_1.path")} />
               </div>
               <Image
                 src={logoIpn}
@@ -124,14 +159,15 @@ export default function IpnLike() {
           />
 
           <div className="lg:grid lg:grid-cols-2 lg:gap-x-20 xl:gap-x-28 max-lg:space-y-8">
-            <div className="space-y-4 lg:py-14">
-              {t.rich("section2.content", {
+            <PAnimate
+              classes="lg:py-14"
+              content={t.rich("section2.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 ul: (chunks) => <ul className="list-disc ml-4">{chunks}</ul>,
                 li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
                 sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
               })}
-            </div>
+            />
 
             <div className="relative max-lg:h-[350px] ">
               <Image
@@ -150,22 +186,22 @@ export default function IpnLike() {
             <div className="space-y-8 lg:space-y-14 lg:py-8">
               <h3 className="h2-perso">{t("section3.h2")}</h3>
 
-              <div className="space-y-4">
-                {t.rich("section3.content", {
+              <PAnimate
+                content={t.rich("section3.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
+              />
 
               <h3 className="h2-perso">{t("section4.h3")}</h3>
 
-              <div className="space-y-4">
-                {t.rich("section4.content", {
+              <PAnimate
+                content={t.rich("section4.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
+              />
 
               <div className="max-lg:grid max-lg:justify-center">
-                <BlueButton content={t("cta.title")} path={t("cta.path")} />
+                <BlueButton content={t("cta_2.title")} path={t("cta_2.path")} />
               </div>
             </div>
             <div className="relative max-lg:h-[350px]">
@@ -174,7 +210,7 @@ export default function IpnLike() {
                 alt={t("section3.alt")}
                 quality={75}
                 fill
-                className=" object-cover size-full rounded-xl"
+                className="object-cover size-full rounded-xl"
               />
             </div>
           </div>

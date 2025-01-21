@@ -1,4 +1,5 @@
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
+import PAnimate from "@/app/components/globals/pAnimate";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import fourth from "@/app/img/auvergne-rhone-alpes-vivacy.jpg";
@@ -19,18 +20,56 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN = "Vivacy's commitments | Serving doctors and patients";
+const descriptionEN =
+  "The commitments of Laboratoires Vivacy. Discover the values of the French laboratory that specialises in injectable hyaluronic acid for doctors and patients.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "Our brands",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -97,7 +136,11 @@ export default function OurCommitments() {
                   <h4 className="text-lg font-semibold text-center uppercase text-blue">
                     {value[1]}
                   </h4>
-                  <p className="text-center lg:text-lg">{value[2]}</p>
+                  <PAnimate
+                    content={
+                      <p className="text-center lg:text-lg">{value[2]}</p>
+                    }
+                  />
                 </div>
               );
             })}
@@ -128,7 +171,7 @@ export default function OurCommitments() {
         <div className="space-y-14 lg:space-y-20 xl:space-y-28">
           {/* first */}
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:px-5 max-lg:gap-8 lg:grid lg:grid-cols-2">
-            <div className="relative max-lg:h-[350px]">
+            <div className="relative h-[350px] lg:h-[630px] 2xl:h-[560px]">
               <Image
                 src={first}
                 alt={t("section2.first.alt")}
@@ -137,30 +180,31 @@ export default function OurCommitments() {
                 className="object-cover object-center"
               />
             </div>
-            <div className="lg:p-10 xl:px-24 xl:py-16 space-y-4">
-              {t.rich("section2.first.content", {
+            <PAnimate
+              classes="lg:px-10 xl:px-24 my-auto"
+              content={t.rich("section2.first.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
-            </div>
+            />
           </div>
 
           {/* second */}
           <div className="max-lg:px-5 max-lg:space-y-8 lg:grid lg:grid-cols-2">
-            <div className="lg:p-10 xl:px-24 xl:py-16 space-y-8 lg:space-y-20">
+            <div className="lg:px-10 xl:px-24 space-y-8 lg:space-y-20 my-auto">
               <FromTopTitles
                 titleH2={t("section2.second.h2")}
                 titleH3={t("section2.second.h3")}
                 h3Classes="text-black"
               />
 
-              <div className="space-y-4">
-                {t.rich("section2.second.content", {
+              <PAnimate
+                content={t.rich("section2.second.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
+              />
             </div>
 
-            <div className="relative max-lg:h-[350px]">
+            <div className="relative h-[350px] lg:h-[630px] 2xl:h-[560px]">
               <Image
                 src={second}
                 alt={t("section2.second.alt")}
@@ -173,7 +217,7 @@ export default function OurCommitments() {
 
           {/* third */}
           <div className="max-lg:px-5 max-lg:flex max-lg:flex-col-reverse max-lg:gap-8 lg:grid lg:grid-cols-2">
-            <div className="relative max-lg:h-[350px]">
+            <div className="relative h-[350px] lg:h-[630px] 2xl:h-[560px]">
               <Image
                 src={environment}
                 alt={t("section2.third.alt")}
@@ -182,40 +226,42 @@ export default function OurCommitments() {
                 className="object-cover object-center"
               />
             </div>
-            <div className="lg:p-10 xl:px-24 xl:py-16 space-y-8 lg:space-y-20">
+            <div className="lg:px-10 xl:px-24 space-y-8 lg:space-y-20 my-auto">
               <FromTopTitles
                 titleH2={t("section2.third.h2")}
                 titleH3={t("section2.third.h3")}
                 h3Classes="text-black"
               />
-              <div className="space-y-4">
-                {t.rich("section2.third.content", {
+
+              <PAnimate
+                content={t.rich("section2.third.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
+              />
             </div>
           </div>
 
           {/* fourth */}
           <div className="max-lg:px-5 lg:grid lg:grid-cols-2 max-lg:space-y-8">
-            <div className="lg:p-10 xl:px-24 xl:py-16 space-y-8 lg:space-y-20">
+            <div className="lg:px-10 xl:px-24 space-y-8 lg:space-y-20 my-auto">
               <Image
                 src={rhoneAlpes}
                 alt={t("section2.fourth.alt")}
                 quality={75}
                 className="max-lg:w-[60%] max-lg:mx-auto"
               />
-              <div className="space-y-4">
-                {t.rich("section2.third.content", {
+
+              <PAnimate
+                content={t.rich("section2.third.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
+              />
             </div>
-            <div className="relative max-lg:h-[350px]">
+            <div className="relative h-[350px] lg:h-[630px] 2xl:h-[560px]">
               <Image
                 src={fourth}
                 alt={t("section2.fourth.alt")}
-                quality={75}
+                quality={100}
                 fill
                 className="object-cover object-center"
               />

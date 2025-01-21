@@ -1,5 +1,20 @@
 "use client";
 
+import img11 from "@/app/img/history/bi-soft-vivacy.jpg";
+import img5 from "@/app/img/history/desirial-kartilage-vivacy.jpg";
+import img13 from "@/app/img/history/monsieur-skin-care.jpg";
+import img4 from "@/app/img/history/stylage-hydromax.jpg";
+import img3 from "@/app/img/history/stylage-lidocaine.jpg";
+import img14 from "@/app/img/history/stylage-lips-plus.jpg";
+import img2 from "@/app/img/history/stylage-products.jpg";
+import img6 from "@/app/img/history/stylage-xxl.jpg";
+import img10 from "@/app/img/history/vivacy-academy.jpg";
+import img8 from "@/app/img/history/vivacy-beauty-dermo-cosmetics.jpg";
+import img15 from "@/app/img/history/vivacy-benelux.jpg";
+import img9 from "@/app/img/history/vivacy-geneva.jpg";
+import img17 from "@/app/img/history/vivacy-italia-canada.jpg";
+import img12 from "@/app/img/history/vivacy-moscow-london.jpg";
+import img16 from "@/app/img/history/vivacy-spain.jpg";
 import img1 from "@/app/img/vivacy-laboratories-paris-acid-hyaluronic.jpg";
 
 import {
@@ -9,6 +24,7 @@ import {
   useScroll,
   useSpring,
 } from "framer-motion";
+import { ArrowBigDownDash } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import FromTopTitles from "../titles/FromTopTitles";
@@ -42,17 +58,17 @@ export default function HistorySteps(props: Props) {
     "2021",
     "2023",
     "2024",
-    "2024",
+    "2025",
   ];
   const achievements = [
-    "Creation of the Laboratoires VIVACY.",
-    "First CE marking of STYLAGE® products.",
-    "First CE marking of STYLAGE® with Lidocaïne products.",
-    "Launch of STYLAGE® HydroMax.",
-    "CE marking of DESIRIAL® & KARTILAGE® ranges.",
-    "Launch of STYLAGE® XXL.",
-    "Opening of the new production site in Archamps.",
-    "Launch of Dermo-cosmetics range.",
+    "Creation of the Laboratoires VIVACY",
+    "First CE marking of STYLAGE® products",
+    "First CE marking of STYLAGE® with Lidocaïne products",
+    "Launch of STYLAGE® HydroMax",
+    "CE marking of DESIRIAL® & KARTILAGE® ranges",
+    "Launch of STYLAGE® XXL",
+    "Opening of the new production site in Archamps",
+    "Launch of Dermo-cosmetics range",
     "Opening of a subsidiary in Geneva",
     "Launch of My VIVACY and VIVACY ACADEMY",
     "Launch of a new-generation injection delivery system, Bi-SOFT® Injection Technology",
@@ -60,27 +76,27 @@ export default function HistorySteps(props: Props) {
     "Launch of DESIRIAL® Paris Perfumes and update of dermo-cosmetics range",
     "Launch of STYLAGE® Lips Plus and dermo-cosmetic range for men, Monsieur Skin Care®",
     "Opening of Italia and Canada subsidiaries",
-    "ACE Award for Best Manufacturer",
-    "Opening of Spain and Benelux subsidiaries",
+    "Opening of Benelux subsidiary",
+    "Opening of Spain and Benelux subsidiary",
   ];
   const images = [
     img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
     img1,
-    img1,
-    img1,
-    img1,
-    img1,
-    img1,
-    img1,
-    img1,
-    img1,
-    img1,
-    img1,
-    img1,
-    img1,
-    img1,
-    img1,
-    img1,
+    img8,
+    img9,
+    img10,
+    img11,
+    img12,
+    img13,
+    img14,
+    img17,
+    img15,
+    img16,
   ];
 
   // SCROLL SETTINGS
@@ -130,11 +146,15 @@ export default function HistorySteps(props: Props) {
     window.scrollTo({ top: calc, behavior: "smooth" });
   };
 
+  const Pass = () => {
+    window.scrollTo({ top: refToTop + sectionHeight, behavior: "smooth" });
+  };
+
   // const translateXProgress = useTransform(scroll, [0, 1], ["0", "-50%"]);
 
   return (
     <section
-      style={{ height: 60 * steps.length - 1 + "vh" }}
+      style={{ height: 40 * steps.length - 1 + "vh" }}
       className="relative max-md:hidden"
       ref={ref}
     >
@@ -186,7 +206,7 @@ export default function HistorySteps(props: Props) {
             return (
               <span
                 key={step}
-                onClick={() => scrollTo(step)}
+                onClick={() => scrollTo(step - 1)}
                 style={{ left: position + "%" }}
                 className={`absolute z-[11] size-3 lg:size-4 cursor-pointer ${
                   scrollValue * 100 >= position
@@ -201,6 +221,13 @@ export default function HistorySteps(props: Props) {
             className="absolute bg-blue h-full origin-left z-10 w-full rounded-2xl"
           />
         </motion.div>
+
+        <div className="w-full grid">
+          <button onClick={Pass} className="mx-auto mt-8">
+            <span className="text-base">Click to pass</span>
+            <ArrowBigDownDash height={20} color="#000f9f" className="mx-auto" />
+          </button>
+        </div>
       </div>
     </section>
   );

@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import BlueButton from "../components/buttons/BlueButton";
-import WhiteButton from "../components/buttons/WhiteButton";
-import IncrementNumber from "../components/globals/testNumbers";
+import KeyNumbers from "../components/globals/keyNumbers";
+import PAnimate from "../components/globals/pAnimate";
 import WorldMap from "../components/globals/worldMap";
 import Innovations from "../components/home/innovations";
 import SyringeRotate from "../components/scrollEffects/SyringeRotate";
@@ -18,8 +18,10 @@ type Params = {
   params: { locale: string };
 };
 
-const titleEN = "";
-const descriptionEN = "";
+const titleEN =
+  "Vivacy | Premium Injectable Hyaluronic Acid | Stylage & Desirial";
+const descriptionEN =
+  "Vivacy, specialising in injectable hyaluronic acid. Discover the Stylage, Hydromax & Desirial ranges, filling treatments from Laboratoires Vivacy.";
 const titleFR = "";
 const descriptionFR = "";
 
@@ -64,7 +66,7 @@ export async function generateMetadata({ params }: Params) {
             height: 600,
           },
         ],
-        locale: "en_US",
+        locale: "fr_FR",
         type: "website",
       },
     };
@@ -121,11 +123,11 @@ export default function Home() {
                 h3Classes="text-black"
               />
 
-              <div className="space-y-4">
-                {t.rich("section1.text", {
+              <PAnimate
+                content={t.rich("section1.text", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
+              />
 
               <div className="max-lg:flex max-lg:justify-center">
                 <BlueButton
@@ -160,13 +162,13 @@ export default function Home() {
 
           <div className="lg:grid lg:grid-cols-2 lg:gap-36">
             <div className="col-start-2 space-y-8 lg:space-y-28">
-              <div className="space-y-4">
-                {t.rich("section2.text", {
+              <PAnimate
+                content={t.rich("section2.text", {
                   p: (chunks) => (
                     <p className="lg:text-lg text-white">{chunks}</p>
                   ),
                 })}
-              </div>
+              />
 
               <div className="max-lg:flex max-lg:justify-center">
                 <BlueButton
@@ -179,76 +181,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* KEY NUMBERS */}
-      <section className="bg-blue lg:max-w-[2550px] lg:m-auto">
-        <div className="myContainer relative space-y-14 lg:space-y-22 text-white lg:flex lg:flex-col lg:items-center ">
-          <div className="titles-container w-full">
-            <FromTopTitles
-              titleH2={t("section3.h2")}
-              titleH3={t("section3.h3")}
-              h3Classes="text-white"
-              h2Classes="text-[#e1e1e1]"
-            />
-          </div>
-
-          <div className="max-lg:space-y-14 lg:grid lg:grid-cols-4 lg:gap-20">
-            <div className="text-center">
-              <p>
-                <IncrementNumber number={85} speed={27.5} />
-              </p>
-              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
-                {t("section3.keyNumbers.1")}
-              </p>
-            </div>
-
-            <div className="text-center">
-              <p>
-                <IncrementNumber number={15} />
-              </p>
-              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
-                {t("section3.keyNumbers.2")}
-              </p>
-            </div>
-
-            <div className="text-center">
-              <p>
-                <IncrementNumber number={1} />
-                <span className="font-bold text-3xl -top-[1em] relative">
-                  st
-                </span>
-              </p>
-              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
-                {t("section3.keyNumbers.3")}
-              </p>
-            </div>
-
-            <div className="text-center">
-              <p>
-                <IncrementNumber number={1} />
-                <span className="font-bold text-3xl -top-[1em] relative">
-                  st
-                </span>
-              </p>
-              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
-                {t("section3.keyNumbers.4")}
-              </p>
-            </div>
-          </div>
-
-          <div className="m-auto lg:ml-0 lg:absolute lg:left-8 lg:bottom-8">
-            <p className="text-sm max-lg:text-center">
-              {t("section3.annotation")}
-            </p>
-          </div>
-
-          <div className="max-lg:flex max-lg:justify-center">
-            <WhiteButton
-              content={t("section3.button")}
-              path={t("section3.buttonPath")}
-            />
-          </div>
-        </div>
-      </section>
+      <KeyNumbers />
 
       <Innovations />
 
@@ -280,7 +213,7 @@ export default function Home() {
       </section>
 
       <section className="bg-[#fafbfc]">
-        <div className="myContainer space-y-20 flex flex-col items-center overflow-hidden">
+        <div className="myContainer space-y-14 lg:space-y-20 flex flex-col items-center overflow-hidden">
           <FromTopCenteredTitles
             titleH2={t("section6.h2")}
             titleH3={t("section6.h3")}
@@ -303,9 +236,11 @@ export default function Home() {
             titleH3={t("section7.h3")}
             h3Classes="text-black"
           />
-          <p className="lg:w-[90%] mx-auto text-center lg:text-lg">
-            {t("section7.text")}
-          </p>
+
+          <PAnimate
+            classes="lg:w-[90%] mx-auto text-center lg:text-lg"
+            content={t("section7.text")}
+          />
           <WorldMap />
         </div>
       </section>

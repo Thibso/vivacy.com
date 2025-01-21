@@ -1,5 +1,6 @@
 import SeringeBiSoft from "@/app/components/bisoft/seringeBiSoft";
 import BlueButton from "@/app/components/buttons/BlueButton";
+import PAnimate from "@/app/components/globals/pAnimate";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
@@ -18,18 +19,57 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN =
+  "Bi-Soft® Injection Technology | Hyaluronic Acid Expert | Precise & Secure";
+const descriptionEN =
+  "Bi-Soft® Injection Technology. Discover Laboratoires Vivacy's patented injection system for doctors. Specialist in injectable hyaluronic acid.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "BiSoft",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -65,22 +105,23 @@ export default function BiSoft() {
   };
   const seringeTextFourth = {
     title: t("seringe.fourth.title"),
-    content: [
-      t("seringe.fourth.content.first"),
-      t("seringe.fourth.content.second"),
-    ],
+    content: [t("seringe.fourth.content.first")],
   };
   const seringeTextFifth = {
     title: t("seringe.fifth.title"),
     content: [
-      t("seringe.fifth.content.first"),
-      t("seringe.fifth.content.second"),
+      t.rich("seringe.fifth.content.first", {
+        sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
+      }),
+      t.rich("seringe.fifth.content.second", {
+        sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
+      }),
     ],
   };
 
   return (
     <main>
-      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
+      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1] ">
         <video
           className="absolute max-md:h-[150%] max-xl:h-[140%] xl:size-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover -z-[2]"
           autoPlay
@@ -93,8 +134,10 @@ export default function BiSoft() {
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-25"></div>
         {/* <HeaderBigTitle title={t("title")} /> */}
         <div className="m-auto px-5 lg:px-28 lg:py-32">
-          <h1 className="text-[8vw] font-mona uppercase font-bold text-whiteGrey text-center leading-none">
-            {t("title")}
+          <h1 className="text-[8vw] font-mona font-bold text-whiteGrey text-center leading-none">
+            {t.rich("title", {
+              sup: (chunks) => <sup>{chunks}</sup>,
+            })}
           </h1>
         </div>
       </section>
@@ -117,12 +160,12 @@ export default function BiSoft() {
               h3Classes="text-black"
             />
 
-            <div className="space-y-4">
-              {t.rich("section1.content", {
+            <PAnimate
+              content={t.rich("section1.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
               })}
-            </div>
+            />
 
             <div className="flex max-lg:gap-14 lg:grid lg:grid-cols-2 justify-center lg:justify-start items-center">
               <div>
@@ -157,7 +200,9 @@ export default function BiSoft() {
 
       <SeringeBiSoft
         h2={t("seringe.h2")}
-        h3={t("seringe.h3")}
+        h3={t.rich("seringe.h3", {
+          sup: (chunks) => <sup>{chunks}</sup>,
+        })}
         first={seringeTextFirst}
         second={seringeTextSecond}
         third={seringeTextThird}
@@ -178,9 +223,12 @@ export default function BiSoft() {
         />
         <div className="myContainer space-y-14 lg:space-y-20">
           <FromTopCenteredTitles
-            titleH2={t("title")}
+            titleH2={t.rich("title", {
+              sup: (chunks) => <sup>{chunks}</sup>,
+            })}
             titleH3={t("section2.h2")}
             h3Classes="text-black"
+            h2Classes="normal-case"
           />
 
           <div className="lg:grid lg:grid-cols-4 lg:gap-x-20 max-lg:space-y-14 max-lg:w-[80%] max-lg:mx-auto">

@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -153,14 +156,20 @@ export default function NavBar(props: Props) {
   };
 
   return (
-    <nav className="bg-blue py-3 px-8 rounded-[44px] w-[97.5%] max-w-[1920px] sticky top-4 md:top-8 mt-4 lg:mt-8 mx-auto h-16 flex z-50 -mb-[96px]">
+    <motion.nav
+      initial={{ opacity: 0, y: -70 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: "some" }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="bg-blue py-3 px-8 rounded-[44px] w-[97.5%] max-w-[1920px] sticky top-2 lg:top-8 mt-2 lg:mt-8 mx-auto h-16 flex z-50 -mb-[72px] lg:-mb-[96px]"
+    >
       <div className="relative flex justify-between items-center w-full">
         <Link href={"/" + props.localeActive}>
           <Image
             src={logo}
             alt="Vivacy logo"
-            height={23}
-            className=" object-contain h-auto block"
+            height={25}
+            className="object-contain w-fit block"
           />
         </Link>
 
@@ -175,6 +184,6 @@ export default function NavBar(props: Props) {
 
         <LocalSwitcher />
       </div>
-    </nav>
+    </motion.nav>
   );
 }

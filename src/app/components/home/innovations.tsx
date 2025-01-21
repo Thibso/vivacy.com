@@ -7,9 +7,9 @@ import FromTopCenteredTitles from "../titles/FromTopCenteredTitles";
 
 // Images
 import biSoft from "@/app/img/stylage-specialiste-acide-hyaluronique-premium.png";
+import ipn from "@/app/img/vivacy-ipn-like-technology.png";
 import innovationsBg from "@/app/img/vivacy-laboratoire-esthetique-france.jpg";
 import security from "@/app/img/vivacy-security.png";
-import ipn from "@/app/img/vivacy-stylage-seringe-research.jpg";
 import vivasome from "@/app/img/vivasome/plateau-vivacy-vivasome.png";
 import { useEffect, useRef, useState } from "react";
 

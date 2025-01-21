@@ -1,5 +1,6 @@
 import BlueButton from "@/app/components/buttons/BlueButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
+import PAnimate from "@/app/components/globals/pAnimate";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
@@ -18,18 +19,56 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN = "Stylage by Vivacy | Acide Hyaluronique Injectable Premium";
+const descriptionEN =
+  "Stylage by Vivacy. Discover the range of hyaluronic acid-based filling products from Laboratoires Vivacy, with or without lidocaine.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "Stylage",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -50,7 +89,11 @@ export default function Stylage() {
           <source src="/videos/stylage-vivacy.mp4" type="video/mp4" />
         </video>
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-25"></div>
-        <HeaderBigTitle title={t("title")} />
+        <HeaderBigTitle
+          title={t.rich("title", {
+            sup: (chunks) => <sup>{chunks}</sup>,
+          })}
+        />
       </section>
 
       <section className="relative z-[1] bg-white">
@@ -70,20 +113,27 @@ export default function Stylage() {
         <div className="myContainer space-y-8 lg:space-y-28">
           <FromTopCenteredTitles
             titleH2={t("section1.h2")}
-            titleH3={t("section1.h3")}
+            titleH3={t.rich("section1.h3", {
+              sup: (chunks) => <sup>{chunks}</sup>,
+            })}
             h3Classes="text-black"
           />
 
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-12">
             <div className="lg:col-span-5 space-y-8 lg:space-y-28 lg:py-4">
-              <div className="space-y-4">
-                {t.rich("section1.content", {
+              <PAnimate
+                content={t.rich("section1.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                  sup: (chunks) => <sup>{chunks}</sup>,
                 })}
-              </div>
+              />
 
               <div className="max-lg:flex max-lg:justify-center">
-                <BlueButton content={t("cta.title")} path={t("cta.path")} />
+                <BlueButton
+                  content={t("cta.title")}
+                  path={t("cta.path")}
+                  blank={true}
+                />
               </div>
             </div>
 
@@ -143,11 +193,11 @@ export default function Stylage() {
                 h3Classes="text-black"
               />
 
-              <div className="space-y-4">
-                {t.rich("section2.content", {
+              <PAnimate
+                content={t.rich("section2.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
+              />
             </div>
           </div>
         </div>
@@ -172,11 +222,14 @@ export default function Stylage() {
               titleH3={t("section3.h3")}
               h3Classes="lg:text-black"
             />
-            <div className="xl:w-[70%] space-y-4">
-              {t.rich("section3.content", {
-                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
-                sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
-              })}
+            <div className="space-y-4">
+              <PAnimate
+                content={t.rich("section3.content", {
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                  sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
+                })}
+              />
+
               <p className="text-sm">{t("section3.asterisk")}</p>
             </div>
           </div>
@@ -196,7 +249,9 @@ export default function Stylage() {
         />
         <div className="myContainer space-y-8 lg:space-y-20">
           <FromTopCenteredTitles
-            titleH2={t("section4.h2")}
+            titleH2={t.rich("section4.h2", {
+              sup: (chunks) => <sup>{chunks}</sup>,
+            })}
             titleH3={t("section4.h3")}
             h3Classes="text-black"
           />
@@ -231,13 +286,19 @@ export default function Stylage() {
             </div>
 
             <div className="col-span-5 col-start-8 space-y-14 lg:py-4">
-              <div className="space-y-4">
-                {t.rich("section4.content", {
+              <PAnimate
+                content={t.rich("section4.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                  sup: (chunks) => <sup>{chunks}</sup>,
                 })}
-              </div>
+              />
+
               <div className="max-lg:flex max-lg:justify-center">
-                <BlueButton content={t("cta.title")} path={t("cta.path")} />
+                <BlueButton
+                  content={t("cta.title")}
+                  path={t("cta.path")}
+                  blank={true}
+                />
               </div>
             </div>
           </div>

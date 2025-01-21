@@ -1,5 +1,8 @@
+import VideoToLeft from "@/app/components/academy/videoToLeft";
 import BlueButton from "@/app/components/buttons/BlueButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
+import ImageHeader from "@/app/components/globals/ImageHeader";
+import PAnimate from "@/app/components/globals/pAnimate";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import aesthetic from "@/app/img/academy/aesthetic.png";
@@ -21,18 +24,56 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN = "Vivacy Academy | Learning Platform for Medical Professionals";
+const descriptionEN =
+  "Vivacy Academy. Discover this learning platform 100% dedicated to healthcare professionals interested in dermal fillers.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "VivacyBeauty",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -66,19 +107,9 @@ export default function VivacyBeauty() {
 
   return (
     <main>
-      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
-        <Image
-          src={bgHeader}
-          alt={t("alt")}
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "50% 0%",
-            zIndex: "-2",
-            position: "absolute",
-          }}
-        />
+      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1] overflow-hidden">
+        <ImageHeader src={bgHeader} alt={t("alt")} />
+
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
         <HeaderBigTitle title={t("title")} />
       </section>
@@ -106,14 +137,21 @@ export default function VivacyBeauty() {
                 titleH3={t("section1.h3")}
                 h3Classes="text-black"
               />
-              <div className="space-y-4 lg:w-[80%]">
-                {t.rich("section1.content", {
+
+              <PAnimate
+                classes="lg:w-[80%]"
+                content={t.rich("section1.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                  sup: (chunks) => <sup>{chunks}</sup>,
                 })}
-              </div>
+              />
 
               <div className="max-lg:flex max-lg:justify-center">
-                <BlueButton content={t("cta.title")} path={t("cta.path")} />
+                <BlueButton
+                  content={t("cta.title")}
+                  path={t("cta.path")}
+                  blank={true}
+                />
               </div>
             </div>
 
@@ -176,28 +214,7 @@ export default function VivacyBeauty() {
           className="max-lg:hidden"
         />
 
-        <div className="myContainer max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-2 lg:items-center lg:gap-x-20">
-          <div className="relative">
-            <video className="w-[50%] mx-auto" playsInline loop controls>
-              <source
-                src="/videos/vivacy-presentation.mp4#t=1.5"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-
-          <div className="space-y-8 lg:space-y-20">
-            <FromTopTitles
-              titleH2={t("section3.h2")}
-              titleH3={t("section3.h3")}
-            />
-            <div className="space-y-4">
-              {t.rich("section3.content", {
-                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
-              })}
-            </div>
-          </div>
-        </div>
+        <VideoToLeft />
 
         <div className="myContainer max-lg:pt-0 max-lg:space-y-8 lg:grid lg:grid-cols-2 lg:items-center lg:gap-x-20">
           <div className="space-y-8 lg:space-y-20">
@@ -206,14 +223,18 @@ export default function VivacyBeauty() {
               titleH3={t("section4.h3")}
             />
 
-            <div className="space-y-4">
-              {t.rich("section4.content", {
+            <PAnimate
+              content={t.rich("section4.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
-            </div>
+            />
 
             <div className="max-lg:flex max-lg:justify-center">
-              <BlueButton content={t("cta.title")} path={t("cta.path")} />
+              <BlueButton
+                content={t("cta.title")}
+                path={t("cta.path")}
+                blank={true}
+              />
             </div>
           </div>
 

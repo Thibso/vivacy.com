@@ -1,7 +1,9 @@
 import BlueButton from "@/app/components/buttons/BlueButton";
-import WhiteButton from "@/app/components/buttons/WhiteButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
+import ImageHeader from "@/app/components/globals/ImageHeader";
+import PAnimate from "@/app/components/globals/pAnimate";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
+import MotionVideo from "@/app/components/videos/motionVideo";
 import apple from "@/app/img/apple-store.jpg";
 import bg from "@/app/img/background-grained.jpg";
 import google from "@/app/img/google-store.jpg";
@@ -18,18 +20,56 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN = "My Vivacy App | Product Authentication | Injection Advice";
+const descriptionEN =
+  "My Vivacy. Discover the Vivacy product authentication app, as well as before and after hyaluronic acid injection advice for doctors.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "Stylage",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -40,50 +80,41 @@ export default function MyVivacy() {
 
   return (
     <main>
-      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
-        <Image
-          src={bgHeader}
-          alt={t("alt")}
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "50% 50%",
-            zIndex: "-2",
-            position: "absolute",
-          }}
-        />
+      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1] overflow-hidden">
+        <ImageHeader src={bgHeader} alt={t("alt")} />
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
         <HeaderBigTitle title={t("title")} />
       </section>
 
-      <section className="relative">
+      <section className="relative bg-[#fafbfc]">
         <div className="myContainer space-y-8 lg:space-20">
           <FromTopCenteredTitles
             titleH2={t("section1.h2")}
             titleH3={t("section1.h3")}
             h3Classes="text-black"
           />
-          <div className="space-y-4 text-center xl:max-w-[70%] mx-auto">
-            {t.rich("section1.content", {
+
+          <PAnimate
+            classes="text-center xl:max-w-[70%] mx-auto"
+            content={t.rich("section1.content", {
               p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+              sup: (chunks) => <sup>{chunks}</sup>,
             })}
-          </div>
+          />
 
           <div className="space-y-8 lg:space-y-20 pt-20">
             <h2 className="h3-perso w-full xl:w-[70%] text-center lg:mx-auto">
               {t("section4.h2")}
             </h2>
 
-            <video className="xl:max-w-[70%] mx-auto" playsInline loop controls>
-              <source
-                src="/videos/presentation-myvivacy.mp4#t=1.5"
-                type="video/mp4"
-              />
-            </video>
+            <MotionVideo src="/videos/presentation-myvivacy.mp4#t=1.5" />
 
             <div className="flex justify-center items-center gap-28">
-              <BlueButton content={t("cta.title")} path={t("cta.path")} />
+              <BlueButton
+                content={t("cta.title")}
+                path={t("cta.path")}
+                blank={true}
+              />
               <div>
                 <Image
                   src={section1}
@@ -155,18 +186,16 @@ export default function MyVivacy() {
                 </Link>
               </div>
             </div>
-            <div className="lg:my-4 lg:col-span-6 lg:col-start-7 p-4 lg:p-10 space-y-14 lg:space-y-20 bg-whiteGrey/20 backdrop-blur-md rounded-xl">
-              <div className="space-y-8 lg:space-y-14 text-white">
-                {t.rich("section2.content", {
+            <div className="lg:my-4 lg:col-span-6 lg:col-start-7 p-4 lg:p-10 space-y-14 lg:space-y-20 bg-whiteGrey/20 backdrop-blur-md rounded-xl grid items-center">
+              <PAnimate
+                classes="space-y-8 lg:space-y-14 text-white"
+                content={t.rich("section2.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                   h2: (chunks) => (
                     <h2 className="h2-perso text-white">{chunks}</h2>
                   ),
                 })}
-              </div>
-              <div className="flex justify-center lg:justify-end">
-                <WhiteButton content={t("cta.title")} path={t("cta.path")} />
-              </div>
+              />
             </div>
           </div>
         </div>
@@ -187,12 +216,13 @@ export default function MyVivacy() {
         <div className="myContainer lg:grid lg:grid-cols-12 max-lg:space-y-8">
           <div className="lg:col-span-6 space-y-8 lg:space-y-14 lg:py-6">
             <h2 className="h2-perso">{t("section3.h2")}</h2>
-            <div className="space-y-8 lg:space-y-14">
-              {t.rich("section3.content", {
+            <PAnimate
+              classes="space-y-8 lg:space-y-14"
+              content={t.rich("section3.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 h2: (chunks) => <h2 className="h2-perso">{chunks}</h2>,
               })}
-            </div>
+            />
           </div>
           <div className="max-lg:h-[350px] lg:col-span-5 lg:col-start-8 relative">
             <Image

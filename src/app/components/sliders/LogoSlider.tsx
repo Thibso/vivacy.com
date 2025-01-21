@@ -34,30 +34,26 @@ export default function LogoSlider() {
       <div className="animate-infinite-slider flex w-[calc(600px*6)] gap-16">
         {images.map((image, index) => (
           <div
-            className="slide flex w-[300px] items-center justify-center"
+            className="slide flex w-[150px] md:w-[300px] items-center justify-center"
             key={index}
           >
-            <a href={links[index]} target="_blank">
-              <Image
-                style={{ filter: "saturate(0%)" }}
-                src={image}
-                alt={alts[index]}
-              />
-            </a>
+            <Image
+              style={{ filter: "saturate(0%)" }}
+              src={image}
+              alt={alts[index]}
+            />
           </div>
         ))}
         {images.map((image, index) => (
           <div
-            className="slide flex w-[300px] items-center justify-center"
+            className="slide flex w-[150px] md:w-[300px] items-center justify-center"
             key={index}
           >
-            <a href={links[index]} target="_blank">
-              <Image
-                style={{ filter: "saturate(0%)" }}
-                src={image}
-                alt={alts[index]}
-              />
-            </a>
+            <Image
+              style={{ filter: "saturate(0%)" }}
+              src={image}
+              alt={alts[index]}
+            />
           </div>
         ))}
       </div>

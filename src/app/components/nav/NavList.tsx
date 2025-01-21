@@ -179,8 +179,7 @@ export default function NavList(props: Props) {
         <li>
           <a
             className="uppercase font-light text-base cursor-pointer"
-            href="http://localhost:3000/en/academy"
-            target="_blank"
+            href={props.products.items[3].path}
           >
             {props.products.items[3].title}
           </a>
@@ -349,8 +348,7 @@ export default function NavList(props: Props) {
                 <li>
                   <a
                     className="uppercase text-lg cursor-pointer"
-                    href="http://localhost:3000/en/academy"
-                    target="_blank"
+                    href={props.products.items[3].path}
                   >
                     {props.products.items[3].title}
                   </a>

@@ -8,18 +8,18 @@ import vivacy from "@/app/img/logos/vivacy-beauty.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import BlueButton from "../buttons/BlueButton";
 
 const logos = [stylage, desirial, desirialPlus, vivacy, kartilage, ispace];
 
 type Text = {
   keys: Array<string>;
-  title: string;
-  content: Array<string>;
+  title: ReactNode;
+  content: ReactNode[];
   cta: {
     display: boolean;
-    content: string;
+    content: ReactNode;
     path: string;
   };
 };

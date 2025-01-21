@@ -17,20 +17,21 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-blue uppercase">{t("vivacy.title")}</h4>
             <ul className="space-y-2">
+              <li>
+                <a
+                  className="block hover:underline"
+                  href={t("vivacy.links.stylage")}
+                >
+                  {t("vivacy.content.stylage")}
+                </a>
+              </li>
+
               <li className="cursor-pointer">
                 <a
                   className="block hover:underline"
                   href={t("vivacy.links.vivacyAcademy")}
                 >
                   {t("vivacy.content.vivacyAcademy")}
-                </a>
-              </li>
-              <li>
-                <a
-                  className="block hover:underline"
-                  href={t("vivacy.links.vivacyBeauty")}
-                >
-                  {t("vivacy.content.vivacyBeauty")}
                 </a>
               </li>
               <li>
@@ -44,7 +45,7 @@ export default function Footer() {
               <li>
                 <a
                   className="block hover:underline"
-                  href={t("vivacy.links.desirialPlus")}
+                  href={t("vivacy.links.desirial")}
                 >
                   {t("vivacy.content.desirialPlus")}
                 </a>
@@ -52,9 +53,9 @@ export default function Footer() {
               <li>
                 <a
                   className="block hover:underline"
-                  href={t("vivacy.links.stylage")}
+                  href={t("vivacy.links.vivacyBeauty")}
                 >
-                  {t("vivacy.content.stylage")}
+                  {t("vivacy.content.vivacyBeauty")}
                 </a>
               </li>
             </ul>
@@ -73,9 +74,18 @@ export default function Footer() {
               <li>
                 <a
                   className="block hover:underline"
-                  href={t("contact.links.network")}
+                  href={t("contact.links.clinic")}
                 >
-                  {t("contact.content.network")}
+                  {t("contact.content.clinic")}
+                </a>
+              </li>
+              <li>
+                <a
+                  className="block hover:underline"
+                  href={t("contact.links.carreers")}
+                  target="_blank"
+                >
+                  {t("contact.content.carreers")}
                 </a>
               </li>
               <li>
@@ -102,7 +112,7 @@ export default function Footer() {
           <Image
             src={logo}
             alt={t("vivacy.logoAlt")}
-            className="max-lg:hidden w-auto h-[100px] mx-auto"
+            className="max-lg:hidden w-auto lg:h-[50px] xl:h-[75px] mx-auto"
           />
         </div>
 

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
+import { useMediaQuery } from "react-responsive";
 
 type Props = {
   titleH2: string;
@@ -12,6 +13,8 @@ type Props = {
 };
 
 export default function FromTopTitles(props: Props) {
+  const isMobile = useMediaQuery({ query: "(max-width: 1024px)" });
+
   return (
     <div
       className={`titles-container ${
@@ -30,7 +33,7 @@ export default function FromTopTitles(props: Props) {
           duration: 0.5,
         }}
         viewport={{
-          amount: "some",
+          amount: "all",
           once: true,
         }}
         className={`h2-perso ${props.h2Classes ? props.h2Classes : ""}`}
@@ -40,7 +43,7 @@ export default function FromTopTitles(props: Props) {
       <motion.h3
         initial={{
           opacity: 0,
-          y: -100,
+          y: isMobile ? -50 : -80,
         }}
         whileInView={{
           opacity: 1,
@@ -51,7 +54,7 @@ export default function FromTopTitles(props: Props) {
           duration: 0.8,
         }}
         viewport={{
-          amount: "some",
+          amount: "all",
           once: true,
         }}
         className={`h3-perso ${props.h3Classes ? props.h3Classes : ""}`}

@@ -1,5 +1,7 @@
 import BrandsDescriptions from "@/app/components/brands/brandsPresentation";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
+import ImageHeader from "@/app/components/globals/ImageHeader";
+import PAnimate from "@/app/components/globals/pAnimate";
 import VivacySecurity from "@/app/components/globals/vivacySecurity";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import firstSectionImg from "@/app/img/vivacy-brands-hyaluronic-acid.jpg";
@@ -11,18 +13,57 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN =
+  "Vivacy’s Brands: Stylage | Hydromax | Desirial | Vivacy Beauty";
+const descriptionEN =
+  "Vivacy's Brands. Discover the different premium hyaluronic acid solutions: Stylage, Hydromax, Desirial and Vivacy Beauty.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "Our brands",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -33,11 +74,19 @@ export default function OurBrands() {
   const texts = [
     {
       keys: ["stylage.img", "stylage.title", "stylage.content", "stylage.cta"],
-      title: t("brandsDescriptions.stylage.title"),
-      content: [t("brandsDescriptions.stylage.content.c1")],
+      title: t.rich("brandsDescriptions.stylage.title", {
+        sup: (chunks) => <sup>{chunks}</sup>,
+      }),
+      content: [
+        t.rich("brandsDescriptions.stylage.content.c1", {
+          sup: (chunks) => <sup>{chunks}</sup>,
+        }),
+      ],
       cta: {
         display: true,
-        content: t("brandsDescriptions.stylage.cta.content"),
+        content: t.rich("brandsDescriptions.stylage.cta.content", {
+          sup: (chunks) => <sup>{chunks}</sup>,
+        }),
         path: t("brandsDescriptions.stylage.cta.path"),
       },
     },
@@ -48,11 +97,19 @@ export default function OurBrands() {
         "desirial.content",
         "desirial.cta",
       ],
-      title: t("brandsDescriptions.desirial.title"),
-      content: [t("brandsDescriptions.desirial.content.c1")],
+      title: t.rich("brandsDescriptions.desirial.title", {
+        sup: (chunks) => <sup>{chunks}</sup>,
+      }),
+      content: [
+        t.rich("brandsDescriptions.desirial.content.c1", {
+          sup: (chunks) => <sup>{chunks}</sup>,
+        }),
+      ],
       cta: {
         display: true,
-        content: t("brandsDescriptions.desirial.cta.content"),
+        content: t.rich("brandsDescriptions.desirial.cta.content", {
+          sup: (chunks) => <sup>{chunks}</sup>,
+        }),
         path: t("brandsDescriptions.desirial.cta.path"),
       },
     },
@@ -64,19 +121,33 @@ export default function OurBrands() {
         "desirialplus.content",
         "desirialplus.cta",
       ],
-      title: t("brandsDescriptions.desirialPlus.title"),
-      content: [t("brandsDescriptions.desirialPlus.content.c1")],
+      title: t.rich("brandsDescriptions.desirialPlus.title", {
+        sup: (chunks) => <sup>{chunks}</sup>,
+      }),
+      content: [
+        t.rich("brandsDescriptions.desirialPlus.content.c1", {
+          sup: (chunks) => <sup>{chunks}</sup>,
+        }),
+      ],
       cta: {
         display: true,
-        content: t("brandsDescriptions.desirialPlus.cta.content"),
+        content: t.rich("brandsDescriptions.desirialPlus.cta.content", {
+          sup: (chunks) => <sup>{chunks}</sup>,
+        }),
         path: t("brandsDescriptions.desirialPlus.cta.path"),
       },
     },
 
     {
       keys: ["vivacy.img", "vivacy.title", "vivacy.content", "vivacy.cta"],
-      title: t("brandsDescriptions.vivacyBeauty.title"),
-      content: [t("brandsDescriptions.vivacyBeauty.content.c1")],
+      title: t.rich("brandsDescriptions.vivacyBeauty.title", {
+        sup: (chunks) => <sup>{chunks}</sup>,
+      }),
+      content: [
+        t.rich("brandsDescriptions.vivacyBeauty.content.c1", {
+          sup: (chunks) => <sup>{chunks}</sup>,
+        }),
+      ],
       cta: {
         display: true,
         content: t("brandsDescriptions.vivacyBeauty.cta.content"),
@@ -91,8 +162,14 @@ export default function OurBrands() {
         "kartilage.content",
         "kartilage.cta",
       ],
-      title: t("brandsDescriptions.kartilage.title"),
-      content: [t("brandsDescriptions.kartilage.content.c1")],
+      title: t.rich("brandsDescriptions.kartilage.title", {
+        sup: (chunks) => <sup>{chunks}</sup>,
+      }),
+      content: [
+        t.rich("brandsDescriptions.kartilage.content.c1", {
+          sup: (chunks) => <sup>{chunks}</sup>,
+        }),
+      ],
       cta: {
         display: false,
         content: t("brandsDescriptions.kartilage.cta.content"),
@@ -102,8 +179,14 @@ export default function OurBrands() {
 
     {
       keys: ["ispace.img", "ispace.title", "ispace.content", "ispace.cta"],
-      title: t("brandsDescriptions.ispace.title"),
-      content: [t("brandsDescriptions.ispace.content.c1")],
+      title: t.rich("brandsDescriptions.ispace.title", {
+        sup: (chunks) => <sup>{chunks}</sup>,
+      }),
+      content: [
+        t.rich("brandsDescriptions.ispace.content.c1", {
+          sup: (chunks) => <sup>{chunks}</sup>,
+        }),
+      ],
       cta: {
         display: false,
         content: t("brandsDescriptions.ispace.cta.content"),
@@ -114,19 +197,9 @@ export default function OurBrands() {
 
   return (
     <main>
-      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
-        <Image
-          src={bgHeader}
-          alt={t("alt")}
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "50% 50%",
-            zIndex: "-2",
-            position: "absolute",
-          }}
-        />
+      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1] overflow-hidden">
+        <ImageHeader src={bgHeader} alt={t("alt")} />
+
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
         <HeaderBigTitle title={t("title")} />
       </section>
@@ -153,11 +226,11 @@ export default function OurBrands() {
               h3Classes="text-black"
             />
 
-            <div className="space-y-4">
-              {t.rich("section1.content", {
+            <PAnimate
+              content={t.rich("section1.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
-            </div>
+            />
           </div>
         </div>
       </section>

@@ -1,16 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
+import { useMediaQuery } from "react-responsive";
 
 type Props = {
-  titleH2: string | null;
-  titleH3: string;
+  titleH2: string | null | ReactNode;
+  titleH3: string | ReactNode;
   containerClasses?: string;
   h3Classes?: string;
   h2Classes?: string;
 };
 
 export default function FromTopTitles(props: Props) {
+  const isMobile = useMediaQuery({ query: "(max-width: 1024px)" });
+
   return (
     <div
       className={`titles-container text-center ${
@@ -30,7 +34,7 @@ export default function FromTopTitles(props: Props) {
             duration: 0.5,
           }}
           viewport={{
-            amount: "some",
+            amount: "all",
             once: true,
           }}
           className={`h2-perso ${props.h2Classes ? props.h2Classes : null}`}
@@ -42,7 +46,7 @@ export default function FromTopTitles(props: Props) {
       <motion.h3
         initial={{
           opacity: 0,
-          y: -100,
+          y: isMobile ? -50 : -80,
         }}
         whileInView={{
           opacity: 1,
@@ -53,7 +57,7 @@ export default function FromTopTitles(props: Props) {
           duration: 0.8,
         }}
         viewport={{
-          amount: "some",
+          amount: "all",
           once: true,
         }}
         className={`h3-perso text-center ${

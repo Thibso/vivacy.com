@@ -13,7 +13,7 @@ type Contents = {
 
 type Props = {
   h2: string;
-  h3: string;
+  h3: string | ReactNode;
   first: Contents;
   second: Contents;
   third: Contents;
@@ -168,7 +168,7 @@ export default function SeringeBiSoft(props: Props) {
               amount: "all",
               once: true,
             }}
-            className="h3-perso text-center"
+            className="h3-perso text-center normal-case"
           >
             {props.h3}
           </motion.h3>

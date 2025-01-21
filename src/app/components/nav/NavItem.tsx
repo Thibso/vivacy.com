@@ -56,7 +56,7 @@ export default function NavItem(props: Props) {
                         }}
                       >
                         <a
-                          className="uppercase underline font-light text-base"
+                          className="underline font-light text-base"
                           href={item[2]}
                         >
                           {item[1]}

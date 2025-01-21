@@ -1,5 +1,7 @@
 import BlueButton from "@/app/components/buttons/BlueButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
+import PAnimate from "@/app/components/globals/pAnimate";
+import UlAnimate from "@/app/components/globals/UlAnimate";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import vivacyLogo from "@/app/img/vivacy-laboratories-hyaluronic-acid-france.png";
@@ -16,18 +18,56 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN = "Vivasôme | Dermo-cosmetic technology | Skin Care";
+const descriptionEN =
+  "Vivasôme, a dermo-cosmetic technology from Laboratoires Vivacy. Encapsulation of active ingredients using liposomes. Advanced skincare solutions.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "Vivasome",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -48,7 +88,11 @@ export default function Vivasome() {
           <source src="/videos/vivasome-vivacy.mp4" type="video/mp4" />
         </video>
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-25"></div>
-        <HeaderBigTitle title={t("title")} />
+        <HeaderBigTitle
+          title={t.rich("title", {
+            sup: (chunks) => <sup>{chunks}</sup>,
+          })}
+        />
       </section>
 
       <section className="relative z-[1] bg-white">
@@ -75,11 +119,12 @@ export default function Vivasome() {
                 h3Classes="text-black"
               />
 
-              <div className="space-y-4">
-                {t.rich("section1.content", {
+              <PAnimate
+                content={t.rich("section1.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                  sup: (chunks) => <sup>{chunks}</sup>,
                 })}
-              </div>
+              />
 
               <div className="flex max-lg:gap-14 lg:grid lg:grid-cols-2 justify-center lg:justify-start items-center">
                 <div>
@@ -133,21 +178,27 @@ export default function Vivasome() {
             </div>
 
             <div className="lg:col-span-5 space-y-8 lg:py-8">
-              <h3 className="h2-perso">{t("section2.h3")}</h3>
-
-              <div className="space-y-4">
-                {t.rich("section2.content", {
-                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+              <h3 className="h2-perso">
+                {t.rich("section2.h3", {
+                  sup: (chunks) => <sup>{chunks}</sup>,
                 })}
-              </div>
+              </h3>
+
+              <PAnimate
+                content={t.rich("section2.content", {
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                  sup: (chunks) => <sup>{chunks}</sup>,
+                })}
+              />
 
               <h3 className="h2-perso">{t("section2.h3Bis")}</h3>
 
-              <div className="space-y-4">
-                {t.rich("section2.contentBis", {
+              <PAnimate
+                content={t.rich("section2.contentBis", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                  sup: (chunks) => <sup>{chunks}</sup>,
                 })}
-              </div>
+              />
             </div>
           </div>
 
@@ -169,28 +220,31 @@ export default function Vivasome() {
 
             <div className="lg:py-8 space-y-8">
               <h3 className="h2-perso">{t("section3.h2")}</h3>
-              <ul className="space-y-4 list-disc ml-4">
-                {t.rich("section3.content", {
+              <UlAnimate
+                classes="list-disc ml-4"
+                content={t.rich("section3.content", {
                   li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
                   b: (chunks) => (
                     <strong className="lg:text-lg text-bold">{chunks}</strong>
                   ),
+                  sup: (chunks) => <sup>{chunks}</sup>,
                 })}
-              </ul>
+              />
             </div>
           </div>
 
           <div className="max-lg:space-y-8 lg:grid lg:grid-cols-2 lg:gap-x-28">
             <div className="lg:pt-28 space-y-8">
               <h3 className="h2-perso">{t("section4.h3")}</h3>
-              <ul className="space-y-4 list-disc ml-4  lg:pb-14">
-                {t.rich("section4.content", {
+              <UlAnimate
+                classes="list-disc ml-4 lg:pb-14"
+                content={t.rich("section4.content", {
                   li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
                   b: (chunks) => (
                     <strong className="lg:text-lg text-bold">{chunks}</strong>
                   ),
                 })}
-              </ul>
+              />
             </div>
 
             <div className="relative max-lg:h-[350px]">
@@ -205,28 +259,6 @@ export default function Vivasome() {
           </div>
         </div>
       </section>
-
-      {/* <section>
-        <div className="myContainer max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-2 lg:gap-x-28">
-          <div className="relative max-lg:h-[350px]">
-            <Image
-              src={section5}
-              alt={t("section5.alt")}
-              quality={100}
-              fill
-              className="object-cover size-full rounded-xl"
-            />
-          </div>
-          <div className="space-y-8 lg:space-y-14 lg:py-28">
-            <h2 className="h2-perso">{t("section5.h2")}</h2>
-            <div className="space-y-4">
-              {t.rich("section5.content", {
-                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
-              })}
-            </div>
-          </div>
-        </div>
-      </section> */}
     </main>
   );
 }

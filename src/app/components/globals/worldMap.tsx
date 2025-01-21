@@ -2,9 +2,14 @@
 
 import dubai from "@/app/img/map/dubai-vivacy-laboratories.jpg";
 import geneva from "@/app/img/map/geneva-vivacy-laboratories.jpg";
+import italie from "@/app/img/map/italia-vivacy-laboratories.jpg";
 import montreal from "@/app/img/map/montreal-vivacy-laboratories.jpg";
-import paris from "@/app/img/map/paris-vivacy-laboratories.jpg";
+import paris from "@/app/img/map/paris-laboratoires-vivacy.jpg";
+import archamps from "@/app/img/map/paris-vivacy-laboratories.jpg";
+import pologne from "@/app/img/map/polska-laboratoires-vivacy.jpg";
 import russie from "@/app/img/map/russie-vivacy-laboratories.jpg";
+import espagne from "@/app/img/map/spain-laboratoires-vivacy.jpg";
+import uk from "@/app/img/map/uk-laboratoires-vivacy.jpg";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
@@ -59,7 +64,7 @@ export default function WorldMap() {
   const [active, setActive] = useState("europe");
 
   const asia = {
-    images: [russie, dubai],
+    images: [russie, dubai, pologne],
     content: [
       [
         t("subsidiary.4"),
@@ -79,11 +84,20 @@ export default function WorldMap() {
           br: () => <br />,
         }),
       ],
+      [
+        t("subsidiary.6"),
+        t.rich("adresses.6", {
+          br: () => <br />,
+        }),
+        t.rich("details.6", {
+          br: () => <br />,
+        }),
+      ],
     ],
   };
 
   const europe = {
-    images: [paris, geneva],
+    images: [paris, geneva, archamps, italie, uk, espagne],
     content: [
       [
         t("subsidiary.1"),
@@ -100,6 +114,42 @@ export default function WorldMap() {
           br: () => <br />,
         }),
         t.rich("details.3", {
+          br: () => <br />,
+        }),
+      ],
+      [
+        t("subsidiary.2"),
+        t.rich("adresses.2", {
+          br: () => <br />,
+        }),
+        t.rich("details.2", {
+          br: () => <br />,
+        }),
+      ],
+      [
+        t("subsidiary.9"),
+        t.rich("adresses.9", {
+          br: () => <br />,
+        }),
+        t.rich("details.9", {
+          br: () => <br />,
+        }),
+      ],
+      [
+        t("subsidiary.5"),
+        t.rich("adresses.5", {
+          br: () => <br />,
+        }),
+        t.rich("details.5", {
+          br: () => <br />,
+        }),
+      ],
+      [
+        t("subsidiary.10"),
+        t.rich("adresses.10", {
+          br: () => <br />,
+        }),
+        t.rich("details.10", {
           br: () => <br />,
         }),
       ],
@@ -124,13 +174,13 @@ export default function WorldMap() {
   return (
     <div>
       <div className="space-y-8 lg:grid lg:grid-cols-12 lg:gap-x-8 items-start">
-        <div className="lg:col-span-8">
+        <div className="lg:col-span-8 relative h-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1094.863"
             height="543.971"
             viewBox="0 0 1094.863 543.971"
-            className="size-full"
+            className="w-full sticky top-[30%]"
           >
             <defs>
               <clipPath id="clip-path">
@@ -206,7 +256,9 @@ export default function WorldMap() {
                 className={`group cursor-pointer clickable ${
                   active === "asia" ? "active" : null
                 }`}
-                onClick={() => setActive("asia")}
+                onClick={() => {
+                  setActive("asia");
+                }}
               >
                 <path
                   id="Tracé_7"

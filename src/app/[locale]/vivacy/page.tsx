@@ -1,9 +1,11 @@
-import WhiteButton from "@/app/components/buttons/WhiteButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
-import IncrementNumber from "@/app/components/globals/testNumbers";
+import ImageHeader from "@/app/components/globals/ImageHeader";
+import KeyNumbers from "@/app/components/globals/keyNumbers";
+import PAnimate from "@/app/components/globals/pAnimate";
 import HistorySteps from "@/app/components/ourHistory/historySteps";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
+import MotionVideo from "@/app/components/videos/motionVideo";
 import seringe3 from "@/app/img/best-hyalronic-acid.jpg";
 import seringe2 from "@/app/img/hyaluronic-acid-specialists-vivacy.jpg";
 import bgHeader from "@/app/img/vivacy-history-expert-hyaluronic-acid.jpg";
@@ -17,18 +19,57 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN =
+  "Laboratoires Vivacy | French Hyaluronic Acid | Expert in Medical Aesthetics";
+const descriptionEN =
+  "Laboratoires Vivacy. Discover the history of the brand, experts in aesthetic and anti-ageing medicine. Pioneers of premium hyaluronic acid.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "Our history",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -39,19 +80,9 @@ export default function OurBrands() {
 
   return (
     <main>
-      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
-        <Image
-          src={bgHeader}
-          alt={t("alt")}
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "50% 50%",
-            zIndex: "-2",
-            position: "absolute",
-          }}
-        />
+      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1] overflow-hidden">
+        <ImageHeader src={bgHeader} alt={t("alt")} />
+
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
         <HeaderBigTitle title={t("title")} />
       </section>
@@ -64,11 +95,12 @@ export default function OurBrands() {
             h3Classes="text-black"
           />
 
-          <div className="space-y-4 lg:max-w-[80%] lg:text-center mx-auto">
-            {t.rich("section1.content", {
+          <PAnimate
+            classes="lg:max-w-[80%] lg:text-center mx-auto"
+            content={t.rich("section1.content", {
               p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
             })}
-          </div>
+          />
         </div>
       </section>
 
@@ -80,12 +112,7 @@ export default function OurBrands() {
             h3Classes="text-black"
           />
 
-          <video className="lg:max-w-[80%] mx-auto" playsInline loop controls>
-            <source
-              src="/videos/vivacy-presentation.mp4#t=1.5"
-              type="video/mp4"
-            />
-          </video>
+          <MotionVideo src="/videos/vivacy-presentation.mp4#t=1.5" />
         </div>
       </section>
 
@@ -146,21 +173,22 @@ export default function OurBrands() {
             h3Classes="text-black"
           />
 
-          <div className="space-y-4 mt-8 lg:mt-16">
-            {t.rich("section2.content", {
+          <PAnimate
+            classes="mt-8 lg:mt-16"
+            content={t.rich("section2.content", {
               p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               ul: (chunks) => (
                 <ul className="lg:text-lg list-disc ml-10">{chunks}</ul>
               ),
               li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
             })}
-          </div>
+          />
         </div>
       </section>
 
       <HistorySteps h2={t("section5.h2")} h3={t("section5.h3")} />
 
-      <section className="relative lg:mt-20 z-[1]">
+      <section id="pass" className="relative lg:mt-20 z-[1]">
         <Image
           src={office}
           alt={t("section3.alt")}
@@ -183,85 +211,18 @@ export default function OurBrands() {
               titleH3={t("section3.h3")}
               h3Classes="text-black"
             />
-            <div className="space-y-4">
-              {t.rich("section3.content", {
+
+            <PAnimate
+              classes=""
+              content={t.rich("section3.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* KEY NUMBERS */}
-      <section className="bg-blue lg:max-w-[2550px] lg:m-auto border-white/50 border-b-[1px]">
-        <div className="myContainer relative space-y-14 lg:space-y-22 text-white lg:flex lg:flex-col lg:items-center ">
-          <div className="titles-container w-full">
-            <FromTopTitles
-              titleH2={h("section3.h2")}
-              titleH3={h("section3.h3")}
-              h3Classes="text-white"
-              h2Classes="text-[#e1e1e1]"
-            />
-          </div>
-
-          <div className="max-lg:space-y-14 lg:grid lg:grid-cols-4 lg:gap-20">
-            <div className="text-center">
-              <p>
-                <IncrementNumber number={85} speed={27.5} />
-              </p>
-              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
-                {h("section3.keyNumbers.1")}
-              </p>
-            </div>
-
-            <div className="text-center">
-              <p>
-                <IncrementNumber number={15} />
-              </p>
-              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
-                {h("section3.keyNumbers.2")}
-              </p>
-            </div>
-
-            <div className="text-center">
-              <p>
-                <IncrementNumber number={1} />
-                <span className="font-bold text-3xl -top-[1em] relative">
-                  st
-                </span>
-              </p>
-              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
-                {h("section3.keyNumbers.3")}
-              </p>
-            </div>
-
-            <div className="text-center">
-              <p>
-                <IncrementNumber number={1} />
-                <span className="font-bold text-3xl -top-[1em] relative">
-                  st
-                </span>
-              </p>
-              <p className="mt-4 lg:mt-10 text-lg lg:text-xl">
-                {h("section3.keyNumbers.4")}
-              </p>
-            </div>
-          </div>
-
-          <div className="m-auto lg:ml-0 lg:absolute lg:left-8 lg:bottom-8">
-            <p className="text-sm max-lg:text-center">
-              {h("section3.annotation")}
-            </p>
-          </div>
-
-          <div className="max-lg:flex max-lg:justify-center">
-            <WhiteButton
-              content={h("section3.button")}
-              path={h("section3.buttonPath")}
             />
           </div>
         </div>
       </section>
+
+      <KeyNumbers />
     </main>
   );
 }

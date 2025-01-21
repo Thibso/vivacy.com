@@ -1,4 +1,5 @@
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
+import PAnimate from "@/app/components/globals/pAnimate";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
@@ -17,18 +18,57 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN =
+  "Research & Development | Innovation in Injectable Hyaluronic Acid";
+const descriptionEN =
+  "Research & Development. A laboratory committed to innovation in aesthetic and anti-ageing medicine. Hyaluronic acid-based medical devices.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "Our brands",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -114,9 +154,10 @@ export default function OurCommitments() {
                 />
               </div>
             </div>
-            <div className="col-span-5 max-lg:mt-8 lg:py-24 xl:py-32">
-              <p className="lg:text-lg">{t("section1.content")}</p>
-            </div>
+            <PAnimate
+              classes="col-span-5 max-lg:mt-8 lg:py-24 xl:py-32"
+              content={<p className="lg:text-lg">{t("section1.content")}</p>}
+            />
           </div>
         </div>
       </section>
@@ -140,11 +181,12 @@ export default function OurCommitments() {
               titleH3={t("section2.h3")}
               h3Classes="text-black"
             />
-            <div className="space-y-4">
-              {t.rich("section2.content", {
+
+            <PAnimate
+              content={t.rich("section2.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
-            </div>
+            />
           </div>
         </div>
       </section>
@@ -170,11 +212,13 @@ export default function OurCommitments() {
                   titleH3={t("section3.first.h3")}
                   h3Classes="text-black"
                 />
-                <div className="space-y-4 lg:w-[80%]">
-                  {t.rich("section3.first.content", {
+                <PAnimate
+                  classes="lg:w-[80%]"
+                  content={t.rich("section3.first.content", {
                     p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                    sup: (chunks) => <sup className="">{chunks}</sup>,
                   })}
-                </div>
+                />
               </div>
 
               <div className="space-y-8 lg:space-y-20">
@@ -183,11 +227,13 @@ export default function OurCommitments() {
                   titleH3={t("section3.second.h3")}
                   h3Classes="text-black"
                 />
-                <div className="space-y-4 lg:w-[80%]">
-                  {t.rich("section3.second.content", {
+
+                <PAnimate
+                  classes="lg:w-[80%]"
+                  content={t.rich("section3.second.content", {
                     p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                   })}
-                </div>
+                />
               </div>
             </div>
             <div className="max-lg:h-[350px] lg:col-span-6 relative">
@@ -227,11 +273,13 @@ export default function OurCommitments() {
                 titleH3={t("section4.h3")}
                 h3Classes="text-black"
               />
-              <div className="space-y-4 lg:w-[70%]">
-                {t.rich("section4.content", {
+
+              <PAnimate
+                classes="lg:w-[70%]"
+                content={t.rich("section4.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
+              />
             </div>
           </div>
         </div>

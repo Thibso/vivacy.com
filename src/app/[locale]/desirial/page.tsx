@@ -1,5 +1,7 @@
 import BlueButton from "@/app/components/buttons/BlueButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
+import ImageHeader from "@/app/components/globals/ImageHeader";
+import PAnimate from "@/app/components/globals/pAnimate";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
@@ -18,18 +20,56 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN = "Desirial | Women's Intimate Health Treatment";
+const descriptionEN =
+  "Desirial by Vivacy. Discover hyaluronic acid-based innovation for the treatment of vaginal dryness and women's intimate comfort.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "DESIRIAL",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -39,21 +79,15 @@ export default function Desirial() {
 
   return (
     <main>
-      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
-        <Image
-          src={bgHeader}
-          alt={t("alt")}
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "50% 50%",
-            zIndex: "-2",
-            position: "absolute",
-          }}
-        />
+      <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1] overflow-hidden">
+        <ImageHeader src={bgHeader} alt={t("alt")} />
+
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
-        <HeaderBigTitle title={t("title")} />
+        <HeaderBigTitle
+          title={t.rich("title", {
+            sup: (chunks) => <sup>{chunks}</sup>,
+          })}
+        />
       </section>
 
       <section className="relative z-[1]">
@@ -75,15 +109,17 @@ export default function Desirial() {
           <div className="space-y-8 lg:space-y-14">
             <FromTopCenteredTitles
               titleH2={t("section1.h2")}
-              titleH3={t("section1.h3")}
+              titleH3={t.rich("section1.h3", {
+                sup: (chunks) => <sup>{chunks}</sup>,
+              })}
               h3Classes="text-black"
             />
-
-            <div className="space-y-4 mx-auto text-center lg:w-[80%]">
-              {t.rich("section1.content", {
+            <PAnimate
+              classes="mx-auto text-center lg:w-[80%]"
+              content={t.rich("section1.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
-            </div>
+            />
           </div>
 
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-2 lg:gap-x-14">
@@ -93,14 +129,20 @@ export default function Desirial() {
                 titleH3={t("section2.h3")}
                 h3Classes="text-black"
               />
-              <div className="space-y-4 lg:w-[80%]">
-                {t.rich("section2.content", {
+
+              <PAnimate
+                classes="lg:w-[80%]"
+                content={t.rich("section2.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
+              />
 
               <div className="max-lg:flex max-lg:justify-center">
-                <BlueButton content={t("cta.title")} path={t("cta.path")} />
+                <BlueButton
+                  content={t("cta.title")}
+                  path={t("cta.path")}
+                  blank={true}
+                />
               </div>
             </div>
 
@@ -140,11 +182,13 @@ export default function Desirial() {
               titleH3={t("section3.h3")}
               h3Classes="lg:text-black"
             />
-            <div className="space-y-4">
-              {t.rich("section3.content", {
+
+            <PAnimate
+              content={t.rich("section3.content", {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                sup: (chunks) => <sup>{chunks}</sup>,
               })}
-            </div>
+            />
           </div>
         </div>
       </section>
@@ -187,11 +231,12 @@ export default function Desirial() {
             </div>
 
             <div className="col-span-5 col-start-8 space-y-14 lg:py-4">
-              <div className="space-y-4">
-                {t.rich("section4.content", {
+              <PAnimate
+                content={t.rich("section4.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                  sup: (chunks) => <sup>{chunks}</sup>,
                 })}
-              </div>
+              />
             </div>
           </div>
         </div>
@@ -218,13 +263,18 @@ export default function Desirial() {
 
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-12 lg:gap-x-14 xl:gap-x-24">
             <div className="lg:col-span-5 lg:flex lg:flex-col lg:justify-around space-y-8 lg:space-y-20">
-              <div className="space-y-4">
-                {t.rich("section5.content", {
+              <PAnimate
+                content={t.rich("section5.content", {
                   p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
+              />
+
               <div className="max-lg:flex max-lg:justify-center">
-                <BlueButton content={t("cta.title")} path={t("cta.path")} />
+                <BlueButton
+                  content={t("cta.title")}
+                  path={t("cta.path")}
+                  blank={true}
+                />
               </div>
             </div>
 

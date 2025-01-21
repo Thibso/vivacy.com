@@ -10,18 +10,57 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN =
+  "Laboratoires Vivacy’s Global Network | Distributors & Subsidiaries";
+const descriptionEN =
+  "Vivacy's Global Network. Find out more about the distributors and subsidiaries of Vivacy, experts in hyaluronic acid-based treatments.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "Map",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -31,7 +70,7 @@ export default function Contact() {
   const subsidiary = [];
   let i = 1;
 
-  while (i < 9) {
+  while (i < 12) {
     subsidiary.push(t(`subsidiary.${i}`));
     i++;
   }

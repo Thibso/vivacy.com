@@ -21,7 +21,10 @@ export default function ProductsCarousel() {
     "Laboratoires VIVACY’s STYLAGE® range embodies exigence in the field of aesthetic medicine. Founded in 2007, our brand has established itself as an undisputed leader, offering a comprehensive range of aesthetic and anti-aging treatments. Beyond our diverse product offerings, STYLAGE® is committed to the education and support of aesthetic professionals worldwide.",
     "In 2011, Laboratoires VIVACY revolutionized the field of aesthetic and functional gynecology by introducing on the market the very first injectable hyaluronic acid gel for female vulvovaginal restoration. This innovation provides a solution for women suffering from vaginal discomfort, chronic irritation, or pain during intercourse. This treatment helps to restore hydration and elasticity to the vaginal tissues, offering significant relief, and improving sexual health and overall comfort.",
   ];
-  const links = ["/en/stylage", "/en/desirial"];
+  const links = [
+    "/en/stylage-hyaluronic-acid-treatment",
+    "/en/desirial-treatment-vaginal-dryness",
+  ];
   const logos = [stylage, desirial];
   const packages = [stylageIllustration, desirialIllustration];
   const alts = [t("products.stylage"), t("products.desirial")];
