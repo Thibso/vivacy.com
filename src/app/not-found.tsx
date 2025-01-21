@@ -39,7 +39,7 @@ export default function NotFound() {
         <h1 className="h3-perso">Damn internet!</h1>
         <p className="lg:text-lg text-center">
           It seems that the page you want to visit no longer exists.
-          <br /> But don't worry! We'll take you home.
+          <br /> But don&apos;t worry! We&apos;ll take you home.
         </p>
         <a href="/en" className="lg:text-lg hover:text-blue underline">
           Return to the home page
