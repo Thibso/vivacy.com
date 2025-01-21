@@ -1,18 +1,7 @@
 import vivacyLogo from "@/app/img/vivacy-laboratories-hyaluronic-acid-france.png";
-import { Metadata } from "next";
 import Image from "next/image";
 import NavBar from "./components/globals/NavBar";
 import Footer from "./components/globals/footer";
-
-// META DATAS
-export const metadata: Metadata = {
-  title: "Error 404 | Vivacy",
-  description: "",
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
 
 export default function NotFound() {
   return (
