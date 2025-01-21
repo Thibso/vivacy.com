@@ -223,10 +223,10 @@ export default function HistorySteps(props: Props) {
         </motion.div>
 
         <div className="w-full grid">
-          <button onClick={Pass} className="mx-auto mt-8">
-            <span className="text-base">Click to pass</span>
+          <a href="#skip" className="mx-auto mt-8">
+            <span className="text-base">Click to skip</span>
             <ArrowBigDownDash height={20} color="#000f9f" className="mx-auto" />
-          </button>
+          </a>
         </div>
       </div>
     </section>

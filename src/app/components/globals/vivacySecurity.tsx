@@ -1,17 +1,53 @@
+"use client";
+
 import apple from "@/app/img/apple-store.jpg";
 import google from "@/app/img/google-store.jpg";
 import bgSection from "@/app/img/vivacy-laboratoire-esthetique-france.jpg";
 import logo from "@/app/img/vivacy-security-logo.png";
 import phoneMockup from "@/app/img/vivacy-security.png";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { useRef } from "react";
+import { useMediaQuery } from "react-responsive";
 import FromTopTitles from "../titles/FromTopTitles";
 
 export default function VivacySecurity() {
   const t = useTranslations("Global.vivacySecurity");
+
+  const isMobileOrTablet = useMediaQuery({ query: "(max-width: 1024px)" });
+
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0.35 .9", "1 1"],
+  });
+
+  const scroll = useSpring(scrollYProgress, {
+    stiffness: 250,
+    damping: 25,
+  });
+
+  const scaleProgress = useTransform(scroll, [0.1, 1], [1.25, 1]);
+  const xProgressMockup = useTransform(
+    scroll,
+    [0.1, 0.65, 1],
+    isMobileOrTablet ? ["0%", "0%", "0%"] : ["-60%", "0%", "0%"]
+  );
+  const xProgressText = useTransform(
+    scroll,
+    [0.35, 0.95],
+    isMobileOrTablet ? ["0%", "0%"] : ["20%", "0%"]
+  );
+  const opacityProgressText = useTransform(
+    scroll,
+    [0.35, 0.95],
+    isMobileOrTablet ? ["100%", "100%"] : ["0%", "100%"]
+  );
+
   return (
-    <section className="relative z-[1]">
+    <section ref={ref} className="relative z-[1] lg:min-h-[150vh]">
       <Image
         src={bgSection}
         alt="texture"
@@ -24,7 +60,7 @@ export default function VivacySecurity() {
           position: "absolute",
         }}
       />
-      <div className="myContainer space-y-8 lg:space-y-20">
+      <div className="myContainer space-y-8 lg:space-y-20 sticky top-0">
         <FromTopTitles
           titleH2={t("h2")}
           titleH3={t("h3")}
@@ -32,7 +68,13 @@ export default function VivacySecurity() {
         />
 
         <div className="max-lg:space-y-16 lg:grid lg:grid-cols-2 lg:gap-32 lg:items-center">
-          <div className="space-y-8 lg:space-y-16">
+          <motion.div
+            style={{
+              opacity: opacityProgressText,
+              x: xProgressText,
+            }}
+            className="space-y-8 lg:space-y-16 "
+          >
             <Image
               src={logo}
               alt={t("alts.logo")}
@@ -77,8 +119,14 @@ export default function VivacySecurity() {
                 />
               </Link>
             </div>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div
+            style={{
+              scale: scaleProgress,
+              x: xProgressMockup,
+            }}
+            className="max-lg:origin-top"
+          >
             <Image
               src={phoneMockup}
               alt={t("alts.mockup")}
@@ -88,7 +136,7 @@ export default function VivacySecurity() {
               }}
               className="max-lg:w-[60%] max-lg:m-auto lg:max-h-[512px]"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

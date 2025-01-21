@@ -3,9 +3,10 @@ import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import ImageHeader from "@/app/components/globals/ImageHeader";
 import PAnimate from "@/app/components/globals/pAnimate";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
+import MotionVideo from "@/app/components/videos/motionVideo";
 import bg from "@/app/img/background-grained.jpg";
+import section1Second from "@/app/img/ipn/ipn-like-technology-vivacy.jpg";
 import bgHeader from "@/app/img/ipn/ipn-like-technology.jpg";
-import section1Second from "@/app/img/ipn/ipn-like-technologye-vivacy.jpg";
 import logoIpn from "@/app/img/ipn/logo-ipn-like-technology.png";
 import section3 from "@/app/img/ipn/vivacy-hyaluronic-acid-expert-ipn-like-technology.jpg";
 import section1First from "@/app/img/ipn/vivacy-ipn-like-technology.jpg";
@@ -95,14 +96,14 @@ export default function IpnLike() {
             <Image
               src={section1First}
               alt={t("section1.alts.first")}
-              quality={75}
+              quality={100}
               className="object-cover w-full h-[250px] lg:h-[300px] rounded-xl"
             />
 
             <Image
               src={section1Second}
               alt={t("section1.alts.second")}
-              quality={75}
+              quality={100}
               className="object-cover w-full h-[250px] lg:h-[300px] rounded-xl"
             />
           </div>
@@ -173,7 +174,7 @@ export default function IpnLike() {
               <Image
                 src={section2}
                 alt={t("section2.alt")}
-                quality={75}
+                quality={100}
                 fill
                 className="object-cover size-full rounded-xl"
               />
@@ -218,15 +219,10 @@ export default function IpnLike() {
       </section>
 
       {/* VIDEO */}
-      <section className="max-lg:px-4">
-        <video className="lg:max-w-[70%] mx-auto" playsInline loop controls>
-          <source
-            src="/videos/vivacy-ipnlike-technology.mp4#t=1.5"
-            type="video/mp4"
-          />
-        </video>
+      <section className="max-lg:px-4 myContainer bg-[#fafbfc] space-y-8 lg:space-y-20">
+        <MotionVideo src="/videos/vivacy-ipnlike-technology.mp4#t=1.5" />
 
-        <div className="myContainer">
+        <div>
           <ol className="space-y-2 list-decimal">
             {t.rich("references", {
               li: (chunks) => <li className="text-sm">{chunks}</li>,

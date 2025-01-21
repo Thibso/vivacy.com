@@ -34,12 +34,12 @@ export default function SyringeRotate() {
 
   return (
     <motion.section
-      className="max-lg:hidden lg:min-h-[150vh] relative"
+      className="max-lg:hidden lg:min-h-[150vh] relative bg-[#f1f1f1]"
       style={{ zIndex: displayProgress }}
     >
       <motion.section
         ref={ref}
-        className=" min-h-[250vh] absolute top-0 left-0 w-full"
+        className="min-h-[250vh] absolute top-0 left-0 w-full"
         style={{ opacity: opacityProgress }}
       >
         <div className="sticky top-0 min-h-screen overflow-hidden">

@@ -120,7 +120,7 @@ export default function Footer() {
           <Image
             src={map}
             alt={t("vivacy.mapAlt")}
-            className="max-sm:w-[100%] max-lg:w-[70%] max-lg:mx-auto"
+            className="max-lg:pt-8 max-sm:w-[100%] max-lg:w-[70%] max-lg:mx-auto"
           />
         </div>
       </div>

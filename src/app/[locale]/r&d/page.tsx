@@ -1,5 +1,8 @@
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import PAnimate from "@/app/components/globals/pAnimate";
+import ImageToLeft from "@/app/components/r&d/imageToLeft";
+import MultipleImagesEffect from "@/app/components/r&d/multipleImagesEffect";
+import ZoomImageOnScroll from "@/app/components/r&d/zoomImageOnScroll";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
@@ -104,56 +107,12 @@ export default function OurCommitments() {
           />
 
           <div className="lg:grid lg:grid-cols-12 lg:space-x-12 xl:space-x-28">
-            <div className="lg:col-span-7 max-lg:h-[250px] grid grid-cols-10 gap-x-2 lg:gap-x-5 xl:gap-x-10">
-              <div className="col-span-4 relative">
-                <Image
-                  src={research1}
-                  alt={t("section1.alts.first")}
-                  quality={75}
-                  fill
-                  style={{
-                    objectFit: "cover",
-                    objectPosition: "50% 50%",
-                  }}
-                />
-              </div>
-              <div className="col-span-3 relative">
-                <Image
-                  src={research2}
-                  alt={t("section1.alts.second")}
-                  quality={75}
-                  fill
-                  style={{
-                    objectFit: "cover",
-                    objectPosition: "50% 50%",
-                  }}
-                />
-              </div>
-              <div className="col-span-2 relative">
-                <Image
-                  src={research3}
-                  alt={t("section1.alts.third")}
-                  quality={75}
-                  fill
-                  style={{
-                    objectFit: "cover",
-                    objectPosition: "50% 50%",
-                  }}
-                />
-              </div>
-              <div className="col-span-1 relative">
-                <Image
-                  src={research4}
-                  alt={t("section1.alts.fourth")}
-                  quality={75}
-                  fill
-                  style={{
-                    objectFit: "cover",
-                    objectPosition: "50% 50%",
-                  }}
-                />
-              </div>
-            </div>
+            <MultipleImagesEffect
+              research1={research1}
+              research2={research2}
+              research3={research3}
+              research4={research4}
+            />
             <PAnimate
               classes="col-span-5 max-lg:mt-8 lg:py-24 xl:py-32"
               content={<p className="lg:text-lg">{t("section1.content")}</p>}
@@ -236,52 +195,10 @@ export default function OurCommitments() {
                 />
               </div>
             </div>
-            <div className="max-lg:h-[350px] lg:col-span-6 relative">
-              <Image
-                src={section3First}
-                alt={t("section3.first.alt")}
-                quality={100}
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "50% 50%",
-                  zIndex: "-1",
-                }}
-                className="rounded-xl"
-              />
-            </div>
+            <ZoomImageOnScroll img={section3First} />
           </div>
 
-          <div className="max-lg:space-y-16 lg:grid lg:grid-cols-12 lg:space-x-14 xl:space-x-24">
-            <div className="lg:col-span-5 relative h-[350px] lg:h-[600px]">
-              <Image
-                src={section3Second}
-                alt={t("section3.second.alt")}
-                quality={100}
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "50% 50%",
-                  zIndex: "-1",
-                }}
-                className="rounded-xl"
-              />
-            </div>
-            <div className="space-y-8 lg:py-8 lg:col-span-7 lg:space-y-20 lg:flex lg:flex-col">
-              <FromTopTitles
-                titleH2={t("section4.h2")}
-                titleH3={t("section4.h3")}
-                h3Classes="text-black"
-              />
-
-              <PAnimate
-                classes="lg:w-[70%]"
-                content={t.rich("section4.content", {
-                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
-                })}
-              />
-            </div>
-          </div>
+          <ImageToLeft img={section3Second} />
         </div>
       </section>
     </main>

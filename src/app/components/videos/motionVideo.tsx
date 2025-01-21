@@ -48,7 +48,7 @@ export default function MotionVideo(props: Props) {
     >
       <video
         ref={videoRef}
-        className="lg:max-w-[80%] mx-auto"
+        className="lg:max-w-[80%] mx-auto rounded-xl"
         playsInline
         loop
         muted

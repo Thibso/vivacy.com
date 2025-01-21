@@ -188,7 +188,7 @@ export default function OurBrands() {
 
       <HistorySteps h2={t("section5.h2")} h3={t("section5.h3")} />
 
-      <section id="pass" className="relative lg:mt-20 z-[1]">
+      <section id="skip" className="relative lg:mt-20 z-[1]">
         <Image
           src={office}
           alt={t("section3.alt")}

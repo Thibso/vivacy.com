@@ -12,7 +12,7 @@ import FromTopCenteredTitles from "../components/titles/FromTopCenteredTitles";
 import FromTopTitles from "../components/titles/FromTopTitles";
 import productsBg from "../img/experts-acide-hyaluronique-laboratoires-vivacy.jpg";
 import haPower from "../img/vivacy-hyaluronic-acid-experts.jpg";
-import experienceBg from "../img/vivacy-laboratoires-experience-esthetique.jpg";
+import experienceBg from "../img/vivacy-laboratoires-experience-esthetique.png";
 
 type Params = {
   params: { locale: string };
@@ -78,7 +78,7 @@ export default function Home() {
   return (
     <main>
       {/* VIDEO HEADER */}
-      <section className="h-[70vh] lg:h-[100vh] relative z-[2] grid pb-6">
+      <section className="h-[70vh] lg:h-[100vh] relative z-[2] grid pb-3">
         <video
           className="absolute size-full top-0 left-1/2 -translate-x-1/2 object-cover -z-[1]"
           autoPlay
@@ -93,7 +93,9 @@ export default function Home() {
         </video>
 
         <div className="m-auto mb-0 space-y-8">
-          <h1 className="h3-perso text-white text-center">{t("title")}</h1>
+          <h1 className="h3-perso text-white text-center tracking-widest">
+            {t("title")}
+          </h1>
         </div>
       </section>
 
@@ -140,7 +142,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative z-[1] lg:max-w-[2550px] lg:mx-auto lg:min-h-screen lg:flex">
+      <section className="relative z-[1] lg:max-w-[2550px] lg:mx-auto lg:min-h-screen lg:flex bg-[#fafbfc]">
         <Image
           src={experienceBg}
           alt={t("section2.alt")}
@@ -164,9 +166,7 @@ export default function Home() {
             <div className="col-start-2 space-y-8 lg:space-y-28">
               <PAnimate
                 content={t.rich("section2.text", {
-                  p: (chunks) => (
-                    <p className="lg:text-lg text-white">{chunks}</p>
-                  ),
+                  p: (chunks) => <p className="lg:text-lg ">{chunks}</p>,
                 })}
               />
 

@@ -137,7 +137,7 @@ export default function Vivasome() {
               <Image
                 src={section1}
                 alt={t("section1.alt")}
-                quality={75}
+                quality={100}
                 fill
                 style={{
                   objectFit: "cover",

@@ -1,3 +1,4 @@
+import IconsEffect from "@/app/components/commitments/iconsEffect";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import PAnimate from "@/app/components/globals/pAnimate";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
@@ -123,28 +124,10 @@ export default function OurCommitments() {
             h3Classes="text-black"
           />
 
-          <div className="max-lg:space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-20 lg:gap-y-14 relative xl:w-[80%] lg:mx-auto mt-8 lg:mt-20">
-            {corporateValues.map((value, index) => {
-              return (
-                <div key={index} className="space-y-4">
-                  <Image
-                    src={value[0]}
-                    alt={valuesAlt[index]}
-                    quality={75}
-                    className="mx-auto"
-                  />
-                  <h4 className="text-lg font-semibold text-center uppercase text-blue">
-                    {value[1]}
-                  </h4>
-                  <PAnimate
-                    content={
-                      <p className="text-center lg:text-lg">{value[2]}</p>
-                    }
-                  />
-                </div>
-              );
-            })}
-          </div>
+          <IconsEffect
+            corporateValues={corporateValues}
+            valuesAlt={valuesAlt}
+          />
 
           <div className="mt-8">
             <p className="text-sm">* {t("section1.references.rifd")}</p>
@@ -160,14 +143,6 @@ export default function OurCommitments() {
           className="absolute object-contain w-full -z-[1]"
         />
 
-        <div className="myContainer max-lg:pb-8">
-          <FromTopTitles
-            titleH2={t("section2.h2")}
-            titleH3={t("section2.h3")}
-            h3Classes="text-black"
-          />
-        </div>
-
         <div className="space-y-14 lg:space-y-20 xl:space-y-28">
           {/* first */}
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:px-5 max-lg:gap-8 lg:grid lg:grid-cols-2">
@@ -180,12 +155,19 @@ export default function OurCommitments() {
                 className="object-cover object-center"
               />
             </div>
-            <PAnimate
-              classes="lg:px-10 xl:px-24 my-auto"
-              content={t.rich("section2.first.content", {
-                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
-              })}
-            />
+            <div className="lg:px-10 xl:px-24 space-y-8 lg:space-y-20 my-auto">
+              <FromTopTitles
+                titleH2={t("section2.h2")}
+                titleH3={t("section2.h3")}
+                h3Classes="text-black"
+              />
+              <PAnimate
+                classes=""
+                content={t.rich("section2.first.content", {
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                })}
+              />
+            </div>
           </div>
 
           {/* second */}
