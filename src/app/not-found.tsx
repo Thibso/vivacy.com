@@ -1,12 +1,12 @@
 import vivacyLogo from "@/app/img/vivacy-laboratories-hyaluronic-acid-france.png";
 import Image from "next/image";
-import NavBar from "./components/globals/NavBar";
-import Footer from "./components/globals/footer";
+// import NavBar from "./components/globals/NavBar";
+// import Footer from "./components/globals/footer";
 
 export default function NotFound() {
   return (
     <main className="border-blue border-b-[1px]">
-      <NavBar localeActive={"en"} />
+      {/* <NavBar localeActive={"en"} /> */}
 
       <section className="relative bg-[#fafbfc] z-[2] myContainer min-h-[50vh] md:min-h-[100vh] flex flex-col items-center justify-center space-y-6">
         <Image
@@ -35,7 +35,7 @@ export default function NotFound() {
         </a>
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
