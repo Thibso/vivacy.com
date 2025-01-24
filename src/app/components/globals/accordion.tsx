@@ -22,14 +22,14 @@ export default function Accordion(props: Props) {
         isActive={true}
       />
       <AccordionItem
-        title={t(`distribution.titles.europe`)}
+        title={t(`distribution.titles.na`)}
         content={props.na}
-        isActive={true}
+        isActive={false}
       />
       <AccordionItem
-        title={t(`distribution.titles.europe`)}
+        title={t(`distribution.titles.sa`)}
         content={props.sa}
-        isActive={true}
+        isActive={false}
       />
       <AccordionItem
         title={t(`distribution.titles.asia`)}
@@ -42,7 +42,7 @@ export default function Accordion(props: Props) {
         isActive={false}
       />
       <AccordionItem
-        title={t(`distribution.titles.americas`)}
+        title={t(`distribution.titles.oceania`)}
         content={props.oceania}
         isActive={false}
       />
