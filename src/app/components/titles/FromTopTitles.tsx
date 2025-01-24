@@ -5,8 +5,8 @@ import { ReactNode } from "react";
 import { useMediaQuery } from "react-responsive";
 
 type Props = {
-  titleH2: string;
-  titleH3: string | ReactNode;
+  titleH2: string | null | ReactNode;
+  titleH3: string | null | ReactNode;
   containerClasses?: string;
   h3Classes?: string;
   h2Classes?: string;

@@ -3,7 +3,7 @@
 import desirial from "@/app/img/logos/desirial-by-vivacy.png";
 import stylage from "@/app/img/logos/stylage-by-vivacy.png";
 import desirialIllustration from "@/app/img/products/desirial-intimate-medicine.png";
-import stylageIllustration from "@/app/img/products/stylage-injectable-gamme-lips-vivacy.png";
+import stylageIllustration from "@/app/img/products/lips-plus-laboratoire-vivacy-stylage.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Circle } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -103,7 +103,7 @@ export default function ProductsCarousel() {
             <Image
               src={packages[state]}
               alt={alts[state]}
-              className="object-contain m-auto"
+              className="object-contain m-auto max-h-[75%] max-w-[550px]"
             />
           </motion.div>
         </motion.div>

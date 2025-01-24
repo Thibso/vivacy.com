@@ -28,6 +28,7 @@ export default function ImageHeader(props: Props) {
         alt={props.alt}
         quality={100}
         fill
+        priority
         style={{
           objectFit: "cover",
           objectPosition: "50% 50%",

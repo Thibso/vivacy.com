@@ -6,7 +6,7 @@ type Props = {
   blank?: boolean;
 };
 
-export default function BlueButton(props: Props) {
+export default function WhiteButton(props: Props) {
   // TARGET BLANK
   if (props.blank) {
     return (

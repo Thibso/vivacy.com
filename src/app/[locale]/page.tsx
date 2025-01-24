@@ -10,8 +10,8 @@ import LogoSlider from "../components/sliders/LogoSlider";
 import ProductsCarousel from "../components/sliders/productsCarousel";
 import FromTopCenteredTitles from "../components/titles/FromTopCenteredTitles";
 import FromTopTitles from "../components/titles/FromTopTitles";
+import haPower from "../img/acid-hyaluronic-experts-laboratoires-vivacy-paris.jpg";
 import productsBg from "../img/experts-acide-hyaluronique-laboratoires-vivacy.jpg";
-import haPower from "../img/vivacy-hyaluronic-acid-experts.jpg";
 import experienceBg from "../img/vivacy-laboratoires-experience-esthetique.png";
 
 type Params = {
@@ -104,17 +104,15 @@ export default function Home() {
           src={haPower}
           alt={t("section1.alt")}
           quality={100}
+          fill
           style={{
             objectFit: "cover",
             objectPosition: "0% 0%",
             zIndex: "-1",
-            position: "absolute",
-            top: "50%",
-            transform: "translateY(-50%)",
-            left: "0",
             maxWidth: "inherit",
+            opacity: 0.75,
           }}
-          className="max-md:size-full max-md:object-center md:h-[auto] md:w-[125%]"
+          className="size-full object-center"
         />
         <div className="myContainer">
           <div className="lg:grid lg:grid-cols-2 lg:gap-36 lg:justify-between">

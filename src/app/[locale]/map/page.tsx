@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Params) {
         siteName: "vivacy.com",
         images: [
           {
-            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            url: "https://vivacy.com/vivacy-laboratories.jpg",
             width: 800,
             height: 600,
           },
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: Params) {
         siteName: "vivacy.com",
         images: [
           {
-            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            url: "https://vivacy.com/vivacy-laboratories.jpg",
             width: 800,
             height: 600,
           },

@@ -1,9 +1,9 @@
-import facebook from "@/app/img/social-medias/facebook.png";
-import instagram from "@/app/img/social-medias/instagram.png";
-import linkedin from "@/app/img/social-medias/linkedin.png";
-import youtube from "@/app/img/social-medias/youtube.png";
+import facebook from "@/app/img/social-medias/facebook-.png";
+import instagram from "@/app/img/social-medias/instagram-.png";
+import linkedin from "@/app/img/social-medias/linkedin-.png";
+import youtube from "@/app/img/social-medias/youtube-.png";
 import logo from "@/app/img/vivacy-logo-official.png";
-import map from "@/app/img/world-map.png";
+import map from "@/app/img/world-map-.png";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 

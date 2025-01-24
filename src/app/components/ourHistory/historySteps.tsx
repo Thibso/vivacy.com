@@ -63,7 +63,7 @@ export default function HistorySteps(props: Props) {
   const achievements = [
     "Creation of the Laboratoires VIVACY",
     "First CE marking of STYLAGE® products",
-    "First CE marking of STYLAGE® with Lidocaïne products",
+    "First CE marking of STYLAGE® with Lidocaine products",
     "Launch of STYLAGE® HydroMax",
     "CE marking of DESIRIAL® & KARTILAGE® ranges",
     "Launch of STYLAGE® XXL",

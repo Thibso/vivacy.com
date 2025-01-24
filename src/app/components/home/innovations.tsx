@@ -6,8 +6,8 @@ import BlueButton from "../buttons/BlueButton";
 import FromTopCenteredTitles from "../titles/FromTopCenteredTitles";
 
 // Images
+import ipn from "@/app/img/laboratoires-vivacy-ipn-like-technology.png";
 import biSoft from "@/app/img/stylage-specialiste-acide-hyaluronique-premium.png";
-import ipn from "@/app/img/vivacy-ipn-like-technology.png";
 import innovationsBg from "@/app/img/vivacy-laboratoire-esthetique-france.jpg";
 import security from "@/app/img/vivacy-security.png";
 import vivasome from "@/app/img/vivasome/plateau-vivacy-vivasome.png";
@@ -19,7 +19,9 @@ export default function Innovations() {
   const textsTop = [
     t.rich("section4.biSoft.textTop", {
       h2: (chunks) => (
-        <h2 className="h2-perso text-lg md:text-2xl text-left">{chunks}</h2>
+        <h2 className="h2-perso normal-case text-lg md:text-2xl text-left">
+          {chunks}
+        </h2>
       ),
       h3: (chunks) => <h3 className="text-base md:text-xl">{chunks}</h3>,
       sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
@@ -97,7 +99,7 @@ export default function Innovations() {
 
   const images = [biSoft, ipn, vivasome, security];
 
-  const buttonsDisplay = ["Bi-Soft", "IPN-Like", "Vivasôme", "My Vivacy"];
+  const buttonsDisplay = ["Bi-SOFT", "IPN-LIKE", "VIVASÔME", "MY VIVACY"];
 
   const [display, setDisplay] = useState(0);
 
@@ -165,7 +167,7 @@ export default function Innovations() {
                   display === index
                     ? "bg-blue text-white"
                     : "bg-transparent text-blue"
-                } inline-block py-1 px-1 lg:py-2 lg:px-8 rounded-3xl text-blue border-[1px] border-blue uppercase font-normal text-[12px] sm:text-base hover:bg-blue hover:text-white cursor-pointer transition-all`}
+                } inline-block py-1 px-1 lg:py-2 lg:px-8 rounded-3xl text-blue border-[1px] border-blue font-normal text-[12px] sm:text-base hover:bg-blue hover:text-white cursor-pointer transition-all`}
               >
                 {text}
               </span>

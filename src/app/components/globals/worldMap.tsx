@@ -37,16 +37,17 @@ function MapText(props: Props) {
           return (
             <div
               key={country[0]?.toString()}
-              className="grid grid-cols-6 gap-x-4 items-center"
+              className="grid grid-cols-7 gap-x-4 items-center"
             >
-              <div className="col-span-2 sm:col-start-2 lg:col-start-1">
+              <div className="col-span-2 lg:col-span-3 sm:col-start-2 lg:col-start-1 relative h-full">
                 <Image
                   src={props.images[index]}
                   alt={"Vivacy " + country[0]?.toString()}
-                  className="object-cover h-[150px]"
+                  fill
+                  className="object-cover"
                 />
               </div>
-              <div className="space-y-2 col-span-4 sm:col-span-3 lg:col-span-4">
+              <div className="space-y-2 col-span-4 lg:col-span-3">
                 <p className="font-bold">{country[0]}</p>
                 <p className="max-lg:text-sm">{country[1]}</p>
                 <p className="max-lg:text-sm">{country[2]}</p>
@@ -180,7 +181,7 @@ export default function WorldMap() {
             width="1094.863"
             height="543.971"
             viewBox="0 0 1094.863 543.971"
-            className="w-full sticky top-[30%]"
+            className="w-full"
           >
             <defs>
               <clipPath id="clip-path">
@@ -688,7 +689,7 @@ export default function WorldMap() {
           </svg>
         </div>
 
-        <div className="lg:col-span-4">
+        <div className="lg:col-span-4 lg:max-h-[650px] lg:overflow-y-scroll lg:pr-4">
           <AnimatePresence mode="wait" initial={false}>
             {active === "asia" ? (
               <MapText

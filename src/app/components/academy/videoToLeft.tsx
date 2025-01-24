@@ -60,7 +60,6 @@ export default function VideoToLeft() {
   useEffect(() => {
     if (isInView && videoRef.current) {
       videoRef.current.play();
-      console.log("test");
     } else if (!isOutView && videoRef.current) {
       videoRef.current.pause();
     }
