@@ -669,7 +669,7 @@
     }
   },
   "BiSoft": {
-    "title": "Bi-SOFT<sup>®</sup> INJECTION TECHNOLOGY",
+    "title": "Bi-SOFT<sup>®</sup> TECHNOLOGY",
     "span": "Expert in hyaluronic acid",
     "alt": "Bi-Soft technology illustration",
     "cta": {
@@ -947,14 +947,18 @@
     "distribution": {
       "titles": {
         "europe": "Europe",
+        "na": "North America",
+        "sa": "South America",
         "asia": "Asia",
         "africa": "Africa",
-        "americas": "Americas"
+        "oceania": "Oceania"
       },
       "europe": "<li>Albania</li><li>Austria</li><li>Belarus</li><li>Belgium</li><li>Bosnia</li><li>Bulgaria</li><li>Croatia</li><li>Cyprus</li><li>Czech Republic</li><li>Denmark</li><li>Estonia</li><li>Finland</li><li>Greece</li><li>Hungary</li><li>Iceland</li><li>Ireland</li><li>Italy</li><li>Kosovo</li><li>Lithuania</li><li>Luxembourg</li><li>Moldova</li><li>Montenegro</li><li>Netherlands</li><li>North Macedonia</li><li>Norway</li><li>Poland</li><li>Portugal</li><li>Romania</li><li>Russia</li><li>Serbia</li><li>Slovakia</li><li>Slovenia</li><li>Sweden</li><li>Switzerland</li><li>Ukraine</li><li>United Kingdom</li>",
+      "na": "<li>Canada</li><li>El Salvador</li><li>French West Indies (Guadeloupe, Martinique, Saint Martin)</li><li>Guatemala</li><li>Honduras</li><li>Mexico</li><li>Nicaragua</li>",
+      "sa": "<li>Argentina</li><li>Bolivia</li><li>Brazil</li><li>Chile</li><li>Colombia</li><li>Ecuador</li><li>Peru</li><li>Uruguay</li><li>Venezuela</li>",
       "asia": "<li>Armenia</li><li>Azerbaijan</li><li>Bahrain</li><li>China</li><li>Dubai (UAE)</li><li>Georgia</li><li>Hong Kong</li><li>Iran</li><li>Iraq</li><li>Israel</li><li>Japan</li><li>Jordan</li><li>Kazakhstan</li><li>Kuwait</li><li>Kyrgyzstan</li><li>Malaysia</li><li>Oman</li><li>Philippines</li><li>Qatar</li><li>Saudi Arabia</li><li>Singapore</li><li>South Korea</li><li>Taiwan</li><li>Turkey</li><li>Uzbekistan</li><li>Vietnam</li>",
       "africa": "<li>Egypt</li><li>Lebanon</li><li>Libya</li><li>Morocco</li><li>Réunion Island</li><li>Sudan</li><li>Tunisia</li>",
-      "americas": "<li>Argentina</li><li>Australia</li><li>Bolivia</li><li>Brazil</li><li>Canada</li><li>Chile</li><li>Colombia</li><li>Ecuador</li><li>El Salvador</li><li>French West Indies (Guadeloupe, Martinique, Saint Martin)</li><li>Guatemala</li><li>Honduras</li><li>Mexico</li><li>Nicaragua</li><li>Peru</li><li>Uruguay</li><li>Venezuela</li>"
+      "oceania": "<li>Australia</li>"
     }
   },
   "Academy": {

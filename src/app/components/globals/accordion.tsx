@@ -4,9 +4,11 @@ import AccordionItem from "./accordionItem";
 
 type Props = {
   europe: ReactNode;
+  na: ReactNode;
+  sa: ReactNode;
   asia: ReactNode;
   africa: ReactNode;
-  americas: ReactNode;
+  oceania: ReactNode;
 };
 
 export default function Accordion(props: Props) {
@@ -17,6 +19,16 @@ export default function Accordion(props: Props) {
       <AccordionItem
         title={t(`distribution.titles.europe`)}
         content={props.europe}
+        isActive={true}
+      />
+      <AccordionItem
+        title={t(`distribution.titles.europe`)}
+        content={props.na}
+        isActive={true}
+      />
+      <AccordionItem
+        title={t(`distribution.titles.europe`)}
+        content={props.sa}
         isActive={true}
       />
       <AccordionItem
@@ -31,7 +43,7 @@ export default function Accordion(props: Props) {
       />
       <AccordionItem
         title={t(`distribution.titles.americas`)}
-        content={props.americas}
+        content={props.oceania}
         isActive={false}
       />
     </div>

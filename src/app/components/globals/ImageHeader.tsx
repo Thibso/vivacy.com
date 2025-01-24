@@ -20,6 +20,7 @@ export default function ImageHeader(props: Props) {
       transition={{
         ease: "easeInOut",
         duration: 1.5,
+        delay: 0,
       }}
       className="absolute size-full -z-[2]"
     >
