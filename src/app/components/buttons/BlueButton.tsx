@@ -1,7 +1,8 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 
 type Props = {
-  content: string;
+  content: string | ReactNode;
   path: string;
   blank?: boolean;
 };

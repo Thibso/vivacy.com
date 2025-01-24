@@ -3,25 +3,32 @@
 import desirial from "@/app/img/logos/desirial-by-vivacy.png";
 import stylage from "@/app/img/logos/stylage-by-vivacy.png";
 import desirialIllustration from "@/app/img/products/desirial-intimate-medicine.png";
-import stylageIllustration from "@/app/img/products/stylage-injectable-gamme-lips-vivacy.png";
+import stylageIllustration from "@/app/img/products/lips-plus-laboratoire-vivacy-stylage.png";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Circle } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import BlueButton from "../buttons/BlueButton";
 
 export default function ProductsCarousel() {
+  const t = useTranslations("HomePage");
   const isMobile = useMediaQuery({ query: "(max-width: 1024px)" });
 
   const [state, setState] = useState(0);
-  const titles = ["Médecine esthétique", "Médecine intime"];
   const texts = [
-    "Explore our range of Stylage® dermal fillers, formulated with hyaluronic acid and specifically designed for aesthetic and anti-aging treatments. These products provide a comprehensive and safe solution to restore youthfulness and vitality to the skin",
-    "Discover our products: Desirial® and Desirial® Plus. Designed with an exclusive formulation, they offer various properties to meet specific needs in intimate comfort.",
+    "Laboratoires VIVACY’s STYLAGE® range embodies exigence in the field of aesthetic medicine. Founded in 2007, our brand has established itself as an undisputed leader, offering a comprehensive range of aesthetic and anti-aging treatments. Beyond our diverse product offerings, STYLAGE® is committed to the education and support of aesthetic professionals worldwide.",
+    "In 2011, Laboratoires VIVACY revolutionized the field of aesthetic and functional gynecology by introducing on the market the very first injectable hyaluronic acid gel for female vulvovaginal restoration. This innovation provides a solution for women suffering from vaginal discomfort, chronic irritation, or pain during intercourse. This treatment helps to restore hydration and elasticity to the vaginal tissues, offering significant relief, and improving sexual health and overall comfort.",
+  ];
+  const links = [
+    "/en/stylage-hyaluronic-acid-treatment",
+    "/en/desirial-treatment-vaginal-dryness",
   ];
   const logos = [stylage, desirial];
   const packages = [stylageIllustration, desirialIllustration];
+  const alts = [t("products.stylage"), t("products.desirial")];
+  const LogoAlts = [t("products.stylageLogo"), t("products.desirialLogo")];
   const products = 2;
 
   const constraintsRef = useRef(null);
@@ -43,6 +50,7 @@ export default function ProductsCarousel() {
           ref={constraintsRef}
           drag="x"
           dragConstraints={constraintsRef}
+          dragElastic={1}
           className="relative lg:grid lg:grid-cols-2 lg:items-center cursor-pointer"
         >
           <motion.div
@@ -68,20 +76,10 @@ export default function ProductsCarousel() {
               >
                 <Image
                   src={logos[state]}
-                  alt=""
+                  alt={LogoAlts[state]}
                   className="max-lg:mx-auto max-lg:h-[50px] object-contain"
                 />
               </motion.div>
-              <motion.h4
-                key={"title-" + state}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ delay: 0.1, duration: 0.3 }}
-                className="h2-perso"
-              >
-                {titles[state]}
-              </motion.h4>
             </div>
             <motion.p
               key={"text-" + state}
@@ -92,7 +90,7 @@ export default function ProductsCarousel() {
             >
               {texts[state]}
             </motion.p>
-            <BlueButton content="Learn More" path="" />
+            <BlueButton content="Learn More" path={links[state]} />
           </motion.div>
           <motion.div
             key={"product-" + state}
@@ -104,8 +102,8 @@ export default function ProductsCarousel() {
           >
             <Image
               src={packages[state]}
-              alt=""
-              className="object-contain m-auto"
+              alt={alts[state]}
+              className="object-contain m-auto max-h-[75%] max-w-[550px]"
             />
           </motion.div>
         </motion.div>

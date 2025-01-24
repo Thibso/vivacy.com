@@ -1,3 +1,4 @@
+import { Toaster } from "@/components/ui/toaster";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
@@ -6,11 +7,19 @@ import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import React from "react";
 import Footer from "../components/globals/footer";
+import GoogleReCaptchaWrapper from "../components/globals/googleCaptchaWrapper";
+import MobileBar from "../components/globals/mobileBar";
 import NavBar from "../components/globals/NavBar";
+import Newsletter from "../components/globals/newsletter";
+import ToTopButton from "../components/globals/toTopButton";
 import "./globals.css";
 
 export const metadata: Metadata = {
   robots: "noindex",
+  // robots: {
+  //   index: true,
+  //   follow: true,
+  // },
 };
 // Font files can be colocated inside of `app`
 const mona = localFont({
@@ -45,13 +54,22 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="relative overflow-x-hidden">
-        <NavBar localeActive={locale} />
-
         <NextIntlClientProvider messages={messages}>
-          <div className="bg-white">{children}</div>
+          <NavBar localeActive={locale} />
+
+          <div className="bg-white relative z-[2]">
+            <GoogleReCaptchaWrapper>
+              {children}
+              <Newsletter />
+            </GoogleReCaptchaWrapper>
+          </div>
+
+          <ToTopButton />
+          <Toaster />
         </NextIntlClientProvider>
 
         <Footer />
+        <MobileBar />
       </body>
     </html>
   );

@@ -5,19 +5,19 @@
 @layer base {
   .myContainer {
     max-width: 1920px;
-    @apply mx-auto px-5 py-16 lg:px-20 lg:py-24 xl:px-28 xl:py-32;
+    @apply mx-auto px-5 py-16 lg:px-20 lg:py-20 xl:px-24 xl:py-24;
   }
 
   .titles-container {
-    @apply flex flex-col-reverse gap-5;
+    @apply flex flex-col-reverse gap-3 xl:gap-5;
   }
 
   .h2-perso {
-    @apply text-blue uppercase font-semibold max-lg:text-center text-base lg:text-xl leading-none;
+    @apply text-blue uppercase font-semibold max-lg:text-center text-base leading-4 lg:text-lg xl:text-xl lg:leading-none;
   }
 
   .h3-perso {
-    @apply font-light text-2xl lg:text-5xl max-lg:text-center uppercase leading-none;
+    @apply font-light text-xl lg:text-3xl xl:text-5xl max-lg:text-center uppercase leading-none;
   }
   :root {
     --background: 0 0% 100%;
@@ -85,7 +85,7 @@
 
 /* World Map */
 
-.cls-1 {
+/* .cls-1 {
   fill: #000f9f;
 }
 
@@ -111,6 +111,51 @@
 
 .cls-5 {
   clip-path: url(#clip-path-2);
+} */
+
+.cls-1,
+.cls-7 {
+  fill: #000f9f;
+}
+
+.cls-1,
+.cls-2 {
+  stroke: #fdfeff;
+}
+
+.cls-10,
+.cls-2 {
+  fill: #0e0f9f;
+}
+
+.cls-3,
+.cls-5 {
+  fill: #f2f2f2;
+}
+
+.cls-4 {
+  fill: #155dff;
+}
+
+.cls-5 {
+  stroke: #155dff;
+  stroke-width: 0.5px;
+}
+
+.cls-6 {
+  clip-path: url(#clip-path);
+}
+
+.cls-8 {
+  fill: #fdfeff;
+}
+
+.cls-9 {
+  clip-path: url(#clip-path-2);
+}
+
+.clickable > path {
+  @apply transition-all;
 }
 
 .active > path {

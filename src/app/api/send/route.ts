@@ -6,6 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request: Request) {
   try {
     const {
+      emailTo,
       firstname,
       lastname,
       email,
@@ -17,6 +18,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: "vivacy.com <contact@thibs-te.fr>",
+      // to: [emailTo],
       to: ["thibautsoulet33@gmail.com"],
       subject: "Contact via vivacy.com",
       react: EmailTemplate({

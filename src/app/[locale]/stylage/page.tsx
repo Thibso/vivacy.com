@@ -1,10 +1,9 @@
 import BlueButton from "@/app/components/buttons/BlueButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
-import HeaderSpan from "@/app/components/globals/headerSpan";
+import PAnimate from "@/app/components/globals/pAnimate";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
-import bgHeader from "@/app/img/desirial/desirial-vivacy-laboratories.jpg";
 import secrtion1Second from "@/app/img/stylage/specialist-hyaluronic-acid-laboratory-vivacy-stylage.jpg";
 import secrtion1First from "@/app/img/stylage/stylage-acid-hyaluronic-expert.jpg";
 import section4First from "@/app/img/stylage/stylage-acid-hyaluronic-quality.jpg";
@@ -20,18 +19,56 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN = "Stylage by Vivacy | Acide Hyaluronique Injectable Premium";
+const descriptionEN =
+  "Stylage by Vivacy. Discover the range of hyaluronic acid-based filling products from Laboratoires Vivacy, with or without lidocaine.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "Stylage",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "https://vivacy.com/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "https://vivacy.com/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -42,55 +79,61 @@ export default function Stylage() {
   return (
     <main>
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
-        <Image
-          src={bgHeader}
-          alt=""
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "50% 50%",
-            zIndex: "-2",
-            position: "absolute",
-          }}
+        <video
+          className="absolute max-md:h-[150%] max-xl:h-[140%] xl:size-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover -z-[2]"
+          autoPlay
+          muted
+          playsInline
+          loop
+        >
+          <source src="/videos/stylage-vivacy.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-25"></div>
+        <HeaderBigTitle
+          title={t.rich("title", {
+            sup: (chunks) => <sup>{chunks}</sup>,
+          })}
         />
-        <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
-        <HeaderBigTitle title={t("title")} />
-
-        <HeaderSpan content={t("span")} />
       </section>
 
-      <section className="relative z-[1]">
+      <section className="relative z-[1] bg-white">
         <Image
           src={vivacyLogo}
-          alt=""
+          alt="Vivacy"
           quality={75}
           style={{
             objectFit: "contain",
             zIndex: "-1",
             left: 0,
             position: "absolute",
-            opacity: 0.05,
+            opacity: 0.02,
           }}
           className="w-full lg:w-[60%] bottom-[200px] lg:-bottom-[300px]"
         />
         <div className="myContainer space-y-8 lg:space-y-28">
           <FromTopCenteredTitles
             titleH2={t("section1.h2")}
-            titleH3={t("section1.h3")}
+            titleH3={t.rich("section1.h3", {
+              sup: (chunks) => <sup>{chunks}</sup>,
+            })}
             h3Classes="text-black"
           />
 
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-12">
-            <div className="lg:col-span-5 space-y-8 lg:space-y-28 py-4">
-              <div className="space-y-4">
-                {t.rich("section1.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+            <div className="lg:col-span-5 space-y-8 lg:space-y-28 lg:py-4">
+              <PAnimate
+                content={t.rich("section1.content", {
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                  sup: (chunks) => <sup>{chunks}</sup>,
                 })}
-              </div>
+              />
 
               <div className="max-lg:flex max-lg:justify-center">
-                <BlueButton content={t("cta.title")} path={t("cta.path")} />
+                <BlueButton
+                  content={t("cta.title")}
+                  path={t("cta.path")}
+                  blank={true}
+                />
               </div>
             </div>
 
@@ -98,8 +141,8 @@ export default function Stylage() {
               <div className="row-span-1 relative">
                 <Image
                   src={secrtion1First}
-                  alt=""
-                  quality={75}
+                  alt={t("section1.alt1")}
+                  quality={100}
                   fill
                   style={{
                     objectFit: "cover",
@@ -111,8 +154,8 @@ export default function Stylage() {
               <div className="row-span-1 relative">
                 <Image
                   src={secrtion1Second}
-                  alt=""
-                  quality={75}
+                  alt={t("section1.alt2")}
+                  quality={100}
                   fill
                   style={{
                     objectFit: "cover",
@@ -126,19 +169,14 @@ export default function Stylage() {
         </div>
       </section>
 
-      <section>
-        <div className="myContainer max-lg:pt-0 space-y-8 lg:space-y-28">
-          <FromTopTitles
-            titleH2={t("section2.h2")}
-            titleH3={t("section2.h3")}
-            h3Classes="text-black"
-          />
+      <section className="relative z-[1]">
+        <div className="myContainer max-lg:pt-0">
           <div className="lg:grid lg:grid-cols-12 max-lg:space-y-8">
             <div className="lg:col-span-6 relative max-lg:h-[350px]">
               <Image
                 src={section2}
-                alt=""
-                quality={75}
+                alt={t("section2.alt")}
+                quality={100}
                 fill
                 style={{
                   objectFit: "cover",
@@ -148,16 +186,18 @@ export default function Stylage() {
               />
             </div>
 
-            <div className="lg:col-span-5 lg:col-start-8 lg:pt-48 lg:pb-40 space-y-8 lg:space-y-28">
-              <div className="space-y-4">
-                {t.rich("section2.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
-                })}
-              </div>
+            <div className="lg:col-span-5 lg:col-start-8 space-y-8 lg:space-y-20 lg:py-8">
+              <FromTopTitles
+                titleH2={t("section2.h2")}
+                titleH3={t("section2.h3")}
+                h3Classes="text-black"
+              />
 
-              <div className="max-lg:flex max-lg:justify-center">
-                <BlueButton content={t("cta.title")} path={t("cta.path")} />
-              </div>
+              <PAnimate
+                content={t.rich("section2.content", {
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                })}
+              />
             </div>
           </div>
         </div>
@@ -166,7 +206,7 @@ export default function Stylage() {
       <section className="relative z-[1]">
         <Image
           src={section3Bg}
-          alt=""
+          alt={t("section3.alt")}
           quality={100}
           fill
           style={{
@@ -176,19 +216,21 @@ export default function Stylage() {
           }}
         />
         <div className="myContainer lg:grid lg:grid-cols-10 ">
-          <div className="p-4 lg:p-10 lg:col-span-7 backdrop-blur rounded-xl bg-white/15 space-y-8 lg:space-y-14">
+          <div className="p-4 lg:p-10 lg:col-span-7 backdrop-blur rounded-xl bg-white/15 space-y-8 lg:space-y-20">
             <FromTopTitles
               titleH2={t("section3.h2")}
               titleH3={t("section3.h3")}
-              h3Classes="text-white"
+              h3Classes="lg:text-black"
             />
-            <div className="xl:w-[70%]">
-              {t.rich("section3.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
-              })}
-            </div>
-            <div className="max-lg:flex max-lg:justify-center">
-              <BlueButton content={t("cta.title")} path={t("cta.path")} />
+            <div className="space-y-4">
+              <PAnimate
+                content={t.rich("section3.content", {
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                  sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
+                })}
+              />
+
+              <p className="text-sm">{t("section3.asterisk")}</p>
             </div>
           </div>
         </div>
@@ -197,7 +239,7 @@ export default function Stylage() {
       <section className="relative z-[1]">
         <Image
           src={bg}
-          alt=""
+          alt="texture"
           quality={75}
           fill
           style={{
@@ -205,9 +247,11 @@ export default function Stylage() {
             zIndex: "-1",
           }}
         />
-        <div className="myContainer space-y-8 lg:space-y-28">
+        <div className="myContainer space-y-8 lg:space-y-20">
           <FromTopCenteredTitles
-            titleH2={t("section4.h2")}
+            titleH2={t.rich("section4.h2", {
+              sup: (chunks) => <sup>{chunks}</sup>,
+            })}
             titleH3={t("section4.h3")}
             h3Classes="text-black"
           />
@@ -216,8 +260,8 @@ export default function Stylage() {
               <div className="col-span-2 relative h-full">
                 <Image
                   src={section4First}
-                  alt=""
-                  quality={75}
+                  alt={t("section4.alt1")}
+                  quality={100}
                   fill
                   style={{
                     objectFit: "cover",
@@ -229,8 +273,8 @@ export default function Stylage() {
               <div className="col-span-3 relative h-full">
                 <Image
                   src={section4Second}
-                  alt=""
-                  quality={75}
+                  alt={t("section4.alt2")}
+                  quality={100}
                   fill
                   style={{
                     objectFit: "cover",
@@ -242,22 +286,28 @@ export default function Stylage() {
             </div>
 
             <div className="col-span-5 col-start-8 space-y-14 lg:py-4">
-              <div className="space-y-4">
-                {t.rich("section4.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+              <PAnimate
+                content={t.rich("section4.content", {
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                  sup: (chunks) => <sup>{chunks}</sup>,
                 })}
-              </div>
+              />
+
               <div className="max-lg:flex max-lg:justify-center">
-                <BlueButton content={t("cta.title")} path={t("cta.path")} />
+                <BlueButton
+                  content={t("cta.title")}
+                  path={t("cta.path")}
+                  blank={true}
+                />
               </div>
             </div>
           </div>
 
-          <ul className="max-lg pt-4">
+          <ol className="max-lg pt-4 list-decimal mx-4">
             {t.rich("section4.references", {
               li: (chunks) => <li className="text-sm">{chunks}</li>,
             })}
-          </ul>
+          </ol>
         </div>
       </section>
     </main>

@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 type Props = {
-  title: string;
+  title: string | ReactNode;
 };
 
 export default function HeaderBigTitle(props: Props) {

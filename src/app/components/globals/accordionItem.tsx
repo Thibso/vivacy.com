@@ -7,17 +7,18 @@ import { ReactNode, useState } from "react";
 type Props = {
   title: string;
   content: ReactNode;
+  isActive: boolean;
 };
 
 export default function AccordionItem(props: Props) {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(props.isActive);
 
   return (
     <div>
       <div
         className={`${
           active ? "bg-blue text-white" : null
-        } flex justify-between items-center uppercase text-lg font-bold px-4 lg:px-8 py-2 cursor-pointer transition-all duration-300`}
+        } flex justify-between items-center uppercase lg:text-lg font-bold px-4 lg:px-8 py-2 cursor-pointer transition-all duration-300`}
         onClick={() => setActive(!active)}
       >
         <span>{props.title}</span>
@@ -36,7 +37,7 @@ export default function AccordionItem(props: Props) {
             }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <ul className="list-disc lg:flex lg:flex-col lg:flex-wrap lg:max-h-[600px] px-14 py-4 lg:px-20 lg:py-8">
+            <ul className="list-disc lg:flex lg:flex-col lg:flex-wrap lg:max-h-[430px] px-14 py-4 lg:px-20 lg:py-8">
               {props.content}
             </ul>
           </motion.div>

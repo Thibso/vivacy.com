@@ -1,5 +1,6 @@
 "use client";
 
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import SubMenuImage from "./SubMenuImage";
 
@@ -12,48 +13,70 @@ type Props = {
 };
 
 export default function NavItem(props: Props) {
-  const [imageDisplay, setImageDisplay] = useState("0");
+  const [imageDisplay, setImageDisplay] = useState("1");
+  const [display, setDisplay] = useState(false);
 
   return (
-    <li className="group">
-      <span className="uppercase font-light text-base cursor-pointer">
+    <li
+      onMouseEnter={() => setDisplay(true)}
+      onMouseLeave={() => setDisplay(false)}
+      onFocus={() => setDisplay(true)}
+      onBlur={() => setDisplay(false)}
+      className="group"
+    >
+      <a href="" className="uppercase font-light text-base cursor-pointer">
         {props.title}
-      </span>
-      {/* hidden group-hover: */}
-      <div className="hidden group-hover:block absolute left-0 w-full pt-5">
-        <div className="grid grid-cols-4 gap-32 justify-between bg-background text-blue px-20 py-12 rounded-b-3xl ">
-          <div className="col-span-1">
-            <span className="uppercase">{props.title}</span>
-            <p className="mt-8 text-sm font-normal">{props.content}</p>
-          </div>
+      </a>
 
-          <div className=" col-span-1 h-full">
-            <ul className="flex flex-col gap-8 h-full justify-center">
-              {props.items.map((item) => {
-                return (
-                  <li
-                    key={item[0]}
-                    onMouseEnter={() => {
-                      setImageDisplay(item[0]);
-                    }}
-                  >
-                    <a
-                      className="uppercase underline font-light text-base"
-                      href={item[2]}
-                    >
-                      {item[1]}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+      {/* hidden group-hover: hidden group-hover:block */}
+      <AnimatePresence>
+        {display ? (
+          <motion.div
+            key="section"
+            initial={{ y: -5, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 5, opacity: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="absolute left-0 w-full pt-5"
+          >
+            <div className="grid grid-cols-4 gap-12 xl:gap-32 justify-between bg-background text-blue px-10 xl:px-20 py-8 xl:py-12 rounded-b-3xl ">
+              <div className="col-span-1">
+                <span className="uppercase">{props.title}</span>
+                <p className="mt-8 text-sm font-normal">{props.content}</p>
+              </div>
 
-          <div className="col-span-2">
-            <SubMenuImage index={Number(imageDisplay)} images={props.images} />
-          </div>
-        </div>
-      </div>
+              <div className=" col-span-1 h-full">
+                <ul className="flex flex-col gap-8 h-full justify-center">
+                  {props.items.map((item) => {
+                    return (
+                      <li
+                        key={item[0]}
+                        onMouseEnter={() => {
+                          setImageDisplay(item[0]);
+                        }}
+                      >
+                        <a
+                          className="underline font-light text-base"
+                          href={item[2]}
+                        >
+                          {item[1]}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+
+              <div className="col-span-2 relative">
+                <SubMenuImage
+                  index={Number(imageDisplay)}
+                  images={props.images}
+                />
+              </div>
+            </div>
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
     </li>
   );
 }

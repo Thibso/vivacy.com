@@ -5,6 +5,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+
 import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
@@ -14,8 +16,16 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import axios from "axios";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
@@ -46,6 +56,9 @@ export default function ContactForm() {
   const t = useTranslations("Contact");
 
   const [checked, setChecked] = useState(false);
+  const [emailTo, setEmailTo] = useState("marketing@vivacy.fr");
+
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   const form = useForm({
     resolver: zodResolver(FormSchema),
@@ -60,7 +73,15 @@ export default function ContactForm() {
     },
   });
 
-  async function onSubmit(data: FormData) {
+  function emailChange(event: any) {
+    if (event.target.value === "Contact with a distributor (international)") {
+      setEmailTo("export@vivacy.com");
+    } else {
+      setEmailTo("marketing@vivacy.fr");
+    }
+  }
+
+  async function handleSubmit(data: FormData) {
     const {
       firstname,
       lastname,
@@ -71,34 +92,61 @@ export default function ContactForm() {
       message,
     } = data;
 
-    const response = await fetch("/api/send", {
-      method: "POST",
+    if (!executeRecaptcha) {
+      console.log("not available to execute recaptcha");
+      return;
+    }
+
+    const gRecaptchaToken = await executeRecaptcha("inquirySubmit");
+
+    const response = await axios({
+      method: "post",
+      url: "/api/recaptcha",
+      data: {
+        gRecaptchaToken,
+      },
       headers: {
+        Accept: "application/json, text/plain, */*",
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        firstname,
-        lastname,
-        email,
-        country,
-        specialisation,
-        subject,
-        message,
-      }),
     });
 
-    const responseJson = await response.json();
-    if (responseJson.id) {
-      toast({
-        title: t("toast.title"),
-        description: t("toast.description"),
+    if (response.data.success === true) {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          emailTo,
+          firstname,
+          lastname,
+          email,
+          country,
+          specialisation,
+          subject,
+          message,
+        }),
       });
-    }
-    if (responseJson.error) {
-      toast({
-        title: t("toast.error_title"),
-        description: t("toast.error_description"),
-      });
+
+      const responseJson = await response.json();
+
+      if (responseJson.id) {
+        toast({
+          title: t("toast.title"),
+          description: t("toast.description"),
+          variant: "success",
+        });
+      }
+      if (responseJson.error) {
+        toast({
+          title: t("toast.error_title"),
+          description: t("toast.error_description"),
+          variant: "destructive",
+        });
+      }
+    } else {
+      window.alert("Recaptcha failed");
     }
   }
 
@@ -106,7 +154,7 @@ export default function ContactForm() {
     <div>
       <Form {...form}>
         <form
-          onSubmit={form.handleSubmit(onSubmit)}
+          onSubmit={form.handleSubmit(handleSubmit)}
           className="space-y-4 lg:grid"
         >
           <div className="lg:grid lg:grid-cols-2 lg:gap-4">
@@ -171,7 +219,57 @@ export default function ContactForm() {
                     {t("form.specialisation")}
                   </FormLabel>
                   <FormControl>
-                    <Input className="border-blue" placeholder="" {...field} />
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
+                      <FormControl>
+                        <SelectTrigger style={{ borderColor: "#000f9f" }}>
+                          <SelectValue placeholder="" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value={t("form.specialisations.1")}>
+                          {t("form.specialisations.1")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.2")}>
+                          {t("form.specialisations.2")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.3")}>
+                          {t("form.specialisations.3")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.4")}>
+                          {t("form.specialisations.4")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.5")}>
+                          {t("form.specialisations.5")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.6")}>
+                          {t("form.specialisations.6")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.7")}>
+                          {t("form.specialisations.7")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.8")}>
+                          {t("form.specialisations.8")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.9")}>
+                          {t("form.specialisations.9")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.10")}>
+                          {t("form.specialisations.10")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.11")}>
+                          {t("form.specialisations.11")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.12")}>
+                          {t("form.specialisations.12")}
+                        </SelectItem>
+                        <SelectItem value={t("form.specialisations.13")}>
+                          {t("form.specialisations.13")}
+                        </SelectItem>
+                      </SelectContent>
+                    </Select>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -203,12 +301,41 @@ export default function ContactForm() {
               control={form.control}
               name="subject"
               render={({ field }) => (
-                <FormItem>
+                <FormItem onChange={emailChange}>
                   <FormLabel className="text-blue">
                     {t("form.subject")}
                   </FormLabel>
                   <FormControl>
-                    <Input className="border-blue" placeholder="" {...field} />
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
+                      <FormControl>
+                        <SelectTrigger style={{ borderColor: "#000f9f" }}>
+                          <SelectValue placeholder="" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value={t("form.subjects.1")}>
+                          {t("form.subjects.1")}
+                        </SelectItem>
+                        <SelectItem
+                          value={t("form.subjects.2")}
+                          onSelect={() => console.log("selected")}
+                        >
+                          {t("form.subjects.2")}
+                        </SelectItem>
+                        <SelectItem value={t("form.subjects.3")}>
+                          {t("form.subjects.3")}
+                        </SelectItem>
+                        <SelectItem value={t("form.subjects.4")}>
+                          {t("form.subjects.4")}
+                        </SelectItem>
+                        <SelectItem value={t("form.subjects.5")}>
+                          {t("form.subjects.5")}
+                        </SelectItem>
+                      </SelectContent>
+                    </Select>
                   </FormControl>
                   <FormMessage />
                 </FormItem>

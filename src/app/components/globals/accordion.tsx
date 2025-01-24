@@ -4,10 +4,10 @@ import AccordionItem from "./accordionItem";
 
 type Props = {
   europe: ReactNode;
+  na: ReactNode;
+  sa: ReactNode;
   asia: ReactNode;
   africa: ReactNode;
-  northAmerica: ReactNode;
-  southAmerica: ReactNode;
   oceania: ReactNode;
 };
 
@@ -19,26 +19,32 @@ export default function Accordion(props: Props) {
       <AccordionItem
         title={t(`distribution.titles.europe`)}
         content={props.europe}
+        isActive={true}
+      />
+      <AccordionItem
+        title={t(`distribution.titles.na`)}
+        content={props.na}
+        isActive={false}
+      />
+      <AccordionItem
+        title={t(`distribution.titles.sa`)}
+        content={props.sa}
+        isActive={false}
       />
       <AccordionItem
         title={t(`distribution.titles.asia`)}
         content={props.asia}
+        isActive={false}
       />
       <AccordionItem
         title={t(`distribution.titles.africa`)}
         content={props.africa}
-      />
-      <AccordionItem
-        title={t(`distribution.titles.northAmerica`)}
-        content={props.northAmerica}
-      />
-      <AccordionItem
-        title={t(`distribution.titles.southAmerica`)}
-        content={props.southAmerica}
+        isActive={false}
       />
       <AccordionItem
         title={t(`distribution.titles.oceania`)}
         content={props.oceania}
+        isActive={false}
       />
     </div>
   );

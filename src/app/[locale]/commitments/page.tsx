@@ -1,15 +1,15 @@
-import BlueButton from "@/app/components/buttons/BlueButton";
+import IconsEffect from "@/app/components/commitments/iconsEffect";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
-import HeaderSpan from "@/app/components/globals/headerSpan";
+import PAnimate from "@/app/components/globals/pAnimate";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import fourth from "@/app/img/auvergne-rhone-alpes-vivacy.jpg";
 import bg from "@/app/img/background-grained.jpg";
 import authenticity from "@/app/img/badge-check.png";
 import efficiency from "@/app/img/crosshair.png";
+import environment from "@/app/img/environment-challenge-vivacy.jpeg";
 import rhoneAlpes from "@/app/img/Groupe 66.png";
 import security from "@/app/img/lock-keyhole.png";
-import bgHeader from "@/app/img/our-brands-hyaluronic-acid.jpg";
 import quality from "@/app/img/shield-check.png";
 import first from "@/app/img/vivacy-laboratories-commitments.jpg";
 import second from "@/app/img/vivacy-photo-from-top.jpg";
@@ -21,18 +21,56 @@ type Params = {
   params: { locale: string };
 };
 
+const titleEN = "Vivacy's commitments | Serving doctors and patients";
+const descriptionEN =
+  "The commitments of Laboratoires Vivacy. Discover the values of the French laboratory that specialises in injectable hyaluronic acid for doctors and patients.";
+const titleFR = "";
+const descriptionFR = "";
+
 // META DATAS
 export async function generateMetadata({ params }: Params) {
   const locale = params.locale;
   if (locale === "en") {
     return {
-      title: "Our brands",
-      description: "Description EN",
+      title: titleEN,
+      description: descriptionEN,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleEN,
+        description: descriptionEN,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "https://vivacy.com/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "en_US",
+        type: "website",
+      },
     };
   } else if (locale === "fr") {
     return {
-      title: "Titre FR",
-      description: "Description FR",
+      title: titleFR,
+      description: descriptionFR,
+      authors: [{ name: "VIVACY" }],
+      openGraph: {
+        title: titleFR,
+        description: descriptionFR,
+        url: "https://vivacy.com/",
+        siteName: "vivacy.com",
+        images: [
+          {
+            url: "https://vivacy.com/vivacy-laboratories.jpg",
+            width: 800,
+            height: 600,
+          },
+        ],
+        locale: "fr_FR",
+        type: "website",
+      },
     };
   }
 }
@@ -55,122 +93,103 @@ export default function OurCommitments() {
     ],
   ];
 
+  const valuesAlt = [
+    t("section1.quality.title"),
+    t("section1.security.title"),
+    t("section1.authenticity.title"),
+    t("section1.efficiency.title"),
+  ];
+
   return (
     <main>
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
-        <Image
-          src={bgHeader}
-          alt=""
-          quality={100}
-          fill
-          style={{
-            objectFit: "cover",
-            objectPosition: "50% 50%",
-            zIndex: "-2",
-            position: "absolute",
-          }}
-        />
-        <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
+        <video
+          className="absolute max-md:h-[150%] max-xl:h-[140%] xl:size-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover -z-[2]"
+          autoPlay
+          muted
+          playsInline
+          loop
+        >
+          <source src="/videos/our-commitments-vivacy.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-25"></div>
         <HeaderBigTitle title={t("title")} />
-
-        <HeaderSpan content={t("span")} />
       </section>
 
-      <section>
-        <div className="myContainer space-y-8 lg:space-y-28">
+      <section className="relative z-[1] bg-white">
+        <div className="myContainer">
           <FromTopCenteredTitles
             titleH2={t("section1.h2")}
             titleH3={t("section1.h3")}
             h3Classes="text-black"
           />
 
-          <div className="max-lg:space-y-12 lg:grid lg:grid-cols-2 lg:gap-x-20 lg:gap-y-14 relative lg:w-[80%] lg:mx-auto">
-            {corporateValues.map((value, index) => {
-              return (
-                <div key={index} className="space-y-4">
-                  <Image
-                    src={value[0]}
-                    alt=""
-                    quality={75}
-                    className="mx-auto"
-                  />
-                  <h4 className="text-lg font-semibold text-center uppercase text-blue">
-                    {value[1]}
-                  </h4>
-                  <p className="text-center">{value[2]}</p>
-                </div>
-              );
-            })}
+          <IconsEffect
+            corporateValues={corporateValues}
+            valuesAlt={valuesAlt}
+          />
 
-            <div className="max-lg:flex max-lg:justify-center lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2">
-              <BlueButton
-                content={t("section1.cta.title")}
-                path={t("section1.cta.path")}
-              />
-            </div>
-          </div>
-
-          <div>
-            <p>* {t("section1.references.rifd")}</p>
+          <div className="mt-8">
+            <p className="text-sm">* {t("section1.references.rifd")}</p>
           </div>
         </div>
       </section>
 
-      <section className="relative z-[1]">
+      <section className="relative z-[1] pb-16 lg:pb-24 xl:pb-32">
         <Image
           src={bg}
-          alt=""
-          quality={100}
+          alt="texture"
+          quality={75}
           className="absolute object-contain w-full -z-[1]"
         />
 
-        <div className="myContainer">
-          <FromTopTitles
-            titleH2={t("section2.h2")}
-            titleH3={t("section2.h3")}
-            h3Classes="text-black"
-          />
-        </div>
-
-        <div className="max-lg:space-y-28">
+        <div className="space-y-14 lg:space-y-20 xl:space-y-28">
           {/* first */}
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:px-5 max-lg:gap-8 lg:grid lg:grid-cols-2">
-            <div className="relative max-lg:h-[350px]">
+            <div className="relative h-[350px] lg:h-[630px] 2xl:h-[560px]">
               <Image
                 src={first}
-                alt=""
-                quality={75}
+                alt={t("section2.first.alt")}
+                quality={100}
                 fill
                 className="object-cover object-center"
               />
             </div>
-            <div className="lg:myContainer space-y-4">
-              {t.rich("section2.first.content", {
-                p: (chunks) => <p className="text-lg">{chunks}</p>,
-              })}
+            <div className="lg:px-10 xl:px-24 space-y-8 lg:space-y-20 my-auto">
+              <FromTopTitles
+                titleH2={t("section2.h2")}
+                titleH3={t("section2.h3")}
+                h3Classes="text-black"
+              />
+              <PAnimate
+                classes=""
+                content={t.rich("section2.first.content", {
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                })}
+              />
             </div>
           </div>
 
           {/* second */}
-          <div className="max-lg:px-5 space-y-8 lg:grid lg:grid-cols-2 lg:mt-72">
-            <div className="lg:px-28 lg:py-6 space-y-8 lg:space-y-20">
+          <div className="max-lg:px-5 max-lg:space-y-8 lg:grid lg:grid-cols-2">
+            <div className="lg:px-10 xl:px-24 space-y-8 lg:space-y-20 my-auto">
               <FromTopTitles
                 titleH2={t("section2.second.h2")}
                 titleH3={t("section2.second.h3")}
                 h3Classes="text-black"
               />
 
-              <div className="space-y-4">
-                {t.rich("section2.second.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+              <PAnimate
+                content={t.rich("section2.second.content", {
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
+              />
             </div>
 
-            <div className="relative max-lg:h-[350px] lg:mr-14">
+            <div className="relative h-[350px] lg:h-[630px] 2xl:h-[560px]">
               <Image
                 src={second}
-                alt=""
+                alt={t("section2.second.alt")}
                 quality={100}
                 fill
                 className="object-cover object-left"
@@ -179,50 +198,52 @@ export default function OurCommitments() {
           </div>
 
           {/* third */}
-          <div className="max-lg:px-5 max-lg:flex max-lg:flex-col-reverse max-lg:gap-8 lg:grid lg:grid-cols-2 lg:mt-40">
-            <div className="relative max-lg:h-[350px]">
+          <div className="max-lg:px-5 max-lg:flex max-lg:flex-col-reverse max-lg:gap-8 lg:grid lg:grid-cols-2">
+            <div className="relative h-[350px] lg:h-[630px] 2xl:h-[560px]">
               <Image
-                src={first}
-                alt=""
+                src={environment}
+                alt={t("section2.third.alt")}
                 quality={75}
                 fill
                 className="object-cover object-center"
               />
             </div>
-            <div className="lg:px-28 lg:pb-16 space-y-8 lg:space-y-20">
+            <div className="lg:px-10 xl:px-24 space-y-8 lg:space-y-20 my-auto">
               <FromTopTitles
                 titleH2={t("section2.third.h2")}
                 titleH3={t("section2.third.h3")}
                 h3Classes="text-black"
               />
-              <div className="space-y-4">
-                {t.rich("section2.third.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+
+              <PAnimate
+                content={t.rich("section2.third.content", {
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
+              />
             </div>
           </div>
 
           {/* fourth */}
-          <div className="max-lg:px-5 lg:grid lg:grid-cols-2 lg:mt-10 space-y-8">
-            <div className="lg:myContainer space-y-8 lg:space-y-20">
+          <div className="max-lg:px-5 lg:grid lg:grid-cols-2 max-lg:space-y-8">
+            <div className="lg:px-10 xl:px-24 space-y-8 lg:space-y-20 my-auto">
               <Image
                 src={rhoneAlpes}
-                alt=""
+                alt={t("section2.fourth.alt")}
                 quality={75}
                 className="max-lg:w-[60%] max-lg:mx-auto"
               />
-              <div className="space-y-4">
-                {t.rich("section2.third.content", {
-                  p: (chunks) => <p className="text-lg">{chunks}</p>,
+
+              <PAnimate
+                content={t.rich("section2.third.content", {
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
                 })}
-              </div>
+              />
             </div>
-            <div className="relative max-lg:h-[350px]">
+            <div className="relative h-[350px] lg:h-[630px] 2xl:h-[560px]">
               <Image
                 src={fourth}
-                alt=""
-                quality={75}
+                alt={t("section2.fourth.alt")}
+                quality={100}
                 fill
                 className="object-cover object-center"
               />

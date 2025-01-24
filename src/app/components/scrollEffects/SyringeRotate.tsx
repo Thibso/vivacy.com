@@ -1,12 +1,15 @@
 "use client";
 
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { ArrowBigDownDash } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef } from "react";
 import front from "../../img/syringe-effect/expert-acide-hyaluronique.png";
 import bg from "../../img/syringe-effect/vivacy-seringue-speciale.png";
 
 export default function SyringeRotate() {
+  const t = useTranslations("HomePage");
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -19,24 +22,24 @@ export default function SyringeRotate() {
     restDelta: 0.001,
   });
 
-  const rotateProgresse = useTransform(scaleY, [0, 0.4], [0, -180]);
-  const opacityProgress = useTransform(scaleY, [0.7, 0.85], [1, 0]);
+  const rotateProgresse = useTransform(scaleY, [0, 0.3], [0, -180]);
+  const opacityProgress = useTransform(scaleY, [0.6, 0.7], [1, 0]);
   const displayProgress = useTransform(
     scaleY,
-    [0, 0.7, 0.85, 1],
-    [51, 51, 51, -10]
+    [0, 0.7, 0.75, 1],
+    [51, 51, -1, -10]
   );
-  const translateXProgress = useTransform(scaleY, [0.5, 0.7], ["0", "60%"]);
-  const scaleProgress = useTransform(scaleY, [0.65, 0.85], [1, 1.5]);
+  const translateXProgress = useTransform(scaleY, [0.35, 0.55], ["0", "60%"]);
+  const scaleProgress = useTransform(scaleY, [0.5, 0.7], [1, 1.5]);
 
   return (
     <motion.section
-      className="max-lg:hidden lg:min-h-[150vh] relative"
+      className="max-lg:hidden lg:min-h-[150vh] relative bg-[#f1f1f1]"
       style={{ zIndex: displayProgress }}
     >
       <motion.section
         ref={ref}
-        className=" min-h-[250vh] absolute top-0 left-0 w-full"
+        className="min-h-[250vh] absolute top-0 left-0 w-full"
         style={{ opacity: opacityProgress }}
       >
         <div className="sticky top-0 min-h-screen overflow-hidden">
@@ -46,7 +49,7 @@ export default function SyringeRotate() {
           >
             <Image
               src={bg}
-              alt=""
+              alt={t("effect.alt1")}
               quality={100}
               fill
               sizes="100vw"
@@ -66,7 +69,7 @@ export default function SyringeRotate() {
             >
               <Image
                 src={front}
-                alt=""
+                alt={t("effect.alt2")}
                 quality={100}
                 fill
                 sizes="100vw"
@@ -75,6 +78,21 @@ export default function SyringeRotate() {
                 }}
               />
             </motion.div>
+          </motion.div>
+
+          <motion.div className="absolute bottom-[16px] left-1/2 -translate-x-1/2 text-white z-[10] flex flex-col items-center">
+            <span className="text-base">Scroll to discover</span>
+            <motion.span
+              animate={{ y: 5, opacity: 1 }}
+              transition={{
+                repeat: Infinity,
+                repeatDelay: 0.45,
+                duration: 0.5,
+                ease: "easeOut",
+              }}
+            >
+              <ArrowBigDownDash height={20} />
+            </motion.span>
           </motion.div>
         </div>
       </motion.section>
