@@ -181,7 +181,7 @@ export default function WorldMap() {
             width="1094.863"
             height="543.971"
             viewBox="0 0 1094.863 543.971"
-            className="w-full"
+            className="w-full lg:sticky lg:top-[30%]"
           >
             <defs>
               <clipPath id="clip-path">
@@ -689,7 +689,7 @@ export default function WorldMap() {
           </svg>
         </div>
 
-        <div className="lg:col-span-4 lg:max-h-[650px] lg:overflow-y-scroll lg:pr-4">
+        <div className="lg:col-span-4">
           <AnimatePresence mode="wait" initial={false}>
             {active === "asia" ? (
               <MapText

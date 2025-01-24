@@ -122,7 +122,7 @@
       "items": {
         "item1": {
           "id": "1",
-          "title": "OUR GLOBAL NETWORK",
+          "title": "GLOBAL NETWORK",
           "path": "/en/network-distributors-subsidiaries"
         },
         "item2": {
@@ -776,7 +776,7 @@
     },
     "section2": {
       "h2": "UNIQUE VISCOELASTIC PROPERTIES",
-      "h3": "A PATENTED CROSS-LINKING",
+      "h3": "THE PATENTED CROSS-LINKING",
       "content": "<p>Laboratoires VIVACY has developed “IPN-Like Technology” (InterPenetrated Networks), a unique cross-linking technology for hyaluronic acid that accurately defines each product’s viscoelastic properties<sup>4</sup>:  From a clinical standpoint, the main product characteristics sought after by physicians are their ability to lift skin tissues, provide mechanical support and spread easily.</p><p> To obtain these desired effects, the HA gel must have a unique combination of elasticity and viscosity<sup>5</sup>. These specific viscoelastic properties determine where the gel will be injected, allowing it to respond to the various mechanical stresses to which it will be subjected in the tissues. As a result, the interpenetration of HA cross-linked networks<sup>4</sup>:</p>    <ul>      <li>Optimises the products’ rheology, in particular the viscosity to guarantee good product injectability.</li>    <li>Preserves the partial independence of the interpenetrated HA networks, whilst increasing the density of chemical nodes.</li>    <li>Guarantees the cohesion of the HA gel and its monophasic properties.</li>    </ul>",
       "alt": "Hyaluronic acid in Vivacy laboratories"
     },
@@ -897,7 +897,7 @@
     "title": "OUR PARTNERS ACROSS THE GLOBE",
     "sub": "GLOBAL NETWORK",
     "h2": "A NETWORK OF EXPERTISE DRIVING INNOVATION",
-    "h3": "OUR SUBSIDIARIES WORLDWIDE",
+    "h3": "OUR SUBSIDIARIES",
     "subsidiary": {
       "title": "SUBSIDIARY",
       "1": "Headquarters: Marketing & Sales",
@@ -942,7 +942,7 @@
     },
     "section2": {
       "h2": "A NETWORK OF TRUSTED PARTNERS",
-      "h3": "OUR GLOBAL NETWORK OF DISTRIBUTORS"
+      "h3": "OUR DISTRIBUTORS"
     },
     "distribution": {
       "titles": {

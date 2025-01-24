@@ -11,9 +11,10 @@ import { useTranslations } from "next-intl";
 import { useEffect, useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 import PAnimate from "../globals/pAnimate";
+import FromTopTitles from "../titles/FromTopTitles";
 
-export default function VideoHistoryToLeft() {
-  const t = useTranslations("History");
+export default function VideoMyVivacyToLeft() {
+  const t = useTranslations("MyVivacy");
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -82,7 +83,7 @@ export default function VideoHistoryToLeft() {
             muted
           >
             <source
-              src="/videos/vivacy-presentation.mp4#t=1.5"
+              src="/videos/presentation-myvivacy.mp4#t=1.5"
               type="video/mp4"
             />
           </video>
@@ -95,9 +96,16 @@ export default function VideoHistoryToLeft() {
           }}
           className="col-span-3 space-y-8 lg:space-y-20"
         >
+          <FromTopTitles
+            titleH2={t("section1.h2")}
+            titleH3={t("section1.h3")}
+            h3Classes="text-black"
+          />
+
           <PAnimate
             content={t.rich("section1.content", {
               p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+              sup: (chunks) => <sup>{chunks}</sup>,
             })}
           />
         </motion.div>

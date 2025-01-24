@@ -153,22 +153,23 @@ export default function IpnLike() {
         />
 
         <div className="myContainer space-y-8 lg:space-y-20">
-          <FromTopTitles
-            titleH2={t("section2.h2")}
-            titleH3={t("section2.h3")}
-            h3Classes="text-black"
-          />
-
           <div className="lg:grid lg:grid-cols-2 lg:gap-x-20 xl:gap-x-28 max-lg:space-y-8">
-            <PAnimate
-              classes="lg:py-14"
-              content={t.rich("section2.content", {
-                p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
-                ul: (chunks) => <ul className="list-disc ml-4">{chunks}</ul>,
-                li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
-                sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
-              })}
-            />
+            <div className="space-y-8 lg:space-y-20">
+              <FromTopTitles
+                titleH2={t("section2.h2")}
+                titleH3={t("section2.h3")}
+                h3Classes="text-black"
+              />
+
+              <PAnimate
+                content={t.rich("section2.content", {
+                  p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+                  ul: (chunks) => <ul className="list-disc ml-4">{chunks}</ul>,
+                  li: (chunks) => <li className="lg:text-lg">{chunks}</li>,
+                  sup: (chunks) => <sup className="text-sm">{chunks}</sup>,
+                })}
+              />
+            </div>
 
             <div className="relative max-lg:h-[350px] ">
               <Image

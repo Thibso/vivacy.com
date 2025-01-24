@@ -135,7 +135,7 @@ export default function VivacyBeauty() {
               <FromTopTitles
                 titleH2={t("section1.h2")}
                 titleH3={t("section1.h3")}
-                h3Classes="text-black"
+                h3Classes="text-black normal-case"
               />
 
               <PAnimate

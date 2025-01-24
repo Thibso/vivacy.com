@@ -106,7 +106,7 @@ export default function Desirial() {
           className="w-full lg:w-[50%]"
         />
         <div className="myContainer space-y-8 lg:space-y-20">
-          <div className="space-y-8 lg:space-y-14">
+          {/* <div className="space-y-8 lg:space-y-14">
             <FromTopCenteredTitles
               titleH2={t("section1.h2")}
               titleH3={t.rich("section1.h3", {
@@ -120,7 +120,7 @@ export default function Desirial() {
                 p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
               })}
             />
-          </div>
+          </div> */}
 
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-2 lg:gap-x-14">
             <div className="lg:col-span-1 space-y-8 lg:space-y-14">

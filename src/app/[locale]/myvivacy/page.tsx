@@ -2,13 +2,11 @@ import BlueButton from "@/app/components/buttons/BlueButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import ImageHeader from "@/app/components/globals/ImageHeader";
 import PAnimate from "@/app/components/globals/pAnimate";
-import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
-import MotionVideo from "@/app/components/videos/motionVideo";
+import VideoMyVivacyToLeft from "@/app/components/myvivacy/videoMyVivacyToLeft";
 import apple from "@/app/img/apple-store.jpg";
 import bg from "@/app/img/background-grained.jpg";
 import google from "@/app/img/google-store.jpg";
 import bgHeader from "@/app/img/vivacy-security-check-products-provenance.jpg";
-import section1 from "@/app/img/vivacy-security-logo.png";
 import section3 from "@/app/img/vivacy-security.jpg";
 import section2 from "@/app/img/vivacy-security.png";
 
@@ -88,45 +86,13 @@ export default function MyVivacy() {
 
       <section className="relative bg-[#fafbfc]">
         <div className="myContainer space-y-8 lg:space-20">
-          <FromTopCenteredTitles
-            titleH2={t("section1.h2")}
-            titleH3={t("section1.h3")}
-            h3Classes="text-black"
-          />
-
-          <PAnimate
-            classes="text-center xl:max-w-[70%] mx-auto"
-            content={t.rich("section1.content", {
-              p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
-              sup: (chunks) => <sup>{chunks}</sup>,
-            })}
-          />
-
-          <div className="space-y-8 lg:space-y-20 pt-20">
-            <h2 className="h3-perso w-full xl:w-[70%] text-center lg:mx-auto">
-              {t("section4.h2")}
-            </h2>
-
-            <MotionVideo src="/videos/presentation-myvivacy.mp4#t=1.5" />
-
-            <div className="flex justify-center items-center gap-28">
-              <BlueButton
-                content={t("cta.title")}
-                path={t("cta.path")}
-                blank={true}
-              />
-              <div>
-                <Image
-                  src={section1}
-                  alt={t("section1.alt")}
-                  quality={75}
-                  style={{
-                    objectFit: "contain",
-                  }}
-                  className="h-[75px] w-fit"
-                />
-              </div>
-            </div>
+          <VideoMyVivacyToLeft />
+          <div className="flex justify-center items-center">
+            <BlueButton
+              content={t("cta.title")}
+              path={t("cta.path")}
+              blank={true}
+            />
           </div>
         </div>
       </section>
@@ -137,17 +103,17 @@ export default function MyVivacy() {
             {t("section2.h2")}
           </h2>
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-12">
-            <div className="col-span-5 flex flex-col justify-center">
+            <div className="col-span-5 flex flex-col justify-center h-fit my-auto">
               <Image
                 src={section2}
                 alt={t("section2.alt")}
-                quality={75}
+                quality={100}
                 style={{
                   objectFit: "contain",
                   objectPosition: "50% 50%",
                   borderRadius: "12px",
                 }}
-                className="max-lg:mx-auto max-lg:w-[60%] lg:h-fit"
+                className="max-lg:mx-auto max-lg:w-[60%] lg:max-h-[575px]"
               />
 
               <div className="flex gap-4 justify-center mt-10">

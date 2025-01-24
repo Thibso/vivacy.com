@@ -77,7 +77,7 @@ export default function HistorySteps(props: Props) {
     "Launch of STYLAGE® Lips Plus and dermo-cosmetic range for men, Monsieur Skin Care®",
     "Opening of Italia and Canada subsidiaries",
     "Opening of Benelux subsidiary",
-    "Opening of Spain and Benelux subsidiary",
+    "Opening of Spain subsidiary",
   ];
   const images = [
     img1,

@@ -3,9 +3,9 @@ import ImageHeader from "@/app/components/globals/ImageHeader";
 import KeyNumbers from "@/app/components/globals/keyNumbers";
 import PAnimate from "@/app/components/globals/pAnimate";
 import HistorySteps from "@/app/components/ourHistory/historySteps";
+import VideoHistoryToLeft from "@/app/components/ourHistory/videoHistoryToLeft";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
-import MotionVideo from "@/app/components/videos/motionVideo";
 import seringe3 from "@/app/img/best-hyalronic-acid.jpg";
 import seringe2 from "@/app/img/hyaluronic-acid-specialists-vivacy.jpg";
 import bgHeader from "@/app/img/vivacy-history-expert-hyaluronic-acid.jpg";
@@ -76,7 +76,6 @@ export async function generateMetadata({ params }: Params) {
 
 export default function OurBrands() {
   const t = useTranslations("History");
-  const h = useTranslations("HomePage");
 
   return (
     <main>
@@ -88,31 +87,14 @@ export default function OurBrands() {
       </section>
 
       <section>
-        <div className="myContainer space-y-8 lg:space-y-16">
+        <div className="myContainer space-y-20">
           <FromTopCenteredTitles
             titleH2={t("section1.h2")}
             titleH3={t("section1.h3")}
             h3Classes="text-black"
           />
 
-          <PAnimate
-            classes="lg:max-w-[80%] lg:text-center mx-auto"
-            content={t.rich("section1.content", {
-              p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
-            })}
-          />
-        </div>
-      </section>
-
-      <section>
-        <div className="myContainer pt-0 space-y-8 lg:space-y-16">
-          <FromTopCenteredTitles
-            titleH2={t("section4.h2")}
-            titleH3={t("section4.h3")}
-            h3Classes="text-black"
-          />
-
-          <MotionVideo src="/videos/vivacy-presentation.mp4#t=1.5" />
+          <VideoHistoryToLeft />
         </div>
       </section>
 
