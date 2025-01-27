@@ -226,9 +226,9 @@ export default function NavList(props: Props) {
           {isOpen ? (
             <motion.div
               initial={{ opacity: 0, bottom: "500px" }}
-              animate={{ opacity: 1, bottom: "32px" }}
+              animate={{ opacity: 1, bottom: "64px" }}
               exit={{ opacity: 0, bottom: "500px" }}
-              className={`fixed flex flex-col top-8 left-[1.25%] right-[1.25%] bottom-8 bg-blue rounded-[44px] px-8 py-5`}
+              className={`fixed flex flex-col top-2 left-[1.25%] right-[1.25%] bg-blue rounded-[44px] px-8 py-5`}
             >
               <Image
                 src={bgVivacy}
@@ -241,10 +241,8 @@ export default function NavList(props: Props) {
                   <Image
                     src={logo}
                     alt="Vivacy logo"
-                    height={23}
-                    style={{
-                      objectFit: "contain",
-                    }}
+                    height={25}
+                    className="object-contain w-fit block -mt-[4px]"
                   />
                 </Link>
 
@@ -381,15 +379,15 @@ export default function NavList(props: Props) {
                 </li>
               </ul>
 
-              <div className="text-white mx-auto mt-auto mb-0">
+              {/* <div className="text-white mx-auto mt-auto mb-0">
                 <Link href={"/en"} className=" underline text-base">
                   English
                 </Link>
-                {/* <span> | </span>
+                <span> | </span>
                 <Link href={"/fr"} className=" underline text-base">
                   Français
-                </Link> */}
-              </div>
+                </Link>
+              </div> */}
             </motion.div>
           ) : null}
         </AnimatePresence>
