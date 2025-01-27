@@ -34,9 +34,17 @@ export default function MobileBar() {
       </div>
 
       <div className="text-white text-[12px] leading-none">
-        <a href="" className="flex flex-col items-center gap-y-1">
+        <a
+          href={
+            deviceType === "iPhone"
+              ? "https://apps.apple.com/fr/app/my-vivacy/id1206429694"
+              : "https://play.google.com/store/apps/details?id=eu.vivacy.vivacysecurity&hl=fr"
+          }
+          target="_blank"
+          className="flex flex-col items-center gap-y-1"
+        >
           <ArrowDownToLine color="white" />
-          <span>Vivacy App {deviceType}</span>
+          <span>Vivacy App</span>
         </a>
       </div>
     </div>

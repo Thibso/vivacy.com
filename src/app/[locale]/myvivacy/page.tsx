@@ -84,8 +84,8 @@ export default function MyVivacy() {
         <HeaderBigTitle title={t("title")} />
       </section>
 
-      <section className="relative bg-[#fafbfc]">
-        <div className="myContainer space-y-8 lg:space-20">
+      <section className="relative bg-[#fafbfc] ">
+        <div className="myContainer space-y-8 lg:space-20 max-lg:overflow-hidden">
           <VideoMyVivacyToLeft />
           <div className="flex justify-center items-center">
             <BlueButton
