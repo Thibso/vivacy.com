@@ -165,7 +165,7 @@ export default function HistorySteps(props: Props) {
           h3Classes="text-black"
         />
 
-        <div className="mt-8 lg:mt-16 relative h-[40vh] max-lg:grid lg:h-[600px] w-[90vw] lg:w-[65vw] mx-auto overflow-hidden z-[1]">
+        <div className="mt-8 lg:mt-16 relative h-[40vh] max-lg:grid lg:h-[550px] w-[90vw] lg:w-[65vw] mx-auto overflow-hidden z-[1]">
           <motion.ul
             style={{ x: "-" + stepValue * imagePosition + "%" }}
             className="flex absolute opacity-35 transition-all duration-1000 -z-[1] h-full"
@@ -179,7 +179,7 @@ export default function HistorySteps(props: Props) {
                   <Image
                     src={img}
                     alt=""
-                    quality={50}
+                    quality={75}
                     className="size-full object-cover"
                   />
                 </li>
