@@ -150,7 +150,7 @@ export default function OurCommitments() {
         </div>
       </section>
 
-      <section className="relative bgTextureReapeated z-[1]">
+      <section className="relative bgTextureReapeated z-[1] max-lg:overflow-hidden">
         <Image
           src={bg}
           alt="texture"

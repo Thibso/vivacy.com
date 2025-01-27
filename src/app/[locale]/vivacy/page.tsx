@@ -4,7 +4,6 @@ import KeyNumbers from "@/app/components/globals/keyNumbers";
 import PAnimate from "@/app/components/globals/pAnimate";
 import HistorySteps from "@/app/components/ourHistory/historySteps";
 import VideoHistoryToLeft from "@/app/components/ourHistory/videoHistoryToLeft";
-import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import seringe3 from "@/app/img/best-hyalronic-acid.jpg";
 import seringe2 from "@/app/img/hyaluronic-acid-specialists-vivacy.jpg";
@@ -86,14 +85,8 @@ export default function OurBrands() {
         <HeaderBigTitle title={t("title")} />
       </section>
 
-      <section>
+      <section className="max-lg:overflow-hidden">
         <div className="myContainer space-y-20">
-          <FromTopCenteredTitles
-            titleH2={t("section1.h2")}
-            titleH3={t("section1.h3")}
-            h3Classes="text-black"
-          />
-
           <VideoHistoryToLeft />
         </div>
       </section>

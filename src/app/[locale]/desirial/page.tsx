@@ -85,7 +85,9 @@ export default function Desirial() {
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
         <HeaderBigTitle
           title={t.rich("title", {
-            sup: (chunks) => <sup>{chunks}</sup>,
+            sup: (chunks) => (
+              <sup className="text-[4vw] align-super">{chunks}</sup>
+            ),
           })}
         />
       </section>
@@ -122,7 +124,7 @@ export default function Desirial() {
             />
           </div> */}
 
-          <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-2 lg:gap-x-14">
+          <div className="max-lg:space-y-8 lg:grid lg:grid-cols-2 lg:gap-x-14">
             <div className="lg:col-span-1 space-y-8 lg:space-y-14">
               <FromTopTitles
                 titleH2={t("section2.h2")}

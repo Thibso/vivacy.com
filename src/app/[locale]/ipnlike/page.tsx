@@ -85,7 +85,9 @@ export default function IpnLike() {
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-15"></div>
         <HeaderBigTitle
           title={t.rich("title", {
-            sup: (chunks) => <sup>{chunks}</sup>,
+            sup: (chunks) => (
+              <sup className="text-[4vw] align-super">{chunks}</sup>
+            ),
           })}
         />
       </section>
@@ -220,11 +222,11 @@ export default function IpnLike() {
       </section>
 
       {/* VIDEO */}
-      <section className="max-lg:px-4 myContainer bg-[#fafbfc] space-y-8 lg:space-y-20">
+      <section className="max-lg:px-4 myContainer bg-[#fafbfc] space-y-8 lg:space-y-20 max-lg:overflow-hidden">
         <MotionVideo src="/videos/vivacy-ipnlike-technology.mp4#t=1.5" />
 
         <div>
-          <ol className="space-y-2 list-decimal">
+          <ol className="space-y-2 list-decimal ml-4">
             {t.rich("references", {
               li: (chunks) => <li className="text-sm">{chunks}</li>,
             })}

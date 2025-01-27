@@ -80,7 +80,10 @@ export default function SyringeRotate() {
             </motion.div>
           </motion.div>
 
-          <motion.div className="absolute bottom-[16px] left-1/2 -translate-x-1/2 text-white z-[10] flex flex-col items-center">
+          <motion.a
+            href="#skip"
+            className="absolute bottom-[16px] left-1/2 -translate-x-1/2 text-white z-[10] flex flex-col items-center"
+          >
             <span className="text-base">Scroll to discover</span>
             <motion.span
               animate={{ y: 5, opacity: 1 }}
@@ -93,7 +96,7 @@ export default function SyringeRotate() {
             >
               <ArrowBigDownDash height={20} />
             </motion.span>
-          </motion.div>
+          </motion.a>
         </div>
       </motion.section>
     </motion.section>

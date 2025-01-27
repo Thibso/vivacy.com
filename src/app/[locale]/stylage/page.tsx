@@ -91,7 +91,9 @@ export default function Stylage() {
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-25"></div>
         <HeaderBigTitle
           title={t.rich("title", {
-            sup: (chunks) => <sup>{chunks}</sup>,
+            sup: (chunks) => (
+              <sup className="text-[4vw] align-super">{chunks}</sup>
+            ),
           })}
         />
       </section>

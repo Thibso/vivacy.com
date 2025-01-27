@@ -136,7 +136,9 @@ export default function BiSoft() {
         <div className="m-auto px-5 lg:px-28 lg:py-32">
           <h1 className="text-[8vw] font-mona font-bold text-whiteGrey text-center leading-none">
             {t.rich("title", {
-              sup: (chunks) => <sup>{chunks}</sup>,
+              sup: (chunks) => (
+                <sup className="text-[4vw] align-super">{chunks}</sup>
+              ),
             })}
           </h1>
         </div>
@@ -321,7 +323,7 @@ export default function BiSoft() {
             </div>
           </div>
 
-          <ol className="list-decimal">
+          <ol className="list-decimal ml-4">
             {t.rich("references", {
               li: (chunks) => <li className="text-sm">{chunks}</li>,
             })}

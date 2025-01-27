@@ -175,13 +175,13 @@ export default function WorldMap() {
   return (
     <div>
       <div className="space-y-8 lg:grid lg:grid-cols-12 lg:gap-x-8 items-start">
-        <div className="lg:col-span-8 relative h-full">
+        <div className="lg:col-span-8 relative h-fit lg:h-full">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="1094.863"
             height="543.971"
             viewBox="0 0 1094.863 543.971"
-            className="w-full lg:sticky lg:top-[30%]"
+            className="w-full lg:sticky lg:top-[30%] h-fit"
           >
             <defs>
               <clipPath id="clip-path">

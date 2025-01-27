@@ -99,7 +99,7 @@ export default function Innovations() {
 
   const images = [biSoft, ipn, vivasome, security];
 
-  const buttonsDisplay = ["Bi-SOFT", "IPN-LIKE", "VIVASÔME", "MY VIVACY"];
+  const buttonsDisplay = ["Bi-SOFT", "IPN-LIKE", "VIVASÔME", "MYVIVACY"];
 
   const [display, setDisplay] = useState(0);
 
