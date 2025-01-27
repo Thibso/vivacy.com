@@ -32,6 +32,7 @@ export default function KeyNumbers() {
 
   return (
     <motion.section
+      id="skip"
       ref={ref}
       style={{ scale: scaleProgress }}
       className="bg-blue lg:max-w-[2550px] lg:m-auto border-white/50 border-b-[1px]"

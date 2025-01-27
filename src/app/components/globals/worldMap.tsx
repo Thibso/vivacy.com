@@ -46,6 +46,7 @@ function MapText(props: Props) {
                   fill
                   className="object-cover"
                 />
+                <div className="absolute size-full bg-white/25 z-[2]"></div>
               </div>
               <div className="space-y-2 col-span-4 lg:col-span-3">
                 <p className="font-bold">{country[0]}</p>
