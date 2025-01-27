@@ -37,7 +37,7 @@ export default function ToTopButton() {
         onClick={scrollToTop}
         className={`${
           scrollY > 1000 ? "opacity-100" : "opacity-0"
-        } bg-blue p-2 fixed rounded-sm right-4 bottom-24 z-[99] shadow shadow-black/25 transition-all`}
+        } bg-blue p-2 fixed rounded-sm right-4 bottom-40 lg:bottom-24 z-[99] shadow shadow-black/25 transition-all`}
       >
         <ChevronUp color="white" />
       </button>

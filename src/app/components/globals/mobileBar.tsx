@@ -18,7 +18,7 @@ export default function MobileBar() {
   }, []);
 
   return (
-    <div className="md:hidden bg-blue flex gap-x-8 sticky bottom-0 left-0 right-0 h-[50px] z-[999] justify-center items-center">
+    <div className="md:hidden bg-blue flex gap-x-8 sticky bottom-0 left-0 right-0 h-[50px] z-[995] justify-center items-center">
       <div className="text-white text-[12px] leading-none">
         <a href="#newsletter" className="flex flex-col items-center gap-y-1">
           <Newspaper color="white" />

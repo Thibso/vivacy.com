@@ -19,6 +19,7 @@
   .h3-perso {
     @apply font-light text-xl lg:text-3xl xl:text-5xl max-lg:text-center uppercase leading-none;
   }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
@@ -112,6 +113,17 @@
 .cls-5 {
   clip-path: url(#clip-path-2);
 } */
+
+.grecaptcha-badge {
+  z-index: 999 !important;
+  bottom: 5.125rem !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .grecaptcha-badge {
+    bottom: 2rem !important;
+  }
+}
 
 .cls-1,
 .cls-7 {
