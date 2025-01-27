@@ -20,7 +20,7 @@ export async function POST(request: Request) {
       from: "vivacy.com <contact@thibs-te.fr>",
       // to: [emailTo],
       to: ["thibautsoulet33@gmail.com"],
-      subject: "Contact via vivacy.com",
+      subject: "Contact from vivacy.com",
       react: EmailTemplate({
         firstname,
         lastname,
