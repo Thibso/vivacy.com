@@ -181,7 +181,7 @@ export default function WorldMap() {
             width="1094.863"
             height="543.971"
             viewBox="0 0 1094.863 543.971"
-            className="w-full lg:sticky lg:top-[30%]"
+            className="w-full lg:sticky lg:top-[30%] h-fit"
           >
             <defs>
               <clipPath id="clip-path">

@@ -85,7 +85,7 @@ export default function OurBrands() {
         <HeaderBigTitle title={t("title")} />
       </section>
 
-      <section>
+      <section className="max-lg:overflow-hidden">
         <div className="myContainer space-y-20">
           <VideoHistoryToLeft />
         </div>

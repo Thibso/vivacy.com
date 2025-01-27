@@ -201,7 +201,7 @@ export default function VivacyBeauty() {
         </div>
       </section>
 
-      <section className="relative z-[1]">
+      <section className="relative z-[1] max-lg:overflow-hidden">
         <Image
           src={bg}
           alt="texture"

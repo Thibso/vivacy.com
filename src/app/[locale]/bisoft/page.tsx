@@ -323,7 +323,7 @@ export default function BiSoft() {
             </div>
           </div>
 
-          <ol className="list-decimal">
+          <ol className="list-decimal ml-4">
             {t.rich("references", {
               li: (chunks) => <li className="text-sm">{chunks}</li>,
             })}

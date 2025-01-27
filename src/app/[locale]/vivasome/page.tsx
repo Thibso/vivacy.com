@@ -167,7 +167,7 @@ export default function Vivasome() {
           className="max-lg:hidden"
         />
 
-        <div className="myContainer max-lg:py-0 space-y-8 lg:space-y-20">
+        <div className="myContainer max-lg:pt-0 space-y-8 lg:space-y-20">
           <h2 className="h3-perso text-center">{t("section2.h2")}</h2>
 
           <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-12 lg:gap-x-20">

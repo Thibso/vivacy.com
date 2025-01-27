@@ -124,7 +124,7 @@ export default function Desirial() {
             />
           </div> */}
 
-          <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-2 lg:gap-x-14">
+          <div className="max-lg:space-y-8 lg:grid lg:grid-cols-2 lg:gap-x-14">
             <div className="lg:col-span-1 space-y-8 lg:space-y-14">
               <FromTopTitles
                 titleH2={t("section2.h2")}

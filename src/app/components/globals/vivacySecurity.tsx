@@ -47,7 +47,10 @@ export default function VivacySecurity() {
   );
 
   return (
-    <section ref={ref} className="relative z-[1] lg:min-h-[150vh]">
+    <section
+      ref={ref}
+      className="relative z-[1] lg:min-h-[150vh] max-lg:overflow-hidden"
+    >
       <Image
         src={bgSection}
         alt="texture"
