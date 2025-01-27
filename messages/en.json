@@ -2,7 +2,7 @@
   "Navigation": {
     "about": {
       "title": "About us",
-      "content": "Explore Laboratoires VIVACY: our expertise in aesthetic and anti-aging medicine, our premium product ranges, our commitment to innovation and safety, as well as our latest news and social initiatives. Discover our dedication to excellence and well-being.",
+      "content": "Explore Laboratoires VIVACY: our expertise in aesthetic and anti-ageing medicine, our premium product ranges, our commitment to innovation and safety, as well as our latest news and social initiatives.",
       "items": {
         "item1": {
           "id": "1",
@@ -34,7 +34,7 @@
     },
     "innovations": {
       "title": "Technologies",
-      "content": "Explore Laboratoires VIVACY’s latest innovations: IPN-LIKE® for advanced formulations, Bi-SOFT for enhanced precision, VIVASÔME for cutting-edge skincare, and VIVACY SECURITY for guaranteed product authenticity. Discover how these technologies are transforming aesthetics and ensuring exceptional quality.",
+      "content": "Explore Laboratoires VIVACY’s latest innovations: IPN-LIKE® for advanced formulations, Bi-SOFT® for enhanced precision, VIVASÔME® for cutting-edge skincare, and MYVIVACY for guaranteed product authenticity. Discover how these technologies are transforming aesthetics and ensuring exceptional quality.",
       "items": {
         "item1": {
           "id": "1",
@@ -66,7 +66,7 @@
     },
     "products": {
       "title": "Brands",
-      "content": "Discover Laboratoires VIVACY’s brands: STYLAGE® for aesthetic medicine, DESIRIAL® for intimate medicine, VIVACY BEAUTY for premium skincare, and MY VIVACY for product authenticity and safety.",
+      "content": "Discover Laboratoires VIVACY’s brands : STYLAGE® for aesthetic medicine, DESIRIAL® & DESIRIAL® PLUS for intimate health and VIVACY BEAUTY for premium skincare.",
       "items": {
         "item1": {
           "id": "1",
@@ -75,7 +75,7 @@
         },
         "item2": {
           "id": "2",
-          "title": "INTIMATE MEDICINE: DESIRIAL® & DESIRIAL PLUS®",
+          "title": "INTIMATE MEDICINE: DESIRIAL® & DESIRIAL® PLUS",
           "path": "/en/desirial-treatment-vaginal-dryness"
         },
         "item3": {
@@ -212,7 +212,7 @@
     },
     "section3": {
       "h2": "VIVACY OUTSTANDING PERFORMANCE",
-      "h3": "KEY FIGURES ABOUT VIVACY",
+      "h3": "KEY FIGURES",
       "keyNumbers": {
         "1": "Present in over 85 countries globally",
         "2": "Patent families",
@@ -237,7 +237,7 @@
       },
       "ipn": {
         "textTop": "<h2>IPN-LIKE TECHNOLOGY</h2><h3>THE PATENTED CROSS-LINKING</h3>",
-        "textCore": "<p>All VIVACY’s products are hyaluronic acid-based. Hyaluronic acid is a naturally occurring molecule in the human body, particularly in the skin and mucous membranes<sup>1</sup>. It can retain up to 1,000 times its weight in water<sup>2</sup>, consequently contributing to the hydration and toning of the concerned tissues<sup>3</sup>.</p><p>HA has a short life span and is soluble in water, meaning it needs to be stabilised before injection into skin tissues. To do so, a special technical process called “cross-linking” <sup>*</sup> is used to bind HA molecules together to obtain a cohesive HA gel for a skin smoothing, lifting and/or volumising effect that will last for several months. The duration of the treatment depends on many factors, such as the patient’s skin type and structure, age, lifestyle, the area treated and the injection technique used by the practitioner.</p>",
+        "textCore": "<p>All VIVACY products are hyaluronic acid-based, a naturally occurring molecule<sup>1</sup> that hydrates and tones tissues by retaining up to 1,000 times its weight in water<sup>2</sup>. To enhance its effect, HA undergoes a 'cross-linking' process* that binds molecules together to create a cohesive gel. This stabilised gel smooths, lifts, and volumises skin, with results lasting several months, depending on factors such as skin type, age, lifestyle, and treatment area<sup>3</sup>.</p>",
         "asterisk": "not all products are cross-linked, refer to the IFU",
         "annotations": "<li>Papakonstantinou, E. & Al. Hyaluronic acid - A key molecule in skin aging. Dermato-Endocrinology 4:3, 253–258; July–December 2012.</li><li>Ulf Anderegg, J. C. S. & Al. More than just a filler – the role of hyaluronan for skin homeostasis. Experimental Dermatology, 2014, 23, 295–303.</li><li>Becker, L. C. & Al. “Final Report of the Safety Assessment of Hyaluronic Acid, Potassium Hyaluronate, and Sodium Hyaluronate” International Journal of Toxicology, 2009, volume 28 Number 4S, 5-67.</li>",
         "button": "MORE INFORMATION",
@@ -307,7 +307,7 @@
   },
   "Global": {
     "vivacySecurity": {
-      "h2": "DISCOVER MY VIVACY APPLICATION!",
+      "h2": "DISCOVER MYVIVACY",
       "h3": "Our mobile application",
       "content": "Scan a product to verify its authenticity using RFID technology and access our digitised instructions. Explore our pre and post-injection advice for a serene treatment experience.",
       "alts": {
@@ -617,7 +617,7 @@
     "section1": {
       "h2": "DISCOVER MYVIVACY APPLICATION!",
       "h3": "VERIFICATION AND AUTHENTICITY",
-      "content": "<p>The MYVIVACY app allows users, including patients and healthcare professionals, to verify the authenticity of Laboratoires VIVACY products using Radio Frequency Identification (RFID) technology. By scanning product tags with a smartphone, they can access vital information such as serial numbers and expiration dates, ensuring the authenticity of products like STYLAGE<sup>®</sup> and DESIRIAL<sup>®</sup>. This system protects against counterfeits and promotes transparency, a priority for Laboratoires VIVACY.</p>",
+      "content": "<p>MYVIVACY app allows users, including patients and healthcare professionals, to verify the authenticity of Laboratoires VIVACY products using Radio Frequency Identification (RFID) technology. By scanning product tags with a smartphone, they can access vital information such as serial numbers and expiration dates, ensuring the authenticity of products like STYLAGE<sup>®</sup> and DESIRIAL<sup>®</sup>. This system protects against counterfeits and promotes transparency, a priority for Laboratoires VIVACY.</p>",
       "alt": "Vivacy security logo"
     },
     "section2": {
@@ -684,7 +684,7 @@
       "altLogo": "Bi-Soft injection technology logo"
     },
     "section2": {
-      "h2": "HIGH PHYSICIANS SATISFACTION ",
+      "h2": "HIGH PHYSICIAN SATISFACTION ",
       "ratings": {
         "first": {
           "title": "Comfort of Use",
@@ -802,7 +802,7 @@
     },
     "section1": {
       "h2": "UNIQUE SKINCARE FORMULATIONS",
-      "h3": "THE SCIENCE OF ANTI-AGEING",
+      "h3": "THE SCIENCE OF <br></br>ANTI-AGEING",
       "content": "<p>With extensive expertise in Aesthetic Medicine and anti-ageing solutions, Laboratoires VIVACY have collaborated with cosmetology experts and dermatologists to develop a professional line of dermo-cosmetics centered around the exclusive VIVASÔME<sup>®</sup> complex.</p><p> This innovative complex incorporates hyaluronic acid and antioxidants to offer advanced skincare solutions.</p>",
       "alt": "Vivacy cosmetic range"
     },
@@ -835,10 +835,10 @@
     "h2": "Vivacy, expert in hyaluronic acid",
     "h3": "Contact us",
     "form": {
-      "lastname": "Last name *",
-      "firstname": "First name *",
-      "country": "Country *",
-      "specialisation": "Specialisation *",
+      "lastname": "*Last name",
+      "firstname": "*First name",
+      "country": "*Country",
+      "specialisation": "*Specialisation",
       "specialisations": {
         "1": "Anatomist",
         "2": "Anesthesiologist",
@@ -854,8 +854,8 @@
         "12": "MD Medical office staff",
         "13": "Other"
       },
-      "email": "Email Address *",
-      "subject": "Subject *",
+      "email": "*Email Address",
+      "subject": "*Subject",
       "subjects": {
         "1": "Information about products",
         "2": "Contact with a distributor (international)",
@@ -863,7 +863,7 @@
         "4": "Media Request",
         "5": "Other"
       },
-      "message": "Message *",
+      "message": "*Message",
       "submit": "Send"
     },
     "legal": "In accordance with applicable regulations relating to the protection of personal data, you have a right of access to, a right of rectification and, for legitimate grounds, a right to object to your data being used for commercial marketing purposes, a right of limitation, a right to erasure and a right to the portability of the data you have transmitted to us, by sending a signed and dated letter to Laboratoires VIVACY, 44 rue Paul Valéry 75116 Paris, France or an e-mail to dpo@vivacy.fr. Your application must be accompanied by a copy of your ID document. You may lodge a complaint with the CNIL (France) if you consider your personal data has been breached under the applicable regulations relating to the protection of personal data. For further information, you may consult our Privacy Policy.",
@@ -1001,8 +1001,8 @@
     "title": "STYLAGE<sup>®</sup> HYDROMAX",
     "alt": "STYLAGE® HYDROMAX illustration",
     "cta_1": {
-      "title": "Find a clinic",
-      "path": ""
+      "title": "Contact Us",
+      "path": "/en/contact"
     },
     "cta_2": {
       "title": "Watch the video",
@@ -1040,13 +1040,13 @@
     },
     "section5": {
       "h2": "STYLAGE<sup>®</sup> Hydromax",
-      "h3": "HYALURONIC ACID,A NATURAL BIOSTIMULATOR",
+      "h3": "HYALURONIC ACID, A NATURAL BIOSTIMULATOR",
       "content": "<p>Hyaluronic acid plays an important role in the multiple biological processes, boosting the production of collagen and elastin, two substances that give the skin its resistance and elasticity. </p> <p>Hyaluronic acid injections stimulate the synthesis of several skin components, resulting in plump, hydrated, and radiant skin.</p>"
     },
     "section6": {
       "h2": "STYLAGE<sup>®</sup> Hydromax",
       "h3": "RESULTS SPEAK FOR THEMSELVES",
-      "content": "<p>According to a patient satisfaction survey<sup>2</sup> conducted by VIVACY:</p><ul>      <li>96% of patients treated with STYLAGE<sup>®</sup> Hydromax noticed a substantial improvement in the quality of their skin.</li><li>83% said the results felt natural. </li><li>97% would be willing to repeat the treatment and recommend it to people they know.</li>      </ul>",
+      "content": "<p>According to a patient satisfaction survey<sup>2</sup> conducted by VIVACY:</p><ul>      <li><spe>96</spe>% of patients treated with STYLAGE<sup>®</sup> Hydromax noticed a substantial improvement in the quality of their skin.</li><li><spe>83</spe>% said the results felt natural. </li><li><spe>97</spe>% would be willing to repeat the treatment and recommend it to people they know.</li>      </ul>",
       "content_bis": "A satisfaction survey<sup>3</sup> of physicians that used STYLAGE<sup>®</sup> Hydromax has demonstrated that:"
     },
     "section7": {

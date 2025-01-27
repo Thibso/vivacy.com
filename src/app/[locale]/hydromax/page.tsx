@@ -4,6 +4,7 @@ import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import ImageHeader from "@/app/components/globals/ImageHeader";
 import PAnimate from "@/app/components/globals/pAnimate";
 import UlAnimate from "@/app/components/globals/UlAnimate";
+import ImageFromEffect from "@/app/components/hydromax/imageFromLeft";
 import KeyNumbers from "@/app/components/hydromax/keyNumbers";
 import TextOnImage from "@/app/components/hydromax/textOnImage";
 import VideoToLeftHydromax from "@/app/components/hydromax/videoToLeft";
@@ -88,11 +89,13 @@ export default function Desirial() {
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-50"></div>
         <HeaderBigTitle
           title={t.rich("title", {
-            sup: (chunks) => <sup>{chunks}</sup>,
+            sup: (chunks) => (
+              <sup className="text-[4vw] align-super">{chunks}</sup>
+            ),
           })}
         />
         <div className="flex justify-center absolute bottom-10 left-1/2 -translate-x-1/2">
-          <WhiteButton content={t("cta_1.title")} path="" />
+          <WhiteButton content={t("cta_1.title")} path={t("cta_1.path")} />
         </div>
       </section>
 
@@ -220,16 +223,12 @@ export default function Desirial() {
           {/* FIRST */}
           <div className="lg:grid lg:grid-cols-7 max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8">
             <div className="col-span-4 relative max-lg:h-[350px]">
-              <Image
+              <ImageFromEffect
                 src={section3}
                 alt={t("section3.alt")}
-                quality={100}
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "50% 50%",
-                }}
-                className="max-lg:rounded-xl rounded-r-xl"
+                from={-200}
+                to={0}
+                classes="rounded-xl lg:rounded-r-xl"
               />
             </div>
 
@@ -280,23 +279,22 @@ export default function Desirial() {
                     <ul className="lg:text-lg list-disc ml-8">{chunks}</ul>
                   ),
                   li: (chunks) => <li>{chunks}</li>,
+                  spe: (chunks) => (
+                    <span className="text-xl lg:text-2xl">{chunks}</span>
+                  ),
                 })}
               />
               <div className="flex justify-center lg:justify-start">
                 <BlueButton content={t("cta_1.title")} path={t("cta_1.path")} />
               </div>
             </div>
-            <div className="col-span-4 relative max-lg:h-[350px] max-lg:mt-8">
-              <Image
+            <div className="col-span-4 relative max-lg:h-[350px] max-lg:mt-8 rounded-l-xl">
+              <ImageFromEffect
                 src={section4}
                 alt={t("section3.alt")}
-                quality={75}
-                fill
-                style={{
-                  objectFit: "cover",
-                  objectPosition: "50% 0%",
-                }}
-                className="max-lg:rounded-xl rounded-l-xl"
+                from={200}
+                to={0}
+                classes="rounded-xl lg:rounded-l-xl"
               />
             </div>
           </div>

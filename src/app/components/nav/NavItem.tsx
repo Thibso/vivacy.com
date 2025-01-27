@@ -24,7 +24,10 @@ export default function NavItem(props: Props) {
       onBlur={() => setDisplay(false)}
       className="group"
     >
-      <a href="" className="uppercase font-light text-base cursor-pointer">
+      <a
+        href=""
+        className=" group-hover:underline uppercase font-light text-base cursor-pointer"
+      >
         {props.title}
       </a>
 
@@ -56,7 +59,7 @@ export default function NavItem(props: Props) {
                         }}
                       >
                         <a
-                          className="underline font-light text-base"
+                          className="hover:font-normal underline font-light text-base"
                           href={item[2]}
                         >
                           {item[1]}

@@ -178,7 +178,7 @@ export default function NavList(props: Props) {
 
         <li>
           <a
-            className="uppercase font-light text-base cursor-pointer"
+            className="hover:underline uppercase font-light text-base cursor-pointer"
             href={props.products.items[3].path}
           >
             {props.products.items[3].title}
@@ -206,7 +206,7 @@ export default function NavList(props: Props) {
 
         <li>
           <a
-            className="uppercase font-light text-base"
+            className="hover:underline uppercase font-light text-base"
             href="https://careers.werecruit.io/fr/vivacy"
             target="_blank"
           >

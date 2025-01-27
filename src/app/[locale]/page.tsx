@@ -10,7 +10,6 @@ import LogoSlider from "../components/sliders/LogoSlider";
 import ProductsCarousel from "../components/sliders/productsCarousel";
 import FromTopCenteredTitles from "../components/titles/FromTopCenteredTitles";
 import FromTopTitles from "../components/titles/FromTopTitles";
-import haPower from "../img/acid-hyaluronic-experts-laboratoires-vivacy-paris.jpg";
 import productsBg from "../img/experts-acide-hyaluronique-laboratoires-vivacy.jpg";
 import experienceBg from "../img/vivacy-laboratoires-experience-esthetique.png";
 
@@ -40,7 +39,7 @@ export async function generateMetadata({ params }: Params) {
         siteName: "vivacy.com",
         images: [
           {
-            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            url: "https://vivacy.com/vivacy-laboratories.jpg",
             width: 800,
             height: 600,
           },
@@ -61,7 +60,7 @@ export async function generateMetadata({ params }: Params) {
         siteName: "vivacy.com",
         images: [
           {
-            url: "http://localhost:3000/vivacy-laboratories.jpg",
+            url: "https://vivacy.com/vivacy-laboratories.jpg",
             width: 800,
             height: 600,
           },
@@ -99,8 +98,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative z-[1] overflow-hidden">
-        <Image
+      <section className="relative bg-[url('/images/acid-hyaluronic-experts-laboratoires-vivacy-paris.jpg')] bg-fixed bg-cover bg-opacity-10 z-[1] overflow-hidden">
+        <div className="absolute size-full bg-white/40 top-0 left-0 -z-[1]"></div>
+        {/* <Image
           src={haPower}
           alt={t("section1.alt")}
           quality={100}
@@ -113,7 +113,7 @@ export default function Home() {
             opacity: 0.75,
           }}
           className="size-full object-center"
-        />
+        /> */}
         <div className="myContainer">
           <div className="lg:grid lg:grid-cols-2 lg:gap-36 lg:justify-between">
             <div className="space-y-8 lg:space-y-28 lg:my-auto lg:pr-16">
@@ -186,7 +186,7 @@ export default function Home() {
       <SyringeRotate />
 
       {/* AFTER EFFECT SECTIONS */}
-      <section className="relative z-[1]">
+      <section id="skip" className="relative z-[1]">
         <Image
           className="-z-[1]"
           src={productsBg}

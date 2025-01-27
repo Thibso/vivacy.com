@@ -1,6 +1,7 @@
 import Accordion from "@/app/components/globals/accordion";
 import VivacySecurity from "@/app/components/globals/vivacySecurity";
 import WorldMap from "@/app/components/globals/worldMap";
+import SubsidiariesList from "@/app/components/map/subsidiariesList";
 import FromTopCenteredTitles from "@/app/components/titles/FromTopCenteredTitles";
 import vivacyLogo from "@/app/img/vivacy-laboratories-hyaluronic-acid-france.png";
 import { useTranslations } from "next-intl";
@@ -107,37 +108,7 @@ export default function Contact() {
             h3Classes="text-white"
             h2Classes="text-white"
           />
-          <ul className="lg:w-[90%] mx-auto">
-            <li className="max-lg:hidden grid grid-cols-7 text-white uppercase border-b-2 border-white/50 py-6 font-bold">
-              <span className="col-span-2">{t(`subsidiary.title`)}</span>
-              <span className="col-span-3">{t(`adresses.title`)}</span>
-              <span className="col-span-2">{t(`details.title`)}</span>
-            </li>
-            {subsidiary.map((item, index) => {
-              return (
-                <li
-                  key={index}
-                  className="max-lg:flex max-lg:flex-col max-lg:gap-y-4 lg:grid lg:grid-cols-7 text-white border-b-2 border-white/50 py-6 lg:items-center"
-                >
-                  <span className="max-lg:font-bold lg:col-span-2">
-                    {t.rich(`subsidiary.${index + 1}`, {
-                      br: () => <br />,
-                    })}
-                  </span>
-                  <span className="lg:col-span-3">
-                    {t.rich(`adresses.${index + 1}`, {
-                      br: () => <br />,
-                    })}
-                  </span>
-                  <span className="lg:col-span-2">
-                    {t.rich(`details.${index + 1}`, {
-                      br: () => <br />,
-                    })}
-                  </span>
-                </li>
-              );
-            })}
-          </ul>
+          <SubsidiariesList />
         </div>
       </section>
 

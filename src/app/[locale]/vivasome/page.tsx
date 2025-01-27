@@ -90,7 +90,9 @@ export default function Vivasome() {
         <div className="absolute top-0 left-0 size-full -z-[1] bg-blue opacity-25"></div>
         <HeaderBigTitle
           title={t.rich("title", {
-            sup: (chunks) => <sup>{chunks}</sup>,
+            sup: (chunks) => (
+              <sup className="text-[4vw] align-super">{chunks}</sup>
+            ),
           })}
         />
       </section>
@@ -115,7 +117,9 @@ export default function Vivasome() {
             <div className="lg:col-span-1 space-y-8 lg:space-y-14 lg:mb-36">
               <FromTopTitles
                 titleH2={t("section1.h2")}
-                titleH3={t("section1.h3")}
+                titleH3={t.rich("section1.h3", {
+                  br: () => <br />,
+                })}
                 h3Classes="text-black"
               />
 

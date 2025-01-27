@@ -11,6 +11,7 @@ import { useTranslations } from "next-intl";
 import { useEffect, useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 import PAnimate from "../globals/pAnimate";
+import FromTopTitles from "../titles/FromTopTitles";
 
 export default function VideoHistoryToLeft() {
   const t = useTranslations("History");
@@ -66,7 +67,7 @@ export default function VideoHistoryToLeft() {
 
   return (
     <div ref={ref} className="lg:min-h-[100vh] relative">
-      <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-7 lg:items-center lg:gap-x-20 lg:sticky lg:top-[25%]">
+      <div className="max-lg:flex max-lg:flex-col-reverse max-lg:gap-y-8 lg:grid lg:grid-cols-7 lg:items-center lg:gap-x-20 lg:sticky lg:top-[15%]">
         <motion.div
           style={{
             scale: scaleProgress,
@@ -95,6 +96,11 @@ export default function VideoHistoryToLeft() {
           }}
           className="col-span-3 space-y-8 lg:space-y-20"
         >
+          <FromTopTitles
+            titleH2={t("section1.h2")}
+            titleH3={t("section1.h3")}
+            h3Classes="text-black"
+          />
           <PAnimate
             content={t.rich("section1.content", {
               p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
