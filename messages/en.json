@@ -650,7 +650,7 @@
     },
     "section1": {
       "h2": "DISCOVER IT ON VIVACYBEAUTY.COM",
-      "h3": "THE ANTI-AGEING SOLUTIONS",
+      "h3": "DERMO-COSMETIC SOLUTION",
       "content": "<p>Laboratoires VIVACY offers a range of professional quality dermo cosmetic products based on expert and innovative formulas to complement aesthetic interventions and help men and women alike preserve their natural beauty beyond the doctor’s office.</p><p> Laboratoires VIVACY is committed to producing high-quality dermal treatments in the form of its premium range of cosmetic products called VIVACY BEAUTY.</p><p> We strive to make professional skincare accessible by making our expertise in aesthetic medicine available to all through a comprehensive e-commerce website.</p>",
       "alt": "Vivacy beauty cosmetic range"
     },
@@ -661,14 +661,14 @@
       "alt": "Vivacy beauty ambassador"
     },
     "section3": {
-      "h2": "TAILOR-MADE FOR ALL SKIN TYPES",
+      "h2": "ADAPTED TO ALL SKIN TYPES",
       "h3": "A DIVERSE RANGE OF PRODUCTS",
       "content": "<p>Laboratoires VIVACY offers three distinct ranges of skincare products to meet all needs. The VIVACY Beauty range for women was created to complement our fillers and ensure long-lasting results with anti-ageing, repairing, refreshing, and nourishing products. It also makes the VIVACY expertise accessible through easy-to-use products that protect the skin from harmful external elements such as the wind, sun, and artificial blue light. The Monsieur Skincare range is specially designed for men, providing a complete skincare routine with various creams, serums, and an after-shave cream to ensure healthy and revitalised skin. Finally, our fragrance range adds a touch of luxury and sophistication with elegant and refined scents. These three ranges, each specialized and innovative, meet all the demands of our clients.</p>",
       "alt": "Vivacy beauty range"
     },
     "section4": {
       "h2": "AGE-DEFYING ACTIVES",
-      "h3": "INNOVATIVE INGREDIENTS",
+      "h3": "INNOVATIVE TECHNOLOGY",
       "content": "<p>Inspired by dermatological research, the formulas comply with regulatory requirements and contain high quality active ingredients that have been scientifically tested. The dermo-cosmetic products integrate an exclusive technology: the VIVASÔME<sup>®</sup> complex. This innovative complex is the result of advanced research by Laboratoires VIVACY. It combines three powerful actions: intense moisturisation, protection against oxidative stress, and skin regeneration. Each component is meticulously selected to ensure high effectiveness and safety, providing visible and long-lasting results. Our dedication to excellence ensures that our products not only meet but aim to exceed the expectations of our clients, providing them with superior solutions for their skincare needs.</p>",
       "alt1": "Vivacy beauty",
       "alt2": "Vivacy beauty illustration"
@@ -751,7 +751,7 @@
       "fifth": {
         "title": "OPTIMISED CENTRE OF GRAVITY",
         "content": {
-          "first": "The optimised centre of gravity of the Bi-SOFT<sup>®</sup> Injection Technology ensures a balanced and stable grip, reducing the risk of hand fatigue during procedures. This feature is particularly beneficial for practitioners performing multiple injections, as it enhances overall efficiency and comfort.",
+          "first": "The optimised centre of gravity of the Bi-SOFT<sup>®</sup> Injection Technology ensures a balanced and stable grip, reducing hand fatigue during procedures. This feature is particularly beneficial for practitioners performing multiple injections, as it enhances overall precision and comfort.",
           "second": "By addressing these key areas—handling ability, bi-material technology, precise and secure injection, injection volume control, and optimised centre of gravity—Bi-SOFT<sup>®</sup> Injection Technology sets a new standard in the field of medical aesthetics. It combines cutting-edge materials with an intuitive design, providing a tool that not only meets but exceeds the high demands of modern aesthetic procedures. This innovation by Laboratoires VIVACY is a testament to our commitment to enhancing both practitioner performance and patient outcomes through superior technology."
         }
       }
@@ -1027,7 +1027,7 @@
     "section3": {
       "h2": "Skin3 Complex",
       "h3": "STYLAGE<sup>®</sup> HYDROMAX",
-      "content": "<p><strong>Skin3 Complex</strong> is an exclusive formula that improves overall skin quality due to 3 synergetic actions. By stimulating not only collagen synthesis, but other key skin components, it promotes cell regeneration and restores skin integrity.</p>",
+      "content": "<p><strong>Skin3 Complex</strong> is an exclusive approach that improves overall skin quality due to 3 synergetic actions. By stimulating not only collagen synthesis, but other key skin components, it promotes cell regeneration and restores skin integrity.</p>",
       "h3_bis": "A 3-IN-1 TREATMENT FOR IMPROVED SKIN QUALITY",
       "content_bis": "<p>Skin3 Complex is based on a scientifically proven mechanism of action that promotes cell renewal at different skin layers, from the deepest to the most superficial<sup>1</sup>.</p> ",
       "alt": "Hydromax by Laboratoire Vivacy"
@@ -1039,9 +1039,9 @@
         "3": "REDENSIFY"
       },
       "content": {
-        "1": "<p>STYLAGE<sup>®</sup> Hydromax supports skin renewal by promoting a good environment for the proliferation of epidermal stem cells.</p> <p>+<spe>49</spe>% Collagen I<br></br>+<spe>136</spe>% Emilin 1</p>",
-        "2": "<p>STYLAGE<sup>®</sup> Hydromax strengthens the skin’s barrier function and reduces water loss at the skin surface.</p><p>+<spe>238</spe>% Ceramides<br></br>+<spe>142</spe>% Aquaporin 3<br></br>+<spe>301</spe>% Filaggrin<sup>*</sup></p>",
-        "3": "<p>STYLAGE<sup>®</sup> Hydromax stimulates the production of collagen and elastin, improving the skin's elasticity and suppleness.</p> <p>+<spe>188</spe>% Stem cell proliferation<br></br>+<spe>53</spe>% Collagen XVII</p>"
+        "1": "<p>STYLAGE<sup>®</sup> Hydromax supports skin renewal by promoting a good environment for the proliferation of epidermal stem cells.<br></br>+<spe>188</spe>% Stem cell proliferation<br></br>+<spe>53</spe>% Collagen XVII </p>",
+        "2": "<p>STYLAGE<sup>®</sup> Hydromax stimulates the production of collagen and elastin, improving the skin's elasticity and suppleness. <br></br>+<spe>49</spe>% Collagen I <br></br>+<spe>136</spe>% Emilin 1</p>",
+        "3": "<p>STYLAGE<sup>®</sup> Hydromax strengthens the skin’s barrier function and reduces water loss at the skin surface. <br></br>+<spe>238</spe>% Ceramides <br></br>+<spe>142</spe>% Aquaporin 3 <br></br>+<spe>301</spe>% Filaggrin</p>"
       }
     },
     "section5": {
