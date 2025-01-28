@@ -15,11 +15,11 @@ import ToTopButton from "../components/globals/toTopButton";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  robots: "noindex",
-  // robots: {
-  //   index: true,
-  //   follow: true,
-  // },
+  // robots: "noindex",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 // Font files can be colocated inside of `app`
 const mona = localFont({
