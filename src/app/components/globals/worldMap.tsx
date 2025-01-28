@@ -37,7 +37,7 @@ function MapText(props: Props) {
           return (
             <div
               key={country[0]?.toString()}
-              className="grid grid-cols-7 gap-x-4 items-center"
+              className="grid grid-cols-7 grid-rows-1 gap-x-4 items-center"
             >
               <div className="col-span-2 lg:col-span-3 sm:col-start-2 lg:col-start-1 relative h-full">
                 <Image
@@ -182,7 +182,7 @@ export default function WorldMap() {
             width="1094.863"
             height="543.971"
             viewBox="0 0 1094.863 543.971"
-            className="w-full lg:sticky lg:top-[30%] h-fit"
+            className="w-full lg:sticky lg:top-[30%] h-full lg:h-fit"
           >
             <defs>
               <clipPath id="clip-path">

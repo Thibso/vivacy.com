@@ -186,7 +186,7 @@ export default function Home() {
       <SyringeRotate />
 
       {/* AFTER EFFECT SECTIONS */}
-      <section id="skip" className="relative z-[1]">
+      <section id="skipEffect" className="relative z-[1]">
         <Image
           className="-z-[1]"
           src={productsBg}

@@ -81,7 +81,7 @@ export default function SyringeRotate() {
           </motion.div>
 
           <motion.a
-            href="#skip"
+            href="#skipEffect"
             className="absolute bottom-[16px] left-1/2 -translate-x-1/2 text-white z-[10] flex flex-col items-center"
           >
             <span className="text-base">Scroll to discover</span>

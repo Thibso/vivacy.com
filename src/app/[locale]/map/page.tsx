@@ -90,7 +90,7 @@ export default function Contact() {
           }}
           className="max-lg:hidden absolute -right-[30%] top-[15%]"
         />
-        <div className="myContainer lg:pl-8 space-y-8 lg:space-y-28">
+        <div className="myContainer space-y-8 lg:space-y-28">
           <FromTopCenteredTitles
             titleH2={t("title")}
             titleH3={t("sub")}
