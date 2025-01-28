@@ -122,6 +122,7 @@
 @media screen and (min-width: 1024px) {
   .grecaptcha-badge {
     bottom: 2rem !important;
+    scale: 0.8;
   }
 }
 

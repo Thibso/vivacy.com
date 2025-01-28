@@ -68,7 +68,7 @@ export default function Contact() {
   const t = useTranslations("Contact");
   return (
     <main>
-      <section className="relative pt-[75px] z-[1]">
+      <section className="relative pt-[75px] z-[1] overflow-hidden">
         <Image
           src={vivacyLogo}
           alt="Vivacy"

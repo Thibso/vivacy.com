@@ -78,7 +78,7 @@ export default function Contact() {
 
   return (
     <main>
-      <section className="mt-14 relative">
+      <section className="mt-14 relative overflow-hidden">
         <Image
           src={vivacyLogo}
           alt="Vivacy"

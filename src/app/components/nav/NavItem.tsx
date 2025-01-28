@@ -44,7 +44,7 @@ export default function NavItem(props: Props) {
           >
             <div className="grid grid-cols-4 gap-12 xl:gap-32 justify-between bg-background text-blue px-10 xl:px-20 py-8 xl:py-12 rounded-b-3xl ">
               <div className="col-span-1">
-                <span className="uppercase">{props.title}</span>
+                <span className="uppercase font-bold">{props.title}</span>
                 <p className="mt-8 text-sm font-normal">{props.content}</p>
               </div>
 
@@ -59,7 +59,7 @@ export default function NavItem(props: Props) {
                         }}
                       >
                         <a
-                          className="hover:font-normal underline font-light text-base"
+                          className="underline font-light text-base"
                           href={item[2]}
                         >
                           {item[1]}
