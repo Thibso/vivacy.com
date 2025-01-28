@@ -12,7 +12,7 @@ import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import bg from "@/app/img/background-grained.jpg";
 import bgHeader from "@/app/img/hydromax/hydromax-laboratoires-vivacy.jpg";
 import bgImg from "@/app/img/hydromax/hydromax-packaging-laboratoire-vivacy.jpg";
-import section2 from "@/app/img/hydromax/packshot-hydromax-laboratoire-vivacy.jpg";
+import section2 from "@/app/img/hydromax/packshot-hydromax-laboratoire-vivacy-.jpg";
 import skin3complex from "@/app/img/hydromax/skin3-complex-vivacy-hydromax-.png";
 import section4 from "@/app/img/hydromax/stylage-hydromax-filler-hyaluronic-acid-vivacy.jpg";
 import section3 from "@/app/img/hydromax/vivacy-hyaluronic-acid-experts-hydromax.jpg";

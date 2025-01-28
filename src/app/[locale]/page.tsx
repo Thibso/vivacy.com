@@ -152,6 +152,7 @@ export default function Home() {
             objectPosition: "0% 100%",
             zIndex: "-1",
           }}
+          className="max-lg:hidden"
         />
         <div className="myContainer lg:h-[auto] lg:flex lg:flex-col lg:justify-around space-y-8 lg:space-y-28">
           <FromTopCenteredTitles

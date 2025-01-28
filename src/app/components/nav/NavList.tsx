@@ -146,11 +146,17 @@ export default function NavList(props: Props) {
               props.products.items[2].title,
               props.products.items[2].path,
             ],
+            [
+              props.products.items[3].id,
+              props.products.items[3].title,
+              props.products.items[3].path,
+            ],
           ]}
           images={[
             props.products.images[0],
             props.products.images[1],
             props.products.images[2],
+            props.products.images[3],
           ]}
         />
 
@@ -179,9 +185,9 @@ export default function NavList(props: Props) {
         <li>
           <a
             className="hover:underline uppercase font-light text-base cursor-pointer"
-            href={props.products.items[3].path}
+            href={props.products.items[4].path}
           >
-            {props.products.items[3].title}
+            {props.products.items[4].title}
           </a>
         </li>
 
@@ -323,6 +329,11 @@ export default function NavList(props: Props) {
                       props.products.items[2].id,
                       props.products.items[2].title,
                       props.products.items[2].path,
+                    ],
+                    [
+                      props.products.items[3].id,
+                      props.products.items[3].title,
+                      props.products.items[3].path,
                     ],
                   ]}
                 />

@@ -75,25 +75,31 @@
         },
         "item2": {
           "id": "2",
-          "title": "INTIMATE MEDICINE: DESIRIAL® & DESIRIAL® PLUS",
-          "path": "/en/desirial-treatment-vaginal-dryness"
+          "title": "SKIN QUALITY: STYLAGE® HYDROMAX",
+          "path": "/en/hydromax"
         },
         "item3": {
           "id": "3",
-          "title": "DERMO-COSMETICS: VIVACY BEAUTY",
-          "path": "/en/vivacy-beauty-dermo-cosmetic-skincare"
+          "title": "INTIMATE MEDICINE: DESIRIAL® & DESIRIAL® PLUS",
+          "path": "/en/desirial-treatment-vaginal-dryness"
         },
         "item4": {
           "id": "4",
+          "title": "DERMO-COSMETICS: VIVACY BEAUTY",
+          "path": "/en/vivacy-beauty-dermo-cosmetic-skincare"
+        },
+        "item5": {
+          "id": "5",
           "title": "VIVACY ACADEMY",
           "path": "/en/vivacy-academy-learning-plateform"
         }
       },
       "images": {
         "1": "/images/nav/brands/stylage.jpg",
-        "2": "/images/nav/brands/desirial.jpg",
-        "3": "/images/nav/brands/vivacy-beauty.jpg",
-        "4": "/images/nav/brands/vivacy-academy.jpg"
+        "2": "/images/nav/brands/hydromax.jpg",
+        "3": "/images/nav/brands/desirial.jpg",
+        "4": "/images/nav/brands/vivacy-beauty.jpg",
+        "5": "/images/nav/brands/vivacy-academy.jpg"
       }
     },
     "professionals": {
