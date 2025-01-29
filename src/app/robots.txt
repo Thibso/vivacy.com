@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://vivacy.com/sitemap.xml
