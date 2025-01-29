@@ -76,7 +76,7 @@
         "item2": {
           "id": "2",
           "title": "SKIN QUALITY: STYLAGE® HYDROMAX",
-          "path": "/en/hydromax"
+          "path": "/en/stylage-hydromax-hyaluronic-acid-skinbooster"
         },
         "item3": {
           "id": "3",
@@ -685,7 +685,7 @@
     "section1": {
       "h2": "UNIQUE AND ERGONOMIC DESIGN",
       "h3": "THE PATENTED INJECTION SYSTEM",
-      "content": "<p>In its continuing quest for innovative excellence in the medical aesthetic market, Laboratoires VIVACY has developed a unique delivery system, Bi-SOFT<sup>®</sup> Injection Technology<sup>1</sup>. This syringe is offers greater precision and comfort. It is specifically designed to help practitioners in their daily practice of aesthetic treatments. The system's ergonomic design and advanced features ensure that it stands out as a significant advancement in injection technology.</p><p>97% of interviewed practitioners are extremely satisfied with the use of BI-SOFT<sup>®</sup> injection system<sup>2</sup>. This statistic reflects the confidence and appreciation users have for the performance of this technology and its reliability in meeting practitioner expectations and improving procedural outcomes.</p>",
+      "content": "<p>In its continuing quest for innovative excellence in the medical aesthetic market, Laboratoires VIVACY has developed a unique delivery system, Bi-SOFT<sup>®</sup> Injection Technology<sup>1</sup>. This syringe offers greater precision and comfort. It is specifically designed to help practitioners in their daily practice of aesthetic treatments. The system's ergonomic design and advanced features ensure that it stands out as a significant advancement in injection technology.</p><p>97% of interviewed practitioners are extremely satisfied with the use of BI-SOFT<sup>®</sup> injection system<sup>2</sup>. This statistic reflects the confidence and appreciation users have for the performance of this technology and its reliability in meeting practitioner expectations and improving procedural outcomes.</p>",
       "alt": "Bi-Soft technology photo",
       "altLogo": "Bi-Soft injection technology logo"
     },
@@ -1012,7 +1012,7 @@
     },
     "cta_2": {
       "title": "Watch the video",
-      "path": ""
+      "path": "/en/vivacy-academy-learning-plateform"
     },
     "section1": {
       "h2": "RENEW YOUR SKIN INSIDE OUT",

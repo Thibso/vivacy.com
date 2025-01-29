@@ -24,9 +24,9 @@ type Params = {
   params: { locale: string };
 };
 
-const titleEN = "Desirial | Women's Intimate Health Treatment";
+const titleEN = "Stylage Hydromax | Hyaluronic Acid Skin booster | Vivacy";
 const descriptionEN =
-  "Desirial by Vivacy. Discover hyaluronic acid-based innovation for the treatment of vaginal dryness and women's intimate comfort.";
+  "Stylage Hydromax by Vivacy. Discover Stylage Hydromax, hyaluronic acid-based skin booster for skin quality improvement and skin regeneration.";
 const titleFR = "";
 const descriptionFR = "";
 

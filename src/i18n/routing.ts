@@ -52,6 +52,9 @@ export const routing = defineRouting({
     "/academy": {
       en: "/vivacy-academy-learning-plateform",
     },
+    "/hydromax": {
+      en: "/stylage-hydromax-hyaluronic-acid-skinbooster",
+    },
   },
 });
 
