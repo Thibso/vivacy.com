@@ -24,9 +24,9 @@ type Params = {
   params: { locale: string };
 };
 
-const titleEN = "Stylage Hydromax | Hyaluronic Acid Skin booster | Vivacy";
+const titleEN = "Stylage® Hydromax | Hyaluronic Acid Skin booster | Vivacy";
 const descriptionEN =
-  "Stylage Hydromax by Vivacy. Discover Stylage Hydromax, hyaluronic acid-based skin booster for skin quality improvement and skin regeneration.";
+  "Stylage® Hydromax by Vivacy. Discover Stylage® Hydromax, hyaluronic acid-based skin booster for skin quality improvement and skin regeneration.";
 const titleFR = "";
 const descriptionFR = "";
 
