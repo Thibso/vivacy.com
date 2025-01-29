@@ -71,14 +71,14 @@ export default function Footer() {
                   {t("contact.content.contact")}
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   className="block hover:underline"
                   href={t("contact.links.clinic")}
                 >
                   {t("contact.content.clinic")}
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   className="block hover:underline"
