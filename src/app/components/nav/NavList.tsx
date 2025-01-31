@@ -357,9 +357,9 @@ export default function NavList(props: Props) {
                 <li>
                   <a
                     className="uppercase text-lg cursor-pointer"
-                    href={props.products.items[3].path}
+                    href={props.products.items[4].path}
                   >
-                    {props.products.items[3].title}
+                    {props.products.items[4].title}
                   </a>
                 </li>
 
