@@ -1,5 +1,6 @@
 import { Toaster } from "@/components/ui/toaster";
 import { routing } from "@/i18n/routing";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -71,6 +72,7 @@ export default async function LocaleLayout({
         <Footer />
         <MobileBar />
       </body>
+      <GoogleAnalytics gaId="G-CNT0394HZT" />
     </html>
   );
 }
