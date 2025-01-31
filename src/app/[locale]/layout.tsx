@@ -21,7 +21,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "GDprNNueiOvIUdQVMsb67o9nc7m82s4sSClUuyw-s7c",
+  },
 };
+
 // Font files can be colocated inside of `app`
 const mona = localFont({
   src: "./MonaSansVF-Regular.ttf",
