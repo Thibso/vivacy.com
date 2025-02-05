@@ -75,9 +75,11 @@ export default function ContactForm() {
 
   function emailChange(event: any) {
     if (event.target.value === "Contact with a distributor (international)") {
-      setEmailTo("export@vivacy.com");
+      // setEmailTo("export@vivacy.com");
+      setEmailTo("contact@magazine-heritage.com");
     } else {
-      setEmailTo("marketing@vivacy.fr");
+      // setEmailTo("marketing@vivacy.fr");
+      setEmailTo("thibautsoulet33@gmail.com");
     }
   }
 
