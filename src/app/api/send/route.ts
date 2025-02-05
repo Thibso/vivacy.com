@@ -18,11 +18,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: "vivacy.com <contact@thibs-te.fr>",
-      to: [
-        emailTo,
-        "gestion.healthcie@gmail.com",
-        "contact@magazine-heritage.com",
-      ],
+      to: [emailTo, "gestion.healthcie@gmail.com", "mjy@moniqueblanchard.com"],
       // to: ["thibautsoulet33@gmail.com"],
       subject: "Contact from vivacy.com",
       react: EmailTemplate({
