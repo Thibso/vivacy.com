@@ -26,7 +26,7 @@ export default function NavItem(props: Props) {
     >
       <a
         href=""
-        className=" group-hover:underline uppercase font-light text-base cursor-pointer"
+        className=" group-hover:underline underline-offset-4 uppercase font-light text-base cursor-pointer"
       >
         {props.title}
       </a>
@@ -59,7 +59,7 @@ export default function NavItem(props: Props) {
                         }}
                       >
                         <a
-                          className="underline font-light text-base"
+                          className="underline underline-offset-4 hover:font-normal font-light text-base transition-all"
                           href={item[2]}
                         >
                           {item[1]}

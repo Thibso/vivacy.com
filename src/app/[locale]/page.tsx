@@ -4,6 +4,7 @@ import BlueButton from "../components/buttons/BlueButton";
 import KeyNumbers from "../components/globals/keyNumbers";
 import PAnimate from "../components/globals/pAnimate";
 import WorldMap from "../components/globals/worldMap";
+import BigTitle from "../components/home/bigTitle";
 import Innovations from "../components/home/innovations";
 import SyringeRotate from "../components/scrollEffects/SyringeRotate";
 import LogoSlider from "../components/sliders/LogoSlider";
@@ -91,11 +92,11 @@ export default function Home() {
           />
         </video>
 
-        <div className="m-auto mb-0 space-y-8">
-          <h1 className="h3-perso text-white text-center tracking-widest">
+        <BigTitle>
+          <h1 className="h3-perso text-6xl text-white text-center tracking-[0.2em]">
             {t("title")}
           </h1>
-        </div>
+        </BigTitle>
       </section>
 
       <section className="relative bg-[url('/images/acid-hyaluronic-experts-laboratoires-vivacy-paris.jpg')] bg-fixed bg-cover bg-opacity-10 z-[1] overflow-hidden">
