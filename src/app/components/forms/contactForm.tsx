@@ -77,7 +77,7 @@ export default function ContactForm() {
     if (event.target.value === "Contact with a distributor (international)") {
       setEmailTo("export@vivacy.com");
     } else {
-      setEmailTo("marketing@vivacy.fr");
+      setEmailTo("marketing@vivacy.com");
     }
   }
 

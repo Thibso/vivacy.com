@@ -9,7 +9,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: "vivacy.com <contact@thibs-te.fr>",
-      to: ["marketing@vivacy.fr"],
+      to: ["marketing@vivacy.com"],
       subject: "Newsletter",
       react: EmailTemplate({
         firstname,
