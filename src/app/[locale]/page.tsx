@@ -75,8 +75,44 @@ export async function generateMetadata({ params }: Params) {
 
 export default function Home() {
   const t = useTranslations("HomePage");
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Laboratoires Vivacy",
+    alternateName: "Vivacy",
+    url: "https://vivacy.com",
+    logo: "https://vivacy.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvivacy-logo-official.6d2026ff.png&w=2048&q=75",
+    description:
+      "Laboratoires VIVACY is renowned pioneers of Hyaluronic Acid in the field of aesthetic medicine.",
+    foundingDate: "2007",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "44 rue Paul Valéry",
+      addressLocality: "Paris",
+      postalCode: "75116",
+      addressCountry: "FR",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+33 01 56 90 08 08",
+      contactType: "Headquarters: Marketing & Sales",
+      availableLanguage: ["French", "English"],
+    },
+    sameAs: [
+      "https://www.facebook.com/laboratoiresvivacy",
+      "https://www.instagram.com/laboratoiresvivacy/",
+      "https://www.linkedin.com/company/laboratoires-vivacy-sas",
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* VIDEO HEADER */}
       <section className="h-[70vh] lg:h-[100vh] relative z-[2] grid pb-3">
         <video

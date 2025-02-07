@@ -58,8 +58,8 @@
         }
       },
       "images": {
-        "1": "/images/nav/technologies/bisoft.jpg",
-        "2": "/images/nav/technologies/ipnlike.jpg",
+        "1": "/images/nav/technologies/ipnlike.jpg",
+        "2": "/images/nav/technologies/bisoft.jpg",
         "3": "/images/nav/technologies/vivasome.jpg",
         "4": "/images/nav/technologies/myvivacy.jpg"
       }
@@ -143,7 +143,7 @@
       }
     },
     "carreers": {
-      "title": "Carreers",
+      "title": "Careers",
       "path": "/en/"
     }
   },
@@ -171,7 +171,7 @@
       "content": {
         "contact": "Contact Us",
         "clinic": "Clinic Locator",
-        "carreers": "Carreers",
+        "carreers": "Careers",
         "network": "Our global network"
       },
       "links": {
@@ -976,7 +976,7 @@
       "path": "https://vivacy-academy.com/login"
     },
     "section1": {
-      "h2": "EMPOWERING MEDICAL EDUCATION WORDWIDE",
+      "h2": "EMPOWERING MEDICAL EDUCATION WORLDWIDE",
       "h3": "PREMIUM TRAININGS FOR HCPs",
       "content": "<p>Discover VIVACY Academy, our training platform exclusively dedicated to healthcare professionals interested in deepening their knowledge and expertise on our product range all around the world.</p><p> Create an account now to access specialised resources on our STYLAGE<sup>®</sup> range and DESIRIAL<sup>®</sup> & DESIRIAL PLUS<sup>®</sup> injectable intimate hydrogels and refine your skills to provide your patients with high quality aesthetic and intimate solutions.</p>",
       "alt": "VIVACY ACADEMY lesson"

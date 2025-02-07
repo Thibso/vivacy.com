@@ -149,7 +149,10 @@ export default function BrandsDescriptions(props: Props) {
                   : "hidden"
               } m-auto lg:mr-0 max-lg:ml-0`}
             >
-              <BlueButton content={props.texts[brand].cta.content} path={""} />
+              <BlueButton
+                content={props.texts[brand].cta.content}
+                path={props.texts[brand].cta.path}
+              />
             </motion.div>
           </AnimatePresence>
         </div>
