@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: Params) {
 export default function Home() {
   const t = useTranslations("HomePage");
 
-  const jsonLd = {
+  const organization = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Laboratoires Vivacy",
@@ -106,11 +106,28 @@ export default function Home() {
     ],
   };
 
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://vivacy.com/",
+      },
+    ],
+  };
+
   return (
     <main>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
       />
 
       {/* VIDEO HEADER */}
