@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Params) {
       title: titleEN,
       description: descriptionEN,
       authors: [{ name: "VIVACY" }],
+      keywords: ["Vivacy", "Beauty", "Dermo-cosmetic", "Hyaluronic Acid"],
       openGraph: {
         title: titleEN,
         description: descriptionEN,
@@ -54,6 +55,7 @@ export async function generateMetadata({ params }: Params) {
       title: titleFR,
       description: descriptionFR,
       authors: [{ name: "VIVACY" }],
+      keywords: ["Vivacy", "Beauty", "Dermo-cosmetic", "Hyaluronic Acid"],
       openGraph: {
         title: titleFR,
         description: descriptionFR,
@@ -76,8 +78,38 @@ export async function generateMetadata({ params }: Params) {
 export default function VivacyBeauty() {
   const t = useTranslations("Beauty");
 
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Homepage",
+        item: "https://vivacy.com/en",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Brands",
+        item: "https://vivacy.com/en/premium-aesthetic-solutions",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Vivacy Beauty",
+        item: "https://vivacy.com/en/vivacy-beauty-dermo-cosmetic-skincare",
+      },
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1] overflow-hidden">
         <ImageHeader src={bgHeader} alt={t("alt")} />
 

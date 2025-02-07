@@ -34,6 +34,12 @@ export async function generateMetadata({ params }: Params) {
       title: titleEN,
       description: descriptionEN,
       authors: [{ name: "VIVACY" }],
+      keywords: [
+        "Vivacy",
+        "IPN-Like Technology",
+        "medical device",
+        "Hyaluronic Acid",
+      ],
       openGraph: {
         title: titleEN,
         description: descriptionEN,
@@ -55,6 +61,12 @@ export async function generateMetadata({ params }: Params) {
       title: titleFR,
       description: descriptionFR,
       authors: [{ name: "VIVACY" }],
+      keywords: [
+        "Vivacy",
+        "IPN-Like Technology",
+        "medical device",
+        "Hyaluronic Acid",
+      ],
       openGraph: {
         title: titleFR,
         description: descriptionFR,
@@ -77,8 +89,31 @@ export async function generateMetadata({ params }: Params) {
 export default function IpnLike() {
   const t = useTranslations("IpnLike");
 
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://vivacy.com/en",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "IPN-Like technology",
+        item: "https://vivacy.com/en/ipn-like-technology-hyaluronic-acid",
+      },
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1] overflow-hidden">
         <ImageHeader src={bgHeader} alt={t("alt")} />
 

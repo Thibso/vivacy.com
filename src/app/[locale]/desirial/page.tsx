@@ -20,9 +20,9 @@ type Params = {
   params: { locale: string };
 };
 
-const titleEN = "Desirial | Women's Intimate Health Treatment";
+const titleEN = "Desirial® | Women's Intimate Health Treatment";
 const descriptionEN =
-  "Desirial by Vivacy. Discover hyaluronic acid-based innovation for the treatment of vaginal dryness and women's intimate comfort.";
+  "Desirial® by Vivacy. Discover hyaluronic acid-based innovation for the treatment of vaginal dryness and women's intimate comfort.";
 const titleFR = "";
 const descriptionFR = "";
 
@@ -34,6 +34,12 @@ export async function generateMetadata({ params }: Params) {
       title: titleEN,
       description: descriptionEN,
       authors: [{ name: "VIVACY" }],
+      keywords: [
+        "Vivacy",
+        "Desirial",
+        "Women's Intimate Health",
+        "Hyaluronic Acid",
+      ],
       openGraph: {
         title: titleEN,
         description: descriptionEN,
@@ -55,6 +61,12 @@ export async function generateMetadata({ params }: Params) {
       title: titleFR,
       description: descriptionFR,
       authors: [{ name: "VIVACY" }],
+      keywords: [
+        "Vivacy",
+        "Desirial",
+        "Women's Intimate Health",
+        "Hyaluronic Acid",
+      ],
       openGraph: {
         title: titleFR,
         description: descriptionFR,
@@ -77,8 +89,38 @@ export async function generateMetadata({ params }: Params) {
 export default function Desirial() {
   const t = useTranslations("Desirial");
 
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://vivacy.com/en",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Brands",
+        item: "https://vivacy.com/en/premium-aesthetic-solutions",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Desirial®",
+        item: "https://vivacy.com/en/desirial-treatment-vaginal-dryness",
+      },
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1] overflow-hidden">
         <ImageHeader src={bgHeader} alt={t("alt")} />
 

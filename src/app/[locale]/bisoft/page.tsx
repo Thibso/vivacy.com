@@ -34,6 +34,12 @@ export async function generateMetadata({ params }: Params) {
       title: titleEN,
       description: descriptionEN,
       authors: [{ name: "VIVACY" }],
+      keywords: [
+        "Vivacy",
+        "Bi-Soft®",
+        "Injection Technology",
+        "Hyaluronic Acid",
+      ],
       openGraph: {
         title: titleEN,
         description: descriptionEN,
@@ -55,6 +61,12 @@ export async function generateMetadata({ params }: Params) {
       title: titleFR,
       description: descriptionFR,
       authors: [{ name: "VIVACY" }],
+      keywords: [
+        "Vivacy",
+        "Bi-Soft®",
+        "Injection Technology",
+        "Hyaluronic Acid",
+      ],
       openGraph: {
         title: titleFR,
         description: descriptionFR,
@@ -76,6 +88,25 @@ export async function generateMetadata({ params }: Params) {
 
 export default function BiSoft() {
   const t = useTranslations("BiSoft");
+
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Homepage",
+        item: "https://vivacy.com/en",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Bi-SOFT® technology",
+        item: "https://vivacy.com/en/bi-soft-injection-technology-hyaluronic-acid",
+      },
+    ],
+  };
 
   const seringeTextFirst = {
     title: t("seringe.first.title"),
@@ -121,6 +152,11 @@ export default function BiSoft() {
 
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1] ">
         <video
           className="absolute max-md:h-[150%] max-xl:h-[140%] xl:size-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover -z-[2]"

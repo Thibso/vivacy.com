@@ -19,9 +19,9 @@ type Params = {
 };
 
 const titleEN =
-  "Vivacy | Premium Injectable Hyaluronic Acid | Stylage & Desirial";
+  "Vivacy | Premium Injectable Hyaluronic Acid | Stylage® & Desirial®";
 const descriptionEN =
-  "Vivacy, specialising in injectable hyaluronic acid. Discover the Stylage, Hydromax & Desirial ranges, filling treatments from Laboratoires Vivacy.";
+  "Vivacy, specialising in injectable hyaluronic acid. Discover the Stylage®, Hydromax & Desirial® ranges, filling treatments from Laboratoires Vivacy.";
 const titleFR = "";
 const descriptionFR = "";
 
@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Params) {
       title: titleEN,
       description: descriptionEN,
       authors: [{ name: "VIVACY" }],
+      keywords: ["Vivacy", "Premium", "Injectable Hyaluronic Acid"],
       openGraph: {
         title: titleEN,
         description: descriptionEN,
@@ -54,6 +55,7 @@ export async function generateMetadata({ params }: Params) {
       title: titleFR,
       description: descriptionFR,
       authors: [{ name: "VIVACY" }],
+      keywords: ["Vivacy", "Premium", "Injectable Hyaluronic Acid"],
       openGraph: {
         title: titleFR,
         description: descriptionFR,
@@ -113,8 +115,8 @@ export default function Home() {
       {
         "@type": "ListItem",
         position: 1,
-        name: "Home",
-        item: "https://vivacy.com/",
+        name: "Homepage",
+        item: "https://vivacy.com/en",
       },
     ],
   };

@@ -19,9 +19,9 @@ type Params = {
   params: { locale: string };
 };
 
-const titleEN = "Stylage by Vivacy | Acide Hyaluronique Injectable Premium";
+const titleEN = "Stylage® by Vivacy | Hyaluronic Acid Injectable Premium";
 const descriptionEN =
-  "Stylage by Vivacy. Discover the range of hyaluronic acid-based filling products from Laboratoires Vivacy, with or without lidocaine.";
+  "Stylage® by Vivacy. Discover the range of hyaluronic acid-based filling products from Laboratoires Vivacy, with or without lidocaine.";
 const titleFR = "";
 const descriptionFR = "";
 
@@ -33,6 +33,12 @@ export async function generateMetadata({ params }: Params) {
       title: titleEN,
       description: descriptionEN,
       authors: [{ name: "VIVACY" }],
+      keywords: [
+        "Vivacy",
+        "Stylage",
+        "Innovation",
+        "Injectable Hyaluronic Acid",
+      ],
       openGraph: {
         title: titleEN,
         description: descriptionEN,
@@ -54,6 +60,12 @@ export async function generateMetadata({ params }: Params) {
       title: titleFR,
       description: descriptionFR,
       authors: [{ name: "VIVACY" }],
+      keywords: [
+        "Vivacy",
+        "Stylage",
+        "Innovation",
+        "Injectable Hyaluronic Acid",
+      ],
       openGraph: {
         title: titleFR,
         description: descriptionFR,
@@ -76,8 +88,32 @@ export async function generateMetadata({ params }: Params) {
 export default function Stylage() {
   const t = useTranslations("Stylage");
 
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://vivacy.com/en",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Stylage®",
+        item: "https://vivacy.com/en/stylage-hyaluronic-acid-treatment",
+      },
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
+
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <video
           className="absolute max-md:h-[150%] max-xl:h-[140%] xl:size-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover -z-[2]"

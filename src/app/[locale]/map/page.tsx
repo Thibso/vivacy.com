@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: Params) {
       title: titleEN,
       description: descriptionEN,
       authors: [{ name: "VIVACY" }],
+      keywords: ["Vivacy", "Global Network", "Distributors", "Subsidiaries"],
       openGraph: {
         title: titleEN,
         description: descriptionEN,
@@ -47,6 +48,7 @@ export async function generateMetadata({ params }: Params) {
       title: titleFR,
       description: descriptionFR,
       authors: [{ name: "VIVACY" }],
+      keywords: ["Vivacy", "Global Network", "Distributors", "Subsidiaries"],
       openGraph: {
         title: titleFR,
         description: descriptionFR,
@@ -76,8 +78,31 @@ export default function Contact() {
     i++;
   }
 
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://vivacy.com/en",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Global network",
+        item: "https://vivacy.com/en/network-distributors-subsidiaries",
+      },
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <section className="mt-14 relative overflow-hidden">
         <Image
           src={vivacyLogo}

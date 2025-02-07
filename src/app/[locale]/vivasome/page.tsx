@@ -18,9 +18,9 @@ type Params = {
   params: { locale: string };
 };
 
-const titleEN = "Vivasôme | Dermo-cosmetic technology | Skin Care";
+const titleEN = "Vivasôme® | Dermo-cosmetic technology | Skin Care";
 const descriptionEN =
-  "Vivasôme, a dermo-cosmetic technology from Laboratoires Vivacy. Encapsulation of active ingredients using liposomes. Advanced skincare solutions.";
+  "Vivasôme®, a dermo-cosmetic technology from Laboratoires Vivacy. Encapsulation of active ingredients using liposomes. Advanced skincare solutions.";
 const titleFR = "";
 const descriptionFR = "";
 
@@ -32,6 +32,12 @@ export async function generateMetadata({ params }: Params) {
       title: titleEN,
       description: descriptionEN,
       authors: [{ name: "VIVACY" }],
+      keywords: [
+        "Vivacy",
+        "Vivasôme",
+        "Dermo-cosmetic technology",
+        "Skin Care",
+      ],
       openGraph: {
         title: titleEN,
         description: descriptionEN,
@@ -53,6 +59,12 @@ export async function generateMetadata({ params }: Params) {
       title: titleFR,
       description: descriptionFR,
       authors: [{ name: "VIVACY" }],
+      keywords: [
+        "Vivacy",
+        "Vivasôme",
+        "Dermo-cosmetic technology",
+        "Skin Care",
+      ],
       openGraph: {
         title: titleFR,
         description: descriptionFR,
@@ -75,8 +87,31 @@ export async function generateMetadata({ params }: Params) {
 export default function Vivasome() {
   const t = useTranslations("Vivasome");
 
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Homepage",
+        item: "https://vivacy.com/en",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Vivasôme®",
+        item: "https://vivacy.com/en/vivasome-dermo-cosmetic-technology-skincare",
+      },
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb) }}
+      />
       <section className="relative min-h-[400px] lg:min-h-[550px] grid z-[1]">
         <video
           className="absolute max-md:h-[150%] max-xl:h-[140%] xl:size-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover -z-[2]"
