@@ -867,10 +867,12 @@
         "2": "Contact with a distributor (international)",
         "3": "Contact with a sales representative (France only)",
         "4": "Media Request",
-        "5": "Other"
+        "5": "Job Application",
+        "6": "Other"
       },
       "message": "*Message",
-      "submit": "Send"
+      "submit": "Send",
+      "submitting": "Sending.."
     },
     "legal": "In accordance with applicable regulations relating to the protection of personal data, you have a right of access to, a right of rectification and, for legitimate grounds, a right to object to your data being used for commercial marketing purposes, a right of limitation, a right to erasure and a right to the portability of the data you have transmitted to us, by sending a signed and dated letter to Laboratoires VIVACY, 44 rue Paul Valéry 75116 Paris, France or an e-mail to dpo@vivacy.fr. Your application must be accompanied by a copy of your ID document. You may lodge a complaint with the CNIL (France) if you consider your personal data has been breached under the applicable regulations relating to the protection of personal data. For further information, you may consult our Privacy Policy.",
     "checked": "I agree that the data I have provided will be used by VIVACY for the purpose of contacting me. The data collected in this form will be processed by VIVACY, the data controller, for the following purposes: managing and processing your contact request and commercial marketing via email and phone. Answers marked with an asterisk (*) are mandatory. If you do not reply, we will not be able to process your request.",
