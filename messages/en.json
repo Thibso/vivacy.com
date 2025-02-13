@@ -868,7 +868,8 @@
         "3": "Contact with a sales representative (France only)",
         "4": "Media Request",
         "5": "Job Application",
-        "6": "Other"
+        "6": "Customer Complaints",
+        "7": "Other"
       },
       "message": "*Message",
       "submit": "Send",

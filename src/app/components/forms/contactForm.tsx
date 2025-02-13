@@ -79,6 +79,8 @@ export default function ContactForm() {
       setEmailTo("export@vivacy.com");
     } else if (event.target.value === "Job Application") {
       setEmailTo("recrutement@vivacy.fr");
+    } else if (event.target.value === "Customer Complaints") {
+      setEmailTo("customer.complaint@vivacy.fr");
     } else {
       setEmailTo("marketing@vivacy.com");
     }
@@ -343,6 +345,9 @@ export default function ContactForm() {
                         </SelectItem>
                         <SelectItem value={t("form.subjects.6")}>
                           {t("form.subjects.6")}
+                        </SelectItem>
+                        <SelectItem value={t("form.subjects.7")}>
+                          {t("form.subjects.7")}
                         </SelectItem>
                       </SelectContent>
                     </Select>
