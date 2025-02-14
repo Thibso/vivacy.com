@@ -1,6 +1,11 @@
 "use client";
 
-import { ArrowDownToLine, Newspaper, NotebookTabs } from "lucide-react";
+import {
+  ArrowDownToLine,
+  GraduationCap,
+  Newspaper,
+  NotebookTabs,
+} from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function MobileBar() {
@@ -30,6 +35,22 @@ export default function MobileBar() {
         <a href="/en/contact" className="flex flex-col items-center gap-y-1">
           <NotebookTabs color="white" />
           <span>Contact</span>
+        </a>
+      </div>
+
+      <div className="text-white text-[12px] leading-none">
+        <a
+          href="https://vivacy-academy.com/login"
+          target="_blank"
+          className="flex flex-col items-center gap-y-1"
+        >
+          <GraduationCap
+            color="white"
+            height={32}
+            width={32}
+            className="-mt-[4px] -mb-[4px]"
+          />
+          <span>Academy</span>
         </a>
       </div>
 

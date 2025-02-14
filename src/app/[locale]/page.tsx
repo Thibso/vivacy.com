@@ -12,6 +12,7 @@ import ProductsCarousel from "../components/sliders/productsCarousel";
 import FromTopCenteredTitles from "../components/titles/FromTopCenteredTitles";
 import FromTopTitles from "../components/titles/FromTopTitles";
 import productsBg from "../img/experts-acide-hyaluronique-laboratoires-vivacy.jpg";
+import section3_mobile from "../img/vivacy-laboratoires-experience-esthetique-mobile.jpg";
 import experienceBg from "../img/vivacy-laboratoires-experience-esthetique.png";
 
 type Params = {
@@ -154,7 +155,7 @@ export default function Home() {
         </BigTitle>
       </section>
 
-      <section className="relative bg-[url('/images/acid-hyaluronic-experts-laboratoires-vivacy-paris.jpg')] bg-fixed bg-cover bg-opacity-10 z-[1] overflow-hidden">
+      <section className="relative bg-[url('/images/acid-hyaluronic-experts-laboratoires-vivacy-paris.jpg')] lg:bg-fixed bg-cover bg-opacity-10 z-[1] overflow-hidden">
         <div className="absolute size-full bg-white/40 top-0 left-0 -z-[1]"></div>
         {/* <Image
           src={haPower}
@@ -218,6 +219,12 @@ export default function Home() {
           />
 
           <div className="lg:grid lg:grid-cols-2 lg:gap-36">
+            <Image
+              src={section3_mobile}
+              alt={t("section2.alt")}
+              quality={100}
+              className="md:hidden h-[350px] rounded-xl object-contain object-right-top mb-8"
+            />
             <div className="col-start-2 space-y-8 lg:space-y-28">
               <PAnimate
                 content={t.rich("section2.text", {
