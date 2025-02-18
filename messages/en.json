@@ -892,7 +892,8 @@
       "firstname": "First name",
       "country": "Country",
       "email": "Email Address",
-      "submit": "Send"
+      "submit": "Send",
+      "submitting": "Sending.."
     },
     "checked": "I agree to receive the newsletter and understand that my details will be used in accordance with the privacy policy.",
     "toast": {

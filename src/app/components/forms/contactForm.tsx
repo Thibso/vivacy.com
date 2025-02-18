@@ -74,6 +74,8 @@ export default function ContactForm() {
     },
   });
 
+  const { reset } = form;
+
   function emailChange(event: any) {
     if (event.target.value === "Contact with a distributor (international)") {
       setEmailTo("export@vivacy.com");
@@ -153,6 +155,7 @@ export default function ContactForm() {
         });
       }
       setIsSending(false);
+      reset();
     } else {
       window.alert("Recaptcha failed");
       setIsSending(false);
