@@ -156,15 +156,15 @@ export default function Footer() {
         </a>
       </div>
 
-      <div className="bg-blue px-5 lg:px-20 xl:px-24 py-2 text-white flex justify-between max-lg:flex-wrap w-full gap-2 lg:gap-x-8 text-[10px]">
+      <div className="bg-blue px-5 lg:px-20 xl:px-24 py-2 text-white flex justify-start max-lg:flex-wrap w-full gap-2 lg:gap-x-8 text-[10px]">
         <span>{t("legals.copyright")}</span>
-        <a
+        {/* <a
           className="hover:underline"
           href={t("legals.author_link")}
           target="_blank"
         >
           {t("legals.author")}
-        </a>
+        </a> */}
       </div>
     </footer>
   );

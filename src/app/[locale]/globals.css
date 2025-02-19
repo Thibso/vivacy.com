@@ -116,13 +116,13 @@
 
 .grecaptcha-badge {
   z-index: 999 !important;
-  bottom: 5.125rem !important;
+  bottom: 45px !important;
+  scale: 0.8;
 }
 
 @media screen and (min-width: 1024px) {
   .grecaptcha-badge {
     bottom: 2rem !important;
-    scale: 0.8;
   }
 }
 
