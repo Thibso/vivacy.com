@@ -1,5 +1,14 @@
 import { useTranslations } from "next-intl";
 
+export async function generateMetadata() {
+  return {
+    robots: {
+      index: false,
+      follow: false,
+    },
+  };
+}
+
 export default function LegalNotice() {
   const t = useTranslations("LegalNotice");
 
@@ -12,6 +21,16 @@ export default function LegalNotice() {
             h3: (chunks) => <h3 className="h2-perso pt-8">{chunks}</h3>,
             h4: (chunks) => <h4 className="lg:text-lg font-bold">{chunks}</h4>,
             p: (chunks) => <p className="lg:text-lg">{chunks}</p>,
+            a: (chunks) => (
+              <a
+                className="lg:text-lg underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.healthcie.fr"
+              >
+                {chunks}
+              </a>
+            ),
             strong: (chunks) => (
               <strong className="lg:text-lg font-bold">{chunks}</strong>
             ),

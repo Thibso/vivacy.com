@@ -3,6 +3,7 @@ import FromTopTitles from "@/app/components/titles/FromTopTitles";
 import vivacyLogo from "@/app/img/vivacy-laboratories-hyaluronic-acid-france.png";
 import Image from "next/image";
 
+import InstagramFeed from "@/app/components/globals/instagramFeed";
 import VivacySecurity from "@/app/components/globals/vivacySecurity";
 import { useTranslations } from "next-intl";
 
@@ -139,6 +140,8 @@ export default function Contact() {
       </section>
 
       <VivacySecurity />
+
+      <InstagramFeed />
     </main>
   );
 }

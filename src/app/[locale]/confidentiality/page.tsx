@@ -1,5 +1,14 @@
 import { useTranslations } from "next-intl";
 
+export async function generateMetadata() {
+  return {
+    robots: {
+      index: false,
+      follow: false,
+    },
+  };
+}
+
 export default function LegalNotice() {
   const t = useTranslations("Confidentiality");
 

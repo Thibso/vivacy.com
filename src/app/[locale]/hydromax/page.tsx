@@ -2,6 +2,7 @@ import BlueButton from "@/app/components/buttons/BlueButton";
 import WhiteButton from "@/app/components/buttons/WhiteButton";
 import HeaderBigTitle from "@/app/components/globals/headerBigTitle";
 import ImageHeader from "@/app/components/globals/ImageHeader";
+import InstagramFeed from "@/app/components/globals/instagramFeed";
 import PAnimate from "@/app/components/globals/pAnimate";
 import UlAnimate from "@/app/components/globals/UlAnimate";
 import ImageFromEffect from "@/app/components/hydromax/imageFromLeft";
@@ -345,6 +346,8 @@ export default function Desirial() {
       </section>
 
       <KeyNumbers />
+
+      <InstagramFeed />
     </main>
   );
 }

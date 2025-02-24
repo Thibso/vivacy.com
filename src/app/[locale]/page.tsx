@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import BlueButton from "../components/buttons/BlueButton";
+import InstagramFeed from "../components/globals/instagramFeed";
 import KeyNumbers from "../components/globals/keyNumbers";
 import PAnimate from "../components/globals/pAnimate";
 import WorldMap from "../components/globals/worldMap";
@@ -291,7 +292,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b-2 border-blue">
+      <section>
         <div className="myContainer space-y-14 lg:space-y-20">
           <FromTopCenteredTitles
             titleH2={t("section7.h2")}
@@ -306,6 +307,8 @@ export default function Home() {
           <WorldMap />
         </div>
       </section>
+
+      <InstagramFeed />
     </main>
   );
 }
